@@ -1,0 +1,139 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f0f4f8;
+  /* Light blue-gray background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.postcard-container {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  /* Max width for desktop */
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid #e2e8f0;
+  /* Light border */
+}
+
+.postcard-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 768px) {
+  .postcard-container {
+    flex-direction: row;
+    height: 500px;
+    /* Increased height for new elements */
+  }
+}
+
+.postcard-left,
+.postcard-right {
+  flex: 1;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.postcard-left {
+  background: linear-gradient(135deg, #a78bfa, #8b5cf6);
+  /* Purple gradient */
+  color: #ffffff;
+  position: relative;
+  min-height: 200px;
+  /* Min height for mobile image side */
+}
+
+.postcard-right {
+  background-color: #f8fafc;
+  /* Very light blue-gray */
+  color: #334155;
+  /* Darker text */
+}
+
+.decorative-element {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 3rem;
+  opacity: 1;
+  transition: transform 0.3s ease;
+}
+
+.postcard-container:hover .decorative-element {
+  transform: rotate(-15deg);
+}
+
+.decorative-element-bottom {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 3rem;
+  opacity: 1;
+  transition: transform 0.3s ease;
+}
+
+.postcard-container:hover .decorative-element-bottom {
+  transform: rotate(15deg);
+}
+
+.button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+}
+
+.button-primary {
+  background-color: #6d28d9;
+  /* Darker purple */
+  color: #ffffff;
+}
+
+.button-primary:hover {
+  background-color: #5b21b6;
+  /* Even darker purple on hover */
+  transform: translateY(-2px);
+}
+
+.button-secondary {
+  background-color: #e2e8f0;
+  color: #475569;
+}
+
+.button-secondary:hover {
+  background-color: #cbd5e1;
+  transform: translateY(-2px);
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#countdown {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #4a044e;
+  /* Dark magenta */
+  background-color: #f3e8ff;
+  padding: 8px 16px;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  border: 2px solid #d8b4fe;
+}
