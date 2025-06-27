@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import Image from "next/image";
 import RoyalPalace from "./assets/RoyalPalace.jpg";
 import "./page.css";
@@ -13,7 +13,7 @@ export default function Home() {
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   // Function to update the countdown text
-  const updateCountdown = () => {
+  const updateCountdown = useCallback(() => {
     const now = new Date().getTime();
     const newDistance = eventDate - now;
     setDistance(newDistance);
@@ -32,7 +32,7 @@ export default function Home() {
     const seconds = Math.floor((newDistance % (1000 * 60)) / 1000);
 
     setCountdownText(`${days}d ${hours}h ${minutes}m ${seconds}s`);
-  };
+  }, [eventDate]);
 
   // Set up the countdown interval
   useEffect(() => {
