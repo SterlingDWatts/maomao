@@ -26,10 +26,19 @@ export default function Home() {
       return;
     }
 
-    const days = Math.floor(newDistance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((newDistance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((newDistance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((newDistance % (1000 * 60)) / 1000);
+    const getTimeUntil = (distance: number) => {
+      const oneSecond = 1000;
+      const oneMinute = oneSecond * 60;
+      const oneHour = oneMinute * 60;
+      const oneDay = oneHour * 24;
+      const days = Math.floor(distance / oneDay);
+      const hours = Math.floor((distance % oneDay) / oneHour);
+      const minutes = Math.floor((distance % oneHour) / oneMinute);
+      const seconds = Math.floor((distance % oneMinute) / oneSecond);
+      return { days, hours, minutes, seconds };
+    };
+
+    const { days, hours, minutes, seconds } = getTimeUntil(newDistance);
 
     setCountdownText(`${days}d ${hours}h ${minutes}m ${seconds}s`);
   }, [eventDate]);
@@ -52,8 +61,12 @@ export default function Home() {
       <div className="postcard-left relative">
         <div className="decorative-element">🌸</div>
         <div className="decorative-element-bottom">🌿</div>
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-shadow">The Apothecary Diaries</h1>
-        <p className="text-lg md:text-xl font-light leading-relaxed mb-6 text-shadow">Royal Guard</p>
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-shadow">
+          The Apothecary Diaries
+        </h1>
+        <p className="text-lg md:text-xl font-light leading-relaxed mb-6 text-shadow">
+          Royal Guard
+        </p>
         <Image
           src={RoyalPalace}
           alt="Apothecary Diaries Character Maomao With Cat Ears"
@@ -70,11 +83,15 @@ export default function Home() {
           Dearest 晨曦 (Chénxī),
           <br />
           <br />
-          <span id="spoiler-warning" className={!spoilerVisible ? "visible" : "hidden"}>
+          <span
+            id="spoiler-warning"
+            className={!spoilerVisible ? "visible" : "hidden"}
+          >
             A new episode awaits, but be warned, the plot is thickening!
           </span>
           <span id="spoiler" className={spoilerVisible ? "visible" : "hidden"}>
-            The imperial army camps in front of the fortress while Zicui contemplates a secret strategy.
+            The imperial army camps in front of the fortress while Zicui
+            contemplates a secret strategy.
           </span>
         </p>
         <button
@@ -101,7 +118,9 @@ export default function Home() {
           href="https://www.crunchyroll.com/watch/GQJUMZWW8/royal-guard"
           target="_blank"
           className={
-            distance > 0 ? "button button-secondary inline-block mb-6" : "button button-primary inline-block mb-6"
+            distance > 0
+              ? "button button-secondary inline-block mb-6"
+              : "button button-primary inline-block mb-6"
           }
         >
           {distance > 0 ? "Not Available Yet" : "Watch Now!"}
