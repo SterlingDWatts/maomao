@@ -2,8 +2,8 @@
 
 import { useState, useEffect, useRef, useCallback } from "react";
 import Image from "next/image";
+import DrawerAppBar from "../components/appBarWithResponsiveMenu";
 import RoyalPalace from "../app/assets/RoyalPalace.jpg";
-import "./index.css";
 
 export default function Page() {
   const [eventDate] = useState(new Date("July 04, 2025 13:00:00").getTime());
@@ -57,6 +57,7 @@ export default function Page() {
 
   return (
     <div className="postcard-container">
+      <DrawerAppBar />
       {/* <!-- Left side of the postcard (Image/Theme) --> */}
       <div className="postcard-left relative">
         <div className="decorative-element">🌸</div>
