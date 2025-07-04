@@ -2,10 +2,10 @@
 
 import { useState, useEffect, useRef, useCallback } from "react";
 import Image from "next/image";
-import RoyalPalace from "./assets/RoyalPalace.jpg";
-import "./page.css";
+import RoyalPalace from "../app/assets/RoyalPalace.jpg";
+import "./index.css";
 
-export default function Home() {
+export default function Page() {
   const [eventDate] = useState(new Date("July 04, 2025 13:00:00").getTime());
   const [countdownText, setCountdownText] = useState("Loading countdown...");
   const [distance, setDistance] = useState(eventDate - new Date().getTime());
