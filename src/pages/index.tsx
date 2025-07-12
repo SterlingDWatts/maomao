@@ -18,6 +18,8 @@ import FrierenFrierensParty from "../app/assets/FrierenFrierensParty.jpg";
 import FrierenLogo from "../app/assets/FrierenLogo.jpg";
 import JamesLogo from "../app/assets/JamesLogo.jpg";
 import MaomaoSmall from "../app/assets/MaomaoSmall.jpg";
+import MyHeroFinalSeason from "../app/assets/MyHeroFinalSeason.jpg";
+import MyHeroLogo from "../app/assets/MyHeroLogo.jpg";
 import OnlyMurdersLogo from "../app/assets/OnlyMurdersLogo.png";
 import SlowHorses from "../app/assets/SlowHorsesLogo.jpg";
 import SlowHorsesLogo from "../app/assets/SlowHorsesLogo.jpg";
@@ -112,6 +114,17 @@ export default function Page() {
             cardMediaAlt="Slow Horses"
             releaseDateTime="September 24, 2025 21:00:00"
             watchUrl="https://tv.apple.com/us/show/slow-horses/umc.cmc.2szz3fdt71tl1ulnbp8utgq5o"
+          />
+
+          <TimerCard
+            avatar={MyHeroLogo.src}
+            title="8.1"
+            subheader="My Hero Academia Season 8 Episode 1"
+            cardMedia={MyHeroFinalSeason.src}
+            cardMediaAlt="My Hero Academia Season 8"
+            releaseDateTime="October 31, 2025 21:00:00"
+            watchUrl="https://www.crunchyroll.com/series/G6NQ5DWZ6/my-hero-academia"
+            estimate
           />
 
           <TimerCard
