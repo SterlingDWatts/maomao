@@ -43,8 +43,8 @@ export default function Page() {
         <Stack spacing={2} sx={{ marginTop: 2 }}>
           <TimerCard
             avatar={FoundationAvatar.src}
-            title="A Song for the End of Everything"
-            subheader="Foundation Season 3 Episode 1"
+            subheader="A Song for the End of Everything"
+            title="Foundation S3 E1"
             cardMedia={FoundationSeason3Episode1.src}
             cardMediaAlt="Foundation Season 3 Episode 1"
             releaseDateTime="July 11, 2025 03:00:00"
@@ -54,8 +54,8 @@ export default function Page() {
 
           <TimerCard
             avatar={TheBearLogo.src}
-            title="Soubise"
-            subheader="The Bear Season 4 Episode 2"
+            subheader="Soubise"
+            title="The Bear S4 E2"
             cardMedia={TheBearS4E2.src}
             cardMediaAlt="The Bear Season 4 Episode 2"
             releaseDateTime="June 25, 2025 21:00:00"
@@ -65,8 +65,8 @@ export default function Page() {
 
           <TimerCard
             avatar={JamesLogo.src}
-            title="Surviving Siegfried"
-            subheader="All Creatures Great And Small Season 3 Episode 3"
+            subheader="Surviving Siegfried"
+            title="All Creatures Great And Small S3 E3"
             cardMedia={AllCreaturesSeason3Episode3.src}
             cardMediaAlt="All Creatures Great And Small Season 3 Episode 3"
             releaseDateTime="January 22, 2023 21:00:00"
@@ -76,8 +76,8 @@ export default function Page() {
 
           <TimerCard
             avatar={FoundationAvatar.src}
-            title="Shadows in the Math"
-            subheader="Foundation Season 3 Episode 2"
+            subheader="Shadows in the Math"
+            title="Foundation S3 E2"
             cardMedia={FoundationSeason3Episode2.src}
             cardMediaAlt="Foundation Season 3 Episode 2"
             releaseDateTime="July 18 2025 03:00:00 GMT-0700"
@@ -87,8 +87,8 @@ export default function Page() {
 
           <TimerCard
             avatar={MaomaoSmall.src}
-            title="The Beginning"
-            subheader="The Apothecary Diaries Season 2 Episode 24"
+            subheader="The Beginning"
+            title="The Apothecary Diaries S2 E24"
             cardMedia={ADTheBeginning.src}
             cardMediaAlt="Apothecary Diaries Season 2 Episode 24"
             releaseDateTime="July 18 2025 13:00:00 GMT-0700"
@@ -98,8 +98,8 @@ export default function Page() {
 
           <TimerCard
             avatar={FoundationAvatar.src}
-            title="3.3"
-            subheader="Foundation Season 3 Episode 3"
+            subheader="3.3"
+            title="Foundation S3 E3"
             cardMedia={FoundationSeason3.src}
             cardMediaAlt="Foundation Season 3 Episode 3"
             releaseDateTime="July 25 2025 03:00:00 GMT-0700"
@@ -108,8 +108,8 @@ export default function Page() {
 
           <TimerCard
             avatar={FoundationAvatar.src}
-            title="3.4"
-            subheader="Foundation Season 3 Episode 4"
+            subheader="3.4"
+            title="Foundation S3 E4"
             cardMedia={FoundationSeason3.src}
             cardMediaAlt="Foundation Season 3 Episode 4"
             releaseDateTime="August 1 2025 03:00:00 GMT-0700"
@@ -118,8 +118,8 @@ export default function Page() {
 
           <TimerCard
             avatar={FoundationAvatar.src}
-            title="3.5"
-            subheader="Foundation Season 3 Episode 5"
+            subheader="3.5"
+            title="Foundation S3 E5"
             cardMedia={FoundationSeason3.src}
             cardMediaAlt="Foundation Season 3 Episode 5"
             releaseDateTime="August 8 2025 03:00:00 GMT-0700"
@@ -128,8 +128,8 @@ export default function Page() {
 
           <TimerCard
             avatar={FoundationAvatar.src}
-            title="3.6"
-            subheader="Foundation Season 3 Episode 6"
+            subheader="3.6"
+            title="Foundation S3 E6"
             cardMedia={FoundationSeason3.src}
             cardMediaAlt="Foundation Season 3 Episode 6"
             releaseDateTime="August 15 2025 03:00:00 GMT-0700"
@@ -138,8 +138,8 @@ export default function Page() {
 
           <TimerCard
             avatar={FoundationAvatar.src}
-            title="3.7"
-            subheader="Foundation Season 3 Episode 7"
+            subheader="3.7"
+            title="Foundation S3 E7"
             cardMedia={FoundationSeason3.src}
             cardMediaAlt="Foundation Season 3 Episode 7"
             releaseDateTime="August 22 2025 03:00:00 GMT-0700"
@@ -148,8 +148,8 @@ export default function Page() {
 
           <TimerCard
             avatar={OnlyMurdersLogo.src}
-            title="5.1"
-            subheader="Only Murders In The Building Season 5 Episode 1"
+            subheader="5.1"
+            title="Only Murders In The Building S5 E1"
             cardMedia={OnlyMurdersLogo.src}
             cardMediaAlt="Only Murders In The Building"
             releaseDateTime="August 26, 2025 21:00:00"
@@ -159,8 +159,8 @@ export default function Page() {
 
           <TimerCard
             avatar={FoundationAvatar.src}
-            title="3.8"
-            subheader="Foundation Season 3 Episode 8"
+            subheader="3.8"
+            title="Foundation S3 E8"
             cardMedia={FoundationSeason3.src}
             cardMediaAlt="Foundation Season 3 Episode 8"
             releaseDateTime="August 29 2025 03:00:00 GMT-0700"
@@ -169,8 +169,8 @@ export default function Page() {
 
           <TimerCard
             avatar={FoundationAvatar.src}
-            title="3.9"
-            subheader="Foundation Season 3 Episode 9"
+            subheader="3.9"
+            title="Foundation S3 E9"
             cardMedia={FoundationSeason3.src}
             cardMediaAlt="Foundation Season 3 Episode 9"
             releaseDateTime="September 05 2025 03:00:00 GMT-0700"
@@ -179,8 +179,8 @@ export default function Page() {
 
           <TimerCard
             avatar={FoundationAvatar.src}
-            title="3.10"
-            subheader="Foundation Season 3 Episode 10"
+            subheader="3.10"
+            title="Foundation S3 E10"
             cardMedia={FoundationSeason3.src}
             cardMediaAlt="Foundation Season 3 Episode 10"
             releaseDateTime="September 12 2025 03:00:00 GMT-0700"
@@ -189,8 +189,8 @@ export default function Page() {
 
           <TimerCard
             avatar={SlowHorsesLogo.src}
-            title="5.1"
-            subheader="Slow Horses Season 5 Episode 1"
+            subheader="5.1"
+            title="Slow Horses S5 E1"
             cardMedia={SlowHorses.src}
             cardMediaAlt="Slow Horses"
             releaseDateTime="September 24, 2025 21:00:00"
@@ -199,8 +199,8 @@ export default function Page() {
 
           <TimerCard
             avatar={SlowHorsesLogo.src}
-            title="5.2"
-            subheader="Slow Horses Season 5 Episode 2"
+            subheader="5.2"
+            title="Slow Horses S5 E2"
             cardMedia={SlowHorses.src}
             cardMediaAlt="Slow Horses"
             releaseDateTime="September 24, 2025 21:00:00"
@@ -209,8 +209,8 @@ export default function Page() {
 
           <TimerCard
             avatar={SlowHorsesLogo.src}
-            title="5.3"
-            subheader="Slow Horses Season 5 Episode 3"
+            subheader="5.3"
+            title="Slow Horses S5 E3"
             cardMedia={SlowHorses.src}
             cardMediaAlt="Slow Horses"
             releaseDateTime="October 01, 2025 21:00:00"
@@ -219,8 +219,8 @@ export default function Page() {
 
           <TimerCard
             avatar={SlowHorsesLogo.src}
-            title="5.4"
-            subheader="Slow Horses Season 5 Episode 4"
+            subheader="5.4"
+            title="Slow Horses S5 E4"
             cardMedia={SlowHorses.src}
             cardMediaAlt="Slow Horses"
             releaseDateTime="October 08, 2025 21:00:00"
@@ -229,8 +229,8 @@ export default function Page() {
 
           <TimerCard
             avatar={SlowHorsesLogo.src}
-            title="5.5"
-            subheader="Slow Horses Season 5 Episode 5"
+            subheader="5.5"
+            title="Slow Horses S5 E5"
             cardMedia={SlowHorses.src}
             cardMediaAlt="Slow Horses"
             releaseDateTime="October 15, 2025 21:00:00"
@@ -239,8 +239,8 @@ export default function Page() {
 
           <TimerCard
             avatar={SlowHorsesLogo.src}
-            title="5.6"
-            subheader="Slow Horses Season 5 Episode 6"
+            subheader="5.6"
+            title="Slow Horses S5 E6"
             cardMedia={SlowHorses.src}
             cardMediaAlt="Slow Horses"
             releaseDateTime="October 22, 2025 21:00:00"
@@ -249,8 +249,8 @@ export default function Page() {
 
           <TimerCard
             avatar={MyHeroLogo.src}
-            title="8.1"
-            subheader="My Hero Academia Season 8 Episode 1"
+            subheader="8.1"
+            title="My Hero Academia S8 E1"
             cardMedia={MyHeroFinalSeason.src}
             cardMediaAlt="My Hero Academia Season 8"
             releaseDateTime="October 31, 2025 21:00:00"
@@ -260,8 +260,8 @@ export default function Page() {
 
           <TimerCard
             avatar={FrierenLogo.src}
-            title="2.1"
-            subheader="Frieren: Beyond Journey's End Season 2 Episode 1"
+            subheader="2.1"
+            title="Frieren: Beyond Journey's End S2 E1"
             cardMedia={FrierenFrierensParty.src}
             cardMediaAlt="Frieren's Party"
             releaseDateTime="January 31, 2026 23:00:00"
