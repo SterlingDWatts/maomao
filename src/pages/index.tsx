@@ -4,19 +4,19 @@ import * as React from "react";
 
 import CssBaseline from "@mui/material/CssBaseline";
 import Container from "@mui/material/Container";
-import IconButton, { IconButtonProps } from "@mui/material/IconButton";
 import Stack from "@mui/material/Stack";
-import { styled } from "@mui/material/styles";
 
 import DrawerAppBar from "../components/appBarWithResponsiveMenu";
 import TimerCard from "../components/timerCard";
 
 import ADTheBeginning from "../app/assets/ADTheBeginning.jpg";
+import AllCreaturesSeason3Episode3 from "../app/assets/AllCreaturesSeason3Episode3.jpg";
 import FoundationSeason3Episode1 from "../app/assets/FoundationSeason3Episode1.jpg";
 import FoundationSeason3Episode2 from "../app/assets/FoundationSeason3Episode2.jpg";
 import FoundationAvatar from "../app/assets/FoundationAvatar.jpg";
 import FrierenFrierensParty from "../app/assets/FrierenFrierensParty.jpg";
 import FrierenLogo from "../app/assets/FrierenLogo.jpg";
+import JamesLogo from "../app/assets/JamesLogo.jpg";
 import MaomaoSmall from "../app/assets/MaomaoSmall.jpg";
 import OnlyMurdersLogo from "../app/assets/OnlyMurdersLogo.png";
 import SlowHorses from "../app/assets/SlowHorsesLogo.jpg";
@@ -58,6 +58,17 @@ export default function Page() {
             releaseDateTime="June 25, 2025 21:00:00"
             synopsis="Gears start to turn."
             watchUrl="https://www.hulu.com/series/05eb6a8e-90ed-4947-8c0b-e6536cbddd5f"
+          />
+
+          <TimerCard
+            avatar={JamesLogo.src}
+            title="Surviving Siegfried"
+            subheader="All Creatures Great And Small Season 3 Episode 3"
+            cardMedia={AllCreaturesSeason3Episode3.src}
+            cardMediaAlt="All Creatures Great And Small Season 3 Episode 3"
+            releaseDateTime="January 22, 2023 21:00:00"
+            synopsis="Siegfried receives some news and channels his feelings into saving a young racehorse. James struggles to get farmers to agree to his newly adopted TB testing scheme."
+            watchUrl="https://play.google.com/store/tv/show?id=gbQjVgRNYkg.P&cdid=tvseason-mjGu8FIpiU4.P&hl=en_US"
           />
 
           <TimerCard
