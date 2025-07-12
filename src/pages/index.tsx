@@ -105,7 +105,7 @@ export default function Page() {
     <React.Fragment>
       <CssBaseline />
       <Container
-        maxWidth={false}
+        maxWidth="lg"
         sx={{
           paddingTop: { xs: "56px", sm: "64px" },
           paddingLeft: { xs: 0, sm: 3 },
@@ -146,7 +146,6 @@ export default function Page() {
                   alignItems: "center",
                 }}
               >
-                {/* <Timer distance={distance} /> */}
                 <Typography
                   variant="h4"
                   component="div"
