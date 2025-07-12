@@ -14,6 +14,7 @@ import AllCreaturesSeason3Episode3 from "../app/assets/AllCreaturesSeason3Episod
 import FoundationSeason3Episode1 from "../app/assets/FoundationSeason3Episode1.jpg";
 import FoundationSeason3Episode2 from "../app/assets/FoundationSeason3Episode2.jpg";
 import FoundationAvatar from "../app/assets/FoundationAvatar.jpg";
+import FoundationSeason3 from "../app/assets/FoundationSeason3.jpg";
 import FrierenFrierensParty from "../app/assets/FrierenFrierensParty.jpg";
 import FrierenLogo from "../app/assets/FrierenLogo.jpg";
 import JamesLogo from "../app/assets/JamesLogo.jpg";
@@ -96,6 +97,56 @@ export default function Page() {
           />
 
           <TimerCard
+            avatar={FoundationAvatar.src}
+            title="3.3"
+            subheader="Foundation Season 3 Episode 3"
+            cardMedia={FoundationSeason3.src}
+            cardMediaAlt="Foundation Season 3 Episode 3"
+            releaseDateTime="July 25 2025 03:00:00 GMT-0700"
+            watchUrl="https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3"
+          />
+
+          <TimerCard
+            avatar={FoundationAvatar.src}
+            title="3.4"
+            subheader="Foundation Season 3 Episode 4"
+            cardMedia={FoundationSeason3.src}
+            cardMediaAlt="Foundation Season 3 Episode 4"
+            releaseDateTime="August 1 2025 03:00:00 GMT-0700"
+            watchUrl="https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3"
+          />
+
+          <TimerCard
+            avatar={FoundationAvatar.src}
+            title="3.5"
+            subheader="Foundation Season 3 Episode 5"
+            cardMedia={FoundationSeason3.src}
+            cardMediaAlt="Foundation Season 3 Episode 5"
+            releaseDateTime="August 8 2025 03:00:00 GMT-0700"
+            watchUrl="https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3"
+          />
+
+          <TimerCard
+            avatar={FoundationAvatar.src}
+            title="3.6"
+            subheader="Foundation Season 3 Episode 6"
+            cardMedia={FoundationSeason3.src}
+            cardMediaAlt="Foundation Season 3 Episode 6"
+            releaseDateTime="August 15 2025 03:00:00 GMT-0700"
+            watchUrl="https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3"
+          />
+
+          <TimerCard
+            avatar={FoundationAvatar.src}
+            title="3.7"
+            subheader="Foundation Season 3 Episode 7"
+            cardMedia={FoundationSeason3.src}
+            cardMediaAlt="Foundation Season 3 Episode 7"
+            releaseDateTime="August 22 2025 03:00:00 GMT-0700"
+            watchUrl="https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3"
+          />
+
+          <TimerCard
             avatar={OnlyMurdersLogo.src}
             title="5.1"
             subheader="Only Murders In The Building Season 5 Episode 1"
@@ -107,12 +158,92 @@ export default function Page() {
           />
 
           <TimerCard
+            avatar={FoundationAvatar.src}
+            title="3.8"
+            subheader="Foundation Season 3 Episode 8"
+            cardMedia={FoundationSeason3.src}
+            cardMediaAlt="Foundation Season 3 Episode 8"
+            releaseDateTime="August 29 2025 03:00:00 GMT-0700"
+            watchUrl="https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3"
+          />
+
+          <TimerCard
+            avatar={FoundationAvatar.src}
+            title="3.9"
+            subheader="Foundation Season 3 Episode 9"
+            cardMedia={FoundationSeason3.src}
+            cardMediaAlt="Foundation Season 3 Episode 9"
+            releaseDateTime="September 05 2025 03:00:00 GMT-0700"
+            watchUrl="https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3"
+          />
+
+          <TimerCard
+            avatar={FoundationAvatar.src}
+            title="3.10"
+            subheader="Foundation Season 3 Episode 10"
+            cardMedia={FoundationSeason3.src}
+            cardMediaAlt="Foundation Season 3 Episode 10"
+            releaseDateTime="September 12 2025 03:00:00 GMT-0700"
+            watchUrl="https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3"
+          />
+
+          <TimerCard
             avatar={SlowHorsesLogo.src}
             title="5.1"
             subheader="Slow Horses Season 5 Episode 1"
             cardMedia={SlowHorses.src}
             cardMediaAlt="Slow Horses"
             releaseDateTime="September 24, 2025 21:00:00"
+            watchUrl="https://tv.apple.com/us/show/slow-horses/umc.cmc.2szz3fdt71tl1ulnbp8utgq5o"
+          />
+
+          <TimerCard
+            avatar={SlowHorsesLogo.src}
+            title="5.2"
+            subheader="Slow Horses Season 5 Episode 2"
+            cardMedia={SlowHorses.src}
+            cardMediaAlt="Slow Horses"
+            releaseDateTime="September 24, 2025 21:00:00"
+            watchUrl="https://tv.apple.com/us/show/slow-horses/umc.cmc.2szz3fdt71tl1ulnbp8utgq5o"
+          />
+
+          <TimerCard
+            avatar={SlowHorsesLogo.src}
+            title="5.3"
+            subheader="Slow Horses Season 5 Episode 3"
+            cardMedia={SlowHorses.src}
+            cardMediaAlt="Slow Horses"
+            releaseDateTime="October 01, 2025 21:00:00"
+            watchUrl="https://tv.apple.com/us/show/slow-horses/umc.cmc.2szz3fdt71tl1ulnbp8utgq5o"
+          />
+
+          <TimerCard
+            avatar={SlowHorsesLogo.src}
+            title="5.4"
+            subheader="Slow Horses Season 5 Episode 4"
+            cardMedia={SlowHorses.src}
+            cardMediaAlt="Slow Horses"
+            releaseDateTime="October 08, 2025 21:00:00"
+            watchUrl="https://tv.apple.com/us/show/slow-horses/umc.cmc.2szz3fdt71tl1ulnbp8utgq5o"
+          />
+
+          <TimerCard
+            avatar={SlowHorsesLogo.src}
+            title="5.5"
+            subheader="Slow Horses Season 5 Episode 5"
+            cardMedia={SlowHorses.src}
+            cardMediaAlt="Slow Horses"
+            releaseDateTime="October 15, 2025 21:00:00"
+            watchUrl="https://tv.apple.com/us/show/slow-horses/umc.cmc.2szz3fdt71tl1ulnbp8utgq5o"
+          />
+
+          <TimerCard
+            avatar={SlowHorsesLogo.src}
+            title="5.6"
+            subheader="Slow Horses Season 5 Episode 6"
+            cardMedia={SlowHorses.src}
+            cardMediaAlt="Slow Horses"
+            releaseDateTime="October 22, 2025 21:00:00"
             watchUrl="https://tv.apple.com/us/show/slow-horses/umc.cmc.2szz3fdt71tl1ulnbp8utgq5o"
           />
 
