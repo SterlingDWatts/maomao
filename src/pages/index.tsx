@@ -1,18 +1,56 @@
 "use client";
 
 import { useState, useEffect, useRef, useCallback } from "react";
-import Image from "next/image";
+import * as React from "react";
+
+import Avatar from "@mui/material/Avatar";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardHeader from "@mui/material/CardHeader";
+import CardMedia from "@mui/material/CardMedia";
+import CssBaseline from "@mui/material/CssBaseline";
+import Collapse from "@mui/material/Collapse";
+import Container from "@mui/material/Container";
+import IconButton, { IconButtonProps } from "@mui/material/IconButton";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
+import { styled } from "@mui/material/styles";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import WarningAmberIcon from "@mui/icons-material/WarningAmber";
+
+import Timer from "../components/timer";
 import DrawerAppBar from "../components/appBarWithResponsiveMenu";
-import RoyalPalace from "../app/assets/RoyalPalace.jpg";
+
+import ApothecaryDiaries from "../app/assets/ApothecaryDiaries.jpg";
+import ADTheBeginning from "../app/assets/ADTheBeginning.jpg";
+import MaomaoSmall from "../app/assets/MaomaoSmall.jpg";
+import FoundationSeason3Episode1 from "../app/assets/FoundationSeason3Episode1.jpg";
+import FoundationAvatar from "../app/assets/FoundationAvatar.jpg";
+
+interface ExpandMoreProps extends IconButtonProps {
+  expand: boolean;
+}
+
+const ExpandMore = styled((props: ExpandMoreProps) => {
+  const { expand, ...other } = props;
+  return <IconButton {...other} />;
+})(({}) => ({}));
 
 export default function Page() {
-  const [eventDate] = useState(new Date("July 04, 2025 13:00:00").getTime());
+  const [eventDate] = useState(new Date("July 18, 2025 13:00:00").getTime());
   const [countdownText, setCountdownText] = useState("Loading countdown...");
   const [distance, setDistance] = useState(eventDate - new Date().getTime());
   const [spoilerVisible, setSpoilerVisible] = useState(false);
+  const [expanded, setExpanded] = React.useState(false);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Function to update the countdown text
+  const handleExpandClick = () => {
+    setExpanded(!expanded);
+  };
+
   const updateCountdown = useCallback(() => {
     const now = new Date().getTime();
     const newDistance = eventDate - now;
@@ -26,6 +64,10 @@ export default function Page() {
       return;
     }
 
+    const formatNumber = (num: number) => {
+      return num < 10 ? `0${num}` : num.toString();
+    };
+
     const getTimeUntil = (distance: number) => {
       const oneSecond = 1000;
       const oneMinute = oneSecond * 60;
@@ -35,7 +77,12 @@ export default function Page() {
       const hours = Math.floor((distance % oneDay) / oneHour);
       const minutes = Math.floor((distance % oneHour) / oneMinute);
       const seconds = Math.floor((distance % oneMinute) / oneSecond);
-      return { days, hours, minutes, seconds };
+      return {
+        days: formatNumber(days),
+        hours: formatNumber(hours),
+        minutes: formatNumber(minutes),
+        seconds: formatNumber(seconds),
+      };
     };
 
     const { days, hours, minutes, seconds } = getTimeUntil(newDistance);
@@ -43,10 +90,9 @@ export default function Page() {
     setCountdownText(`${days}d ${hours}h ${minutes}m ${seconds}s`);
   }, [eventDate]);
 
-  // Set up the countdown interval
   useEffect(() => {
-    updateCountdown(); // Initial call to set the countdown text
-    intervalRef.current = setInterval(updateCountdown, 1000); // Update every second
+    updateCountdown();
+    intervalRef.current = setInterval(updateCountdown, 1000);
 
     return () => {
       if (intervalRef.current) {
@@ -56,83 +102,171 @@ export default function Page() {
   }, [eventDate, updateCountdown]);
 
   return (
-    <div className="postcard-container">
-      <DrawerAppBar />
-      {/* <!-- Left side of the postcard (Image/Theme) --> */}
-      <div className="postcard-left relative">
-        <div className="decorative-element">🌸</div>
-        <div className="decorative-element-bottom">🌿</div>
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-shadow">
-          The Apothecary Diaries
-        </h1>
-        <p className="text-lg md:text-xl font-light leading-relaxed mb-6 text-shadow">
-          Royal Guard
-        </p>
-        <Image
-          src={RoyalPalace}
-          alt="Apothecary Diaries Character Maomao With Cat Ears"
-          width={168}
-          height={128}
-          className="w-42 h-32 rounded-full border-4 border-white shadow-lg"
-        />
-        <p className="mt-4 text-sm font-medium">up next</p>
-      </div>
+    <React.Fragment>
+      <CssBaseline />
+      <Container
+        maxWidth={false}
+        sx={{
+          paddingTop: { xs: "56px", sm: "64px" },
+          paddingLeft: { xs: 0, sm: 3 },
+          paddingRight: { xs: 0, sm: 3 },
+        }}
+      >
+        <DrawerAppBar />
+        <Stack spacing={2} sx={{ marginTop: 2 }}>
+          <Card sx={{ maxWidth: "100vw" }}>
+            <CardHeader
+              avatar={<Avatar src={FoundationAvatar.src} />}
+              title="A Song for the End of Everything"
+              subheader="Foundation Season 3 Episode 1"
+            />
+            <Box
+              sx={{
+                width: "100%",
+                height: "194px",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                position: "relative",
+              }}
+            >
+              <CardMedia
+                component="img"
+                height="194"
+                image={FoundationSeason3Episode1.src}
+                alt="Apothecary Diaries"
+              />
+              <Box
+                sx={{
+                  position: "absolute",
+                  width: "100%",
+                  height: "100%",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                {/* <Timer distance={distance} /> */}
+                <Typography
+                  variant="h4"
+                  component="div"
+                  color="white"
+                  sx={{ fontWeight: "bold" }}
+                >
+                  AVAILABLE
+                </Typography>
+              </Box>
+            </Box>
 
-      {/* <!-- Right side of the postcard (Invitation details) --> */}
-      <div className="postcard-right">
-        <p className="text-md leading-relaxed mb-4">
-          Dearest 晨曦 (Chénxī),
-          <br />
-          <br />
-          <span
-            id="spoiler-warning"
-            className={!spoilerVisible ? "visible" : "hidden"}
-          >
-            A new episode awaits, but be warned, the plot is thickening!
-          </span>
-          <span id="spoiler" className={spoilerVisible ? "visible" : "hidden"}>
-            The imperial army camps in front of the fortress while Zicui
-            contemplates a secret strategy.
-          </span>
-        </p>
-        <button
-          id="spoiler-btn"
-          className={
-            !spoilerVisible
-              ? "visible button button-secondary mb-6 text-sm"
-              : "hidden button button-secondary mb-6 text-sm"
-          }
-          onClick={() => setSpoilerVisible(true)}
-        >
-          Reveal Details
-        </button>
-
-        <div id="countdown">{countdownText}</div>
-
-        <div className="mb-6 text-lg font-semibold text-gray-700">
-          <p>When: July 4th at 1:00 PM</p>
-          <p>Where: Watts Living Room</p>
-        </div>
-
-        <a
-          id="watch-btn"
-          href="https://www.crunchyroll.com/watch/GQJUMZWW8/royal-guard"
-          target="_blank"
-          className={
-            distance > 0
-              ? "button button-secondary inline-block mb-6"
-              : "button button-primary inline-block mb-6"
-          }
-        >
-          {distance > 0 ? "Not Available Yet" : "Watch Now!"}
-        </a>
-
-        <p className="mt-6 text-sm text-gray-500">
-          Hope to see you there!
-          <br />
-          Best, 卓然 (Zhuórán)
-        </p>
-      </div>
-    </div>
+            <Collapse in={expanded} timeout="auto" unmountOnExit>
+              <CardContent>
+                <Typography sx={{ marginBottom: 2 }}>
+                  A mysterious new pirate with terrifying abilities - known as
+                  the Mule - catches the attention of the Foundation and Empire.
+                </Typography>
+              </CardContent>
+            </Collapse>
+            <CardActions sx={{ justifyContent: "space-between" }}>
+              <Button
+                size="small"
+                href="https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3"
+                color="primary"
+              >
+                Watch
+              </Button>
+              <ExpandMore
+                expand={expanded}
+                onClick={handleExpandClick}
+                aria-expanded={expanded}
+                aria-label="show more"
+              >
+                {expanded ? (
+                  <ExpandMoreIcon />
+                ) : (
+                  <Button
+                    component="button"
+                    startIcon={<WarningAmberIcon />}
+                    color="error"
+                  >
+                    Plot
+                  </Button>
+                )}
+              </ExpandMore>
+            </CardActions>
+          </Card>
+          <Card sx={{ maxWidth: "100vw" }}>
+            <CardHeader
+              avatar={<Avatar src={MaomaoSmall.src} />}
+              title="The Beginning"
+              subheader="The Apothecary Diaries"
+            />
+            <Box
+              sx={{
+                width: "100%",
+                height: "194px",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                position: "relative",
+              }}
+            >
+              <CardMedia
+                component="img"
+                height="194"
+                image={ADTheBeginning.src}
+                alt="Apothecary Diaries"
+              />
+              <Box
+                sx={{
+                  position: "absolute",
+                  width: "100%",
+                  height: "100%",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <Timer distance={distance} />
+              </Box>
+            </Box>
+            <CardActions sx={{ justifyContent: "space-between" }}>
+              <Button
+                size="small"
+                href="https://www.crunchyroll.com/watch/GWDU7300N/the-beginning"
+                color={distance > 0 ? "secondary" : "primary"}
+              >
+                {distance > 0 ? "Visit" : "Watch"}
+              </Button>
+              <ExpandMore
+                expand={expanded}
+                onClick={handleExpandClick}
+                aria-expanded={expanded}
+                aria-label="show more"
+              >
+                {expanded ? (
+                  <ExpandMoreIcon />
+                ) : (
+                  <Button
+                    component="button"
+                    startIcon={<WarningAmberIcon />}
+                    color="error"
+                  >
+                    Plot
+                  </Button>
+                )}
+              </ExpandMore>
+            </CardActions>
+            <Collapse in={expanded} timeout="auto" unmountOnExit>
+              <CardContent>
+                <Typography sx={{ marginBottom: 2 }}>
+                  After the war ends, Jinshi faces mounting work duties while
+                  Maomao goes back to the pleasure quarter.
+                </Typography>
+              </CardContent>
+            </Collapse>
+          </Card>
+        </Stack>
+      </Container>
+    </React.Fragment>
   );
 }
