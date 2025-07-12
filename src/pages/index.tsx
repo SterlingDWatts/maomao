@@ -18,6 +18,7 @@ import IconButton, { IconButtonProps } from "@mui/material/IconButton";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
+import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import WarningAmberIcon from "@mui/icons-material/WarningAmber";
 
@@ -180,7 +181,7 @@ export default function Page() {
                 aria-label="show more"
               >
                 {expanded ? (
-                  <ExpandMoreIcon />
+                  <ExpandLessIcon />
                 ) : (
                   <Button
                     component="button"
@@ -228,6 +229,16 @@ export default function Page() {
                 <Timer distance={distance} />
               </Box>
             </Box>
+
+            <Collapse in={expanded} timeout="auto" unmountOnExit>
+              <CardContent>
+                <Typography sx={{ marginBottom: 2 }}>
+                  After the war ends, Jinshi faces mounting work duties while
+                  Maomao goes back to the pleasure quarter.
+                </Typography>
+              </CardContent>
+            </Collapse>
+
             <CardActions sx={{ justifyContent: "space-between" }}>
               <Button
                 size="small"
@@ -243,7 +254,7 @@ export default function Page() {
                 aria-label="show more"
               >
                 {expanded ? (
-                  <ExpandMoreIcon />
+                  <ExpandLessIcon />
                 ) : (
                   <Button
                     component="button"
@@ -255,14 +266,6 @@ export default function Page() {
                 )}
               </ExpandMore>
             </CardActions>
-            <Collapse in={expanded} timeout="auto" unmountOnExit>
-              <CardContent>
-                <Typography sx={{ marginBottom: 2 }}>
-                  After the war ends, Jinshi faces mounting work duties while
-                  Maomao goes back to the pleasure quarter.
-                </Typography>
-              </CardContent>
-            </Collapse>
           </Card>
         </Stack>
       </Container>
