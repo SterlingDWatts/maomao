@@ -84,7 +84,7 @@ export default function Page() {
 
           <TimerCard
             avatar={OnlyMurdersLogo.src}
-            title="TBA"
+            title="5.1"
             subheader="Only Murders In The Building Season 5 Episode 1"
             cardMedia={OnlyMurdersLogo.src}
             cardMediaAlt="Only Murders In The Building"
@@ -95,7 +95,7 @@ export default function Page() {
 
           <TimerCard
             avatar={SlowHorsesLogo.src}
-            title="TBA"
+            title="5.1"
             subheader="Slow Horses Season 5 Episode 1"
             cardMedia={SlowHorses.src}
             cardMediaAlt="Slow Horses"
@@ -105,7 +105,7 @@ export default function Page() {
 
           <TimerCard
             avatar={FrierenLogo.src}
-            title="TBA"
+            title="2.1"
             subheader="Frieren: Beyond Journey's End Season 2 Episode 1"
             cardMedia={FrierenFrierensParty.src}
             cardMediaAlt="Frieren's Party"
