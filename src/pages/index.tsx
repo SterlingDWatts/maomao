@@ -117,6 +117,18 @@ export default function Page() {
           />
 
           <TimerCard
+            avatar={OnlyMurdersLogo.src}
+            subheader="5.1"
+            title="Only Murders In The Building S5 E1"
+            cardMedia={OnlyMurdersLogo.src}
+            cardMediaAlt="Only Murders In The Building"
+            releaseDateTime="August 05, 2025 21:00:00"
+            watchUrl="https://www.hulu.com/series/ef31c7e1-cd0f-4e07-848d-1cbfedb50ddf"
+            estimate
+            estimateDate="[Best Guess] August 2025"
+          />
+
+          <TimerCard
             avatar={FoundationAvatar.src}
             subheader="3.5"
             title="Foundation S3 E5"
@@ -144,17 +156,6 @@ export default function Page() {
             cardMediaAlt="Foundation Season 3 Episode 7"
             releaseDateTime="August 22 2025 03:00:00 GMT-0700"
             watchUrl="https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3"
-          />
-
-          <TimerCard
-            avatar={OnlyMurdersLogo.src}
-            subheader="5.1"
-            title="Only Murders In The Building S5 E1"
-            cardMedia={OnlyMurdersLogo.src}
-            cardMediaAlt="Only Murders In The Building"
-            releaseDateTime="August 26, 2025 21:00:00"
-            watchUrl="https://www.hulu.com/series/ef31c7e1-cd0f-4e07-848d-1cbfedb50ddf"
-            estimate
           />
 
           <TimerCard
@@ -256,6 +257,7 @@ export default function Page() {
             releaseDateTime="October 31, 2025 21:00:00"
             watchUrl="https://www.crunchyroll.com/series/G6NQ5DWZ6/my-hero-academia"
             estimate
+            estimateDate="October 2025"
           />
 
           <TimerCard
@@ -267,6 +269,7 @@ export default function Page() {
             releaseDateTime="January 31, 2026 23:00:00"
             watchUrl="https://www.crunchyroll.com/series/GG5H5XQX4/frieren-beyond-journeys-end"
             estimate
+            estimateDate="January 2026"
           />
         </Stack>
       </Container>

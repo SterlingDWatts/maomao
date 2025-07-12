@@ -30,6 +30,7 @@ interface TimerCardProps {
   synopsis?: string;
   watchUrl: string;
   estimate?: boolean;
+  estimateDate?: string;
 }
 
 interface ExpandMoreProps extends IconButtonProps {
@@ -51,6 +52,7 @@ export default function TimerCard({
   synopsis,
   watchUrl,
   estimate = false,
+  estimateDate,
 }: TimerCardProps) {
   const [eventDate] = useState(new Date(releaseDateTime).getTime());
   const [countdownText, setCountdownText] = useState("Loading countdown...");
@@ -163,6 +165,13 @@ export default function TimerCard({
           )}
         </Box>
       </Box>
+      <CardContent>
+        <Typography variant="body2" color="text.secondary">
+          {!estimate
+            ? new Date(releaseDateTime).toDateString()
+            : estimateDate || "TBD"}
+        </Typography>
+      </CardContent>
 
       {synopsis && (
         <Collapse in={expanded} timeout="auto" unmountOnExit>
