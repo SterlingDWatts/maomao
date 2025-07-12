@@ -145,7 +145,7 @@ export default function TimerCard({
           }}
         >
           {distance > 0 ? (
-            <Timer distance={distance} />
+            <Timer distance={distance} estimate={estimate} />
           ) : (
             <Typography
               variant="h4"
@@ -159,23 +159,6 @@ export default function TimerCard({
               }}
             >
               AVAILABLE
-            </Typography>
-          )}
-          {estimate && (
-            <Typography
-              variant="subtitle1"
-              component="div"
-              color="white"
-              sx={{
-                fontWeight: "bold",
-                lineHeight: 1,
-                minWidth: "60px",
-                backgroundColor: "rgba(139, 139, 139, 0.3)",
-                borderRadius: 2,
-                padding: 1,
-              }}
-            >
-              ESTIMATED
             </Typography>
           )}
         </Box>

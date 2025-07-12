@@ -13,8 +13,6 @@ export default function TimerBox({ time, timeUnit }: TimerBoxProps) {
       sx={{
         padding: 1,
         textAlign: "center",
-        backgroundColor: "rgba(139, 139, 139, 0.3)",
-        borderRadius: 2,
       }}
     >
       <Typography

@@ -1,12 +1,14 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
 import TimerBox from "./timerBox";
 
 interface TimerBoxProps {
   distance: number;
+  estimate?: boolean;
 }
 
-export default function Timer({ distance }: TimerBoxProps) {
+export default function Timer({ distance, estimate = false }: TimerBoxProps) {
   const formatNumber = (num: number) => {
     return num < 10 ? `0${num}` : num.toString();
   };
@@ -32,15 +34,42 @@ export default function Timer({ distance }: TimerBoxProps) {
   return (
     <Box
       sx={{
-        display: "flex",
-        flexDirection: "row",
-        borderRadius: 1,
+        backgroundColor: "rgba(139, 139, 139, 0.3)",
+        borderRadius: 2,
       }}
     >
-      <TimerBox time={days} timeUnit={"days"} />
-      <TimerBox time={hours} timeUnit={"hours"} />
-      <TimerBox time={minutes} timeUnit={"minutes"} />
-      <TimerBox time={seconds} timeUnit={"seconds"} />
+      {estimate && (
+        <Typography
+          variant="subtitle1"
+          component="div"
+          color="white"
+          sx={{
+            fontWeight: "bold",
+            lineHeight: 1,
+            minWidth: "60px",
+            padding: 1,
+          }}
+        >
+          ESTIMATED
+        </Typography>
+      )}
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-around",
+          alignItems: "center",
+        }}
+      >
+        <TimerBox time={days} timeUnit={"days"} />
+        {!estimate && (
+          <>
+            <TimerBox time={hours} timeUnit={"hours"} />
+            <TimerBox time={minutes} timeUnit={"minutes"} />
+            <TimerBox time={seconds} timeUnit={"seconds"} />
+          </>
+        )}
+      </Box>
     </Box>
   );
 }
