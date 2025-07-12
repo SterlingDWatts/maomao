@@ -182,9 +182,7 @@ export default function Page() {
                 size="small"
                 href="https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3"
                 startIcon={<LiveTvIcon />}
-              >
-                WATCH
-              </Button>
+              ></Button>
               <ExpandMore
                 expand={expanded}
                 onClick={handleExpandClick}
@@ -196,8 +194,9 @@ export default function Page() {
                 ) : (
                   <Button
                     component="button"
-                    startIcon={<WarningAmberIcon />}
-                    color="error"
+                    endIcon={<WarningAmberIcon />}
+                    color="secondary"
+                    size="small"
                   >
                     Plot
                   </Button>
@@ -262,9 +261,7 @@ export default function Page() {
                 size="small"
                 href="https://www.hulu.com/watch/3fdd6b36-f227-4f93-bb54-77b227b1863b"
                 startIcon={<LiveTvIcon />}
-              >
-                WATCH
-              </Button>
+              ></Button>
               <ExpandMore
                 expand={expanded2}
                 onClick={handleExpandClick2}
@@ -276,8 +273,9 @@ export default function Page() {
                 ) : (
                   <Button
                     component="button"
-                    startIcon={<WarningAmberIcon />}
-                    color="error"
+                    endIcon={<WarningAmberIcon />}
+                    color="secondary"
+                    size="small"
                   >
                     Plot
                   </Button>
@@ -339,18 +337,14 @@ export default function Page() {
                   href="https://www.crunchyroll.com/watch/GWDU7300N/the-beginning"
                   startIcon={<TvOffIcon />}
                   color="error"
-                >
-                  VISIT
-                </Button>
+                ></Button>
               ) : (
                 <Button
                   component="button"
                   size="small"
                   href="https://www.crunchyroll.com/watch/GWDU7300N/the-beginning"
                   startIcon={<LiveTvIcon />}
-                >
-                  WATCH
-                </Button>
+                ></Button>
               )}
               <ExpandMore
                 expand={expanded3}
@@ -363,8 +357,9 @@ export default function Page() {
                 ) : (
                   <Button
                     component="button"
-                    startIcon={<WarningAmberIcon />}
-                    color="error"
+                    endIcon={<WarningAmberIcon />}
+                    color="secondary"
+                    size="small"
                   >
                     Plot
                   </Button>
