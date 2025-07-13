@@ -1,4 +1,3 @@
-import { useState, useEffect, useRef, useCallback } from "react";
 import * as React from "react";
 
 import Avatar from "@mui/material/Avatar";
@@ -21,6 +20,9 @@ import LocalMoviesTwoToneIcon from "@mui/icons-material/LocalMoviesTwoTone";
 import TvOffIcon from "@mui/icons-material/TvOff";
 
 import Timer from "./timer";
+
+import useDistance from "@/app/hooks/useDistance";
+import useExpanded from "@/app/hooks/useExpanded";
 
 interface TimerCardProps {
   avatar: string;
@@ -45,12 +47,6 @@ const ExpandMore = styled((props: ExpandMoreProps) => {
   return <IconButton {...other} />;
 })(({}) => ({}));
 
-const SmallAvatar = styled(Avatar)(({ theme }) => ({
-  width: 22,
-  height: 22,
-  border: `2px solid ${theme.palette.background.paper}`,
-}));
-
 export default function TimerCard({
   avatar,
   title,
@@ -64,63 +60,8 @@ export default function TimerCard({
   isMovie = false,
   estimateDate,
 }: TimerCardProps) {
-  const [eventDate] = useState(new Date(releaseDateTime).getTime());
-  const [countdownText, setCountdownText] = useState("Loading countdown...");
-  const [distance, setDistance] = useState(eventDate - new Date().getTime());
-  const [expanded, setExpanded] = useState(false);
-  const intervalRef = useRef<NodeJS.Timeout | null>(null);
-
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
-
-  const updateCountdown = useCallback(() => {
-    const now = new Date().getTime();
-    const newDistance = eventDate - now;
-    setDistance(newDistance);
-
-    if (newDistance < 0) {
-      setCountdownText("It's time!");
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current);
-      }
-      return;
-    }
-
-    const formatNumber = (num: number) => {
-      return num < 10 ? `0${num}` : num.toString();
-    };
-
-    const getTimeUntil = (distance: number) => {
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
-      );
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      return {
-        days: formatNumber(days),
-        hours: formatNumber(hours),
-        minutes: formatNumber(minutes),
-        seconds: formatNumber(seconds),
-      };
-    };
-
-    const { days, hours, minutes, seconds } = getTimeUntil(newDistance);
-
-    setCountdownText(`${days}d ${hours}h ${minutes}m ${seconds}s`);
-  }, [eventDate]);
-
-  useEffect(() => {
-    updateCountdown();
-    intervalRef.current = setInterval(updateCountdown, 1000);
-
-    return () => {
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current);
-      }
-    };
-  }, [eventDate, updateCountdown]);
+  const { expanded, handleExpandClick } = useExpanded();
+  const distance = useDistance(releaseDateTime);
 
   return (
     <Card sx={{ maxWidth: "100vw" }}>
