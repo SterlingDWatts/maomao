@@ -11,20 +11,23 @@ export default function TimerBox({ time, timeUnit }: TimerBoxProps) {
   return (
     <Box
       sx={{
-        padding: 1,
+        padding: { xs: 1, sm: 2, md: 3 },
         textAlign: "center",
       }}
     >
       <Typography
-        variant="h4"
+        variant="h3"
         component="div"
         color="white"
-        sx={{ fontWeight: "bold" }}
+        sx={{
+          fontWeight: "bold",
+          fontSize: { xs: "3rem", sm: "4rem", md: "5rem", lg: "6rem" },
+        }}
       >
         {time}
       </Typography>
       <Typography
-        variant="subtitle1"
+        variant="subtitle2"
         component="div"
         color="white"
         sx={{ fontWeight: "medium", lineHeight: 1, minWidth: "60px" }}

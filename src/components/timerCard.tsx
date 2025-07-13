@@ -2,7 +2,7 @@ import * as React from "react";
 
 import Avatar from "@mui/material/Avatar";
 import Badge from "@mui/material/Badge";
-import Box from "@mui/material/Box";
+import Box, { BoxProps } from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
@@ -10,14 +10,14 @@ import CardContent from "@mui/material/CardContent";
 import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
 import Collapse from "@mui/material/Collapse";
-import Zoom from "@mui/material/Zoom";
-import IconButton, { IconButtonProps } from "@mui/material/IconButton";
+import Grow from "@mui/material/Grow";
+import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
 import ConfirmationNumberIcon from "@mui/icons-material/ConfirmationNumber";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import LiveTvIcon from "@mui/icons-material/LiveTv";
-import LocalMoviesTwoToneIcon from "@mui/icons-material/LocalMoviesTwoTone";
+import LocalMoviesIcon from "@mui/icons-material/LocalMovies";
 import TvOffIcon from "@mui/icons-material/TvOff";
 import WarningAmberIcon from "@mui/icons-material/WarningAmber";
 
@@ -27,14 +27,15 @@ import { TimerCardProps } from "../app/showsAndMovies";
 
 import useDistance from "@/app/hooks/useDistance";
 import useExpanded from "@/app/hooks/useExpanded";
+import useInView from "@/app/hooks/useInView";
 
-interface ExpandMoreProps extends IconButtonProps {
+interface ExpandMoreProps extends BoxProps {
   expand: boolean;
 }
 
 const ExpandMore = styled((props: ExpandMoreProps) => {
   const { expand, ...other } = props;
-  return <IconButton {...other} />;
+  return <Box {...other} />;
 })(({}) => ({}));
 
 export default function TimerCard({
@@ -51,33 +52,11 @@ export default function TimerCard({
   objectPosition = "50% 50%",
   estimateDate,
 }: TimerCardProps) {
+  const timerBoxRef = React.useRef<HTMLDivElement>(null);
+
   const { expanded, handleExpandClick } = useExpanded();
   const distance = useDistance(releaseDateTime);
-  const timerBoxRef = React.useRef<HTMLDivElement>(null);
-  const [isInView, setIsInView] = React.useState(false);
-
-  React.useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsInView(entry.isIntersecting);
-      },
-      {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.5,
-      },
-    );
-
-    if (timerBoxRef.current) {
-      observer.observe(timerBoxRef.current);
-    }
-
-    return () => {
-      if (timerBoxRef.current) {
-        observer.unobserve(timerBoxRef.current);
-      }
-    };
-  }, []);
+  const isInView = useInView(timerBoxRef);
 
   return (
     <Card sx={{ maxWidth: "100vw" }}>
@@ -89,15 +68,14 @@ export default function TimerCard({
               anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
               badgeContent={
                 <Avatar
-                  variant="square"
                   sx={{
                     width: 22,
                     height: 22,
-                    backgroundColor: "black",
-                    border: `2px solid white`,
+                    backgroundColor: "white",
+                    border: `1px solid black`,
                   }}
                 >
-                  <LocalMoviesTwoToneIcon />
+                  <LocalMoviesIcon color="action" />
                 </Avatar>
               }
             >
@@ -129,10 +107,7 @@ export default function TimerCard({
             objectPosition: objectPosition,
           }}
         />
-        <Zoom
-          in={isInView}
-          style={{ transitionDelay: isInView ? "100ms" : "0ms" }}
-        >
+        <Grow in={isInView} {...(isInView ? { timeout: 1000 } : {})}>
           <Box
             ref={timerBoxRef}
             sx={{
@@ -149,21 +124,22 @@ export default function TimerCard({
               <Timer distance={distance} estimate={estimate} />
             ) : (
               <Typography
-                variant="h4"
+                variant="h3"
                 component="div"
                 color="white"
                 sx={{
                   fontWeight: "bold",
-                  backgroundColor: "rgba(139, 139, 139, 0.3)",
+                  backgroundColor: "rgba(0, 0, 0, 0.3)",
                   borderRadius: 2,
                   padding: 1,
+                  fontSize: { xs: "3rem", sm: "4rem", md: "5rem", lg: "6rem" },
                 }}
               >
                 AVAILABLE
               </Typography>
             )}
           </Box>
-        </Zoom>
+        </Grow>
       </Box>
       <CardContent>
         <Typography variant="body2" color="text.secondary">
@@ -219,7 +195,9 @@ export default function TimerCard({
             aria-label="show more"
           >
             {expanded ? (
-              <ExpandLessIcon />
+              <IconButton>
+                <ExpandLessIcon />
+              </IconButton>
             ) : (
               <Button
                 component="button"
