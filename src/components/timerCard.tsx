@@ -2,6 +2,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import * as React from "react";
 
 import Avatar from "@mui/material/Avatar";
+import Badge from "@mui/material/Badge";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
@@ -16,6 +17,7 @@ import { styled } from "@mui/material/styles";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import WarningAmberIcon from "@mui/icons-material/WarningAmber";
 import LiveTvIcon from "@mui/icons-material/LiveTv";
+import LocalMoviesTwoToneIcon from "@mui/icons-material/LocalMoviesTwoTone";
 import TvOffIcon from "@mui/icons-material/TvOff";
 
 import Timer from "./timer";
@@ -28,9 +30,10 @@ interface TimerCardProps {
   cardMediaAlt: string;
   releaseDateTime: string;
   synopsis?: string;
-  watchUrl: string;
+  watchUrl?: string;
   estimate?: boolean;
   estimateDate?: string;
+  isMovie?: boolean;
 }
 
 interface ExpandMoreProps extends IconButtonProps {
@@ -42,6 +45,12 @@ const ExpandMore = styled((props: ExpandMoreProps) => {
   return <IconButton {...other} />;
 })(({}) => ({}));
 
+const SmallAvatar = styled(Avatar)(({ theme }) => ({
+  width: 22,
+  height: 22,
+  border: `2px solid ${theme.palette.background.paper}`,
+}));
+
 export default function TimerCard({
   avatar,
   title,
@@ -52,6 +61,7 @@ export default function TimerCard({
   synopsis,
   watchUrl,
   estimate = false,
+  isMovie = false,
   estimateDate,
 }: TimerCardProps) {
   const [eventDate] = useState(new Date(releaseDateTime).getTime());
@@ -115,7 +125,30 @@ export default function TimerCard({
   return (
     <Card sx={{ maxWidth: "100vw" }}>
       <CardHeader
-        avatar={<Avatar src={avatar} />}
+        avatar={
+          isMovie ? (
+            <Badge
+              overlap="circular"
+              anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
+              badgeContent={
+                <Avatar
+                  sx={{
+                    width: 22,
+                    height: 22,
+                    backgroundColor: "black",
+                    border: `2px solid white`,
+                  }}
+                >
+                  <LocalMoviesTwoToneIcon />
+                </Avatar>
+              }
+            >
+              <Avatar src={avatar} />
+            </Badge>
+          ) : (
+            <Avatar src={avatar} />
+          )
+        }
         title={title}
         subheader={subheader}
       />
@@ -182,7 +215,9 @@ export default function TimerCard({
       )}
 
       <CardActions sx={{ justifyContent: "space-between" }}>
-        {distance > 0 ? (
+        {!watchUrl ? (
+          <></>
+        ) : distance > 0 ? (
           <Button
             component="button"
             size="small"
