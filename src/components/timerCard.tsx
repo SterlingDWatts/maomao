@@ -13,30 +13,19 @@ import Collapse from "@mui/material/Collapse";
 import IconButton, { IconButtonProps } from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
+import ConfirmationNumberIcon from "@mui/icons-material/ConfirmationNumber";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
-import WarningAmberIcon from "@mui/icons-material/WarningAmber";
 import LiveTvIcon from "@mui/icons-material/LiveTv";
 import LocalMoviesTwoToneIcon from "@mui/icons-material/LocalMoviesTwoTone";
 import TvOffIcon from "@mui/icons-material/TvOff";
+import WarningAmberIcon from "@mui/icons-material/WarningAmber";
 
 import Timer from "./timer";
 
+import { TimerCardProps } from "../app/showsAndMovies";
+
 import useDistance from "@/app/hooks/useDistance";
 import useExpanded from "@/app/hooks/useExpanded";
-
-interface TimerCardProps {
-  avatar: string;
-  title: string;
-  subheader: string;
-  cardMedia: string;
-  cardMediaAlt: string;
-  releaseDateTime: string;
-  synopsis?: string;
-  watchUrl?: string;
-  estimate?: boolean;
-  estimateDate?: string;
-  isMovie?: boolean;
-}
 
 interface ExpandMoreProps extends IconButtonProps {
   expand: boolean;
@@ -157,8 +146,15 @@ export default function TimerCard({
       )}
 
       <CardActions sx={{ justifyContent: "space-between" }}>
-        {!watchUrl ? (
-          <></>
+        {isMovie ? (
+          <Button
+            component="button"
+            size="small"
+            href={watchUrl}
+            startIcon={<ConfirmationNumberIcon />}
+          >
+            Info
+          </Button>
         ) : distance > 0 ? (
           <Button
             component="button"
@@ -166,14 +162,18 @@ export default function TimerCard({
             href={watchUrl}
             startIcon={<TvOffIcon />}
             color="error"
-          ></Button>
+          >
+            Site
+          </Button>
         ) : (
           <Button
             component="button"
             size="small"
             href={watchUrl}
             startIcon={<LiveTvIcon />}
-          ></Button>
+          >
+            Watch
+          </Button>
         )}
         {synopsis && (
           <ExpandMore

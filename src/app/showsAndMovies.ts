@@ -19,7 +19,21 @@ import SupermanLogo from "./assets/SupermanLogo.jpg";
 import TheBearLogo from "./assets/TheBearLogo.jpg";
 import TheBearSeason4Episode3 from "./assets/TheBearSeason4Episode3.jpg";
 
-const showsAndMovies = [
+export interface TimerCardProps {
+  avatar: string;
+  title: string;
+  subheader: string;
+  cardMedia: string;
+  cardMediaAlt: string;
+  releaseDateTime: string;
+  synopsis?: string;
+  watchUrl: string;
+  estimate?: boolean;
+  estimateDate?: string;
+  isMovie?: boolean;
+}
+
+const showsAndMovies: TimerCardProps[] = [
   {
     avatar: SupermanLogo.src,
     title: "Superman",
@@ -30,6 +44,7 @@ const showsAndMovies = [
     synopsis:
       "Superman must reconcile his alien Kryptonian heritage with his human upbringing as reporter Clark Kent. As the embodiment of truth, justice and the human way he soon finds himself in a world that views these as old-fashioned.",
     isMovie: true,
+    watchUrl: "https://www.fandango.com/superman-2025-230934/movie-overview",
   },
   {
     avatar: JamesLogo.src,
@@ -240,6 +255,8 @@ const showsAndMovies = [
     synopsis:
       "Denji encounters a new romantic interest, Reze, who works at a coffee café.",
     isMovie: true,
+    watchUrl:
+      "https://www.fandango.com/chainsaw-man-the-movie-reze-arc-2025-241288/movie-overview",
   },
   {
     avatar: MyHeroLogo.src,
