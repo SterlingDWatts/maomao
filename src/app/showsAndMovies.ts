@@ -10,9 +10,11 @@ import JamesLogo from "./assets/JamesLogo.jpg";
 import MaomaoSmall from "./assets/MaomaoSmall.jpg";
 import MyHeroFinalSeason from "./assets/MyHeroFinalSeason.jpg";
 import MyHeroLogo from "./assets/MyHeroLogo.jpg";
+import OnlyMurdersintheBuilding from "./assets/OnlyMurdersintheBuilding.jpg";
 import OnlyMurdersLogo from "./assets/OnlyMurdersLogo.png";
 import Pochita from "./assets/Pochita.jpg";
 import SlowHorses from "./assets/SlowHorsesLogo.jpg";
+import SlowHorsesBig from "./assets/SlowHorses.jpg";
 import SlowHorsesLogo from "./assets/SlowHorsesLogo.jpg";
 import Superman from "./assets/Superman.jpg";
 import SupermanLogo from "./assets/SupermanLogo.jpg";
@@ -31,6 +33,7 @@ export interface TimerCardProps {
   estimate?: boolean;
   estimateDate?: string;
   isMovie?: boolean;
+  objectPosition?: string;
 }
 
 const showsAndMovies: TimerCardProps[] = [
@@ -45,6 +48,7 @@ const showsAndMovies: TimerCardProps[] = [
       "Superman must reconcile his alien Kryptonian heritage with his human upbringing as reporter Clark Kent. As the embodiment of truth, justice and the human way he soon finds himself in a world that views these as old-fashioned.",
     isMovie: true,
     watchUrl: "https://www.fandango.com/superman-2025-230934/movie-overview",
+    objectPosition: "50% 40%",
   },
   {
     avatar: JamesLogo.src,
@@ -57,6 +61,7 @@ const showsAndMovies: TimerCardProps[] = [
       "Siegfried receives some news and channels his feelings into saving a young racehorse. James struggles to get farmers to agree to his newly adopted TB testing scheme.",
     watchUrl:
       "https://play.google.com/store/tv/show?id=gbQjVgRNYkg.P&cdid=tvseason-mjGu8FIpiU4.P&hl=en_US",
+    objectPosition: "50% 47%",
   },
   {
     avatar: FoundationAvatar.src,
@@ -69,6 +74,7 @@ const showsAndMovies: TimerCardProps[] = [
       "Gaal and Hari advance their plans on Ignis. Empire grapples with an unforeseen prediction. Pritcher enlists help to investigate the Mule.",
     watchUrl:
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
+    objectPosition: "50% 15%",
   },
   {
     avatar: MaomaoSmall.src,
@@ -81,6 +87,7 @@ const showsAndMovies: TimerCardProps[] = [
       "After the war ends, Jinshi faces mounting work duties while Maomao goes back to the pleasure quarter.",
     watchUrl:
       "https://www.crunchyroll.com/series/G3KHEVDJ7/the-apothecary-diaries",
+    objectPosition: "50% 35%",
   },
   {
     avatar: TheBearLogo.src,
@@ -102,6 +109,7 @@ const showsAndMovies: TimerCardProps[] = [
     releaseDateTime: "July 25 2025 03:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
+    objectPosition: "50% 40%",
   },
   {
     avatar: FoundationAvatar.src,
@@ -112,18 +120,20 @@ const showsAndMovies: TimerCardProps[] = [
     releaseDateTime: "August 1 2025 03:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
+    objectPosition: "50% 40%",
   },
   {
     avatar: OnlyMurdersLogo.src,
     title: "Only Murders In The Building S5 E1",
     subheader: "5.1",
-    cardMedia: OnlyMurdersLogo.src,
+    cardMedia: OnlyMurdersintheBuilding.src,
     cardMediaAlt: "Only Murders In The Building",
     releaseDateTime: "August 05, 2025 21:00:00",
     watchUrl:
       "https://www.hulu.com/series/ef31c7e1-cd0f-4e07-848d-1cbfedb50ddf",
     estimate: true,
     estimateDate: "[Best Guess] August 2025",
+    objectPosition: "50% 20%",
   },
   {
     avatar: FoundationAvatar.src,
@@ -134,6 +144,7 @@ const showsAndMovies: TimerCardProps[] = [
     releaseDateTime: "August 8 2025 03:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
+    objectPosition: "50% 40%",
   },
   {
     avatar: FoundationAvatar.src,
@@ -144,6 +155,7 @@ const showsAndMovies: TimerCardProps[] = [
     releaseDateTime: "August 15 2025 03:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
+    objectPosition: "50% 40%",
   },
   {
     avatar: FoundationAvatar.src,
@@ -154,6 +166,7 @@ const showsAndMovies: TimerCardProps[] = [
     releaseDateTime: "August 22 2025 03:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
+    objectPosition: "50% 40%",
   },
   {
     avatar: FoundationAvatar.src,
@@ -164,6 +177,7 @@ const showsAndMovies: TimerCardProps[] = [
     releaseDateTime: "August 29 2025 03:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
+    objectPosition: "50% 40%",
   },
   {
     avatar: FoundationAvatar.src,
@@ -174,6 +188,7 @@ const showsAndMovies: TimerCardProps[] = [
     releaseDateTime: "September 05 2025 03:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
+    objectPosition: "50% 40%",
   },
   {
     avatar: FoundationAvatar.src,
@@ -184,66 +199,73 @@ const showsAndMovies: TimerCardProps[] = [
     releaseDateTime: "September 12 2025 03:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
+    objectPosition: "50% 40%",
   },
   {
     avatar: SlowHorsesLogo.src,
     title: "Slow Horses S5 E1",
     subheader: "5.1",
-    cardMedia: SlowHorses.src,
+    cardMedia: SlowHorsesBig.src,
     cardMediaAlt: "Slow Horses",
     releaseDateTime: "September 24, 2025 21:00:00",
     watchUrl:
       "https://tv.apple.com/us/show/slow-horses/umc.cmc.2szz3fdt71tl1ulnbp8utgq5o",
+    objectPosition: "50% 30%",
   },
   {
     avatar: SlowHorsesLogo.src,
     title: "Slow Horses S5 E2",
     subheader: "5.2",
-    cardMedia: SlowHorses.src,
+    cardMedia: SlowHorsesBig.src,
     cardMediaAlt: "Slow Horses",
     releaseDateTime: "September 24, 2025 21:00:00",
     watchUrl:
       "https://tv.apple.com/us/show/slow-horses/umc.cmc.2szz3fdt71tl1ulnbp8utgq5o",
+    objectPosition: "50% 30%",
   },
   {
     avatar: SlowHorsesLogo.src,
     title: "Slow Horses S5 E3",
     subheader: "5.3",
-    cardMedia: SlowHorses.src,
+    cardMedia: SlowHorsesBig.src,
     cardMediaAlt: "Slow Horses",
     releaseDateTime: "October 01, 2025 21:00:00",
     watchUrl:
       "https://tv.apple.com/us/show/slow-horses/umc.cmc.2szz3fdt71tl1ulnbp8utgq5o",
+    objectPosition: "50% 30%",
   },
   {
     avatar: SlowHorsesLogo.src,
     title: "Slow Horses S5 E4",
     subheader: "5.4",
-    cardMedia: SlowHorses.src,
+    cardMedia: SlowHorsesBig.src,
     cardMediaAlt: "Slow Horses",
     releaseDateTime: "October 08, 2025 21:00:00",
     watchUrl:
       "https://tv.apple.com/us/show/slow-horses/umc.cmc.2szz3fdt71tl1ulnbp8utgq5o",
+    objectPosition: "50% 30%",
   },
   {
     avatar: SlowHorsesLogo.src,
     title: "Slow Horses S5 E5",
     subheader: "5.5",
-    cardMedia: SlowHorses.src,
+    cardMedia: SlowHorsesBig.src,
     cardMediaAlt: "Slow Horses",
     releaseDateTime: "October 15, 2025 21:00:00",
     watchUrl:
       "https://tv.apple.com/us/show/slow-horses/umc.cmc.2szz3fdt71tl1ulnbp8utgq5o",
+    objectPosition: "50% 30%",
   },
   {
     avatar: SlowHorsesLogo.src,
     title: "Slow Horses S5 E6",
     subheader: "5.6",
-    cardMedia: SlowHorses.src,
+    cardMedia: SlowHorsesBig.src,
     cardMediaAlt: "Slow Horses",
     releaseDateTime: "October 22, 2025 21:00:00",
     watchUrl:
       "https://tv.apple.com/us/show/slow-horses/umc.cmc.2szz3fdt71tl1ulnbp8utgq5o",
+    objectPosition: "50% 30%",
   },
   {
     avatar: Pochita.src,
@@ -257,6 +279,7 @@ const showsAndMovies: TimerCardProps[] = [
     isMovie: true,
     watchUrl:
       "https://www.fandango.com/chainsaw-man-the-movie-reze-arc-2025-241288/movie-overview",
+    objectPosition: "50% 30%",
   },
   {
     avatar: MyHeroLogo.src,
@@ -280,6 +303,7 @@ const showsAndMovies: TimerCardProps[] = [
       "https://www.crunchyroll.com/series/GG5H5XQX4/frieren-beyond-journeys-end",
     estimate: true,
     estimateDate: "January 2026",
+    objectPosition: "50% 10%",
   },
 ];
 

@@ -47,6 +47,7 @@ export default function TimerCard({
   watchUrl,
   estimate = false,
   isMovie = false,
+  objectPosition = "50% 50%",
   estimateDate,
 }: TimerCardProps) {
   const { expanded, handleExpandClick } = useExpanded();
@@ -98,6 +99,9 @@ export default function TimerCard({
           height="194"
           image={cardMedia}
           alt={cardMediaAlt}
+          sx={{
+            objectPosition: objectPosition,
+          }}
         />
         <Box
           sx={{
