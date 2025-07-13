@@ -10,6 +10,7 @@ import CardContent from "@mui/material/CardContent";
 import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
 import Collapse from "@mui/material/Collapse";
+import Zoom from "@mui/material/Zoom";
 import IconButton, { IconButtonProps } from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
@@ -52,6 +53,31 @@ export default function TimerCard({
 }: TimerCardProps) {
   const { expanded, handleExpandClick } = useExpanded();
   const distance = useDistance(releaseDateTime);
+  const timerBoxRef = React.useRef<HTMLDivElement>(null);
+  const [isInView, setIsInView] = React.useState(false);
+
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsInView(entry.isIntersecting);
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5,
+      },
+    );
+
+    if (timerBoxRef.current) {
+      observer.observe(timerBoxRef.current);
+    }
+
+    return () => {
+      if (timerBoxRef.current) {
+        observer.unobserve(timerBoxRef.current);
+      }
+    };
+  }, []);
 
   return (
     <Card sx={{ maxWidth: "100vw" }}>
@@ -103,35 +129,41 @@ export default function TimerCard({
             objectPosition: objectPosition,
           }}
         />
-        <Box
-          sx={{
-            position: "absolute",
-            width: "100%",
-            height: "100%",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
+        <Zoom
+          in={isInView}
+          style={{ transitionDelay: isInView ? "100ms" : "0ms" }}
         >
-          {distance > 0 ? (
-            <Timer distance={distance} estimate={estimate} />
-          ) : (
-            <Typography
-              variant="h4"
-              component="div"
-              color="white"
-              sx={{
-                fontWeight: "bold",
-                backgroundColor: "rgba(139, 139, 139, 0.3)",
-                borderRadius: 2,
-                padding: 1,
-              }}
-            >
-              AVAILABLE
-            </Typography>
-          )}
-        </Box>
+          <Box
+            ref={timerBoxRef}
+            sx={{
+              position: "absolute",
+              width: "100%",
+              height: "100%",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            {distance > 0 ? (
+              <Timer distance={distance} estimate={estimate} />
+            ) : (
+              <Typography
+                variant="h4"
+                component="div"
+                color="white"
+                sx={{
+                  fontWeight: "bold",
+                  backgroundColor: "rgba(139, 139, 139, 0.3)",
+                  borderRadius: 2,
+                  padding: 1,
+                }}
+              >
+                AVAILABLE
+              </Typography>
+            )}
+          </Box>
+        </Zoom>
       </Box>
       <CardContent>
         <Typography variant="body2" color="text.secondary">
