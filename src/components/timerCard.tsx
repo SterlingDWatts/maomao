@@ -132,6 +132,7 @@ export default function TimerCard({
               anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
               badgeContent={
                 <Avatar
+                  variant="square"
                   sx={{
                     width: 22,
                     height: 22,
