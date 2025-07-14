@@ -19,6 +19,7 @@ export default function Timer({ distance, estimate = false }: TimerBoxProps) {
         backgroundColor: "rgba(0, 0, 0, 0.3)",
         borderRadius: 2,
         padding: { xs: 1, sm: 2, md: 3 },
+        textShadow: "black 0px 0px 10px",
       }}
     >
       {estimate && (

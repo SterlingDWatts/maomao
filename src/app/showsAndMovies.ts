@@ -13,7 +13,6 @@ import MyHeroLogo from "./assets/MyHeroLogo.jpg";
 import OnlyMurdersintheBuilding from "./assets/OnlyMurdersintheBuilding.jpg";
 import OnlyMurdersLogo from "./assets/OnlyMurdersLogo.png";
 import Pochita from "./assets/Pochita.jpg";
-import SlowHorses from "./assets/SlowHorsesLogo.jpg";
 import SlowHorsesBig from "./assets/SlowHorses.jpg";
 import SlowHorsesLogo from "./assets/SlowHorsesLogo.jpg";
 import Superman from "./assets/Superman.jpg";
@@ -36,7 +35,7 @@ export interface TimerCardProps {
   objectPosition?: string;
 }
 
-const showsAndMovies: TimerCardProps[] = [
+export const firstUpNext: TimerCardProps[] = [
   {
     avatar: SupermanLogo.src,
     title: "Superman",
@@ -306,5 +305,3 @@ const showsAndMovies: TimerCardProps[] = [
     objectPosition: "50% 10%",
   },
 ];
-
-export default showsAndMovies;
