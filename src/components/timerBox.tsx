@@ -11,7 +11,6 @@ export default function TimerBox({ time, timeUnit }: TimerBoxProps) {
   return (
     <Box
       sx={{
-        padding: { xs: 1, sm: 2, md: 3 },
         textAlign: "center",
       }}
     >

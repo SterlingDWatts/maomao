@@ -25,7 +25,7 @@ export default function Page() {
       >
         <DrawerAppBar />
 
-        <Stack spacing={2} sx={{ marginTop: 2 }}>
+        <Stack spacing={2}>
           {showsAndMovies.map((props, i) => (
             <TimerCard key={i} {...props} />
           ))}

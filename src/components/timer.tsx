@@ -18,6 +18,7 @@ export default function Timer({ distance, estimate = false }: TimerBoxProps) {
       sx={{
         backgroundColor: "rgba(0, 0, 0, 0.3)",
         borderRadius: 2,
+        padding: { xs: 1, sm: 2, md: 3 },
       }}
     >
       {estimate && (
@@ -29,7 +30,7 @@ export default function Timer({ distance, estimate = false }: TimerBoxProps) {
             fontWeight: "bold",
             lineHeight: 1,
             minWidth: "60px",
-            padding: 1,
+            textAlign: "center",
           }}
         >
           ESTIMATED
@@ -41,6 +42,7 @@ export default function Timer({ distance, estimate = false }: TimerBoxProps) {
           flexDirection: "row",
           justifyContent: "space-around",
           alignItems: "center",
+          gap: { xs: 2, sm: 4, md: 6 },
         }}
       >
         <TimerBox time={days} timeUnit={"days"} />
