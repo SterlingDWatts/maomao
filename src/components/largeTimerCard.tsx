@@ -38,7 +38,7 @@ const ExpandMore = styled((props: ExpandMoreProps) => {
   return <Box {...other} />;
 })(({}) => ({}));
 
-export default function TimerCard({
+export default function LargeTimerCard({
   avatar,
   title,
   subheader,
@@ -151,8 +151,8 @@ export default function TimerCard({
 
       {synopsis && (
         <Collapse in={expanded} timeout="auto" unmountOnExit>
-          <CardContent>
-            <Typography sx={{ marginBottom: 2 }}>{synopsis}</Typography>
+          <CardContent sx={{ paddingTop: 0 }}>
+            <Typography>{synopsis}</Typography>
           </CardContent>
         </Collapse>
       )}
@@ -164,28 +164,21 @@ export default function TimerCard({
             size="small"
             href={watchUrl}
             startIcon={<ConfirmationNumberIcon />}
-          >
-            Info
-          </Button>
+          ></Button>
         ) : distance > 0 ? (
           <Button
             component="button"
             size="small"
             href={watchUrl}
             startIcon={<TvOffIcon />}
-            color="error"
-          >
-            Site
-          </Button>
+          ></Button>
         ) : (
           <Button
             component="button"
             size="small"
             href={watchUrl}
             startIcon={<LiveTvIcon />}
-          >
-            Watch
-          </Button>
+          ></Button>
         )}
         {synopsis && (
           <ExpandMore
@@ -199,12 +192,7 @@ export default function TimerCard({
                 <ExpandLessIcon />
               </IconButton>
             ) : (
-              <Button
-                component="button"
-                endIcon={<WarningAmberIcon />}
-                color="secondary"
-                size="small"
-              >
+              <Button component="button" size="small">
                 Plot
               </Button>
             )}

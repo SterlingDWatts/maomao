@@ -3,12 +3,12 @@
 import * as React from "react";
 
 import CssBaseline from "@mui/material/CssBaseline";
-import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
 
 import DrawerAppBar from "../components/appBarWithResponsiveMenu";
-import TimerCard from "../components/timerCard";
+import LargeTimerCard from "../components/largeTimerCard";
+import SmallTimerCard from "../components/smallTimerCard";
 
 import { firstUpNext } from "../app/showsAndMovies";
 
@@ -51,8 +51,14 @@ export default function Page() {
               sx={{ backgroundColor: "grey.300", flex: "0 0 auto" }}
             ></Box>
           </Stack> */}
-          {firstUpNext.map((props, i) => (
-            <TimerCard key={i} {...props} />
+          {[firstUpNext[2]].map((props, i) => (
+            <LargeTimerCard key={i} {...props} />
+          ))}
+          {firstUpNext.slice(0, 2).map((props, i) => (
+            <SmallTimerCard key={i} {...props} />
+          ))}
+          {firstUpNext.slice(3).map((props, i) => (
+            <SmallTimerCard key={i} {...props} />
           ))}
         </Stack>
       </Container>
