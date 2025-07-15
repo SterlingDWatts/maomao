@@ -48,7 +48,7 @@ export default function TallTimerCard({
   const distance = useDistance(releaseDateTime);
 
   return (
-    <Card sx={{ width: "300px", flex: "0 0 auto" }}>
+    <Card sx={{ width: "200px", flex: "0 0 auto" }}>
       <Box
         sx={{
           width: "100%",
@@ -76,7 +76,7 @@ export default function TallTimerCard({
           <Typography
             variant="h5"
             component="div"
-            sx={{ fontSize: "1rem", fontWeight: "bold" }}
+            sx={{ fontSize: ".9rem", fontWeight: "bold" }}
           >
             {title}
           </Typography>
