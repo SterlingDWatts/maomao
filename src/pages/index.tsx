@@ -13,6 +13,10 @@ import TallTimerCard from "@/components/tallTimerCard";
 import { upNext, availableNow } from "../app/showsAndMovies";
 
 export default function Page() {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <React.Fragment>
       <CssBaseline />
