@@ -19,11 +19,10 @@ import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import LiveTvIcon from "@mui/icons-material/LiveTv";
 import LocalMoviesIcon from "@mui/icons-material/LocalMovies";
 import TvOffIcon from "@mui/icons-material/TvOff";
-import WarningAmberIcon from "@mui/icons-material/WarningAmber";
 
 import Timer from "./timer";
 
-import { TimerCardProps } from "../app/showsAndMovies";
+import { UpNextProps } from "../app/showsAndMovies";
 
 import useDistance from "@/app/hooks/useDistance";
 import useExpanded from "@/app/hooks/useExpanded";
@@ -53,7 +52,7 @@ export default function LargeTimerCard({
   isMovie = false,
   objectPosition = "50% 50%",
   estimateDate,
-}: TimerCardProps) {
+}: UpNextProps) {
   const timerBoxRef = React.useRef<HTMLDivElement>(null);
 
   const { expanded, handleExpandClick } = useExpanded();
@@ -93,6 +92,7 @@ export default function LargeTimerCard({
             ? `S${season}E${episode}${subheader && ": "} ${subheader}`
             : subheader
         }
+        slotProps={{ title: { fontWeight: "bold" } }}
       />
       <Box
         sx={{

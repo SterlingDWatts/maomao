@@ -22,7 +22,7 @@ import TimerBox from "./timerBox";
 
 import { getTimeUntil } from "../app/utils";
 
-import { TimerCardProps } from "../app/showsAndMovies";
+import { AvailableNowProps } from "../app/showsAndMovies";
 
 import useDistance from "@/app/hooks/useDistance";
 import useExpanded from "@/app/hooks/useExpanded";
@@ -51,7 +51,7 @@ export default function SmallTimerCard({
   isMovie = false,
   objectPosition = "50% 50%",
   estimateDate,
-}: TimerCardProps) {
+}: AvailableNowProps) {
   const timerBoxRef = React.useRef<HTMLDivElement>(null);
 
   const { expanded, handleExpandClick } = useExpanded();

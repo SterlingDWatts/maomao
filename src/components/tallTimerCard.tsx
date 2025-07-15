@@ -1,29 +1,21 @@
 import * as React from "react";
 
-import Avatar from "@mui/material/Avatar";
-import Badge from "@mui/material/Badge";
 import Box, { BoxProps } from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
-import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
 import Collapse from "@mui/material/Collapse";
-import Grow from "@mui/material/Grow";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
 import ConfirmationNumberIcon from "@mui/icons-material/ConfirmationNumber";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import LiveTvIcon from "@mui/icons-material/LiveTv";
-import LocalMoviesIcon from "@mui/icons-material/LocalMovies";
 import TvOffIcon from "@mui/icons-material/TvOff";
-import WarningAmberIcon from "@mui/icons-material/WarningAmber";
 
-import Timer from "./timer";
-
-import { TimerCardProps } from "../app/showsAndMovies";
+import { AvailableNowProps } from "../app/showsAndMovies";
 
 import useDistance from "@/app/hooks/useDistance";
 import useExpanded from "@/app/hooks/useExpanded";
@@ -39,7 +31,6 @@ const ExpandMore = styled((props: ExpandMoreProps) => {
 })(({}) => ({}));
 
 export default function TallTimerCard({
-  avatar,
   title,
   subheader,
   season,
@@ -53,12 +44,9 @@ export default function TallTimerCard({
   isMovie = false,
   objectPosition = "50% 50%",
   estimateDate,
-}: TimerCardProps) {
-  const timerBoxRef = React.useRef<HTMLDivElement>(null);
-
+}: AvailableNowProps) {
   const { expanded, handleExpandClick } = useExpanded();
   const distance = useDistance(releaseDateTime);
-  const isInView = useInView(timerBoxRef);
 
   return (
     <Card sx={{ width: "300px", flex: "0 0 auto" }}>
@@ -81,39 +69,6 @@ export default function TallTimerCard({
             objectPosition: objectPosition,
           }}
         />
-        <Grow in={isInView} {...(isInView ? { timeout: 1000 } : {})}>
-          <Box
-            ref={timerBoxRef}
-            sx={{
-              position: "absolute",
-              width: "100%",
-              height: "100%",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            {distance > 0 ? (
-              <Timer distance={distance} estimate={estimate} />
-            ) : (
-              <Typography
-                variant="h3"
-                component="div"
-                color="white"
-                sx={{
-                  fontWeight: "bold",
-                  backgroundColor: "rgba(0, 0, 0, 0.3)",
-                  borderRadius: 2,
-                  padding: 1,
-                  fontSize: { xs: "3rem" },
-                }}
-              >
-                AVAILABLE
-              </Typography>
-            )}
-          </Box>
-        </Grow>
       </Box>
       <CardContent>
         <Typography
@@ -131,11 +86,6 @@ export default function TallTimerCard({
           {season && episode
             ? `S${season}E${episode}${subheader && ": "} ${subheader}`
             : subheader}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {!estimate
-            ? new Date(releaseDateTime).toDateString()
-            : estimateDate || "TBD"}
         </Typography>
       </CardContent>
 

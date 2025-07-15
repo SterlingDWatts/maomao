@@ -5,78 +5,89 @@ import * as React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
 
 import DrawerAppBar from "../components/appBarWithResponsiveMenu";
-import LargeTimerCard from "../components/largeTimerCard";
-import SmallTimerCard from "../components/smallTimerCard";
 import TallTimerCard from "@/components/tallTimerCard";
 
-import { firstUpNext, secondUpNext } from "../app/showsAndMovies";
+import { upNext, availableNow } from "../app/showsAndMovies";
 
 export default function Page() {
   return (
     <React.Fragment>
       <CssBaseline />
       <Container
-        maxWidth="lg"
+        disableGutters
+        maxWidth={false}
         sx={{
-          paddingTop: { xs: "56px", sm: "64px" },
-          paddingLeft: { xs: 1, sm: 3 },
-          paddingRight: { xs: 1, sm: 3 },
+          backgroundColor: "primary.light",
         }}
       >
-        <DrawerAppBar />
+        <Container
+          maxWidth="lg"
+          sx={{
+            paddingTop: { xs: "56px", sm: "64px" },
+            paddingBottom: { xs: 1, sm: 3 },
+            paddingLeft: { xs: 1, sm: 3 },
+            paddingRight: { xs: 1, sm: 3 },
+            backgroundColor: "primary.light",
+          }}
+        >
+          <DrawerAppBar />
 
-        <Stack spacing={2} sx={{ marginTop: 2 }}>
-          {[firstUpNext[0]].map((props, i) => (
-            <LargeTimerCard key={i} {...props} />
-          ))}
-          <Stack
-            direction="row"
-            spacing={2}
-            sx={{
-              overflowX: "auto",
-              flexWrap: "nowrap",
-            }}
-          >
-            {firstUpNext.slice(1, 4).map((props, i) => (
-              <TallTimerCard key={i} {...props} />
-            ))}
-            {secondUpNext.map((props, i) => (
-              <TallTimerCard key={i} {...props} />
-            ))}
+          <Stack spacing={2} sx={{ marginTop: 2 }}>
+            <Stack>
+              <Typography
+                variant="h6"
+                component="div"
+                sx={{
+                  fontWeight: "bold",
+                }}
+              >
+                Featured
+              </Typography>
+              {[upNext[0]].map(({ TimerCard, ...props }, i) => (
+                <TimerCard key={i} {...{ TimerCard, ...props }} />
+              ))}
+            </Stack>
+            <Stack>
+              <Typography
+                variant="h6"
+                component="div"
+                sx={{ fontWeight: "bold" }}
+              >
+                Available Now
+              </Typography>
+              <Stack
+                direction="row"
+                spacing={2}
+                sx={{
+                  overflowX: "auto",
+                  flexWrap: "nowrap",
+                }}
+              >
+                {availableNow.map((props, i) => (
+                  <TallTimerCard key={i} {...props} />
+                ))}
+              </Stack>
+            </Stack>
+
+            <Stack>
+              <Typography
+                variant="h6"
+                component="div"
+                sx={{ fontWeight: "bold" }}
+              >
+                Coming Soon
+              </Typography>
+              <Stack spacing={2}>
+                {upNext.slice(1).map(({ TimerCard, ...props }, i) => (
+                  <TimerCard key={i} {...{ TimerCard, ...props }} />
+                ))}
+              </Stack>
+            </Stack>
           </Stack>
-          {[firstUpNext[4]].map((props, i) => (
-            <LargeTimerCard key={i} {...props} />
-          ))}
-          {firstUpNext.slice(5, 7).map((props, i) => (
-            <SmallTimerCard key={i} {...props} />
-          ))}
-          {[firstUpNext[7]].map((props, i) => (
-            <LargeTimerCard key={i} {...props} />
-          ))}
-          {firstUpNext.slice(8, 10).map((props, i) => (
-            <SmallTimerCard key={i} {...props} />
-          ))}
-
-          {[firstUpNext[10]].map((props, i) => (
-            <LargeTimerCard key={i} {...props} />
-          ))}
-
-          {firstUpNext.slice(11, 19).map((props, i) => (
-            <SmallTimerCard key={i} {...props} />
-          ))}
-          {[firstUpNext[19]].map((props, i) => (
-            <LargeTimerCard key={i} {...props} />
-          ))}
-
-          {firstUpNext.slice(20, 28).map((props, i) => (
-            <SmallTimerCard key={i} {...props} />
-          ))}
-          {firstUpNext.slice(28).map((props, i) => (
-            <LargeTimerCard key={i} {...props} />
-          ))}
-        </Stack>
+        </Container>
       </Container>
     </React.Fragment>
   );
