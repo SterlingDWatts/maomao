@@ -9,15 +9,6 @@ import Typography from "@mui/material/Typography";
 
 import DrawerAppBar from "../components/appBarWithResponsiveMenu";
 import TallTimerCard from "../components/tallTimerCard";
-import {
-  AppleLogo,
-  CrunchyrollLogo,
-  FandangoLogo,
-  GooglePlayMoviesLogo,
-  HBOLogo,
-  HuluLogo,
-  NetflixLogo,
-} from "../app/svgs/svgLogos";
 
 import { upNext, availableNow } from "../app/showsAndMovies";
 
@@ -43,13 +34,6 @@ export default function Page() {
           <DrawerAppBar />
 
           <Stack spacing={2} sx={{ marginTop: 2 }}>
-            <AppleLogo />
-            <CrunchyrollLogo />
-            <FandangoLogo />
-            <GooglePlayMoviesLogo />
-            <HBOLogo />
-            <HuluLogo />
-            <NetflixLogo />
             <Stack>
               <Typography
                 variant="h6"
