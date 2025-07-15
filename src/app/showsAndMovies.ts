@@ -41,6 +41,21 @@ export interface TimerCardProps {
 
 export const firstUpNext: TimerCardProps[] = [
   {
+    avatar: FoundationAvatar.src,
+    title: "Foundation",
+    subheader: "Shadows in the Math",
+    season: 3,
+    episode: 2,
+    cardMedia: FoundationSeason3Episode2.src,
+    cardMediaAlt: "Brother Day in a towel",
+    releaseDateTime: "July 18 2025 03:00:00 GMT-0700",
+    synopsis:
+      "Gaal and Hari advance their plans on Ignis. Empire grapples with an unforeseen prediction. Pritcher enlists help to investigate the Mule.",
+    watchUrl:
+      "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
+    objectPosition: "50% 15%",
+  },
+  {
     avatar: SupermanLogo.src,
     title: "Superman",
     subheader: "",
@@ -69,19 +84,18 @@ export const firstUpNext: TimerCardProps[] = [
     objectPosition: "50% 47%",
   },
   {
-    avatar: FoundationAvatar.src,
-    title: "Foundation",
-    subheader: "Shadows in the Math",
-    season: 3,
-    episode: 2,
-    cardMedia: FoundationSeason3Episode2.src,
-    cardMediaAlt: "Brother Day in a towel",
-    releaseDateTime: "July 18 2025 03:00:00 GMT-0700",
-    synopsis:
-      "Gaal and Hari advance their plans on Ignis. Empire grapples with an unforeseen prediction. Pritcher enlists help to investigate the Mule.",
+    avatar: TheBearLogo.src,
+    title: "The Bear",
+    subheader: "Scallop",
+    season: 4,
+    episode: 3,
+    cardMedia: TheBearSeason4Episode3.src,
+    cardMediaAlt: "The Bear Season 4 Episode 3",
+    releaseDateTime: "June 25, 2025 21:00:00",
+    synopsis: "Opportunity.",
     watchUrl:
-      "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
-    objectPosition: "50% 15%",
+      "https://www.hulu.com/series/05eb6a8e-90ed-4947-8c0b-e6536cbddd5f",
+    objectPosition: "30% 50%",
   },
   {
     avatar: MaomaoSmall.src,
@@ -97,20 +111,6 @@ export const firstUpNext: TimerCardProps[] = [
     watchUrl:
       "https://www.crunchyroll.com/series/G3KHEVDJ7/the-apothecary-diaries",
     objectPosition: "50% 35%",
-  },
-  {
-    avatar: TheBearLogo.src,
-    title: "The Bear",
-    subheader: "Scallop",
-    season: 4,
-    episode: 3,
-    cardMedia: TheBearSeason4Episode3.src,
-    cardMediaAlt: "The Bear Season 4 Episode 3",
-    releaseDateTime: "June 25, 2025 21:00:00",
-    synopsis: "Opportunity.",
-    watchUrl:
-      "https://www.hulu.com/series/05eb6a8e-90ed-4947-8c0b-e6536cbddd5f",
-    objectPosition: "30% 50%",
   },
   {
     avatar: FoundationAvatar.src,
