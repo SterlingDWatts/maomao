@@ -32,8 +32,9 @@ export const CardHeader = (props: CardHeaderProps) => {
       {...props}
       slotProps={{
         title: { fontWeight: "bold", fontSize: "1rem" },
-        subheader: { lineHeight: 1, fontSize: ".75rem" },
+        subheader: { lineHeight: 1, fontSize: ".75rem", color: "white" },
       }}
+      sx={{ backgroundColor: "secondary.main", color: "white" }}
     />
   );
 };

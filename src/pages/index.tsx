@@ -56,7 +56,7 @@ export default function Page() {
                 component="div"
                 sx={{ fontWeight: "bold" }}
               >
-                Available Now
+                Next Episode or Movie
               </Typography>
               <Stack
                 direction="row"
