@@ -35,6 +35,7 @@ export default function Page() {
             paddingLeft: { xs: 1, sm: 3 },
             paddingRight: { xs: 1, sm: 3 },
             backgroundColor: "primary.light",
+            overflowX: "hidden",
           }}
         >
           <DrawerAppBar />
@@ -68,6 +69,11 @@ export default function Page() {
                 sx={{
                   overflowX: "auto",
                   flexWrap: "nowrap",
+                  position: "relative",
+                  width: { xs: "100vw", sm: "initial" },
+                  marginLeft: { xs: -1, sm: 0 },
+                  paddingLeft: { xs: 1, sm: 0 },
+                  paddingRight: { xs: 1, sm: 0 },
                 }}
               >
                 {availableNow.map((props, i) => (
