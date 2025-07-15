@@ -86,10 +86,10 @@ export default function SmallTimerCard({
           <Typography
             variant="subtitle1"
             color="text.secondary"
-            sx={{ lineHeight: 1.2 }}
+            sx={{ lineHeight: 1, fontSize: ".75rem" }}
           >
             {season && episode
-              ? `S${season}E${episode}${subheader && ": "} ${subheader}`
+              ? `${season}.${episode}${subheader && ": "} ${subheader}`
               : subheader}
           </Typography>
           <Typography variant="body2" color="text.secondary">

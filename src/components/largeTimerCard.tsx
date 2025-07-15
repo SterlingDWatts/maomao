@@ -1,13 +1,11 @@
 import * as React from "react";
 
 import Avatar from "@mui/material/Avatar";
-import Badge from "@mui/material/Badge";
 import Box, { BoxProps } from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
-import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
 import Collapse from "@mui/material/Collapse";
 import Grow from "@mui/material/Grow";
@@ -22,11 +20,15 @@ import TvOffIcon from "@mui/icons-material/TvOff";
 
 import Timer from "./timer";
 
+import { AvatarBadge, Badge, CardHeader } from "./largeTimerCard.styles";
+
 import { UpNextProps } from "../app/showsAndMovies";
 
 import useDistance from "@/app/hooks/useDistance";
 import useExpanded from "@/app/hooks/useExpanded";
 import useInView from "@/app/hooks/useInView";
+
+import { formatSubheader } from "../app/utils";
 
 interface ExpandMoreProps extends BoxProps {
   expand: boolean;
@@ -36,6 +38,18 @@ const ExpandMore = styled((props: ExpandMoreProps) => {
   const { expand, ...other } = props;
   return <Box {...other} />;
 })(({}) => ({}));
+
+const MovieBadge: React.FC<{ avatar: string }> = ({ avatar }) => (
+  <Badge
+    badgeContent={
+      <AvatarBadge>
+        <LocalMoviesIcon color="action" />
+      </AvatarBadge>
+    }
+  >
+    <Avatar src={avatar} />
+  </Badge>
+);
 
 export default function LargeTimerCard({
   avatar,
@@ -62,37 +76,11 @@ export default function LargeTimerCard({
   return (
     <Card sx={{ maxWidth: "100vw" }}>
       <CardHeader
-        avatar={
-          isMovie ? (
-            <Badge
-              overlap="circular"
-              anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
-              badgeContent={
-                <Avatar
-                  sx={{
-                    width: 22,
-                    height: 22,
-                    backgroundColor: "white",
-                    border: `1px solid black`,
-                  }}
-                >
-                  <LocalMoviesIcon color="action" />
-                </Avatar>
-              }
-            >
-              <Avatar src={avatar} />
-            </Badge>
-          ) : (
-            <Avatar src={avatar} />
-          )
-        }
         title={title}
-        subheader={
-          season && episode
-            ? `S${season}E${episode}${subheader && ": "} ${subheader}`
-            : subheader
+        subheader={formatSubheader(season, episode, subheader)}
+        avatar={
+          isMovie ? <MovieBadge avatar={avatar} /> : <Avatar src={avatar} />
         }
-        slotProps={{ title: { fontWeight: "bold" } }}
       />
       <Box
         sx={{

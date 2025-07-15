@@ -19,6 +19,8 @@ import Masterchef from "./assets/Masterchef.jpg";
 import MasterchefLogo from "./assets/MasterchefLogo.jpg";
 import MyHeroFinalSeason from "./assets/MyHeroFinalSeason.jpg";
 import MyHeroLogo from "./assets/MyHeroLogo.jpg";
+import Nyaight from "./assets/Nyaight.jpg";
+import NyaightLogo from "./assets/NyaightLogo.jpg";
 import OnlyMurdersintheBuilding from "./assets/OnlyMurdersintheBuilding.jpg";
 import OnlyMurdersLogo from "./assets/OnlyMurdersLogo.png";
 import PeacemakerLogo from "./assets/PeacemakerLogo.jpg";
@@ -30,6 +32,8 @@ import Solo from "./assets/Solo.jpg";
 import SoloLogo from "./assets/SoloLogo.jpg";
 import Stone from "./assets/Stone.jpg";
 import StoneLogo from "./assets/StoneLogo.jpg";
+import Stranger from "./assets/Stranger.jpg";
+import StrangerLogo from "./assets/StrangerLogo.jpg";
 import Superman from "./assets/Superman.jpg";
 import SupermanLogo from "./assets/SupermanLogo.jpg";
 import TheBearLogo from "./assets/TheBearLogo.jpg";
@@ -127,7 +131,7 @@ export const availableNow: AvailableNowProps[] = [
     synopsis:
       "Finally, after three long years, Einar and Thorfinn chop down the final tree in the forest. At the same time, Canute, who became the conqueror of England, is visiting Jelling, the royal capital of Denmark.",
     watchUrl: "https://www.crunchyroll.com/series/GEXH3WKK0/vinland-saga",
-    objectPosition: "50% 50%",
+    objectPosition: "50% 34%",
   },
   {
     avatar: AttackLogo.src,
@@ -186,6 +190,21 @@ export const availableNow: AvailableNowProps[] = [
       "https://www.hulu.com/series/45d67197-5346-4adb-9d90-6ed2d7b7bd85",
     objectPosition: "50% 30%",
   },
+  {
+    avatar: NyaightLogo.src,
+    title: "Nyaight of the Living Cat",
+    subheader: "Tonight the cats will steal the stars",
+    season: 1,
+    episode: 2,
+    cardMedia: Nyaight.src,
+    cardMediaAlt: "Nyaight of the Living Cat",
+    releaseDateTime: "July 13 2025 07:15:00 GMT-0700",
+    synopsis:
+      "Kunagi, Kaoru, and Tanishi take shelter in a supermarket, where Kaoru reunites with a friend.",
+    watchUrl:
+      "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
+    objectPosition: "50% 20%",
+  },
 ];
 
 export const upNext: UpNextProps[] = [
@@ -222,6 +241,21 @@ export const upNext: UpNextProps[] = [
     TimerCard: LargeTimerCard,
   },
   {
+    avatar: NyaightLogo.src,
+    title: "Nyaight of the Living Cat",
+    subheader: "",
+    season: 1,
+    episode: 3,
+    cardMedia: Nyaight.src,
+    cardMediaAlt: "Nyaight of the Living Cat",
+    releaseDateTime: "July 20 2025 07:15:00 GMT-0700",
+    synopsis: "",
+    watchUrl:
+      "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
+    objectPosition: "50% 20%",
+    TimerCard: SmallTimerCard,
+  },
+  {
     avatar: FoundationAvatar.src,
     title: "Foundation",
     subheader: "",
@@ -233,6 +267,22 @@ export const upNext: UpNextProps[] = [
     watchUrl:
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
     objectPosition: "100% 40%",
+    TimerCard: SmallTimerCard,
+  },
+
+  {
+    avatar: NyaightLogo.src,
+    title: "Nyaight of the Living Cat",
+    subheader: "",
+    season: 1,
+    episode: 4,
+    cardMedia: Nyaight.src,
+    cardMediaAlt: "Nyaight of the Living Cat",
+    releaseDateTime: "July 27 2025 07:15:00 GMT-0700",
+    synopsis: "",
+    watchUrl:
+      "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
+    objectPosition: "50% 20%",
     TimerCard: SmallTimerCard,
   },
   {
@@ -247,6 +297,21 @@ export const upNext: UpNextProps[] = [
     watchUrl:
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
     objectPosition: "100% 40%",
+    TimerCard: SmallTimerCard,
+  },
+  {
+    avatar: NyaightLogo.src,
+    title: "Nyaight of the Living Cat",
+    subheader: "",
+    season: 1,
+    episode: 5,
+    cardMedia: Nyaight.src,
+    cardMediaAlt: "Nyaight of the Living Cat",
+    releaseDateTime: "August 03 2025 07:15:00 GMT-0700",
+    synopsis: "",
+    watchUrl:
+      "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
+    objectPosition: "50% 20%",
     TimerCard: SmallTimerCard,
   },
   {
@@ -280,6 +345,21 @@ export const upNext: UpNextProps[] = [
     TimerCard: SmallTimerCard,
   },
   {
+    avatar: NyaightLogo.src,
+    title: "Nyaight of the Living Cat",
+    subheader: "",
+    season: 1,
+    episode: 6,
+    cardMedia: Nyaight.src,
+    cardMediaAlt: "Nyaight of the Living Cat",
+    releaseDateTime: "August 10 2025 07:15:00 GMT-0700",
+    synopsis: "",
+    watchUrl:
+      "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
+    objectPosition: "50% 20%",
+    TimerCard: SmallTimerCard,
+  },
+  {
     avatar: FoundationAvatar.src,
     title: "Foundation",
     subheader: "",
@@ -291,6 +371,21 @@ export const upNext: UpNextProps[] = [
     watchUrl:
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
     objectPosition: "100% 40%",
+    TimerCard: SmallTimerCard,
+  },
+  {
+    avatar: NyaightLogo.src,
+    title: "Nyaight of the Living Cat",
+    subheader: "",
+    season: 1,
+    episode: 7,
+    cardMedia: Nyaight.src,
+    cardMediaAlt: "Nyaight of the Living Cat",
+    releaseDateTime: "August 17 2025 07:15:00 GMT-0700",
+    synopsis: "",
+    watchUrl:
+      "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
+    objectPosition: "50% 20%",
     TimerCard: SmallTimerCard,
   },
   {
@@ -321,6 +416,22 @@ export const upNext: UpNextProps[] = [
     objectPosition: "100% 40%",
     TimerCard: SmallTimerCard,
   },
+
+  {
+    avatar: NyaightLogo.src,
+    title: "Nyaight of the Living Cat",
+    subheader: "",
+    season: 1,
+    episode: 8,
+    cardMedia: Nyaight.src,
+    cardMediaAlt: "Nyaight of the Living Cat",
+    releaseDateTime: "August 24 2025 07:15:00 GMT-0700",
+    synopsis: "",
+    watchUrl:
+      "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
+    objectPosition: "50% 20%",
+    TimerCard: SmallTimerCard,
+  },
   {
     avatar: PeacemakerLogo.src,
     title: "Peacemaker",
@@ -347,6 +458,22 @@ export const upNext: UpNextProps[] = [
     watchUrl:
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
     objectPosition: "100% 40%",
+    TimerCard: SmallTimerCard,
+  },
+
+  {
+    avatar: NyaightLogo.src,
+    title: "Nyaight of the Living Cat",
+    subheader: "",
+    season: 1,
+    episode: 9,
+    cardMedia: Nyaight.src,
+    cardMediaAlt: "Nyaight of the Living Cat",
+    releaseDateTime: "August 31 2025 07:15:00 GMT-0700",
+    synopsis: "",
+    watchUrl:
+      "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
+    objectPosition: "50% 20%",
     TimerCard: SmallTimerCard,
   },
   {
@@ -378,6 +505,21 @@ export const upNext: UpNextProps[] = [
     TimerCard: SmallTimerCard,
   },
   {
+    avatar: NyaightLogo.src,
+    title: "Nyaight of the Living Cat",
+    subheader: "",
+    season: 1,
+    episode: 10,
+    cardMedia: Nyaight.src,
+    cardMediaAlt: "Nyaight of the Living Cat",
+    releaseDateTime: "September 07 2025 07:15:00 GMT-0700",
+    synopsis: "",
+    watchUrl:
+      "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
+    objectPosition: "50% 20%",
+    TimerCard: SmallTimerCard,
+  },
+  {
     avatar: PeacemakerLogo.src,
     title: "Peacemaker",
     subheader: "",
@@ -406,6 +548,21 @@ export const upNext: UpNextProps[] = [
     TimerCard: SmallTimerCard,
   },
   {
+    avatar: NyaightLogo.src,
+    title: "Nyaight of the Living Cat",
+    subheader: "",
+    season: 1,
+    episode: 11,
+    cardMedia: Nyaight.src,
+    cardMediaAlt: "Nyaight of the Living Cat",
+    releaseDateTime: "September 14 2025 07:15:00 GMT-0700",
+    synopsis: "",
+    watchUrl:
+      "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
+    objectPosition: "50% 20%",
+    TimerCard: SmallTimerCard,
+  },
+  {
     avatar: PeacemakerLogo.src,
     title: "Peacemaker",
     subheader: "",
@@ -417,6 +574,21 @@ export const upNext: UpNextProps[] = [
     watchUrl:
       "https://play.hbomax.com/show/a939d96b-7ffb-4481-96f6-472838d104ca",
     objectPosition: "50% 35%",
+    TimerCard: SmallTimerCard,
+  },
+  {
+    avatar: NyaightLogo.src,
+    title: "Nyaight of the Living Cat",
+    subheader: "",
+    season: 1,
+    episode: 12,
+    cardMedia: Nyaight.src,
+    cardMediaAlt: "Nyaight of the Living Cat",
+    releaseDateTime: "September 21 2025 07:15:00 GMT-0700",
+    synopsis: "",
+    watchUrl:
+      "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
+    objectPosition: "50% 20%",
     TimerCard: SmallTimerCard,
   },
   {
@@ -574,6 +746,110 @@ export const upNext: UpNextProps[] = [
     estimateDate: "October 2025",
     objectPosition: "50% 50%",
     TimerCard: LargeTimerCard,
+  },
+  {
+    avatar: StrangerLogo.src,
+    title: "Stranger Things",
+    subheader: "Chapter One: The Crawl",
+    season: 5,
+    episode: 1,
+    cardMedia: Stranger.src,
+    cardMediaAlt: "Stranger Things Season 5",
+    releaseDateTime: "November 26, 2025 21:00:00",
+    watchUrl: "https://www.netflix.com/search?q=stranger%20things&jbv=80057281",
+    objectPosition: "50% 50%",
+    TimerCard: LargeTimerCard,
+  },
+  {
+    avatar: StrangerLogo.src,
+    title: "Stranger Things",
+    subheader: "Chapter Two: The Vanishing of",
+    season: 5,
+    episode: 2,
+    cardMedia: Stranger.src,
+    cardMediaAlt: "Stranger Things Season 5",
+    releaseDateTime: "November 26, 2025 21:00:00",
+    watchUrl: "https://www.netflix.com/search?q=stranger%20things&jbv=80057281",
+    objectPosition: "50% 50%",
+    TimerCard: SmallTimerCard,
+  },
+  {
+    avatar: StrangerLogo.src,
+    title: "Stranger Things",
+    subheader: "Chapter Three: The Turnbow Trap",
+    season: 5,
+    episode: 3,
+    cardMedia: Stranger.src,
+    cardMediaAlt: "Stranger Things Season 5",
+    releaseDateTime: "November 26, 2025 21:00:00",
+    watchUrl: "https://www.netflix.com/search?q=stranger%20things&jbv=80057281",
+    objectPosition: "50% 50%",
+    TimerCard: SmallTimerCard,
+  },
+  {
+    avatar: StrangerLogo.src,
+    title: "Stranger Things",
+    subheader: "Chapter Four: Sorcerer",
+    season: 5,
+    episode: 4,
+    cardMedia: Stranger.src,
+    cardMediaAlt: "Stranger Things Season 5",
+    releaseDateTime: "November 26, 2025 21:00:00",
+    watchUrl: "https://www.netflix.com/search?q=stranger%20things&jbv=80057281",
+    objectPosition: "50% 50%",
+    TimerCard: SmallTimerCard,
+  },
+  {
+    avatar: StrangerLogo.src,
+    title: "Stranger Things",
+    subheader: "Chapter Five: Shock Jock",
+    season: 5,
+    episode: 5,
+    cardMedia: Stranger.src,
+    cardMediaAlt: "Stranger Things Season 5",
+    releaseDateTime: "December 25, 2025 21:00:00",
+    watchUrl: "https://www.netflix.com/search?q=stranger%20things&jbv=80057281",
+    objectPosition: "50% 50%",
+    TimerCard: SmallTimerCard,
+  },
+  {
+    avatar: StrangerLogo.src,
+    title: "Stranger Things",
+    subheader: "Chapter Six: Escape from Camazotz",
+    season: 5,
+    episode: 6,
+    cardMedia: Stranger.src,
+    cardMediaAlt: "Stranger Things Season 5",
+    releaseDateTime: "December 25, 2025 21:00:00",
+    watchUrl: "https://www.netflix.com/search?q=stranger%20things&jbv=80057281",
+    objectPosition: "50% 50%",
+    TimerCard: SmallTimerCard,
+  },
+  {
+    avatar: StrangerLogo.src,
+    title: "Stranger Things",
+    subheader: "Chapter Seven: The Bridge",
+    season: 5,
+    episode: 7,
+    cardMedia: Stranger.src,
+    cardMediaAlt: "Stranger Things Season 5",
+    releaseDateTime: "December 25, 2025 21:00:00",
+    watchUrl: "https://www.netflix.com/search?q=stranger%20things&jbv=80057281",
+    objectPosition: "50% 50%",
+    TimerCard: SmallTimerCard,
+  },
+  {
+    avatar: StrangerLogo.src,
+    title: "Stranger Things",
+    subheader: "Chapter Eight: The Rightside Up",
+    season: 5,
+    episode: 8,
+    cardMedia: Stranger.src,
+    cardMediaAlt: "Stranger Things Season 5",
+    releaseDateTime: "December 31, 2025 21:00:00",
+    watchUrl: "https://www.netflix.com/search?q=stranger%20things&jbv=80057281",
+    objectPosition: "50% 50%",
+    TimerCard: SmallTimerCard,
   },
   {
     avatar: FrierenLogo.src,

@@ -2,6 +2,16 @@ export const formatNumber = (num: number) => {
   return num < 10 ? `0${num}` : num.toString();
 };
 
+export const formatSubheader = (
+  season?: number,
+  episode?: number,
+  subheader?: string,
+) => {
+  return season && episode
+    ? `${season}.${episode}${subheader && ": "} ${subheader}`
+    : subheader;
+};
+
 export const getTimeUntil = (distance: number) => {
   const oneSecond = 1000;
   const oneMinute = oneSecond * 60;
