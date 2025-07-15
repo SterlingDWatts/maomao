@@ -93,7 +93,7 @@ export default function TallTimerCard({
 
         {synopsis && (
           <Collapse in={expanded} timeout="auto" unmountOnExit>
-            <CardContent sx={{ paddingTop: 0 }}>
+            <CardContent>
               <Typography>{synopsis}</Typography>
             </CardContent>
           </Collapse>
