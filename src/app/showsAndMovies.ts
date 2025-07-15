@@ -1,6 +1,10 @@
 import ADTheBeginning from "./assets/ADTheBeginning.jpg";
 import AllCreaturesSeason3Episode3 from "./assets/AllCreaturesSeason3Episode3.jpg";
+import Attack from "./assets/Attack.jpg";
+import AttackLogo from "./assets/AttackLogo.jpg";
 import ChainsawManMovie from "./assets/ChainsawManMovie.jpg";
+import Dandadan from "./assets/Dandadan.jpg";
+import DandadanLogo from "./assets/DandadanLogo.jpg";
 import FoundationSeason3Episode2 from "./assets/FoundationSeason3Episode2.jpg";
 import FoundationAvatar from "./assets/FoundationAvatar.jpg";
 import FoundationSeason3 from "./assets/FoundationSeason3.jpg";
@@ -8,6 +12,8 @@ import FrierenFrierensParty from "./assets/FrierenFrierensParty.jpg";
 import FrierenLogo from "./assets/FrierenLogo.jpg";
 import JamesLogo from "./assets/JamesLogo.jpg";
 import MaomaoSmall from "./assets/MaomaoSmall.jpg";
+import Masterchef from "./assets/Masterchef.jpg";
+import MasterchefLogo from "./assets/MasterchefLogo.jpg";
 import MyHeroFinalSeason from "./assets/MyHeroFinalSeason.jpg";
 import MyHeroLogo from "./assets/MyHeroLogo.jpg";
 import OnlyMurdersintheBuilding from "./assets/OnlyMurdersintheBuilding.jpg";
@@ -17,10 +23,16 @@ import PeacemakerSeason2 from "./assets/PeacemakerSeason2.jpg";
 import Pochita from "./assets/Pochita.jpg";
 import SlowHorsesBig from "./assets/SlowHorses.jpg";
 import SlowHorsesLogo from "./assets/SlowHorsesLogo.jpg";
+import Solo from "./assets/Solo.jpg";
+import SoloLogo from "./assets/SoloLogo.jpg";
+import Stone from "./assets/Stone.jpg";
+import StoneLogo from "./assets/StoneLogo.jpg";
 import Superman from "./assets/Superman.jpg";
 import SupermanLogo from "./assets/SupermanLogo.jpg";
 import TheBearLogo from "./assets/TheBearLogo.jpg";
 import TheBearSeason4Episode3 from "./assets/TheBearSeason4Episode3.jpg";
+import VinlandLogo from "./assets/VinlandLogo.jpg";
+import VinlandSaga from "./assets/VinlandSaga.jpg";
 
 export interface TimerCardProps {
   avatar: string;
@@ -38,6 +50,80 @@ export interface TimerCardProps {
   isMovie?: boolean;
   objectPosition?: string;
 }
+
+export const secondUpNext: TimerCardProps[] = [
+  {
+    avatar: DandadanLogo.src,
+    title: "Dan Da Dan",
+    subheader: "Sorette uchûjin ja ne",
+    season: 1,
+    episode: 2,
+    cardMedia: Dandadan.src,
+    cardMediaAlt: "Dandadan",
+    releaseDateTime: "October 10 2024 03:00:00 GMT-0700",
+    synopsis:
+      "Okarun is cursed by Turbo Granny, and Momo uses her newly found psychic powers to curb Turbo Granny from running out of control. Dawn breaks, and the two of them temporarily find shelter in Momo's house.",
+    watchUrl: "https://www.crunchyroll.com/series/GG5H5XQ0D/dan-da-dan",
+    objectPosition: "50% 50%",
+  },
+  {
+    avatar: VinlandLogo.src,
+    title: "Vinland Saga",
+    subheader: "Cursed Head",
+    season: 2,
+    episode: 10,
+    cardMedia: VinlandSaga.src,
+    cardMediaAlt: "Vinland Saga",
+    releaseDateTime: "March 14 2023 03:00:00 GMT-0700",
+    synopsis:
+      "Finally, after three long years, Einar and Thorfinn chop down the final tree in the forest. At the same time, Canute, who became the conqueror of England, is visiting Jelling, the royal capital of Denmark.",
+    watchUrl: "https://www.crunchyroll.com/series/GEXH3WKK0/vinland-saga",
+    objectPosition: "50% 50%",
+  },
+  {
+    avatar: AttackLogo.src,
+    title: "Attack on Titan",
+    subheader: "Soldier",
+    season: 2,
+    episode: 29,
+    cardMedia: Attack.src,
+    cardMediaAlt: "Attack on Titan",
+    releaseDateTime: "April 22 2017 03:00:00 GMT-0700",
+    synopsis:
+      "When the Scouts are overwhelmed by the Titan assault on the castle, the unarmed recruits' hope for survival may lie in a promise and secret.",
+    watchUrl: "https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan",
+    objectPosition: "50% 50%",
+  },
+  {
+    avatar: SoloLogo.src,
+    title: "Solo Leveling",
+    subheader: "Still a Long Way to Go",
+    season: 2,
+    episode: 3,
+    cardMedia: Solo.src,
+    cardMediaAlt: "Solo Leveling",
+    releaseDateTime: "January 18 2025 03:00:00 GMT-0700",
+    synopsis:
+      "Jinwoo, now more powerful after conquering 19 dungeons, returns to the treacherous S-Rank Demon's Castle. His mission to obtain rare ingredients for the Elixir of Life, a crucial step in his quest to save his ailing mother.",
+    watchUrl: "https://www.crunchyroll.com/series/GDKHZEJ0K/solo-leveling",
+    objectPosition: "50% 50%",
+  },
+  {
+    avatar: MasterchefLogo.src,
+    title: "Masterchef",
+    subheader: "Dinner Party Dish",
+    season: 15,
+    episode: 4,
+    cardMedia: Masterchef.src,
+    cardMediaAlt: "Masterchef",
+    releaseDateTime: "June 11 2025 03:00:00 GMT-0700",
+    synopsis:
+      "Twelve talented cooking pairs compete to create the ultimate dinner party masterpiece, putting their combined culinary skills to the test as they vie for the judges' approval.",
+    watchUrl:
+      "https://www.hulu.com/series/45d67197-5346-4adb-9d90-6ed2d7b7bd85",
+    objectPosition: "50% 50%",
+  },
+];
 
 export const firstUpNext: TimerCardProps[] = [
   {

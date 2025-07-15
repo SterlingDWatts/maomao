@@ -106,7 +106,7 @@ export default function TallTimerCard({
                   backgroundColor: "rgba(0, 0, 0, 0.3)",
                   borderRadius: 2,
                   padding: 1,
-                  fontSize: { xs: "3rem", sm: "4rem", md: "5rem", lg: "6rem" },
+                  fontSize: { xs: "3rem" },
                 }}
               >
                 AVAILABLE

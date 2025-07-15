@@ -2,7 +2,6 @@
 
 import * as React from "react";
 
-import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
 import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
@@ -12,7 +11,7 @@ import LargeTimerCard from "../components/largeTimerCard";
 import SmallTimerCard from "../components/smallTimerCard";
 import TallTimerCard from "@/components/tallTimerCard";
 
-import { firstUpNext } from "../app/showsAndMovies";
+import { firstUpNext, secondUpNext } from "../app/showsAndMovies";
 
 export default function Page() {
   return (
@@ -41,6 +40,9 @@ export default function Page() {
             }}
           >
             {firstUpNext.slice(1, 4).map((props, i) => (
+              <TallTimerCard key={i} {...props} />
+            ))}
+            {secondUpNext.map((props, i) => (
               <TallTimerCard key={i} {...props} />
             ))}
           </Stack>
