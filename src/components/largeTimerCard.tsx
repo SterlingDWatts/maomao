@@ -66,6 +66,7 @@ export default function LargeTimerCard({
   isMovie = false,
   objectPosition = "50% 50%",
   estimateDate,
+  SiteLogo,
 }: UpNextProps) {
   const timerBoxRef = React.useRef<HTMLDivElement>(null);
 
@@ -152,28 +153,13 @@ export default function LargeTimerCard({
       )}
 
       <CardActions sx={{ justifyContent: "space-between" }}>
-        {isMovie ? (
-          <Button
-            component="button"
-            size="small"
-            href={watchUrl}
-            startIcon={<ConfirmationNumberIcon />}
-          ></Button>
-        ) : distance > 0 ? (
-          <Button
-            component="button"
-            size="small"
-            href={watchUrl}
-            startIcon={<TvOffIcon />}
-          ></Button>
-        ) : (
-          <Button
-            component="button"
-            size="small"
-            href={watchUrl}
-            startIcon={<LiveTvIcon />}
-          ></Button>
-        )}
+        <Button
+          component="button"
+          size="small"
+          href={watchUrl}
+          startIcon={<SiteLogo />}
+        ></Button>
+
         {synopsis && (
           <ExpandMore
             expand={expanded}

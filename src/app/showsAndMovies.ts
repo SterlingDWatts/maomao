@@ -1,5 +1,14 @@
-import LargeTimerCard from "@/components/largeTimerCard";
-import SmallTimerCard from "@/components/smallTimerCard";
+import LargeTimerCard from "../components/largeTimerCard";
+import SmallTimerCard from "../components/smallTimerCard";
+import {
+  AppleLogo,
+  CrunchyrollLogo,
+  FandangoLogo,
+  GooglePlayMoviesLogo,
+  HBOLogo,
+  HuluLogo,
+  NetflixLogo,
+} from "./svgs/svgLogos";
 
 import ADTheBeginning from "./assets/ADTheBeginning.jpg";
 import AllCreaturesSeason3Episode3 from "./assets/AllCreaturesSeason3Episode3.jpg";
@@ -56,6 +65,13 @@ export interface AvailableNowProps {
   estimateDate?: string;
   isMovie?: boolean;
   objectPosition?: string;
+  SiteLogo:
+    | typeof AppleLogo
+    | typeof CrunchyrollLogo
+    | typeof FandangoLogo
+    | typeof HBOLogo
+    | typeof HuluLogo
+    | typeof NetflixLogo;
 }
 
 export interface UpNextProps extends AvailableNowProps {
@@ -75,6 +91,7 @@ export const availableNow: AvailableNowProps[] = [
     isMovie: true,
     watchUrl: "https://www.fandango.com/superman-2025-230934/movie-overview",
     objectPosition: "50% 40%",
+    SiteLogo: FandangoLogo,
   },
   {
     avatar: JamesLogo.src,
@@ -90,6 +107,7 @@ export const availableNow: AvailableNowProps[] = [
     watchUrl:
       "https://play.google.com/store/tv/show?id=gbQjVgRNYkg.P&cdid=tvseason-mjGu8FIpiU4.P&hl=en_US",
     objectPosition: "50% 47%",
+    SiteLogo: GooglePlayMoviesLogo,
   },
   {
     avatar: TheBearLogo.src,
@@ -104,6 +122,7 @@ export const availableNow: AvailableNowProps[] = [
     watchUrl:
       "https://www.hulu.com/series/05eb6a8e-90ed-4947-8c0b-e6536cbddd5f",
     objectPosition: "30% 50%",
+    SiteLogo: HuluLogo,
   },
   {
     avatar: DandadanLogo.src,
@@ -118,6 +137,7 @@ export const availableNow: AvailableNowProps[] = [
       "Okarun transforms from Turbo Granny's curse. He goes berserk unable to control his power, but Momo's grandmother Seiko, saves them in the nick of time. To lift the curse, Momo and Okarun decide to play tag with Turbo Granny.",
     watchUrl: "https://www.crunchyroll.com/series/GG5H5XQ0D/dan-da-dan",
     objectPosition: "50% 50%",
+    SiteLogo: CrunchyrollLogo,
   },
   {
     avatar: VinlandLogo.src,
@@ -132,6 +152,7 @@ export const availableNow: AvailableNowProps[] = [
       "Finally, after three long years, Einar and Thorfinn chop down the final tree in the forest. At the same time, Canute, who became the conqueror of England, is visiting Jelling, the royal capital of Denmark.",
     watchUrl: "https://www.crunchyroll.com/series/GEXH3WKK0/vinland-saga",
     objectPosition: "50% 34%",
+    SiteLogo: CrunchyrollLogo,
   },
   {
     avatar: AttackLogo.src,
@@ -146,6 +167,7 @@ export const availableNow: AvailableNowProps[] = [
       "When the Scouts are overwhelmed by the Titan assault on the castle, the unarmed recruits' hope for survival may lie in a promise and secret.",
     watchUrl: "https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan",
     objectPosition: "50% 60%",
+    SiteLogo: CrunchyrollLogo,
   },
   {
     avatar: StoneLogo.src,
@@ -160,6 +182,7 @@ export const availableNow: AvailableNowProps[] = [
       "Jinwoo, now more powerful after conquering 19 dungeons, returns to the treacherous S-Rank Demon's Castle. His mission to obtain rare ingredients for the Elixir of Life, a crucial step in his quest to save his ailing mother.",
     watchUrl: "https://www.crunchyroll.com/series/GYEXQKJG6/dr-stone",
     objectPosition: "50% 50%",
+    SiteLogo: CrunchyrollLogo,
   },
   {
     avatar: SoloLogo.src,
@@ -174,6 +197,7 @@ export const availableNow: AvailableNowProps[] = [
       "Jinwoo, now more powerful after conquering 19 dungeons, returns to the treacherous S-Rank Demon's Castle. His mission to obtain rare ingredients for the Elixir of Life, a crucial step in his quest to save his ailing mother.",
     watchUrl: "https://www.crunchyroll.com/series/GDKHZEJ0K/solo-leveling",
     objectPosition: "50% 50%",
+    SiteLogo: CrunchyrollLogo,
   },
   {
     avatar: MasterchefLogo.src,
@@ -189,6 +213,7 @@ export const availableNow: AvailableNowProps[] = [
     watchUrl:
       "https://www.hulu.com/series/45d67197-5346-4adb-9d90-6ed2d7b7bd85",
     objectPosition: "50% 30%",
+    SiteLogo: HuluLogo,
   },
   {
     avatar: NyaightLogo.src,
@@ -204,6 +229,7 @@ export const availableNow: AvailableNowProps[] = [
     watchUrl:
       "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
     objectPosition: "50% 20%",
+    SiteLogo: CrunchyrollLogo,
   },
 ];
 
@@ -223,6 +249,7 @@ export const upNext: UpNextProps[] = [
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
     objectPosition: "50% 15%",
     TimerCard: LargeTimerCard,
+    SiteLogo: AppleLogo,
   },
   {
     avatar: MaomaoSmall.src,
@@ -239,6 +266,7 @@ export const upNext: UpNextProps[] = [
       "https://www.crunchyroll.com/series/G3KHEVDJ7/the-apothecary-diaries",
     objectPosition: "50% 35%",
     TimerCard: LargeTimerCard,
+    SiteLogo: CrunchyrollLogo,
   },
   {
     avatar: NyaightLogo.src,
@@ -254,6 +282,7 @@ export const upNext: UpNextProps[] = [
       "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
     objectPosition: "50% 20%",
     TimerCard: SmallTimerCard,
+    SiteLogo: CrunchyrollLogo,
   },
   {
     avatar: FoundationAvatar.src,
@@ -268,6 +297,7 @@ export const upNext: UpNextProps[] = [
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
     objectPosition: "100% 40%",
     TimerCard: SmallTimerCard,
+    SiteLogo: AppleLogo,
   },
 
   {
@@ -284,6 +314,7 @@ export const upNext: UpNextProps[] = [
       "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
     objectPosition: "50% 20%",
     TimerCard: SmallTimerCard,
+    SiteLogo: CrunchyrollLogo,
   },
   {
     avatar: FoundationAvatar.src,
@@ -298,6 +329,7 @@ export const upNext: UpNextProps[] = [
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
     objectPosition: "100% 40%",
     TimerCard: SmallTimerCard,
+    SiteLogo: AppleLogo,
   },
   {
     avatar: NyaightLogo.src,
@@ -313,6 +345,7 @@ export const upNext: UpNextProps[] = [
       "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
     objectPosition: "50% 20%",
     TimerCard: SmallTimerCard,
+    SiteLogo: CrunchyrollLogo,
   },
   {
     avatar: OnlyMurdersLogo.src,
@@ -329,6 +362,7 @@ export const upNext: UpNextProps[] = [
     estimateDate: "[Best Guess] August 2025",
     objectPosition: "100% 20%",
     TimerCard: LargeTimerCard,
+    SiteLogo: HuluLogo,
   },
   {
     avatar: FoundationAvatar.src,
@@ -343,6 +377,7 @@ export const upNext: UpNextProps[] = [
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
     objectPosition: "100% 40%",
     TimerCard: SmallTimerCard,
+    SiteLogo: AppleLogo,
   },
   {
     avatar: NyaightLogo.src,
@@ -358,6 +393,7 @@ export const upNext: UpNextProps[] = [
       "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
     objectPosition: "50% 20%",
     TimerCard: SmallTimerCard,
+    SiteLogo: CrunchyrollLogo,
   },
   {
     avatar: FoundationAvatar.src,
@@ -372,6 +408,7 @@ export const upNext: UpNextProps[] = [
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
     objectPosition: "100% 40%",
     TimerCard: SmallTimerCard,
+    SiteLogo: AppleLogo,
   },
   {
     avatar: NyaightLogo.src,
@@ -387,6 +424,7 @@ export const upNext: UpNextProps[] = [
       "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
     objectPosition: "50% 20%",
     TimerCard: SmallTimerCard,
+    SiteLogo: CrunchyrollLogo,
   },
   {
     avatar: PeacemakerLogo.src,
@@ -401,6 +439,7 @@ export const upNext: UpNextProps[] = [
       "https://play.hbomax.com/show/a939d96b-7ffb-4481-96f6-472838d104ca",
     objectPosition: "50% 35%",
     TimerCard: LargeTimerCard,
+    SiteLogo: HBOLogo,
   },
   {
     avatar: FoundationAvatar.src,
@@ -415,6 +454,7 @@ export const upNext: UpNextProps[] = [
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
     objectPosition: "100% 40%",
     TimerCard: SmallTimerCard,
+    SiteLogo: AppleLogo,
   },
 
   {
@@ -431,6 +471,7 @@ export const upNext: UpNextProps[] = [
       "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
     objectPosition: "50% 20%",
     TimerCard: SmallTimerCard,
+    SiteLogo: CrunchyrollLogo,
   },
   {
     avatar: PeacemakerLogo.src,
@@ -445,6 +486,7 @@ export const upNext: UpNextProps[] = [
       "https://play.hbomax.com/show/a939d96b-7ffb-4481-96f6-472838d104ca",
     objectPosition: "50% 35%",
     TimerCard: SmallTimerCard,
+    SiteLogo: HBOLogo,
   },
   {
     avatar: FoundationAvatar.src,
@@ -459,6 +501,7 @@ export const upNext: UpNextProps[] = [
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
     objectPosition: "100% 40%",
     TimerCard: SmallTimerCard,
+    SiteLogo: AppleLogo,
   },
 
   {
@@ -475,6 +518,7 @@ export const upNext: UpNextProps[] = [
       "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
     objectPosition: "50% 20%",
     TimerCard: SmallTimerCard,
+    SiteLogo: CrunchyrollLogo,
   },
   {
     avatar: PeacemakerLogo.src,
@@ -489,6 +533,7 @@ export const upNext: UpNextProps[] = [
       "https://play.hbomax.com/show/a939d96b-7ffb-4481-96f6-472838d104ca",
     objectPosition: "50% 35%",
     TimerCard: SmallTimerCard,
+    SiteLogo: HBOLogo,
   },
   {
     avatar: FoundationAvatar.src,
@@ -503,6 +548,7 @@ export const upNext: UpNextProps[] = [
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
     objectPosition: "100% 40%",
     TimerCard: SmallTimerCard,
+    SiteLogo: AppleLogo,
   },
   {
     avatar: NyaightLogo.src,
@@ -518,6 +564,7 @@ export const upNext: UpNextProps[] = [
       "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
     objectPosition: "50% 20%",
     TimerCard: SmallTimerCard,
+    SiteLogo: CrunchyrollLogo,
   },
   {
     avatar: PeacemakerLogo.src,
@@ -532,6 +579,7 @@ export const upNext: UpNextProps[] = [
       "https://play.hbomax.com/show/a939d96b-7ffb-4481-96f6-472838d104ca",
     objectPosition: "50% 35%",
     TimerCard: SmallTimerCard,
+    SiteLogo: HBOLogo,
   },
   {
     avatar: FoundationAvatar.src,
@@ -546,6 +594,7 @@ export const upNext: UpNextProps[] = [
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
     objectPosition: "100% 40%",
     TimerCard: SmallTimerCard,
+    SiteLogo: AppleLogo,
   },
   {
     avatar: NyaightLogo.src,
@@ -561,6 +610,7 @@ export const upNext: UpNextProps[] = [
       "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
     objectPosition: "50% 20%",
     TimerCard: SmallTimerCard,
+    SiteLogo: CrunchyrollLogo,
   },
   {
     avatar: PeacemakerLogo.src,
@@ -575,6 +625,7 @@ export const upNext: UpNextProps[] = [
       "https://play.hbomax.com/show/a939d96b-7ffb-4481-96f6-472838d104ca",
     objectPosition: "50% 35%",
     TimerCard: SmallTimerCard,
+    SiteLogo: HBOLogo,
   },
   {
     avatar: NyaightLogo.src,
@@ -590,6 +641,7 @@ export const upNext: UpNextProps[] = [
       "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
     objectPosition: "50% 20%",
     TimerCard: SmallTimerCard,
+    SiteLogo: CrunchyrollLogo,
   },
   {
     avatar: SlowHorsesLogo.src,
@@ -604,6 +656,7 @@ export const upNext: UpNextProps[] = [
       "https://tv.apple.com/us/show/slow-horses/umc.cmc.2szz3fdt71tl1ulnbp8utgq5o",
     objectPosition: "50% 30%",
     TimerCard: LargeTimerCard,
+    SiteLogo: AppleLogo,
   },
   {
     avatar: SlowHorsesLogo.src,
@@ -618,6 +671,7 @@ export const upNext: UpNextProps[] = [
       "https://tv.apple.com/us/show/slow-horses/umc.cmc.2szz3fdt71tl1ulnbp8utgq5o",
     objectPosition: "50% 30%",
     TimerCard: SmallTimerCard,
+    SiteLogo: AppleLogo,
   },
   {
     avatar: PeacemakerLogo.src,
@@ -632,6 +686,7 @@ export const upNext: UpNextProps[] = [
       "https://play.hbomax.com/show/a939d96b-7ffb-4481-96f6-472838d104ca",
     objectPosition: "50% 35%",
     TimerCard: SmallTimerCard,
+    SiteLogo: HBOLogo,
   },
   {
     avatar: SlowHorsesLogo.src,
@@ -646,6 +701,7 @@ export const upNext: UpNextProps[] = [
       "https://tv.apple.com/us/show/slow-horses/umc.cmc.2szz3fdt71tl1ulnbp8utgq5o",
     objectPosition: "50% 30%",
     TimerCard: SmallTimerCard,
+    SiteLogo: AppleLogo,
   },
   {
     avatar: PeacemakerLogo.src,
@@ -660,6 +716,7 @@ export const upNext: UpNextProps[] = [
       "https://play.hbomax.com/show/a939d96b-7ffb-4481-96f6-472838d104ca",
     objectPosition: "50% 50%",
     TimerCard: SmallTimerCard,
+    SiteLogo: HBOLogo,
   },
   {
     avatar: SlowHorsesLogo.src,
@@ -674,6 +731,7 @@ export const upNext: UpNextProps[] = [
       "https://tv.apple.com/us/show/slow-horses/umc.cmc.2szz3fdt71tl1ulnbp8utgq5o",
     objectPosition: "50% 30%",
     TimerCard: SmallTimerCard,
+    SiteLogo: AppleLogo,
   },
   {
     avatar: PeacemakerLogo.src,
@@ -688,6 +746,7 @@ export const upNext: UpNextProps[] = [
       "https://play.hbomax.com/show/a939d96b-7ffb-4481-96f6-472838d104ca",
     objectPosition: "50% 50%",
     TimerCard: SmallTimerCard,
+    SiteLogo: HBOLogo,
   },
   {
     avatar: SlowHorsesLogo.src,
@@ -702,6 +761,7 @@ export const upNext: UpNextProps[] = [
       "https://tv.apple.com/us/show/slow-horses/umc.cmc.2szz3fdt71tl1ulnbp8utgq5o",
     objectPosition: "50% 30%",
     TimerCard: SmallTimerCard,
+    SiteLogo: AppleLogo,
   },
   {
     avatar: SlowHorsesLogo.src,
@@ -716,6 +776,7 @@ export const upNext: UpNextProps[] = [
       "https://tv.apple.com/us/show/slow-horses/umc.cmc.2szz3fdt71tl1ulnbp8utgq5o",
     objectPosition: "50% 30%",
     TimerCard: SmallTimerCard,
+    SiteLogo: AppleLogo,
   },
   {
     avatar: Pochita.src,
@@ -731,6 +792,7 @@ export const upNext: UpNextProps[] = [
       "https://www.fandango.com/chainsaw-man-the-movie-reze-arc-2025-241288/movie-overview",
     objectPosition: "50% 30%",
     TimerCard: LargeTimerCard,
+    SiteLogo: FandangoLogo,
   },
   {
     avatar: MyHeroLogo.src,
@@ -746,6 +808,7 @@ export const upNext: UpNextProps[] = [
     estimateDate: "October 2025",
     objectPosition: "50% 50%",
     TimerCard: LargeTimerCard,
+    SiteLogo: CrunchyrollLogo,
   },
   {
     avatar: StrangerLogo.src,
@@ -756,9 +819,10 @@ export const upNext: UpNextProps[] = [
     cardMedia: Stranger.src,
     cardMediaAlt: "Stranger Things Season 5",
     releaseDateTime: "November 26, 2025 21:00:00",
-    watchUrl: "https://www.netflix.com/search?q=stranger%20things&jbv=80057281",
+    watchUrl: "https://www.netflix.com/us/title/80057281",
     objectPosition: "50% 50%",
     TimerCard: LargeTimerCard,
+    SiteLogo: NetflixLogo,
   },
   {
     avatar: StrangerLogo.src,
@@ -769,9 +833,10 @@ export const upNext: UpNextProps[] = [
     cardMedia: Stranger.src,
     cardMediaAlt: "Stranger Things Season 5",
     releaseDateTime: "November 26, 2025 21:00:00",
-    watchUrl: "https://www.netflix.com/search?q=stranger%20things&jbv=80057281",
+    watchUrl: "https://www.netflix.com/us/title/80057281",
     objectPosition: "50% 50%",
     TimerCard: SmallTimerCard,
+    SiteLogo: NetflixLogo,
   },
   {
     avatar: StrangerLogo.src,
@@ -782,9 +847,10 @@ export const upNext: UpNextProps[] = [
     cardMedia: Stranger.src,
     cardMediaAlt: "Stranger Things Season 5",
     releaseDateTime: "November 26, 2025 21:00:00",
-    watchUrl: "https://www.netflix.com/search?q=stranger%20things&jbv=80057281",
+    watchUrl: "https://www.netflix.com/us/title/80057281",
     objectPosition: "50% 50%",
     TimerCard: SmallTimerCard,
+    SiteLogo: NetflixLogo,
   },
   {
     avatar: StrangerLogo.src,
@@ -795,9 +861,10 @@ export const upNext: UpNextProps[] = [
     cardMedia: Stranger.src,
     cardMediaAlt: "Stranger Things Season 5",
     releaseDateTime: "November 26, 2025 21:00:00",
-    watchUrl: "https://www.netflix.com/search?q=stranger%20things&jbv=80057281",
+    watchUrl: "https://www.netflix.com/us/title/80057281",
     objectPosition: "50% 50%",
     TimerCard: SmallTimerCard,
+    SiteLogo: NetflixLogo,
   },
   {
     avatar: StrangerLogo.src,
@@ -808,9 +875,10 @@ export const upNext: UpNextProps[] = [
     cardMedia: Stranger.src,
     cardMediaAlt: "Stranger Things Season 5",
     releaseDateTime: "December 25, 2025 21:00:00",
-    watchUrl: "https://www.netflix.com/search?q=stranger%20things&jbv=80057281",
+    watchUrl: "https://www.netflix.com/us/title/80057281",
     objectPosition: "50% 50%",
     TimerCard: SmallTimerCard,
+    SiteLogo: NetflixLogo,
   },
   {
     avatar: StrangerLogo.src,
@@ -821,9 +889,10 @@ export const upNext: UpNextProps[] = [
     cardMedia: Stranger.src,
     cardMediaAlt: "Stranger Things Season 5",
     releaseDateTime: "December 25, 2025 21:00:00",
-    watchUrl: "https://www.netflix.com/search?q=stranger%20things&jbv=80057281",
+    watchUrl: "https://www.netflix.com/us/title/80057281",
     objectPosition: "50% 50%",
     TimerCard: SmallTimerCard,
+    SiteLogo: NetflixLogo,
   },
   {
     avatar: StrangerLogo.src,
@@ -834,9 +903,10 @@ export const upNext: UpNextProps[] = [
     cardMedia: Stranger.src,
     cardMediaAlt: "Stranger Things Season 5",
     releaseDateTime: "December 25, 2025 21:00:00",
-    watchUrl: "https://www.netflix.com/search?q=stranger%20things&jbv=80057281",
+    watchUrl: "https://www.netflix.com/us/title/80057281",
     objectPosition: "50% 50%",
     TimerCard: SmallTimerCard,
+    SiteLogo: NetflixLogo,
   },
   {
     avatar: StrangerLogo.src,
@@ -847,9 +917,10 @@ export const upNext: UpNextProps[] = [
     cardMedia: Stranger.src,
     cardMediaAlt: "Stranger Things Season 5",
     releaseDateTime: "December 31, 2025 21:00:00",
-    watchUrl: "https://www.netflix.com/search?q=stranger%20things&jbv=80057281",
+    watchUrl: "https://www.netflix.com/us/title/80057281",
     objectPosition: "50% 50%",
     TimerCard: SmallTimerCard,
+    SiteLogo: NetflixLogo,
   },
   {
     avatar: FrierenLogo.src,
@@ -866,5 +937,6 @@ export const upNext: UpNextProps[] = [
     estimateDate: "January 2026",
     objectPosition: "50% 10%",
     TimerCard: LargeTimerCard,
+    SiteLogo: CrunchyrollLogo,
   },
 ];

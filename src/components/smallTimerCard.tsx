@@ -51,6 +51,7 @@ export default function SmallTimerCard({
   isMovie = false,
   objectPosition = "50% 50%",
   estimateDate,
+  SiteLogo,
 }: AvailableNowProps) {
   const timerBoxRef = React.useRef<HTMLDivElement>(null);
 
@@ -107,28 +108,13 @@ export default function SmallTimerCard({
         )}
 
         <CardActions sx={{ justifyContent: "space-between" }}>
-          {isMovie ? (
-            <Button
-              component="button"
-              size="small"
-              href={watchUrl}
-              startIcon={<ConfirmationNumberIcon />}
-            ></Button>
-          ) : distance > 0 ? (
-            <Button
-              component="button"
-              size="small"
-              href={watchUrl}
-              startIcon={<TvOffIcon />}
-            ></Button>
-          ) : (
-            <Button
-              component="button"
-              size="small"
-              href={watchUrl}
-              startIcon={<LiveTvIcon />}
-            ></Button>
-          )}
+          <Button
+            component="button"
+            size="small"
+            href={watchUrl}
+            startIcon={<SiteLogo />}
+          ></Button>
+
           {synopsis && (
             <ExpandMore
               expand={expanded}

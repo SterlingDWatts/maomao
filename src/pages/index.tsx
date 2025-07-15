@@ -8,7 +8,16 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 
 import DrawerAppBar from "../components/appBarWithResponsiveMenu";
-import TallTimerCard from "@/components/tallTimerCard";
+import TallTimerCard from "../components/tallTimerCard";
+import {
+  AppleLogo,
+  CrunchyrollLogo,
+  FandangoLogo,
+  GooglePlayMoviesLogo,
+  HBOLogo,
+  HuluLogo,
+  NetflixLogo,
+} from "../app/svgs/svgLogos";
 
 import { upNext, availableNow } from "../app/showsAndMovies";
 
@@ -20,13 +29,7 @@ export default function Page() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container
-        disableGutters
-        maxWidth={false}
-        sx={{
-          backgroundColor: "primary.light",
-        }}
-      >
+      <Container disableGutters maxWidth={false}>
         <Container
           maxWidth="lg"
           sx={{
@@ -34,17 +37,24 @@ export default function Page() {
             paddingBottom: { xs: 1, sm: 3 },
             paddingLeft: { xs: 1, sm: 3 },
             paddingRight: { xs: 1, sm: 3 },
-            backgroundColor: "primary.light",
             overflowX: "hidden",
           }}
         >
           <DrawerAppBar />
 
           <Stack spacing={2} sx={{ marginTop: 2 }}>
+            <AppleLogo />
+            <CrunchyrollLogo />
+            <FandangoLogo />
+            <GooglePlayMoviesLogo />
+            <HBOLogo />
+            <HuluLogo />
+            <NetflixLogo />
             <Stack>
               <Typography
                 variant="h6"
                 component="div"
+                color="warning.light"
                 sx={{
                   fontWeight: "bold",
                 }}
@@ -61,6 +71,14 @@ export default function Page() {
                 component="div"
                 sx={{ fontWeight: "bold" }}
               >
+                <Typography
+                  variant="h6"
+                  color="warning.light"
+                  component="span"
+                  sx={{ fontWeight: 900 }}
+                >
+                  |{" ‎‎ "}
+                </Typography>
                 Next Episode or Movie
               </Typography>
               <Stack
@@ -86,6 +104,7 @@ export default function Page() {
               <Typography
                 variant="h6"
                 component="div"
+                color="warning.light"
                 sx={{ fontWeight: "bold" }}
               >
                 Coming Soon

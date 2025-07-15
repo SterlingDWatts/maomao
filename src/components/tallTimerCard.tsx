@@ -43,6 +43,7 @@ export default function TallTimerCard({
   watchUrl,
   isMovie = false,
   objectPosition = "50% 50%",
+  SiteLogo,
 }: AvailableNowProps) {
   const { expanded, handleExpandClick } = useExpanded();
   const distance = useDistance(releaseDateTime);
@@ -100,29 +101,13 @@ export default function TallTimerCard({
         )}
 
         <CardActions sx={{ justifyContent: "space-between" }}>
-          {isMovie ? (
-            <Button
-              component="button"
-              size="small"
-              href={watchUrl}
-              startIcon={<ConfirmationNumberIcon />}
-            ></Button>
-          ) : distance > 0 ? (
-            <Button
-              component="button"
-              size="small"
-              href={watchUrl}
-              startIcon={<TvOffIcon />}
-            ></Button>
-          ) : (
-            <Button
-              component="button"
-              size="small"
-              href={watchUrl}
-              startIcon={<LiveTvIcon />}
-            ></Button>
-          )}
-          {synopsis && (
+          <Button
+            component="button"
+            size="small"
+            href={watchUrl}
+            startIcon={<SiteLogo />}
+          ></Button>
+          {/* {synopsis && (
             <ExpandMore
               expand={expanded}
               onClick={handleExpandClick}
@@ -139,7 +124,7 @@ export default function TallTimerCard({
                 </Button>
               )}
             </ExpandMore>
-          )}
+          )} */}
         </CardActions>
       </Stack>
     </Card>
