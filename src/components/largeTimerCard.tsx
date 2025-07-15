@@ -42,6 +42,8 @@ export default function LargeTimerCard({
   avatar,
   title,
   subheader,
+  season,
+  episode,
   cardMedia,
   cardMediaAlt,
   releaseDateTime,
@@ -86,7 +88,11 @@ export default function LargeTimerCard({
           )
         }
         title={title}
-        subheader={subheader}
+        subheader={
+          season && episode
+            ? `S${season}E${episode}${subheader && ": "} ${subheader}`
+            : subheader
+        }
       />
       <Box
         sx={{

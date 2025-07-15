@@ -62,34 +62,17 @@ export default function Page() {
           {[firstUpNext[10]].map((props, i) => (
             <LargeTimerCard key={i} {...props} />
           ))}
-          <Stack
-            direction="row"
-            spacing={2}
-            sx={{
-              overflowX: "auto",
-              flexWrap: "nowrap",
-            }}
-          >
-            {firstUpNext.slice(11, 19).map((props, i) => (
-              <TallTimerCard key={i} {...props} />
-            ))}
-          </Stack>
+
+          {firstUpNext.slice(11, 19).map((props, i) => (
+            <SmallTimerCard key={i} {...props} />
+          ))}
           {[firstUpNext[19]].map((props, i) => (
             <LargeTimerCard key={i} {...props} />
           ))}
 
-          <Stack
-            direction="row"
-            spacing={2}
-            sx={{
-              overflowX: "auto",
-              flexWrap: "nowrap",
-            }}
-          >
-            {firstUpNext.slice(20, 28).map((props, i) => (
-              <TallTimerCard key={i} {...props} />
-            ))}
-          </Stack>
+          {firstUpNext.slice(20, 28).map((props, i) => (
+            <SmallTimerCard key={i} {...props} />
+          ))}
           {firstUpNext.slice(28).map((props, i) => (
             <LargeTimerCard key={i} {...props} />
           ))}
