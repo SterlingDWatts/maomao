@@ -1,35 +1,19 @@
 import * as React from "react";
 
 import Box, { BoxProps } from "@mui/material/Box";
-import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Collapse from "@mui/material/Collapse";
 import IconButton from "@mui/material/IconButton";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import { styled } from "@mui/material/styles";
-
-import ConfirmationNumberIcon from "@mui/icons-material/ConfirmationNumber";
-import ExpandLessIcon from "@mui/icons-material/ExpandLess";
-import LiveTvIcon from "@mui/icons-material/LiveTv";
-import TvOffIcon from "@mui/icons-material/TvOff";
 
 import { AvailableNowProps } from "../app/showsAndMovies";
-
-import useDistance from "@/app/hooks/useDistance";
-import useExpanded from "@/app/hooks/useExpanded";
 
 interface ExpandMoreProps extends BoxProps {
   expand: boolean;
 }
-
-const ExpandMore = styled((props: ExpandMoreProps) => {
-  const { expand, ...other } = props;
-  return <Box {...other} />;
-})(({}) => ({}));
 
 export default function TallTimerCard({
   title,
@@ -39,15 +23,10 @@ export default function TallTimerCard({
   cardMedia,
   cardMediaAlt,
   releaseDateTime,
-  synopsis,
   watchUrl,
-  isMovie = false,
   objectPosition = "50% 50%",
   SiteLogo,
 }: AvailableNowProps) {
-  const { expanded, handleExpandClick } = useExpanded();
-  const distance = useDistance(releaseDateTime);
-
   return (
     <Card sx={{ width: "200px", flex: "0 0 auto" }}>
       <Box
@@ -92,39 +71,10 @@ export default function TallTimerCard({
           </Typography>
         </CardContent>
 
-        {synopsis && (
-          <Collapse in={expanded} timeout="auto" unmountOnExit>
-            <CardContent>
-              <Typography>{synopsis}</Typography>
-            </CardContent>
-          </Collapse>
-        )}
-
         <CardActions sx={{ justifyContent: "space-between" }}>
-          <Button
-            component="button"
-            size="small"
-            href={watchUrl}
-            startIcon={<SiteLogo />}
-          ></Button>
-          {/* {synopsis && (
-            <ExpandMore
-              expand={expanded}
-              onClick={handleExpandClick}
-              aria-expanded={expanded}
-              aria-label="show more"
-            >
-              {expanded ? (
-                <IconButton>
-                  <ExpandLessIcon />
-                </IconButton>
-              ) : (
-                <Button component="button" size="small">
-                  Plot
-                </Button>
-              )}
-            </ExpandMore>
-          )} */}
+          <IconButton href={watchUrl}>
+            <SiteLogo />
+          </IconButton>
         </CardActions>
       </Stack>
     </Card>
