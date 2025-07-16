@@ -80,7 +80,11 @@ export default function SmallTimerCard({
           <Typography
             variant="h5"
             component="div"
-            sx={{ fontSize: "1rem", fontWeight: "bold", color: "primary.main" }}
+            sx={{
+              fontSize: "1rem",
+              fontWeight: "bold",
+              color: "tertiary.main",
+            }}
           >
             {title}
           </Typography>

@@ -69,7 +69,7 @@ export default function DrawerAppBar(props: Props) {
   return (
     <Box sx={{ display: "flex" }}>
       <HideOnScroll {...props}>
-        <AppBar component="nav" sx={{ backgroundColor: "primary.dark" }}>
+        <AppBar component="nav" sx={{ backgroundColor: "primary.main" }}>
           <Container maxWidth="lg" disableGutters>
             <Toolbar>
               <IconButton

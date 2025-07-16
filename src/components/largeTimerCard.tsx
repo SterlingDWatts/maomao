@@ -140,7 +140,7 @@ export default function LargeTimerCard({
         />
         <Typography
           variant="h3"
-          color="primary.light"
+          color="tertiary.main"
           sx={{ fontWeight: "bold", fontSize: "1.5rem", textAlign: "center" }}
         >
           {title}
@@ -182,7 +182,7 @@ export default function LargeTimerCard({
                 <ExpandLessIcon />
               </IconButton>
             ) : (
-              <Button component="button" size="small">
+              <Button component="button" size="small" color="success">
                 Plot
               </Button>
             )}

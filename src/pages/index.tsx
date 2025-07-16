@@ -17,15 +17,25 @@ import { upNext, availableNow } from "../app/showsAndMovies";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#0336FF",
+      main: "#FFDE03",
+      light: "#FCF267",
+      dark: "#FFAB00",
+      darker: "#FF7F00",
+      lighter: "#FDF795",
     },
     secondary: {
-      main: "#FFDE03",
+      main: "#0336FF",
+      light: "#5954FF",
+      dark: "#0026EB",
+      darker: "#001BE6",
+      lighter: "#8173FF",
     },
     tertiary: {
-      main: "#FF6D00",
-      light: "#FF8a33",
-      dark: "#b24c00",
+      main: "#FF0266",
+      light: "#FF6297",
+      dark: "#C2005D",
+      darker: "#9E0057",
+      lighter: "#FFBCD3",
       contrastText: "#000",
     },
   },
@@ -43,7 +53,7 @@ export default function Page() {
         <Container
           disableGutters
           maxWidth={false}
-          sx={{ backgroundColor: "primary.main" }}
+          sx={{ backgroundColor: "primary.light" }}
         >
           <Container
             maxWidth="lg"
@@ -62,7 +72,7 @@ export default function Page() {
                 <Typography
                   variant="h6"
                   component="div"
-                  color="secondary.main"
+                  color="secondary.light"
                   sx={{
                     fontWeight: "bold",
                   }}
@@ -77,11 +87,11 @@ export default function Page() {
                 <Typography
                   variant="h6"
                   component="div"
-                  sx={{ fontWeight: "bold", color: "white" }}
+                  sx={{ fontWeight: "bold", color: "black" }}
                 >
                   <Typography
                     variant="h6"
-                    color="secondary.main"
+                    color="secondary.light"
                     component="span"
                     sx={{ fontWeight: 900 }}
                   >
@@ -114,7 +124,7 @@ export default function Page() {
                 <Typography
                   variant="h6"
                   component="div"
-                  color="secondary.main"
+                  color="secondary.light"
                   sx={{ fontWeight: "bold" }}
                 >
                   Coming Soon
