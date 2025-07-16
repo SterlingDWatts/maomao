@@ -186,7 +186,7 @@ export default function LargeTimerCard({
                 <ExpandLessIcon />
               </IconButton>
             ) : (
-              <Button component="button" size="small" color="secondary">
+              <Button component="button" color="secondary">
                 Plot
               </Button>
             )}
