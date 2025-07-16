@@ -2,10 +2,10 @@ export const AppleLogo = (props: { height?: string; width?: string }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      clip-rule="evenodd"
-      fill-rule="evenodd"
-      stroke-linejoin="round"
-      stroke-miterlimit="1.41421"
+      clipRule="evenodd"
+      fillRule="evenodd"
+      strokeLinejoin="round"
+      strokeMiterlimit="1.41421"
       viewBox="70.06 126.06 420.03 147.97"
       height={props.height || "18"}
       width={props.width || "52"}
@@ -114,10 +114,10 @@ export const HBOLogo = (props: { height?: string; width?: string }) => {
         y1="-.307"
         y2="-.307"
       >
-        <stop offset="0" stop-color="#991eeb"></stop>
-        <stop offset=".399" stop-color="#5822b4"></stop>
-        <stop offset=".727" stop-color="#5822b4"></stop>
-        <stop offset="1" stop-color="#991eeb"></stop>
+        <stop offset="0" stopColor="#991eeb"></stop>
+        <stop offset=".399" stopColor="#5822b4"></stop>
+        <stop offset=".727" stopColor="#5822b4"></stop>
+        <stop offset="1" stopColor="#991eeb"></stop>
       </linearGradient>
       <switch>
         <g>
