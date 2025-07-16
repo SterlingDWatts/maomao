@@ -91,7 +91,7 @@ export default function Page() {
                 >
                   <Typography
                     variant="h6"
-                    color="secondary.light"
+                    color="tertiary.main"
                     component="span"
                     sx={{ fontWeight: 900 }}
                   >
