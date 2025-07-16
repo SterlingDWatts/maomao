@@ -9,7 +9,7 @@ export const formatSubheader = (
 ) => {
   if (!season && !episode && !subheader) return "";
   if (season === undefined && episode === undefined) return subheader;
-  if (!subheader) return `S${season} E${episode}`;
+  if (!subheader) return `Season ${season} Episode ${episode}`;
   return `S${season} E${episode}${subheader && ": "} ${subheader}`;
 };
 
