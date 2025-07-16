@@ -41,10 +41,6 @@ const theme = createTheme({
 } as Omit<ThemeOptions, "components">);
 
 export default function AnimeTrackerPage() {
-  React.useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <React.Fragment>
       <ThemeProvider theme={theme}>
