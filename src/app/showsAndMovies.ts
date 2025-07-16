@@ -38,12 +38,10 @@ import PeacemakerSeason2 from "./assets/PeacemakerSeason2.jpg";
 import Pochita from "./assets/Pochita.jpg";
 import SlowHorsesBig from "./assets/SlowHorses.jpg";
 import SlowHorsesLogo from "./assets/SlowHorsesLogo.jpg";
-import Solo from "./assets/Solo.jpg";
 import SoloLeveling from "./assets/SoloLeveling.jpg";
 import SoloLogo from "./assets/SoloLogo.jpg";
 import Stone from "./assets/Stone.jpg";
 import StoneLogo from "./assets/StoneLogo.jpg";
-import Stranger from "./assets/Stranger.jpg";
 import StrangerLogo from "./assets/StrangerLogo.jpg";
 import StrangerThings from "./assets/StrangerThings.jpg";
 import Superman from "./assets/Superman.jpg";
@@ -69,6 +67,7 @@ export interface AvailableNowProps {
   isMovie?: boolean;
   addContrastToTimer?: boolean;
   objectPosition?: string;
+  finale?: boolean;
   SiteLogo:
     | typeof AppleLogo
     | typeof CrunchyrollLogo
@@ -254,6 +253,7 @@ export const upNext: UpNextProps[] = [
     objectPosition: "50% 27%",
     TimerCard: LargeTimerCard,
     SiteLogo: CrunchyrollLogo,
+    finale: true,
   },
   {
     avatar: NyaightLogo.src,
@@ -582,6 +582,7 @@ export const upNext: UpNextProps[] = [
     objectPosition: "100% 40%",
     TimerCard: SmallTimerCard,
     SiteLogo: AppleLogo,
+    finale: true,
   },
   {
     avatar: NyaightLogo.src,
@@ -629,6 +630,7 @@ export const upNext: UpNextProps[] = [
     objectPosition: "50% 20%",
     TimerCard: SmallTimerCard,
     SiteLogo: CrunchyrollLogo,
+    finale: true,
   },
   {
     avatar: SlowHorsesLogo.src,
@@ -738,6 +740,7 @@ export const upNext: UpNextProps[] = [
     objectPosition: "50% 50%",
     TimerCard: SmallTimerCard,
     SiteLogo: HBOLogo,
+    finale: true,
   },
   {
     avatar: SlowHorsesLogo.src,
@@ -770,6 +773,7 @@ export const upNext: UpNextProps[] = [
     TimerCard: SmallTimerCard,
     SiteLogo: AppleLogo,
     addContrastToTimer: true,
+    finale: true,
   },
   {
     avatar: Pochita.src,
@@ -916,6 +920,7 @@ export const upNext: UpNextProps[] = [
     objectPosition: "50% 30%",
     TimerCard: SmallTimerCard,
     SiteLogo: NetflixLogo,
+    finale: true,
   },
   {
     avatar: FrierenLogo.src,

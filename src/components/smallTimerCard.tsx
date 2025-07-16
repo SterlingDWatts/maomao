@@ -52,6 +52,7 @@ export default function SmallTimerCard({
   objectPosition = "50% 50%",
   estimateDate,
   SiteLogo,
+  finale = false,
 }: AvailableNowProps) {
   const timerBoxRef = React.useRef<HTMLDivElement>(null);
 
@@ -67,6 +68,7 @@ export default function SmallTimerCard({
         display: "flex",
         justifyContent: "space-between",
         maxWidth: "100vw",
+        backgroundColor: finale ? "tertiary.lighter" : "white",
       }}
     >
       <Box
@@ -96,6 +98,7 @@ export default function SmallTimerCard({
             {season && episode
               ? `${season}.${episode}${subheader && ": "} ${subheader}`
               : subheader}
+            {finale && " (FINALE)"}
           </Typography>
           <Typography
             variant="body2"

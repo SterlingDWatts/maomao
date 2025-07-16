@@ -63,6 +63,7 @@ export default function LargeTimerCard({
   objectPosition = "50% 50%",
   addContrastToTimer = false,
   SiteLogo,
+  finale = false,
 }: UpNextProps) {
   const timerBoxRef = React.useRef<HTMLDivElement>(null);
 
@@ -71,7 +72,12 @@ export default function LargeTimerCard({
   const isInView = useInView(timerBoxRef);
 
   return (
-    <Card sx={{ maxWidth: "100vw" }}>
+    <Card
+      sx={{
+        maxWidth: "100vw",
+        backgroundColor: finale ? "tertiary.lighter" : "white",
+      }}
+    >
       <Box
         sx={{
           width: "100%",
@@ -158,6 +164,7 @@ export default function LargeTimerCard({
           sx={{ fontSize: "1rem", textAlign: "center", fontWeight: "bold" }}
         >
           {formatSubheader(season, episode, subheader)}
+          {finale && " (FINALE)"}
         </Typography>
       </CardContent>
 
