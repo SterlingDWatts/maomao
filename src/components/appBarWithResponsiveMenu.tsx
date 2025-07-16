@@ -15,6 +15,7 @@ import Slide from "@mui/material/Slide";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
+import Link from "next/link";
 
 interface Props {
   window?: () => Window;
@@ -22,7 +23,10 @@ interface Props {
 }
 
 const drawerWidth = 240;
-const navItems = [""];
+const navItems: { label: string; href: string }[] = [
+  // { label: "Watchlist", href: "/" },
+  // { label: "Anime Tracker", href: "/anime-tracker" },
+];
 
 function HideOnScroll(props: Props) {
   const { children, window } = props;
@@ -48,15 +52,24 @@ export default function DrawerAppBar(props: Props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        Maomao
+        Watchlist
       </Typography>
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
+          <ListItem key={item.label} disablePadding>
+            <Link
+              href={item.href}
+              style={{
+                textDecoration: "none",
+                color: "inherit",
+                width: "100%",
+              }}
+            >
+              <ListItemButton sx={{ textAlign: "center" }}>
+                <ListItemText primary={item.label} />
+              </ListItemButton>
+            </Link>
           </ListItem>
         ))}
       </List>
@@ -76,7 +89,7 @@ export default function DrawerAppBar(props: Props) {
                 color="inherit"
                 aria-label="open drawer"
                 edge="start"
-                // onClick={handleDrawerToggle}
+                onClick={handleDrawerToggle}
                 sx={{ mr: 2, display: { sm: "none" } }}
               >
                 <CatchingPokemonIcon />
@@ -90,9 +103,13 @@ export default function DrawerAppBar(props: Props) {
               </Typography>
               <Box sx={{ display: { xs: "none", sm: "block" } }}>
                 {navItems.map((item) => (
-                  <Button key={item} sx={{ color: "#fff" }}>
-                    {item}
-                  </Button>
+                  <Link
+                    key={item.label}
+                    href={item.href}
+                    style={{ textDecoration: "none" }}
+                  >
+                    <Button sx={{ color: "#fff" }}>{item.label}</Button>
+                  </Link>
                 ))}
               </Box>
             </Toolbar>
