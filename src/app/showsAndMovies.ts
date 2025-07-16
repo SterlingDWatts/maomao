@@ -11,6 +11,7 @@ import {
 } from "./svgs/svgLogos";
 
 import ADTheBeginning from "./assets/ADTheBeginning.jpg";
+import ApothecaryDiaries from "./assets/ApothecaryDiaries.jpg";
 import AllCreaturesSeason3Episode3 from "./assets/AllCreaturesSeason3Episode3.jpg";
 import Attack from "./assets/Attack.jpg";
 import AttackLogo from "./assets/AttackLogo.jpg";
@@ -243,14 +244,14 @@ export const upNext: UpNextProps[] = [
     subheader: "The Beginning",
     season: 2,
     episode: 24,
-    cardMedia: ADTheBeginning.src,
+    cardMedia: ApothecaryDiaries.src,
     cardMediaAlt: "Apothecary Diaries Season 2 Episode 24",
     releaseDateTime: "July 18 2025 13:00:00 GMT-0700",
     synopsis:
       "After the war ends, Jinshi faces mounting work duties while Maomao goes back to the pleasure quarter.",
     watchUrl:
       "https://www.crunchyroll.com/series/G3KHEVDJ7/the-apothecary-diaries",
-    objectPosition: "50% 35%",
+    objectPosition: "50% 27%",
     TimerCard: LargeTimerCard,
     SiteLogo: CrunchyrollLogo,
   },
