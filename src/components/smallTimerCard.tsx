@@ -80,6 +80,15 @@ export default function SmallTimerCard({
       >
         <CardContent sx={{ flex: "1 0 auto" }}>
           <Typography
+            id={`large-timer-card-${[title, season, episode, subheader]
+              .filter(Boolean)
+              .map((v) =>
+                String(v)
+                  .toLowerCase()
+                  .replace(/\s+/g, "-")
+                  .replace(/[^a-z0-9\-]/g, ""),
+              )
+              .join("-")}`}
             variant="h5"
             component="div"
             sx={{

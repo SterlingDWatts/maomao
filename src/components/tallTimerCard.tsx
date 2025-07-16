@@ -53,6 +53,15 @@ export default function TallTimerCard({
       >
         <CardContent sx={{ paddingBottom: 0 }}>
           <Typography
+            id={`large-timer-card-${[title, season, episode, subheader]
+              .filter(Boolean)
+              .map((v) =>
+                String(v)
+                  .toLowerCase()
+                  .replace(/\s+/g, "-")
+                  .replace(/[^a-z0-9\-]/g, ""),
+              )
+              .join("-")}`}
             variant="h5"
             component="div"
             sx={{
