@@ -12,11 +12,8 @@ import Grow from "@mui/material/Grow";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
-import ConfirmationNumberIcon from "@mui/icons-material/ConfirmationNumber";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
-import LiveTvIcon from "@mui/icons-material/LiveTv";
 import LocalMoviesIcon from "@mui/icons-material/LocalMovies";
-import TvOffIcon from "@mui/icons-material/TvOff";
 
 import Timer from "./timer";
 
@@ -76,13 +73,6 @@ export default function LargeTimerCard({
 
   return (
     <Card sx={{ maxWidth: "100vw" }}>
-      <CardHeader
-        title={title}
-        subheader={formatSubheader(season, episode, subheader)}
-        avatar={
-          isMovie ? <MovieBadge avatar={avatar} /> : <Avatar src={avatar} />
-        }
-      />
       <Box
         sx={{
           width: "100%",
@@ -136,11 +126,31 @@ export default function LargeTimerCard({
           </Box>
         </Grow>
       </Box>
-      <CardContent>
-        <Typography variant="body2" color="text.secondary">
-          {!estimate
-            ? new Date(releaseDateTime).toDateString()
-            : estimateDate || "TBD"}
+      <CardContent
+        sx={{ position: "relative", paddingTop: "20px", paddingBottom: 0 }}
+      >
+        <Avatar
+          src={avatar}
+          sx={{
+            position: "absolute",
+            top: -20,
+            left: "Calc(50% - 20px)",
+            border: "2px solid white",
+          }}
+        />
+        <Typography
+          variant="h3"
+          color="primary.light"
+          sx={{ fontWeight: "bold", fontSize: "1.5rem", textAlign: "center" }}
+        >
+          {title}
+        </Typography>
+        <Typography
+          variant="subtitle1"
+          color="text.secondary"
+          sx={{ fontSize: "1rem", textAlign: "center", fontWeight: "bold" }}
+        >
+          {formatSubheader(season, episode, subheader)}
         </Typography>
       </CardContent>
 

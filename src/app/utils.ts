@@ -7,9 +7,10 @@ export const formatSubheader = (
   episode?: number,
   subheader?: string,
 ) => {
-  return season && episode
-    ? `${season}.${episode}${subheader && ": "} ${subheader}`
-    : subheader;
+  if (!season && !episode && !subheader) return "";
+  if (season === undefined && episode === undefined) return subheader;
+  if (!subheader) return `S${season} E${episode}`;
+  return `S${season} E${episode}${subheader && ": "} ${subheader}`;
 };
 
 export const getTimeUntil = (distance: number) => {

@@ -3,7 +3,6 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
-import CssBaseline from "@mui/material/CssBaseline";
 import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
@@ -69,9 +68,8 @@ export default function DrawerAppBar(props: Props) {
 
   return (
     <Box sx={{ display: "flex" }}>
-      <CssBaseline />
       <HideOnScroll {...props}>
-        <AppBar component="nav">
+        <AppBar component="nav" sx={{ backgroundColor: "primary.dark" }}>
           <Container maxWidth="lg" disableGutters>
             <Toolbar>
               <IconButton

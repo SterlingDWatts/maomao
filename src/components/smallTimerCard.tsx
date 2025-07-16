@@ -80,20 +80,24 @@ export default function SmallTimerCard({
           <Typography
             variant="h5"
             component="div"
-            sx={{ fontSize: "1rem", fontWeight: "bold" }}
+            sx={{ fontSize: "1rem", fontWeight: "bold", color: "primary.main" }}
           >
             {title}
           </Typography>
           <Typography
             variant="subtitle1"
             color="text.secondary"
-            sx={{ lineHeight: 1, fontSize: ".75rem" }}
+            sx={{ lineHeight: 1.5, fontSize: ".875rem", fontWeight: "bold" }}
           >
             {season && episode
               ? `${season}.${episode}${subheader && ": "} ${subheader}`
               : subheader}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography
+            variant="body2"
+            color="text.secondary"
+            sx={{ fontSize: ".75rem" }}
+          >
             {!estimate
               ? new Date(releaseDateTime).toDateString()
               : estimateDate || "TBD"}

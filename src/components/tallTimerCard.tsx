@@ -22,7 +22,6 @@ export default function TallTimerCard({
   episode,
   cardMedia,
   cardMediaAlt,
-  releaseDateTime,
   watchUrl,
   objectPosition = "50% 50%",
   SiteLogo,
@@ -56,14 +55,14 @@ export default function TallTimerCard({
           <Typography
             variant="h5"
             component="div"
-            sx={{ fontSize: ".9rem", fontWeight: "bold" }}
+            sx={{ fontSize: "1rem", fontWeight: "bold", color: "primary.main" }}
           >
             {title}
           </Typography>
           <Typography
             variant="subtitle1"
             color="text.secondary"
-            sx={{ lineHeight: 1, fontSize: ".75rem" }}
+            sx={{ fontSize: ".875rem", fontWeight: "bold", lineHeight: 1.5 }}
           >
             {season && episode
               ? `${season}.${episode}${subheader && ": "} ${subheader}`
