@@ -8,15 +8,22 @@ import { getTimeUntil } from "../app/utils";
 interface TimerBoxProps {
   distance: number;
   estimate?: boolean;
+  addContrastToTimer?: boolean;
 }
 
-export default function Timer({ distance, estimate = false }: TimerBoxProps) {
+export default function Timer({
+  distance,
+  estimate = false,
+  addContrastToTimer = false,
+}: TimerBoxProps) {
   const { days, hours, minutes, seconds } = getTimeUntil(distance);
 
   return (
     <Box
       sx={{
-        backgroundColor: "rgba(0, 0, 0, 0.3)",
+        backgroundColor: addContrastToTimer
+          ? "rgba(0, 0, 0, 0.3)"
+          : "transparent",
         borderRadius: 2,
         padding: { xs: 1, sm: 2, md: 3 },
         textShadow: "black 0px 0px 10px",

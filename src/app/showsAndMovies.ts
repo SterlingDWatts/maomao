@@ -66,6 +66,7 @@ export interface AvailableNowProps {
   estimate?: boolean;
   estimateDate?: string;
   isMovie?: boolean;
+  addContrastToTimer?: boolean;
   objectPosition?: string;
   SiteLogo:
     | typeof AppleLogo
@@ -642,6 +643,7 @@ export const upNext: UpNextProps[] = [
     objectPosition: "50% 30%",
     TimerCard: LargeTimerCard,
     SiteLogo: AppleLogo,
+    addContrastToTimer: true,
   },
   {
     avatar: SlowHorsesLogo.src,
@@ -657,6 +659,7 @@ export const upNext: UpNextProps[] = [
     objectPosition: "50% 30%",
     TimerCard: SmallTimerCard,
     SiteLogo: AppleLogo,
+    addContrastToTimer: true,
   },
   {
     avatar: PeacemakerLogo.src,
@@ -687,6 +690,7 @@ export const upNext: UpNextProps[] = [
     objectPosition: "50% 30%",
     TimerCard: SmallTimerCard,
     SiteLogo: AppleLogo,
+    addContrastToTimer: true,
   },
   {
     avatar: PeacemakerLogo.src,
@@ -717,6 +721,7 @@ export const upNext: UpNextProps[] = [
     objectPosition: "50% 30%",
     TimerCard: SmallTimerCard,
     SiteLogo: AppleLogo,
+    addContrastToTimer: true,
   },
   {
     avatar: PeacemakerLogo.src,
@@ -747,6 +752,7 @@ export const upNext: UpNextProps[] = [
     objectPosition: "50% 30%",
     TimerCard: SmallTimerCard,
     SiteLogo: AppleLogo,
+    addContrastToTimer: true,
   },
   {
     avatar: SlowHorsesLogo.src,
@@ -762,6 +768,7 @@ export const upNext: UpNextProps[] = [
     objectPosition: "50% 30%",
     TimerCard: SmallTimerCard,
     SiteLogo: AppleLogo,
+    addContrastToTimer: true,
   },
   {
     avatar: Pochita.src,
@@ -778,6 +785,7 @@ export const upNext: UpNextProps[] = [
     objectPosition: "50% 25%",
     TimerCard: LargeTimerCard,
     SiteLogo: FandangoLogo,
+    addContrastToTimer: true,
   },
   {
     avatar: MyHeroLogo.src,
@@ -794,6 +802,7 @@ export const upNext: UpNextProps[] = [
     objectPosition: "50% 50%",
     TimerCard: LargeTimerCard,
     SiteLogo: CrunchyrollLogo,
+    addContrastToTimer: true,
   },
   {
     avatar: StrangerLogo.src,
@@ -923,5 +932,6 @@ export const upNext: UpNextProps[] = [
     objectPosition: "50% 10%",
     TimerCard: LargeTimerCard,
     SiteLogo: CrunchyrollLogo,
+    addContrastToTimer: true,
   },
 ];

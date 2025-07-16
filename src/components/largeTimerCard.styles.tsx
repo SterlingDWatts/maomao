@@ -1,6 +1,5 @@
 import MuiAvatar, { AvatarProps } from "@mui/material/Avatar";
 import MuiBadge, { BadgeProps } from "@mui/material/Badge";
-import MuiCardHeader, { CardHeaderProps } from "@mui/material/CardHeader";
 
 export const AvatarBadge = (props: AvatarProps) => {
   return (
@@ -22,24 +21,6 @@ export const Badge = (props: BadgeProps) => {
       {...props}
       overlap="circular"
       anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
-    />
-  );
-};
-
-export const CardHeader = (props: CardHeaderProps) => {
-  return (
-    <MuiCardHeader
-      {...props}
-      slotProps={{
-        title: { fontWeight: "bold", fontSize: "1rem" },
-        subheader: {
-          lineHeight: 1,
-          fontSize: ".75rem",
-          color: "white",
-          fontWeight: "bold",
-        },
-      }}
-      sx={{ backgroundColor: "primary.light", color: "white" }}
     />
   );
 };

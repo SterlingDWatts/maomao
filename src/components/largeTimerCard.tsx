@@ -17,7 +17,7 @@ import LocalMoviesIcon from "@mui/icons-material/LocalMovies";
 
 import Timer from "./timer";
 
-import { AvatarBadge, Badge, CardHeader } from "./largeTimerCard.styles";
+import { AvatarBadge, Badge } from "./largeTimerCard.styles";
 
 import { UpNextProps } from "../app/showsAndMovies";
 
@@ -60,9 +60,8 @@ export default function LargeTimerCard({
   synopsis,
   watchUrl,
   estimate = false,
-  isMovie = false,
   objectPosition = "50% 50%",
-  estimateDate,
+  addContrastToTimer = false,
   SiteLogo,
 }: UpNextProps) {
   const timerBoxRef = React.useRef<HTMLDivElement>(null);
@@ -106,7 +105,11 @@ export default function LargeTimerCard({
             }}
           >
             {distance > 0 ? (
-              <Timer distance={distance} estimate={estimate} />
+              <Timer
+                distance={distance}
+                estimate={estimate}
+                addContrastToTimer={addContrastToTimer}
+              />
             ) : (
               <Typography
                 variant="h3"
@@ -114,7 +117,9 @@ export default function LargeTimerCard({
                 color="white"
                 sx={{
                   fontWeight: "bold",
-                  backgroundColor: "rgba(0, 0, 0, 0.3)",
+                  backgroundColor: addContrastToTimer
+                    ? "rgba(0, 0, 0, 0.3)"
+                    : "transparent",
                   borderRadius: 2,
                   padding: 1,
                   fontSize: { xs: "3rem", sm: "4rem", md: "5rem", lg: "6rem" },
