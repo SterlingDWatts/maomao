@@ -786,8 +786,7 @@ export const upNext: UpNextProps[] = [
     cardMedia: NobodyWants.src,
     cardMediaAlt: "Nobody Wants This",
     releaseDateTime: "October 23, 2025 21:00:00",
-    watchUrl:
-      "https://tv.apple.com/us/show/slow-horses/umc.cmc.2szz3fdt71tl1ulnbp8utgq5o",
+    watchUrl: "https://www.netflix.com/us/title/81591296",
     objectPosition: "50% 50%",
     TimerCard: LargeTimerCard,
     SiteLogo: NetflixLogo,

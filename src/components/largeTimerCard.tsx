@@ -152,6 +152,15 @@ export default function LargeTimerCard({
           }}
         />
         <Typography
+          id={`large-timer-card-${[title, season, episode, subheader]
+            .filter(Boolean)
+            .map((v) =>
+              String(v)
+                .toLowerCase()
+                .replace(/\s+/g, "-")
+                .replace(/[^a-z0-9\-]/g, ""),
+            )
+            .join("-")}`}
           variant="h3"
           color="secondary.dark"
           sx={{ fontWeight: "bold", fontSize: "1.5rem", textAlign: "center" }}
