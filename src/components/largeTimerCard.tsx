@@ -133,9 +133,11 @@ export default function LargeTimerCard({
           src={avatar}
           sx={{
             position: "absolute",
-            top: -20,
-            left: "Calc(50% - 20px)",
+            top: -26,
+            left: "Calc(50% - 24px)",
             border: "2px solid white",
+            height: 48,
+            width: 48,
           }}
         />
         <Typography
