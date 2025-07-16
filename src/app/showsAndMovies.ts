@@ -930,7 +930,7 @@ export const upNext: UpNextProps[] = [
       "https://www.crunchyroll.com/series/GG5H5XQX4/frieren-beyond-journeys-end",
     estimate: true,
     estimateDate: "January 2026",
-    objectPosition: "50% 10%",
+    objectPosition: "50% 28%",
     TimerCard: LargeTimerCard,
     SiteLogo: CrunchyrollLogo,
     addContrastToTimer: true,
