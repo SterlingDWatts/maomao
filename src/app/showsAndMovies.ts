@@ -29,6 +29,8 @@ import Masterchef from "./assets/Masterchef.jpg";
 import MasterchefLogo from "./assets/MasterchefLogo.jpg";
 import MyHeroFinalSeason from "./assets/MyHeroFinalSeason.jpg";
 import MyHeroLogo from "./assets/MyHeroLogo.jpg";
+import NobodyWants from "./assets/NobodyWants.jpg";
+import NobodyWantsLogo from "./assets/NobodyWantsLogo.jpg";
 import Nyaight from "./assets/Nyaight.jpg";
 import NyaightLogo from "./assets/NyaightLogo.jpg";
 import OnlyMurdersintheBuilding from "./assets/OnlyMurdersintheBuilding.jpg";
@@ -775,6 +777,22 @@ export const upNext: UpNextProps[] = [
     addContrastToTimer: true,
     finale: true,
   },
+  {
+    avatar: NobodyWantsLogo.src,
+    title: "Nobody Wants This",
+    subheader: "",
+    season: 2,
+    episode: 1,
+    cardMedia: NobodyWants.src,
+    cardMediaAlt: "Nobody Wants This",
+    releaseDateTime: "October 23, 2025 21:00:00",
+    watchUrl:
+      "https://tv.apple.com/us/show/slow-horses/umc.cmc.2szz3fdt71tl1ulnbp8utgq5o",
+    objectPosition: "50% 50%",
+    TimerCard: LargeTimerCard,
+    SiteLogo: NetflixLogo,
+  },
+
   {
     avatar: Pochita.src,
     title: "Chainsaw Man - The Movie: Reze Arc",
