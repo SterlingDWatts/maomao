@@ -80,7 +80,7 @@ export default function SmallTimerCard({
       >
         <CardContent sx={{ flex: "1 0 auto" }}>
           <Typography
-            id={`large-timer-card-${[title, season, episode, subheader]
+            id={`small-timer-card-${[title, season, episode, subheader]
               .filter(Boolean)
               .map((v) =>
                 String(v)

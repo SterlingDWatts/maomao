@@ -53,7 +53,7 @@ export default function TallTimerCard({
       >
         <CardContent sx={{ paddingBottom: 0 }}>
           <Typography
-            id={`large-timer-card-${[title, season, episode, subheader]
+            id={`tall-timer-card-${[title, season, episode, subheader]
               .filter(Boolean)
               .map((v) =>
                 String(v)
