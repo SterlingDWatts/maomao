@@ -83,14 +83,14 @@ export default function SmallTimerCard({
             sx={{
               fontSize: "1rem",
               fontWeight: "bold",
-              color: "tertiary.main",
+              color: "secondary.dark",
             }}
           >
             {title}
           </Typography>
           <Typography
             variant="subtitle1"
-            color="text.secondary"
+            color="black"
             sx={{ lineHeight: 1.5, fontSize: ".875rem", fontWeight: "bold" }}
           >
             {season && episode

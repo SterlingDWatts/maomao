@@ -171,22 +171,6 @@ export const availableNow: AvailableNowProps[] = [
     SiteLogo: HuluLogo,
   },
   {
-    avatar: NyaightLogo.src,
-    title: "Nyaight of the Living Cat",
-    subheader: "Tonight the cats will steal the stars",
-    season: 1,
-    episode: 2,
-    cardMedia: Nyaight.src,
-    cardMediaAlt: "Nyaight of the Living Cat",
-    releaseDateTime: "July 13 2025 07:15:00 GMT-0700",
-    synopsis:
-      "Kunagi, Kaoru, and Tanishi take shelter in a supermarket, where Kaoru reunites with a friend.",
-    watchUrl:
-      "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
-    objectPosition: "50% 20%",
-    SiteLogo: CrunchyrollLogo,
-  },
-  {
     avatar: DandadanLogo.src,
     title: "Dan Da Dan",
     subheader: "Kicking Turbo Granny's Ass",
@@ -280,7 +264,7 @@ export const upNext: UpNextProps[] = [
     watchUrl:
       "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
     objectPosition: "50% 20%",
-    TimerCard: SmallTimerCard,
+    TimerCard: LargeTimerCard,
     SiteLogo: CrunchyrollLogo,
   },
   {

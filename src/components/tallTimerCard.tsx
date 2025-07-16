@@ -58,14 +58,14 @@ export default function TallTimerCard({
             sx={{
               fontSize: "1rem",
               fontWeight: "bold",
-              color: "tertiary.main",
+              color: "secondary.dark",
             }}
           >
             {title}
           </Typography>
           <Typography
             variant="subtitle1"
-            color="text.secondary"
+            color="black"
             sx={{ fontSize: ".875rem", fontWeight: "bold", lineHeight: 1.5 }}
           >
             {season && episode

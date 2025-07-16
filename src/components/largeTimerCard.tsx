@@ -140,14 +140,14 @@ export default function LargeTimerCard({
         />
         <Typography
           variant="h3"
-          color="tertiary.main"
+          color="secondary.dark"
           sx={{ fontWeight: "bold", fontSize: "1.5rem", textAlign: "center" }}
         >
           {title}
         </Typography>
         <Typography
           variant="subtitle1"
-          color="text.secondary"
+          color="black"
           sx={{ fontSize: "1rem", textAlign: "center", fontWeight: "bold" }}
         >
           {formatSubheader(season, episode, subheader)}
@@ -156,8 +156,10 @@ export default function LargeTimerCard({
 
       {synopsis && (
         <Collapse in={expanded} timeout="auto" unmountOnExit>
-          <CardContent sx={{ paddingTop: 0 }}>
-            <Typography>{synopsis}</Typography>
+          <CardContent>
+            <Typography sx={{ textAlign: "center", fontSize: ".875rem" }}>
+              {synopsis}
+            </Typography>
           </CardContent>
         </Collapse>
       )}
@@ -182,7 +184,7 @@ export default function LargeTimerCard({
                 <ExpandLessIcon />
               </IconButton>
             ) : (
-              <Button component="button" size="small" color="success">
+              <Button component="button" size="small" color="secondary">
                 Plot
               </Button>
             )}
