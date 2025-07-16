@@ -775,7 +775,7 @@ export const upNext: UpNextProps[] = [
     isMovie: true,
     watchUrl:
       "https://www.fandango.com/chainsaw-man-the-movie-reze-arc-2025-241288/movie-overview",
-    objectPosition: "50% 30%",
+    objectPosition: "50% 25%",
     TimerCard: LargeTimerCard,
     SiteLogo: FandangoLogo,
   },
