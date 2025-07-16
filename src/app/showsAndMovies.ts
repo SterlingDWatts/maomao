@@ -15,7 +15,7 @@ import AllCreaturesSeason3Episode3 from "./assets/AllCreaturesSeason3Episode3.jp
 import Attack from "./assets/Attack.jpg";
 import AttackLogo from "./assets/AttackLogo.jpg";
 import ChainsawManMovie from "./assets/ChainsawManMovie.jpg";
-import Dandadan from "./assets/Dandadan.jpg";
+import DanDaDan from "./assets/DanDaDan.jpg";
 import DandadanLogo from "./assets/DandadanLogo.jpg";
 import FoundationSeason3Episode2 from "./assets/FoundationSeason3Episode2.jpg";
 import FoundationAvatar from "./assets/FoundationAvatar.jpg";
@@ -31,13 +31,14 @@ import MyHeroLogo from "./assets/MyHeroLogo.jpg";
 import Nyaight from "./assets/Nyaight.jpg";
 import NyaightLogo from "./assets/NyaightLogo.jpg";
 import OnlyMurdersintheBuilding from "./assets/OnlyMurdersintheBuilding.jpg";
-import OnlyMurdersLogo from "./assets/OnlyMurdersLogo.png";
+import OnlyMurdersLogo from "./assets/OnlyMurdersLogo.jpg";
 import PeacemakerLogo from "./assets/PeacemakerLogo.jpg";
 import PeacemakerSeason2 from "./assets/PeacemakerSeason2.jpg";
 import Pochita from "./assets/Pochita.jpg";
 import SlowHorsesBig from "./assets/SlowHorses.jpg";
 import SlowHorsesLogo from "./assets/SlowHorsesLogo.jpg";
 import Solo from "./assets/Solo.jpg";
+import SoloLeveling from "./assets/SoloLeveling.jpg";
 import SoloLogo from "./assets/SoloLogo.jpg";
 import Stone from "./assets/Stone.jpg";
 import StoneLogo from "./assets/StoneLogo.jpg";
@@ -90,7 +91,7 @@ export const availableNow: AvailableNowProps[] = [
       "Superman must reconcile his alien Kryptonian heritage with his human upbringing as reporter Clark Kent. As the embodiment of truth, justice and the human way he soon finds himself in a world that views these as old-fashioned.",
     isMovie: true,
     watchUrl: "https://www.fandango.com/superman-2025-230934/movie-overview",
-    objectPosition: "50% 40%",
+    objectPosition: "50% 50%",
     SiteLogo: FandangoLogo,
   },
   {
@@ -145,13 +146,13 @@ export const availableNow: AvailableNowProps[] = [
     subheader: "Still a Long Way to Go",
     season: 2,
     episode: 3,
-    cardMedia: Solo.src,
+    cardMedia: SoloLeveling.src,
     cardMediaAlt: "Solo Leveling",
     releaseDateTime: "January 18 2025 03:00:00 GMT-0700",
     synopsis:
       "Jinwoo, now more powerful after conquering 19 dungeons, returns to the treacherous S-Rank Demon's Castle. His mission to obtain rare ingredients for the Elixir of Life, a crucial step in his quest to save his ailing mother.",
     watchUrl: "https://www.crunchyroll.com/series/GDKHZEJ0K/solo-leveling",
-    objectPosition: "50% 50%",
+    objectPosition: "10% 50%",
     SiteLogo: CrunchyrollLogo,
   },
   {
@@ -176,7 +177,7 @@ export const availableNow: AvailableNowProps[] = [
     subheader: "Kicking Turbo Granny's Ass",
     season: 1,
     episode: 4,
-    cardMedia: Dandadan.src,
+    cardMedia: DanDaDan.src,
     cardMediaAlt: "Dandadan",
     releaseDateTime: "October 24 2024 03:00:00 GMT-0700",
     synopsis:
@@ -197,7 +198,7 @@ export const availableNow: AvailableNowProps[] = [
     synopsis:
       "Utgard Castle comes crumbling down as Ymir desperately battles the Titans. Now, Christa must fulfill the promise they made long ago during winter training.",
     watchUrl: "https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan",
-    objectPosition: "50% 60%",
+    objectPosition: "15% 50%",
     SiteLogo: CrunchyrollLogo,
   },
   {
