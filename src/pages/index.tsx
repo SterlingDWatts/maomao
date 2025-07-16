@@ -70,12 +70,14 @@ export default function Page() {
                 spacing={2}
                 sx={{
                   overflowX: "auto",
+                  overflowY: "visible",
                   flexWrap: "nowrap",
                   position: "relative",
                   width: { xs: "100vw", sm: "initial" },
                   marginLeft: { xs: -1, sm: 0 },
                   paddingLeft: { xs: 1, sm: 0 },
                   paddingRight: { xs: 1, sm: 0 },
+                  paddingBottom: { xs: 1, sm: 0 },
                 }}
               >
                 {availableNow.map((props, i) => (
