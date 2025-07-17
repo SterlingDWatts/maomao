@@ -207,7 +207,7 @@ export const availableNow: AvailableNowProps[] = [
   {
     avatar: DandadanLogo.src,
     title: "Dan Da Dan",
-    subheader: "Where is Tamakazu?",
+    subheader: "Like, where are you balls?!",
     season: 1,
     episode: 5,
     cardMedia: DanDaDan.src,
