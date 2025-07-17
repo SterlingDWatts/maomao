@@ -15,17 +15,22 @@ import Slide from "@mui/material/Slide";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
+
+import MenuIcon from "@mui/icons-material/Menu";
+
 import Link from "next/link";
 
 interface Props {
   window?: () => Window;
   children?: React.ReactElement<unknown>;
+  backgroundColor?: string;
+  color?: string;
 }
 
 const drawerWidth = 240;
 const navItems: { label: string; href: string }[] = [
-  // { label: "Watchlist", href: "/" },
-  // { label: "Anime Tracker", href: "/anime-tracker" },
+  { label: "Watchlist", href: "/" },
+  { label: "Anime Tracker", href: "/anime-tracker" },
 ];
 
 function HideOnScroll(props: Props) {
@@ -82,7 +87,13 @@ export default function DrawerAppBar(props: Props) {
   return (
     <Box sx={{ display: "flex" }}>
       <HideOnScroll {...props}>
-        <AppBar component="nav" sx={{ backgroundColor: "primary.main" }}>
+        <AppBar
+          component="nav"
+          sx={{
+            backgroundColor: props.backgroundColor || "primary.main",
+            color: props.color || "black",
+          }}
+        >
           <Container maxWidth="lg" disableGutters>
             <Toolbar>
               <IconButton
@@ -92,7 +103,7 @@ export default function DrawerAppBar(props: Props) {
                 onClick={handleDrawerToggle}
                 sx={{ mr: 2, display: { sm: "none" } }}
               >
-                <CatchingPokemonIcon />
+                <MenuIcon />
               </IconButton>
               <Typography
                 variant="h6"
@@ -108,7 +119,9 @@ export default function DrawerAppBar(props: Props) {
                     href={item.href}
                     style={{ textDecoration: "none" }}
                   >
-                    <Button sx={{ color: "#fff" }}>{item.label}</Button>
+                    <Button sx={{ color: props.color || "black" }}>
+                      {item.label}
+                    </Button>
                   </Link>
                 ))}
               </Box>

@@ -8,6 +8,20 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
+import FormControl from "@mui/material/FormControl";
+import InputLabel from "@mui/material/InputLabel";
+import Select from "@mui/material/Select";
+import MenuItem from "@mui/material/MenuItem";
+import Button from "@mui/material/Button";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import Chip from "@mui/material/Chip";
+
+import { animeList } from "../nextAnime";
 
 import { createTheme, ThemeOptions, ThemeProvider } from "@mui/material/styles";
 
@@ -40,7 +54,77 @@ const theme = createTheme({
   },
 } as Omit<ThemeOptions, "components">);
 
+const bull = (
+  <Box
+    component="span"
+    sx={{ display: "inline-block", mx: "2px", transform: "scale(0.8)" }}
+  >
+    •
+  </Box>
+);
+
 export default function AnimeTrackerPage() {
+  const [sortBy, setSortBy] = React.useState<
+    "title" | "year" | "rating" | "rank" | "popularity"
+  >("title");
+  const [sortDirection, setSortDirection] = React.useState<"asc" | "desc">(
+    "asc",
+  );
+
+  const sortedAnimeList = React.useMemo(() => {
+    return [...animeList].sort((a, b) => {
+      let aValue: string | number;
+      let bValue: string | number;
+
+      switch (sortBy) {
+        case "title":
+          aValue = a.title.toLowerCase();
+          bValue = b.title.toLowerCase();
+          break;
+        case "year":
+          aValue = a.year;
+          bValue = b.year;
+          break;
+        case "rating":
+          aValue = a.rating;
+          bValue = b.rating;
+          break;
+        case "rank":
+          aValue = a.rank;
+          bValue = b.rank;
+          break;
+        case "popularity":
+          aValue = a.popularity;
+          bValue = b.popularity;
+          break;
+        default:
+          aValue = a.title.toLowerCase();
+          bValue = b.title.toLowerCase();
+      }
+
+      if (typeof aValue === "string" && typeof bValue === "string") {
+        if (sortDirection === "asc") {
+          return aValue.localeCompare(bValue);
+        } else {
+          return bValue.localeCompare(aValue);
+        }
+      } else {
+        if (sortDirection === "asc") {
+          return (aValue as number) - (bValue as number);
+        } else {
+          return (bValue as number) - (aValue as number);
+        }
+      }
+    });
+  }, [sortBy, sortDirection]);
+
+  const handleSortChange = (event: any) => {
+    setSortBy(event.target.value);
+  };
+
+  const toggleSortDirection = () => {
+    setSortDirection((prev) => (prev === "asc" ? "desc" : "asc"));
+  };
   return (
     <React.Fragment>
       <ThemeProvider theme={theme}>
@@ -48,7 +132,7 @@ export default function AnimeTrackerPage() {
         <Container
           disableGutters
           maxWidth={false}
-          sx={{ backgroundColor: "primary.light" }}
+          sx={{ backgroundColor: "tertiary.light", minHeight: "100vh" }}
         >
           <Container
             maxWidth="lg"
@@ -60,140 +144,131 @@ export default function AnimeTrackerPage() {
               overflowX: "hidden",
             }}
           >
-            <DrawerAppBar />
+            <DrawerAppBar backgroundColor="tertiary.dark" color="white" />
 
-            <Stack spacing={3} sx={{ marginTop: 2 }}>
-              <Typography
-                variant="h4"
-                component="h1"
-                color="secondary.main"
+            <Box
+              sx={{
+                mb: 3,
+                display: "flex",
+                gap: 2,
+                alignItems: "center",
+                flexWrap: "wrap",
+                marginTop: 2,
+              }}
+            >
+              <FormControl
+                size="small"
                 sx={{
-                  fontWeight: "bold",
-                  textAlign: "center",
+                  minWidth: 150,
+                }}
+                variant="standard"
+                color="primary"
+              >
+                <InputLabel
+                  id="sort-select-label"
+                  sx={{ color: "primary.main" }}
+                >
+                  Sort By
+                </InputLabel>
+                <Select
+                  labelId="sort-select-label"
+                  value={sortBy}
+                  label="Sort By"
+                  onChange={handleSortChange}
+                  sx={{
+                    color: "primary.main",
+                    "&:hover": { backgroundColor: "tertiary.main" },
+                  }}
+                >
+                  <MenuItem value="title">Title</MenuItem>
+                  <MenuItem value="year">Year</MenuItem>
+                  <MenuItem value="rating">Rating</MenuItem>
+                  <MenuItem value="rank">Rank</MenuItem>
+                  <MenuItem value="popularity">Popularity</MenuItem>
+                </Select>
+              </FormControl>
+
+              <Button
+                variant="text"
+                color="primary"
+                size="medium"
+                onClick={toggleSortDirection}
+                startIcon={
+                  sortDirection === "asc" ? (
+                    <ArrowUpwardIcon />
+                  ) : (
+                    <ArrowDownwardIcon />
+                  )
+                }
+                sx={{
+                  "&:hover": { backgroundColor: "tertiary.main" },
                 }}
               >
-                Anime Tracker
-              </Typography>
+                {sortDirection === "asc" ? "Ascending" : "Descending"}
+              </Button>
+            </Box>
 
-              <Box
-                sx={{
-                  display: "grid",
-                  gridTemplateColumns: { xs: "1fr", md: "1fr 1fr" },
-                  gap: 3,
-                }}
-              >
-                <Paper
-                  elevation={3}
-                  sx={{
-                    p: 3,
-                    backgroundColor: "white",
-                    borderRadius: 2,
-                  }}
-                >
-                  <Typography
-                    variant="h6"
-                    component="h2"
-                    color="tertiary.main"
-                    sx={{ fontWeight: "bold", mb: 2 }}
-                  >
-                    Currently Watching
-                  </Typography>
-                  <Typography color="text.secondary">
-                    Track your ongoing anime series here. Add episodes you're
-                    watching and keep track of your progress.
-                  </Typography>
-                </Paper>
+            <Stack spacing={2}>
+              {sortedAnimeList.map((anime) => (
+                <Card>
+                  <CardContent>
+                    <Typography
+                      gutterBottom
+                      sx={{ color: "text.secondary", fontSize: 14 }}
+                    >
+                      {anime.year}
+                      {bull}
+                      {anime.episodes} episodes
+                    </Typography>
+                    <Typography
+                      variant="h5"
+                      component="div"
+                      sx={{ color: "secondary.main" }}
+                    >
+                      {anime.title}
+                    </Typography>
+                    <Typography
+                      mb={1}
+                      sx={{
+                        color: "text.secondary",
+                        "& sup": { fontSize: 8 },
+                      }}
+                    >
+                      {anime.rating}
+                      <sup>RATING</sup> {bull} #{anime.rank}
+                      <sup>RANK</sup> {bull} #{anime.popularity}
+                      <sup>POPULARITY</sup>
+                    </Typography>
 
-                <Paper
-                  elevation={3}
-                  sx={{
-                    p: 3,
-                    backgroundColor: "white",
-                    borderRadius: 2,
-                  }}
-                >
-                  <Typography
-                    variant="h6"
-                    component="h2"
-                    color="secondary.main"
-                    sx={{ fontWeight: "bold", mb: 2 }}
-                  >
-                    Plan to Watch
-                  </Typography>
-                  <Typography color="text.secondary">
-                    Keep a list of anime you want to watch in the future. Never
-                    forget about that series you heard about!
-                  </Typography>
-                </Paper>
-
-                <Paper
-                  elevation={3}
-                  sx={{
-                    p: 3,
-                    backgroundColor: "white",
-                    borderRadius: 2,
-                  }}
-                >
-                  <Typography
-                    variant="h6"
-                    component="h2"
-                    color="tertiary.main"
-                    sx={{ fontWeight: "bold", mb: 2 }}
-                  >
-                    Completed
-                  </Typography>
-                  <Typography color="text.secondary">
-                    Archive of all the anime you've finished watching. Rate and
-                    review your completed series.
-                  </Typography>
-                </Paper>
-
-                <Paper
-                  elevation={3}
-                  sx={{
-                    p: 3,
-                    backgroundColor: "white",
-                    borderRadius: 2,
-                  }}
-                >
-                  <Typography
-                    variant="h6"
-                    component="h2"
-                    color="secondary.main"
-                    sx={{ fontWeight: "bold", mb: 2 }}
-                  >
-                    Statistics
-                  </Typography>
-                  <Typography color="text.secondary">
-                    View your anime watching statistics, including total
-                    episodes watched, favorite genres, and more.
-                  </Typography>
-                </Paper>
-              </Box>
-
-              <Paper
-                elevation={3}
-                sx={{
-                  p: 4,
-                  backgroundColor: "primary.lighter",
-                  borderRadius: 2,
-                  textAlign: "center",
-                }}
-              >
-                <Typography
-                  variant="h5"
-                  component="h2"
-                  color="secondary.dark"
-                  sx={{ fontWeight: "bold", mb: 2 }}
-                >
-                  Coming Soon!
-                </Typography>
-                <Typography color="text.secondary" sx={{ fontSize: "1.1rem" }}>
-                  The Anime Tracker is currently under development. Soon you'll
-                  be able to manage your anime watchlist, track your progress,
-                  and discover new series to enjoy!
-                </Typography>
-              </Paper>
+                    <Stack
+                      direction="row"
+                      spacing={1}
+                      useFlexGap
+                      sx={{ flexWrap: "wrap" }}
+                    >
+                      {anime.tags.map((tag) => (
+                        <Chip
+                          key={tag}
+                          label={tag}
+                          size="small"
+                          color="primary"
+                          sx={{ fontSize: "0.65rem" }}
+                        />
+                      ))}
+                    </Stack>
+                    {anime.shortDescription && (
+                      <Typography
+                        variant="body2"
+                        mb={1}
+                        mt={1}
+                        sx={{ color: "text.secondary" }}
+                      >
+                        {anime.shortDescription}
+                      </Typography>
+                    )}
+                  </CardContent>
+                </Card>
+              ))}
             </Stack>
           </Container>
         </Container>
