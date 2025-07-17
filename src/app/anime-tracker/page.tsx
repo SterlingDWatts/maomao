@@ -66,7 +66,7 @@ const bull = (
 export default function AnimeTrackerPage() {
   const [sortBy, setSortBy] = React.useState<
     "title" | "year" | "rating" | "rank" | "popularity"
-  >("popularity");
+  >("rank");
   const [sortDirection, setSortDirection] = React.useState<"asc" | "desc">(
     "asc",
   );
