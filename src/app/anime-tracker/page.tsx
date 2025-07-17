@@ -216,9 +216,7 @@ export default function AnimeTrackerPage() {
                       gutterBottom
                       sx={{ color: "text.secondary", fontSize: 14 }}
                     >
-                      {anime.year}
-                      {bull}
-                      {anime.episodes} episodes
+                      {anime.year} {bull} {anime.episodes} episodes
                     </Typography>
                     <Typography
                       variant="h5"
@@ -227,24 +225,48 @@ export default function AnimeTrackerPage() {
                     >
                       {anime.title}
                     </Typography>
-                    <Typography
+                    <Stack
+                      direction="row"
+                      justifyContent={"space-around"}
                       mb={1}
-                      sx={{
-                        color: "text.secondary",
-                        "& sup": { fontSize: 8 },
-                      }}
                     >
-                      {anime.rating}
-                      <sup>RATING</sup> {bull} #{anime.rank}
-                      <sup>RANK</sup> {bull} #{anime.popularity}
-                      <sup>POPULARITY</sup>
-                    </Typography>
+                      <Typography
+                        sx={{
+                          color: "text.secondary",
+                          "& sup": { fontSize: 8 },
+                        }}
+                      >
+                        {anime.rating}
+                        <sup>RATING</sup>
+                      </Typography>
+                      <Typography
+                        sx={{
+                          color: "text.secondary",
+                          "& sup": { fontSize: 8 },
+                        }}
+                      >
+                        #{anime.rank}
+                        <sup>RANK</sup>
+                      </Typography>
+                      <Typography
+                        sx={{
+                          color: "text.secondary",
+                          "& sup": { fontSize: 8 },
+                        }}
+                      >
+                        #{anime.popularity}
+                        <sup>POPULARITY</sup>
+                      </Typography>
+                    </Stack>
 
                     <Stack
                       direction="row"
                       spacing={1}
                       useFlexGap
-                      sx={{ flexWrap: "wrap" }}
+                      sx={{
+                        overflowY: "visible",
+                        flexWrap: "nowrap",
+                      }}
                     >
                       {anime.tags.map((tag) => (
                         <Chip
