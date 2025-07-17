@@ -264,8 +264,10 @@ export default function AnimeTrackerPage() {
                       spacing={1}
                       useFlexGap
                       sx={{
+                        overflowX: "auto",
                         overflowY: "visible",
                         flexWrap: "nowrap",
+                        paddingBottom: { xs: 1, sm: 0 },
                       }}
                     >
                       {anime.tags.map((tag) => (
