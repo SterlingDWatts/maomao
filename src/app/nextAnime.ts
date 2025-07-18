@@ -1,18 +1,34 @@
 ﻿import placeholder from "./assets/placeholder.jpg";
 
 import ApothecaryDiaries from "./assets/ApothecaryDiaries.jpg";
+import Ascendance from "./assets/Ascendance.jpg";
+import Assassination from "./assets/Assassination.jpg";
 import Attack from "./assets/Attack.jpg";
 import Bleach from "./assets/Bleach.jpg";
+import ChainsawManMovie from "./assets/ChainsawManMovie.jpg";
 import DanDaDan from "./assets/DanDaDan.jpg";
 import Delicious from "./assets/Delicious.jpg";
 import FrierenFrierensParty from "./assets/FrierenFrierensParty.jpg";
+import Fruits from "./assets/Fruits.jpg";
 import Fullmetal from "./assets/Fullmetal.jpg";
+import Gosick from "./assets/Gosick.jpg";
 import Gurren from "./assets/Gurren.jpg";
+import Hero from "./assets/Hero.jpg";
 import Jujutsu from "./assets/Jujutsu.jpg";
+import Lazarus from "./assets/Lazarus.jpg";
+import Naruto from "./assets/Naruto.jpg";
+import NarutoShippuden from "./assets/NarutoShippuden.jpg";
+import OnePunch from "./assets/OnePunch.jpg";
+import Raven from "./assets/Raven.jpg";
+import Saiunkoku from "./assets/Saiunkoku.jpg";
 import Samurai from "./assets/Samurai.jpg";
+import SnowWhite from "./assets/SnowWhite.jpg";
+import Solo from "./assets/Solo.jpg";
 import Steins from "./assets/Steins.jpg";
 import Stone from "./assets/Stone.jpg";
+import Trigun from "./assets/Trigun.jpg";
 import VinlandSaga from "./assets/VinlandSaga.jpg";
+import Yona from "./assets/Yona.jpg";
 
 interface Anime {
   title: string;
@@ -77,7 +93,7 @@ export const animeList: Anime[] = [
     ratingOutOf: 2349371,
     rank: 148,
     popularity: 4,
-    picture: placeholder.src,
+    picture: OnePunch.src,
     tags: ["Superhero", "Action", "Comedy", "Family", "Fantasy", "Sci-Fi"],
     shortDescription:
       "The story of Saitama, a hero that does it just for fun & can defeat his enemies with a single punch.",
@@ -92,7 +108,7 @@ export const animeList: Anime[] = [
     ratingOutOf: 2167121,
     rank: 954,
     popularity: 7,
-    picture: placeholder.src,
+    picture: Hero.src,
     tags: ["Shōnen", "Superhero", "Action", "Adventure", "Fantasy", "Sci-Fi"],
   },
   {
@@ -103,7 +119,7 @@ export const animeList: Anime[] = [
     ratingOutOf: 2073355,
     rank: 665,
     popularity: 9,
-    picture: placeholder.src,
+    picture: Naruto.src,
     tags: [
       "Martial Arts",
       "Shōnen",
@@ -169,7 +185,7 @@ export const animeList: Anime[] = [
     ratingOutOf: 1757874,
     rank: 309,
     popularity: 16,
-    picture: placeholder.src,
+    picture: NarutoShippuden.src,
     tags: [
       "Martial Arts",
       "Shōnen",
@@ -192,7 +208,7 @@ export const animeList: Anime[] = [
     ratingOutOf: 1261815,
     rank: 570,
     popularity: 34,
-    picture: placeholder.src,
+    picture: Assassination.src,
     tags: [
       "Shōnen",
       "Teen Comedy",
@@ -229,7 +245,7 @@ export const animeList: Anime[] = [
     ratingOutOf: 1007903,
     rank: 170,
     popularity: 59,
-    picture: placeholder.src,
+    picture: ChainsawManMovie.src,
     tags: ["Dark Fantasy", "Shōnen", "Action", "Comedy", "Fantasy"],
     shortDescription:
       "Following a betrayal, a young man left for dead is reborn as a powerful devil-human hybrid after merging with his pet devil and is soon enlisted into an organization dedicated to hunting devils.",
@@ -325,7 +341,7 @@ export const animeList: Anime[] = [
     ratingOutOf: 605189,
     rank: 324,
     popularity: 186,
-    picture: placeholder.src,
+    picture: Solo.src,
     tags: [
       "Action Epic",
       "Dark Fantasy",
@@ -345,7 +361,7 @@ export const animeList: Anime[] = [
     ratingOutOf: 439481,
     rank: 631,
     popularity: 212,
-    picture: placeholder.src,
+    picture: Yona.src,
     tags: [
       "Coming-of-Age",
       "Fantasy Epic",
@@ -365,7 +381,7 @@ export const animeList: Anime[] = [
     ratingOutOf: 431084,
     rank: 390,
     popularity: 213,
-    picture: placeholder.src,
+    picture: Fruits.src,
     tags: [
       "Shōjo",
       "Supernatural Fantasy",
@@ -390,7 +406,7 @@ export const animeList: Anime[] = [
     ratingOutOf: 390266,
     rank: 371,
     popularity: 260,
-    picture: placeholder.src,
+    picture: Trigun.src,
     tags: [
       "Desert Adventure",
       "Shōnen",
@@ -434,7 +450,7 @@ export const animeList: Anime[] = [
     ratingOutOf: 360626,
     rank: 1158,
     popularity: 306,
-    picture: placeholder.src,
+    picture: SnowWhite.src,
     tags: [
       "Adventure Epic",
       "Fantasy Epic",
@@ -500,7 +516,7 @@ export const animeList: Anime[] = [
     ratingOutOf: 241735,
     rank: 619,
     popularity: 411,
-    picture: placeholder.src,
+    picture: Gosick.src,
     tags: ["Comedy", "Crime", "Drama", "Mystery", "Romance"],
     shortDescription:
       "A brilliant Japanese student teams up with an enigmatic young female prodigy to unravel mysteries across 1920s Europe, with their sleuthing adventures leading them through a web of intrigue and suspense.",
@@ -538,7 +554,7 @@ export const animeList: Anime[] = [
     ratingOutOf: 178361,
     rank: 714,
     popularity: 757,
-    picture: placeholder.src,
+    picture: Ascendance.src,
     tags: [
       "Isekai",
       "Slice of Life",
@@ -562,7 +578,7 @@ export const animeList: Anime[] = [
     ratingOutOf: 49340,
     rank: 3546,
     popularity: 1277,
-    picture: placeholder.src,
+    picture: Lazarus.src,
     tags: ["Gun Fu", "Action", "Adventure", "Sci-Fi", "Thriller"],
   },
   {
@@ -573,7 +589,7 @@ export const animeList: Anime[] = [
     ratingOutOf: 41155,
     rank: 1837,
     popularity: 2097,
-    picture: placeholder.src,
+    picture: Raven.src,
     tags: ["Josei", "Supernatural Fantasy", "Fantasy", "History", "Mystery"],
     shortDescription:
       "The Raven Consort is a special consort living deep in the inner palace; Shouxue has the ability to use mysterious arts and will accept any favor asked of her, whether it is to find something lost or to curse someone to death.",
@@ -589,7 +605,7 @@ export const animeList: Anime[] = [
     ratingOutOf: 36522,
     rank: 900,
     popularity: 2238,
-    picture: placeholder.src,
+    picture: Saiunkoku.src,
     tags: [
       "Coming-of-Age",
       "Martial Arts",

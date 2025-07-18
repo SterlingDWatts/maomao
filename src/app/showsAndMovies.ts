@@ -85,6 +85,23 @@ export interface UpNextProps extends AvailableNowProps {
 
 export const availableNow: AvailableNowProps[] = [
   {
+    avatar: FoundationAvatar.src,
+    title: "Foundation",
+    subheader: "Shadows in the Math",
+    season: 3,
+    episode: 2,
+    cardMedia: FoundationSeason3Episode2.src,
+    cardMediaAlt: "Brother Day in a towel",
+    releaseDateTime: "July 18 2025 03:00:00 GMT-0700",
+    synopsis:
+      "Gaal and Hari advance their plans on Ignis. Empire grapples with an unforeseen prediction. Pritcher enlists help to investigate the Mule.",
+    watchUrl:
+      "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
+    objectPosition: "50% 15%",
+    // TimerCard: LargeTimerCard,
+    SiteLogo: AppleLogo,
+  },
+  {
     avatar: SupermanLogo.src,
     title: "Superman",
     subheader: "",
@@ -221,23 +238,6 @@ export const availableNow: AvailableNowProps[] = [
 ];
 
 export const upNext: UpNextProps[] = [
-  {
-    avatar: FoundationAvatar.src,
-    title: "Foundation",
-    subheader: "Shadows in the Math",
-    season: 3,
-    episode: 2,
-    cardMedia: FoundationSeason3Episode2.src,
-    cardMediaAlt: "Brother Day in a towel",
-    releaseDateTime: "July 18 2025 03:00:00 GMT-0700",
-    synopsis:
-      "Gaal and Hari advance their plans on Ignis. Empire grapples with an unforeseen prediction. Pritcher enlists help to investigate the Mule.",
-    watchUrl:
-      "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
-    objectPosition: "50% 15%",
-    TimerCard: LargeTimerCard,
-    SiteLogo: AppleLogo,
-  },
   {
     avatar: MaomaoSmall.src,
     title: "The Apothecary Diaries",
