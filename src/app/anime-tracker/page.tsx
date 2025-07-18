@@ -241,7 +241,14 @@ export default function AnimeTrackerPage() {
               </Typography>
             </Box>
 
-            <Stack>
+            <Stack
+              sx={{
+                "& .MuiCard-root:not(:first-child) > .MuiBox-root > .MuiCardContent-root":
+                  {
+                    borderTop: "1px solid rgb(0, 0, 0)",
+                  },
+              }}
+            >
               {sortedAnimeList.map((anime) => (
                 <Card
                   key={anime.title}
@@ -275,21 +282,39 @@ export default function AnimeTrackerPage() {
                       maomao recom
                     </Box>
                   )}
-                  <Box sx={{ position: "relative", display: "flex" }}>
-                    <Box sx={{ width: "100px", height: "100px" }}>
+                  <Box
+                    sx={{
+                      position: "relative",
+                      display: "flex",
+                    }}
+                  >
+                    <Box
+                      sx={{
+                        width: "100px",
+                        height: "100px",
+                        mt: 1.5,
+                        zIndex: 100,
+                      }}
+                    >
                       <CardMedia
                         component="img"
                         image={anime.picture || Placeholder.src}
                         width={100}
                         height={100}
                         sx={{
-                          mt: 2,
                           objectPosition: "50% 50%",
                           objectFit: "cover",
+                          zIndex: 100,
                         }}
                       />
                     </Box>
-                    <CardContent sx={{ width: "calc(100vw - 100px)" }}>
+                    <CardContent
+                      sx={{
+                        width: "calc(100vw - 100px)",
+                        pt: 1.5,
+                        "&.MuiCardContent-root:last-child": { pb: 1.5 },
+                      }}
+                    >
                       <Typography
                         sx={{
                           color: "black",
@@ -361,8 +386,8 @@ export default function AnimeTrackerPage() {
                           overflowY: "visible",
                           flexWrap: { xs: "nowrap", sm: "wrap" },
                           width: { xs: "100vw", sm: "auto" },
-                          marginLeft: { xs: -2, sm: 0 },
-                          paddingLeft: { xs: 2, sm: 0 },
+                          marginLeft: { xs: "calc(-16px - 100px)", sm: 0 },
+                          paddingLeft: { xs: "calc(16px + 100px)", sm: 0 },
                           paddingRight: { xs: 2, sm: 0 },
                           paddingBottom: { xs: 0.5, sm: 0 },
                         }}
@@ -380,7 +405,13 @@ export default function AnimeTrackerPage() {
                     </CardContent>
                   </Box>{" "}
                   {anime.shortDescription && (
-                    <CardContent sx={{ paddingTop: 0, marginTop: -3 }}>
+                    <CardContent
+                      sx={{
+                        paddingTop: 0,
+                        marginTop: -1.5,
+                        "&:last-child": { paddingBottom: 1 },
+                      }}
+                    >
                       <Typography
                         variant="body2"
                         mt={1}
