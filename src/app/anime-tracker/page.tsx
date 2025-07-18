@@ -181,12 +181,6 @@ export default function AnimeTrackerPage() {
                 variant="standard"
                 color="primary"
               >
-                {/* <InputLabel
-                  id="sort-select-label"
-                  sx={{ color: "black", fontWeight: "bold" }}
-                >
-                  Sort By
-                </InputLabel> */}
                 <Select
                   labelId="sort-select-label"
                   value={sortBy}
@@ -231,6 +225,17 @@ export default function AnimeTrackerPage() {
                   <ArrowDownwardIcon />
                 )}
               </IconButton>
+
+              <Typography
+                sx={{
+                  color: "primary.main",
+                  fontWeight: "bold",
+                  fontSize: 14,
+                  "& sup": { fontSize: 8 },
+                }}
+              >
+                {sortedAnimeList.length} anime series
+              </Typography>
             </Box>
 
             <Stack>
