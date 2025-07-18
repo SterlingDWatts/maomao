@@ -210,7 +210,32 @@ export default function AnimeTrackerPage() {
 
             <Stack spacing={2}>
               {sortedAnimeList.map((anime) => (
-                <Card>
+                <Card
+                  key={anime.title}
+                  sx={{ position: "relative", overflow: "hidden" }}
+                >
+                  {anime.maomaoReccommendation && (
+                    <Box
+                      sx={{
+                        position: "absolute",
+                        top: -6,
+                        right: -37,
+                        backgroundColor: "tertiary.main",
+                        color: "white",
+                        padding: "0px 40px 0px 120px",
+                        fontSize: "0.7rem",
+                        fontWeight: "bold",
+                        textAlign: "center",
+                        transform: "rotate(15deg)",
+                        transformOrigin: "center",
+                        zIndex: 10,
+                        boxShadow: "0 2px 4px rgba(0,0,0,0.2)",
+                        borderRadius: "2px",
+                      }}
+                    >
+                      maomao rec
+                    </Box>
+                  )}
                   <CardContent>
                     <Typography
                       gutterBottom
@@ -225,37 +250,38 @@ export default function AnimeTrackerPage() {
                     >
                       {anime.title}
                     </Typography>
-                    <Stack
-                      direction="row"
-                      justifyContent={"space-around"}
-                      mb={1}
-                    >
+                    <Stack direction="row" gap={2} mb={1}>
                       <Typography
                         sx={{
                           color: "text.secondary",
+                          fontSize: 14,
                           "& sup": { fontSize: 8 },
                         }}
                       >
                         {anime.rating}
-                        <sup>RATING</sup>
+                        <sup> RATING</sup>
                       </Typography>
+                      {bull}
                       <Typography
                         sx={{
                           color: "text.secondary",
+                          fontSize: 14,
                           "& sup": { fontSize: 8 },
                         }}
                       >
                         #{anime.rank}
-                        <sup>RANK</sup>
+                        <sup> RANK</sup>
                       </Typography>
+                      {bull}
                       <Typography
                         sx={{
                           color: "text.secondary",
+                          fontSize: 14,
                           "& sup": { fontSize: 8 },
                         }}
                       >
                         #{anime.popularity}
-                        <sup>POPULARITY</sup>
+                        <sup> POPULARITY</sup>
                       </Typography>
                     </Stack>
 
@@ -266,8 +292,8 @@ export default function AnimeTrackerPage() {
                       sx={{
                         overflowX: "auto",
                         overflowY: "visible",
-                        flexWrap: "nowrap",
-                        paddingBottom: { xs: 1, sm: 0 },
+                        flexWrap: { xs: "nowrap", sm: "wrap" },
+                        paddingBottom: { xs: 0.5, sm: 0 },
                       }}
                     >
                       {anime.tags.map((tag) => (
@@ -276,7 +302,7 @@ export default function AnimeTrackerPage() {
                           label={tag}
                           size="small"
                           color="primary"
-                          sx={{ fontSize: "0.65rem" }}
+                          sx={{ fontSize: "0.75rem" }}
                         />
                       ))}
                     </Stack>

@@ -1,6 +1,20 @@
 ﻿import placeholder from "./assets/placeholder.jpg";
 
-export const animeList = [
+interface Anime {
+  title: string;
+  year: number;
+  episodes: number;
+  rating: number;
+  rank: number;
+  popularity: number;
+  picture: string;
+  tags: string[];
+  shortDescription?: string;
+  longDescription?: string;
+  maomaoReccommendation?: boolean;
+}
+
+export const animeList: Anime[] = [
   {
     title: "Attack on Titan",
     year: 2013,
@@ -17,25 +31,6 @@ export const animeList = [
       "Tragedy",
       "Action",
       "Adventure",
-    ],
-  },
-  {
-    title: "Death Note",
-    year: 2006,
-    episodes: 37,
-    rating: 8.62,
-    rank: 89,
-    popularity: 2,
-    picture: placeholder.src,
-    tags: [
-      "Cop Drama",
-      "Hard-boiled Detective",
-      "Legal Drama",
-      "Police Procedural",
-      "Psychological Drama",
-      "Psychological Thriller",
-      "Serial Killer",
-      "Shōnen",
     ],
   },
   {
@@ -352,6 +347,7 @@ export const animeList = [
       "After Tohru is taken in by the Soma family, she learns that twelve family members transform involuntarily into animals of the Chinese zodiac and helps them deal with the emotional pain caused by the transformations.",
     longDescription:
       'Tooru Honda has always been fascinated by the story of the Chinese zodiac that her beloved mother told her as a child. However, a sudden family tragedy changes her life, and subsequent circumstances leave her all alone. Tooru is now forced to live in a tent, but little does she know that her temporary home resides on the private property of the esteemed Souma family. Stumbling upon their home one day, she encounters Shigure, an older Souma cousin, and Yuki, the "prince" of her school. Tooru explains that she lives nearby, but the Soumas eventually discover her well-kept secret of being homeless when they see her walking back to her tent one night. Things start to look up for Tooru as they kindly offer to take her in after hearing about her situation. But soon after, she is caught up in a fight between Yuki and his hot-tempered cousin, Kyou. While trying to stop them, she learns that the Souma family has a well-kept secret of their own: whenever they are hugged by a member of the opposite sex, they transform into the animals of the Chinese zodiac. With this new revelation, Tooru will find that living with the Soumas is an unexpected adventure filled with laughter and romance.',
+    maomaoReccommendation: true,
   },
   {
     title: "Trigun",
@@ -417,6 +413,7 @@ export const animeList = [
       "Although her name means 'white as snow', Shirayuki is a cheerful red-haired girl who lives in the town of Tanbarun and works diligently as an apothecary in her herbal shop.",
     longDescription:
       "Although her name means \"snow white,\" Shirayuki is a cheerful, red-haired girl living in the country of Tanbarun who works diligently as an apothecary at her herbal shop. Her life changes drastically when she is noticed by the silly prince of Tanbarun, Prince Raji, who then tries to force her to become his concubine. Unwilling to give up her freedom, Shirayuki cuts her long red hair and escapes into the forest, where she is rescued from Raji by Zen Wistalia, the second prince of a neighboring country, and his two aides. Hoping to repay her debt to the trio someday, Shirayuki sets her sights on pursuing a career as the court herbalist in Zen's country, Clarines. Akagami no Shirayuki-hime depicts Shirayuki's journey toward a new life at the royal palace of Clarines, as well as Zen's endeavor to become a prince worthy of his title. As loyal friendships are forged and deadly enemies formed, Shirayuki and Zen slowly learn to support each other as they walk their own paths.",
+    maomaoReccommendation: true,
   },
   {
     title: "The Apothecary Diaries",
@@ -514,6 +511,7 @@ export const animeList = [
       "Urano, a young Japanese soon-to-be librarian, dies in an earthquake. She is reincarnated in another world as a young girl named Mayne, but learns books are scarce and only provided to prestigious elites.",
     longDescription:
       "Urano Motosu loves books and has an endless desire to read literature, no matter the subject. She almost fulfills her dream job of becoming a librarian before her life is ended in an accident. As she draws her last breath, she wishes to be able to read more books in her next life. As if fate was listening to her prayer, she wakes up reincarnated as Myne—a frail five-year-old girl living in a medieval era. What immediately comes to her mind is her passion. She tries to find something to read, only to become frustrated by the lack of books at her disposal. Without the printing press, books have to be written and copied by hand, making them very expensive; as such, only a few nobles can afford them—but this won't stop Myne. She will prove that her will to read is unbreakable, and if there are no books around, she will make them herself!",
+    maomaoReccommendation: true,
   },
   {
     title: "Lazarus",
@@ -538,6 +536,7 @@ export const animeList = [
       "The Raven Consort is a special consort living deep in the inner palace; Shouxue has the ability to use mysterious arts and will accept any favor asked of her, whether it is to find something lost or to curse someone to death.",
     longDescription:
       "Among the royal court, there is an individual feared as much as revered: the Raven Consort Ryuu Jusetsu. Residing in her jet-black palace and isolated from the emperor, she is the subject of countless rumors. Claimed to possess mystic abilities, she is said to take on any request—from finding lost items to inflicting curses. While some call her an immortal sage, others believe her to be a terrifying revenant. But such comments fail to faze Jusetsu, who prefers to spend her days in quiet solitude. That is, until the emperor, Ka Koushun, barges into her court and asks for her assistance with a mysterious case. The young emperor's request requires Jusetsu to step out of her palace for the first time. Despite Ka Koushun's frequent visits annoying her to no end, she cannot bring herself to turn him away. Her predecessor's teachings echo in her ears: the Raven Consort is destined to remain forever alone and never desire anything. Yet Jusetsu finds herself making the first of several bonds when she asks Jiujiu, an innocently inquisitive court girl, to be her sole attendant. Together, they begin fulfilling requests from the people of the palace. However, unknown perils lurk in the outside world, and drawing attention to herself may bring Jusetsu face-to-face with a past that is better left undisturbed.",
+    maomaoReccommendation: true,
   },
   {
     title: "The Story of Saiunkoku",
@@ -562,5 +561,6 @@ export const animeList = [
       "A girl called Sho Ruurei is offered 500 gold coins to become the King's consort. She carelessly accepts the offer and has to tutor the King. The King falls in love with her however his brother is in love with her too.",
     longDescription:
       "Shuurei Kou, the daughter of a noble yet impoverished family, is a clever young lady who dreams of becoming a government official and contributing toward her country. However, her dream is out of her reach as such a position is forbidden to women. While her father works a low wage job as an archivist at the palace, Shuurei has to juggle odd jobs to make ends meet. Then, one day, an unexpected visit changes her life. Shuurei is called to assist Ryuuki Shi, the new emperor who is known for slacking on his duties and preferring the company of men. Tempted by the generous compensation, she readily accepts the chance to become the young emperor's consort for six months. Luckily, she is not alone as Seiran Shi, her trusty friend, joins her as Ryuuki's bodyguard. While tasked with transforming the new emperor into a responsible ruler, court life and politics prove troublesome as Shuurei faces the challenges of her new life. Set in a fictional country, Saiunkoku Monogatari centers on the idea of meaningful leadership, its adversities and the rewards that come alongside a prospering nation.",
+    maomaoReccommendation: true,
   },
 ];
