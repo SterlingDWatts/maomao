@@ -394,7 +394,7 @@ export const animeList: Anime[] = [
   {
     title: "Dandadan",
     year: 2024,
-    episodes: 13,
+    episodes: 24,
     rating: 8.5,
     ratingOutOf: 456352,
     rank: 142,

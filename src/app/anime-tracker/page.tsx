@@ -221,7 +221,9 @@ export default function AnimeTrackerPage() {
                   )
                 }
                 sx={{
-                  "&:hover": { backgroundColor: "tertiary.main" },
+                  "&:hover": {
+                    backgroundColor: "tertiary.main",
+                  },
                 }}
               ></Button>
             </Box>
