@@ -2,24 +2,24 @@
 
 import * as React from "react";
 
-import CssBaseline from "@mui/material/CssBaseline";
-import Container from "@mui/material/Container";
-import Stack from "@mui/material/Stack";
-import Typography from "@mui/material/Typography";
-import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
-import FormControl from "@mui/material/FormControl";
-import InputLabel from "@mui/material/InputLabel";
-import Select from "@mui/material/Select";
-import MenuItem from "@mui/material/MenuItem";
 import Button from "@mui/material/Button";
-import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
-import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
-
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Chip from "@mui/material/Chip";
+import Container from "@mui/material/Container";
+import CssBaseline from "@mui/material/CssBaseline";
+import FormControl from "@mui/material/FormControl";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import Paper from "@mui/material/Paper";
+import Select from "@mui/material/Select";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
+
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
 import { animeList } from "../nextAnime";
 
@@ -57,7 +57,12 @@ const theme = createTheme({
 const bull = (
   <Box
     component="span"
-    sx={{ display: "inline-block", mx: "2px", transform: "scale(0.8)" }}
+    sx={{
+      display: "inline-block",
+      mx: "2px",
+      transform: "scale(0.8)",
+      color: "black",
+    }}
   >
     •
   </Box>
@@ -70,6 +75,15 @@ export default function AnimeTrackerPage() {
   const [sortDirection, setSortDirection] = React.useState<"asc" | "desc">(
     "asc",
   );
+
+  const formatNumber = (num: number) => {
+    if (num >= 1000000) {
+      return Math.floor(num / 1000000) + "MIL";
+    } else if (num >= 1000) {
+      return Math.floor(num / 1000) + "k";
+    }
+    return num.toString();
+  };
 
   const sortedAnimeList = React.useMemo(() => {
     return [...animeList].sort((a, b) => {
@@ -132,15 +146,15 @@ export default function AnimeTrackerPage() {
         <Container
           disableGutters
           maxWidth={false}
-          sx={{ backgroundColor: "tertiary.light", minHeight: "100vh" }}
+          sx={{ backgroundColor: "tertiary.main", minHeight: "100vh" }}
         >
           <Container
             maxWidth="lg"
             sx={{
               paddingTop: { xs: "56px", sm: "64px" },
               paddingBottom: { xs: 1, sm: 3 },
-              paddingLeft: { xs: 1, sm: 3 },
-              paddingRight: { xs: 1, sm: 3 },
+              paddingLeft: { xs: 0, sm: 3 },
+              paddingRight: { xs: 0, sm: 3 },
               overflowX: "hidden",
             }}
           >
@@ -154,19 +168,21 @@ export default function AnimeTrackerPage() {
                 alignItems: "center",
                 flexWrap: "wrap",
                 marginTop: 2,
+                paddingLeft: { xs: 1, sm: 0 },
+                paddingRight: { xs: 1, sm: 0 },
               }}
             >
               <FormControl
                 size="small"
                 sx={{
-                  minWidth: 150,
+                  minWidth: 110,
                 }}
                 variant="standard"
                 color="primary"
               >
                 <InputLabel
                   id="sort-select-label"
-                  sx={{ color: "primary.main" }}
+                  sx={{ color: "black", fontWeight: "bold" }}
                 >
                   Sort By
                 </InputLabel>
@@ -177,7 +193,11 @@ export default function AnimeTrackerPage() {
                   onChange={handleSortChange}
                   sx={{
                     color: "primary.main",
-                    "&:hover": { backgroundColor: "tertiary.main" },
+                    fontWeight: "bold",
+                    "&:hover": {
+                      backgroundColor: "tertiary.main",
+                      color: "black",
+                    },
                   }}
                 >
                   <MenuItem value="title">Title</MenuItem>
@@ -203,25 +223,27 @@ export default function AnimeTrackerPage() {
                 sx={{
                   "&:hover": { backgroundColor: "tertiary.main" },
                 }}
-              >
-                {sortDirection === "asc" ? "Ascending" : "Descending"}
-              </Button>
+              ></Button>
             </Box>
 
-            <Stack spacing={2}>
+            <Stack>
               {sortedAnimeList.map((anime) => (
                 <Card
                   key={anime.title}
-                  sx={{ position: "relative", overflow: "hidden" }}
+                  sx={{
+                    position: "relative",
+                    overflow: "hidden",
+                    backgroundColor: "rgb(0, 0, 0, 0)",
+                  }}
                 >
                   {anime.maomaoRecommendation && (
                     <Box
                       sx={{
                         position: "absolute",
-                        top: -6,
-                        right: -37,
-                        backgroundColor: "tertiary.main",
-                        color: "white",
+                        top: -4,
+                        right: -45,
+                        backgroundColor: "tertiary.lighter",
+                        color: "black",
                         padding: "0px 40px 0px 120px",
                         fontSize: "0.7rem",
                         fontWeight: "bold",
@@ -233,38 +255,52 @@ export default function AnimeTrackerPage() {
                         borderRadius: "2px",
                       }}
                     >
-                      maomao rec
+                      maomao recom
                     </Box>
                   )}
                   <CardContent>
                     <Typography
-                      gutterBottom
-                      sx={{ color: "text.secondary", fontSize: 14 }}
+                      sx={{
+                        color: "black",
+                        fontWeight: "bold",
+                        fontSize: 14,
+                        "& sup": { fontSize: 8 },
+                      }}
                     >
-                      {anime.year} {bull} {anime.episodes} episodes
+                      {anime.year} {bull} {anime.episodes}
+                      <sup> episodes</sup>
                     </Typography>
                     <Typography
                       variant="h5"
-                      component="div"
-                      sx={{ color: "secondary.main" }}
+                      sx={{
+                        color: "black",
+                        fontSize: 16,
+                        fontWeight: "bold",
+                      }}
                     >
                       {anime.title}
                     </Typography>
-                    <Stack direction="row" gap={2} mb={1}>
+                    <Stack
+                      direction="row"
+                      gap={2}
+                      sx={{ lineHeight: "1.1", mb: 1 }}
+                    >
                       <Typography
                         sx={{
-                          color: "text.secondary",
+                          color: "black",
+                          fontWeight: "bold",
                           fontSize: 14,
                           "& sup": { fontSize: 8 },
                         }}
                       >
                         {anime.rating}
-                        <sup> RATING</sup>
+                        <sup> {formatNumber(anime.ratingOutOf)}</sup>
                       </Typography>
                       {bull}
                       <Typography
                         sx={{
-                          color: "text.secondary",
+                          color: "black",
+                          fontWeight: "bold",
                           fontSize: 14,
                           "& sup": { fontSize: 8 },
                         }}
@@ -275,7 +311,8 @@ export default function AnimeTrackerPage() {
                       {bull}
                       <Typography
                         sx={{
-                          color: "text.secondary",
+                          color: "black",
+                          fontWeight: "bold",
                           fontSize: 14,
                           "& sup": { fontSize: 8 },
                         }}
@@ -293,6 +330,10 @@ export default function AnimeTrackerPage() {
                         overflowX: "auto",
                         overflowY: "visible",
                         flexWrap: { xs: "nowrap", sm: "wrap" },
+                        width: { xs: "100vw", sm: "auto" },
+                        marginLeft: { xs: -2, sm: 0 },
+                        paddingLeft: { xs: 2, sm: 0 },
+                        paddingRight: { xs: 2, sm: 0 },
                         paddingBottom: { xs: 0.5, sm: 0 },
                       }}
                     >
@@ -309,9 +350,8 @@ export default function AnimeTrackerPage() {
                     {anime.shortDescription && (
                       <Typography
                         variant="body2"
-                        mb={1}
                         mt={1}
-                        sx={{ color: "text.secondary" }}
+                        sx={{ color: "black", fontWeight: "bold" }}
                       >
                         {anime.shortDescription}
                       </Typography>
