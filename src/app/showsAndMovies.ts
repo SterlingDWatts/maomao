@@ -18,9 +18,10 @@ import AttackLogo from "./assets/AttackLogo.jpg";
 import ChainsawManMovie from "./assets/ChainsawManMovie.jpg";
 import DanDaDan from "./assets/DanDaDan.jpg";
 import DandadanLogo from "./assets/DandadanLogo.jpg";
-import FoundationSeason3Episode2 from "./assets/FoundationSeason3Episode2.jpg";
 import FoundationAvatar from "./assets/FoundationAvatar.jpg";
 import FoundationSeason3 from "./assets/FoundationSeason3.jpg";
+import FoundationSeason3Episode2 from "./assets/FoundationSeason3Episode2.jpg";
+import FoundationSeason3Episode3 from "./assets/FoundationSeason3Episode3.jpg";
 import FrierenFrierensParty from "./assets/FrierenFrierensParty.jpg";
 import FrierenLogo from "./assets/FrierenLogo.jpg";
 import JamesLogo from "./assets/JamesLogo.jpg";
@@ -278,13 +279,15 @@ export const upNext: UpNextProps[] = [
     subheader: "",
     season: 3,
     episode: 3,
-    cardMedia: FoundationSeason3.src,
+    cardMedia: FoundationSeason3Episode3.src,
     cardMediaAlt: "Foundation Season 3 Episode 3",
     releaseDateTime: "July 25 2025 03:00:00 GMT-0700",
+    synopsis:
+      " An unexpected alliance is formed. Pritcher, Bayta, and Toran come face-to-face with the Mule. Demerzel seeks spiritual guidance.",
     watchUrl:
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
     objectPosition: "100% 40%",
-    TimerCard: SmallTimerCard,
+    TimerCard: LargeTimerCard,
     SiteLogo: AppleLogo,
   },
 
