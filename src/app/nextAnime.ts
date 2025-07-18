@@ -8,6 +8,7 @@ import Bleach from "./assets/Bleach.jpg";
 import ChainsawManMovie from "./assets/ChainsawManMovie.jpg";
 import DanDaDan from "./assets/DanDaDan.jpg";
 import Delicious from "./assets/Delicious.jpg";
+import Evangelion from "./assets/Evangelion.jpg";
 import FrierenFrierensParty from "./assets/FrierenFrierensParty.jpg";
 import Fruits from "./assets/Fruits.jpg";
 import Fullmetal from "./assets/Fullmetal.jpg";
@@ -51,8 +52,8 @@ export const animeList: Anime[] = [
     year: 2013,
     episodes: 98,
     rating: 8.56,
-    ratingOutOf: 2955680,
-    rank: 109,
+    ratingOutOf: 2955846,
+    rank: 112,
     popularity: 1,
     picture: Attack.src,
     tags: [
@@ -64,13 +65,16 @@ export const animeList: Anime[] = [
       "Action",
       "Adventure",
     ],
+    shortDescription:
+      "After his hometown is destroyed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.",
+    longDescription: `Centuries ago, mankind was slaughtered to near extinction by monstrous humanoid creatures called Titans, forcing humans to hide in fear behind enormous concentric walls. What makes these giants truly terrifying is that their taste for human flesh is not born out of hunger but what appears to be out of pleasure. To ensure their survival, the remnants of humanity began living within defensive barriers, resulting in one hundred years without a single titan encounter. However, that fragile calm is soon shattered when a colossal Titan manages to breach the supposedly impregnable outer wall, reigniting the fight for survival against the man-eating abominations. After witnessing a horrific personal loss at the hands of the invading creatures, Eren Yeager dedicates his life to their eradication by enlisting into the Survey Corps, an elite military unit that combats the merciless humanoids outside the protection of the walls. Eren, his adopted sister Mikasa Ackerman, and his childhood friend Armin Arlert join the brutal war against the Titans and race to discover a way of defeating them before the last walls are breached.`,
   },
   {
     title: "Fullmetal Alchemist Brotherhood",
     year: 2009,
     episodes: 68,
     rating: 9.1,
-    ratingOutOf: 2231996,
+    ratingOutOf: 2232110,
     rank: 2,
     popularity: 3,
     picture: Fullmetal.src,
@@ -84,14 +88,17 @@ export const animeList: Anime[] = [
       "Fantasy",
       "Sci-Fi",
     ],
+    shortDescription:
+      "Two brothers search for a Philosopher's Stone after an attempt to revive their deceased mother goes awry and leaves them in damaged physical forms.",
+    longDescription: `After a horrific alchemy experiment goes wrong in the Elric household, brothers Edward and Alphonse are left in a catastrophic new reality. Ignoring the alchemical principle banning human transmutation, the boys attempted to bring their recently deceased mother back to life. Instead, they suffered brutal personal loss: Alphonse's body disintegrated while Edward lost a leg and then sacrificed an arm to keep Alphonse's soul in the physical realm by binding it to a hulking suit of armor. The brothers are rescued by their neighbor Pinako Rockbell and her granddaughter Winry. Known as a bio-mechanical engineering prodigy, Winry creates prosthetic limbs for Edward by utilizing "automail," a tough, versatile metal used in robots and combat armor. After years of training, the Elric brothers set off on a quest to restore their bodies by locating the Philosopher's Stone—a powerful gem that allows an alchemist to defy the traditional laws of Equivalent Exchange. As Edward becomes an infamous alchemist and gains the nickname "Fullmetal," the boys' journey embroils them in a growing conspiracy that threatens the fate of the world.`,
   },
   {
     title: "One Punch Man",
     year: 2015,
     episodes: 31,
-    rating: 8.49,
-    ratingOutOf: 2349371,
-    rank: 148,
+    rating: 8.48,
+    ratingOutOf: 2349475,
+    rank: 155,
     popularity: 4,
     picture: OnePunch.src,
     tags: ["Superhero", "Action", "Comedy", "Family", "Fantasy", "Sci-Fi"],
@@ -105,11 +112,14 @@ export const animeList: Anime[] = [
     year: 2016,
     episodes: 167,
     rating: 7.84,
-    ratingOutOf: 2167121,
-    rank: 954,
+    ratingOutOf: 2167207,
+    rank: 987,
     popularity: 7,
     picture: Hero.src,
     tags: ["Shōnen", "Superhero", "Action", "Adventure", "Fantasy", "Sci-Fi"],
+    shortDescription:
+      "A superhero-admiring boy enrolls in a prestigious hero academy and learns what it really means to be a hero, after the strongest superhero grants him his own powers.",
+    longDescription: `The appearance of "quirks," newly discovered super powers, has been steadily increasing over the years, with 80 percent of humanity possessing various abilities from manipulation of elements to shapeshifting. This leaves the remainder of the world completely powerless, and Izuku Midoriya is one such individual. Since he was a child, the ambitious middle schooler has wanted nothing more than to be a hero. Izuku's unfair fate leaves him admiring heroes and taking notes on them whenever he can. But it seems that his persistence has borne some fruit: Izuku meets the number one hero and his personal idol, All Might. All Might's quirk is a unique ability that can be inherited, and he has chosen Izuku to be his successor! Enduring many months of grueling training, Izuku enrolls in UA High, a prestigious high school famous for its excellent hero training program, and this year's freshmen look especially promising. With his bizarre but talented classmates and the looming threat of a villainous organization, Izuku will soon learn what it really means to be a hero.`,
   },
   {
     title: "Naruto",
@@ -117,7 +127,7 @@ export const animeList: Anime[] = [
     episodes: 220,
     rating: 8.01,
     ratingOutOf: 2073355,
-    rank: 665,
+    rank: 676,
     popularity: 9,
     picture: Naruto.src,
     tags: [
@@ -130,14 +140,17 @@ export const animeList: Anime[] = [
       "Comedy",
       "Fantasy",
     ],
+    shortDescription:
+      "Naruto Uzumaki, a mischievous adolescent ninja, struggles as he searches for recognition and dreams of becoming the Hokage, the village's leader and strongest ninja.",
+    longDescription: `Moments before Naruto Uzumaki's birth, a huge demon known as the Nine-Tailed Fox attacked Konohagakure, the Hidden Leaf Village, and wreaked havoc. In order to put an end to the demon's rampage, the leader of the village, the Fourth Hokage, sacrificed his life and sealed the monstrous beast inside the newborn Naruto. In the present, Naruto is a hyperactive and knuckle-headed ninja growing up within Konohagakure. Shunned because of the demon inside him, Naruto struggles to find his place in the village. His one burning desire to become the Hokage and be acknowledged by the villagers who despise him. However, while his goal leads him to unbreakable bonds with lifelong friends, it also lands him in the crosshairs of many deadly foes.`,
   },
   {
     title: "Jujutsu Kaisen",
     year: 2020,
     episodes: 48,
-    rating: 8.55,
-    ratingOutOf: 1866904,
-    rank: 117,
+    rating: 8.54,
+    ratingOutOf: 1867105,
+    rank: 129,
     popularity: 13,
     picture: Jujutsu.src,
     tags: [
@@ -159,7 +172,7 @@ export const animeList: Anime[] = [
     year: 2011,
     episodes: 26,
     rating: 9.07,
-    ratingOutOf: 1472681,
+    ratingOutOf: 1472740,
     rank: 3,
     popularity: 14,
     picture: Steins.src,
@@ -183,7 +196,7 @@ export const animeList: Anime[] = [
     episodes: 501,
     rating: 8.28,
     ratingOutOf: 1757874,
-    rank: 309,
+    rank: 315,
     popularity: 16,
     picture: NarutoShippuden.src,
     tags: [
@@ -205,8 +218,8 @@ export const animeList: Anime[] = [
     year: 2015,
     episodes: 49,
     rating: 8.07,
-    ratingOutOf: 1261815,
-    rank: 570,
+    ratingOutOf: 1261869,
+    rank: 577,
     popularity: 34,
     picture: Assassination.src,
     tags: [
@@ -218,6 +231,31 @@ export const animeList: Anime[] = [
       "Fantasy",
       "Sci-Fi",
     ],
+    shortDescription:
+      "A powerful creature claims that within a year, Earth will be destroyed by him, but he offers mankind a chance by becoming a homeroom teacher where he teaches his students about how to kill him. An assassination classroom begins.",
+    longDescription: `Tucked in the mountains near the elite Kunugigaoka Middle School lies a small derelict building that houses the delinquents and dropouts of Class 3-E. Looked down upon by their peers, the students in this class appear to have little hope in advancing their academic careers. That is, until the national government tasks them with eliminating the greatest threat to their planet: their new teacher. Having already destroyed the moon, the octopus-like professor—dubbed "Koro-sensei"—has now threatened to destroy the Earth by March of the following year. In light of their mission, the students have found that killing him is easier said than done. Not only can Koro-sensei move at speeds of up to Mach 20, but he can also resist almost every earthly weapon. Ironically, he also proves to be one of the best teachers Class 3-E has ever had. Training the class to excel in both their studies as students and skills as assassins, Koro-sensei is confident that his students' ingenuity and indomitable will could return them to the main campus. Through trial and error, Nagisa Shiota, as well as the other students of Class 3-E, must figure out Koro-sensei's weaknesses—and fast, for the very fate of the world depends upon it.`,
+  },
+  {
+    title: "Neon Genesis Evangelion",
+    year: 1995,
+    episodes: 26,
+    rating: 8.36,
+    ratingOutOf: 1161907,
+    rank: 242,
+    popularity: 45,
+    picture: Evangelion.src,
+    tags: [
+      "Action Epic",
+      "Alien Invasion",
+      "Coming-of-Age",
+      "Cyberpunk",
+      "Dystopian Sci-Fi",
+      "Epic",
+      "Kaiju",
+    ],
+    shortDescription:
+      "A teenage boy finds himself recruited as a member of an elite team of pilots by his father.",
+    longDescription: `Fifteen years after a cataclysmic event known as the Second Impact, the world faces a new threat: monstrous celestial beings called Angels invade Tokyo-3 one by one. Mankind is unable to defend themselves against the Angels despite utilizing their most advanced munitions and military tactics. The only hope for human salvation rests in the hands of NERV, a mysterious organization led by the cold Gendou Ikari. NERV operates giant humanoid robots dubbed "Evangelions" to combat the Angels with state-of-the-art advanced weaponry and protective barriers known as Absolute Terror Fields. Years after being abandoned by his father, Shinji Ikari, Gendou's 14-year-old son, returns to Tokyo-3. Shinji undergoes a perpetual internal battle against the deeply buried trauma caused by the loss of his mother and the emotional neglect he suffered at the hands of his father. Terrified to open himself up to another, Shinji's life is forever changed upon meeting 29-year-old Misato Katsuragi, a high-ranking NERV officer who shows him a free-spirited maternal kindness he has never experienced. A devastating Angel attack forces Shinji into action as Gendou reveals his true motive for inviting his son back to Tokyo-3: Shinji is the only child capable of efficiently piloting Evangelion Unit-01, a new robot that synchronizes with his biometrics. Despite the brutal psychological trauma brought about by piloting an Evangelion, Shinji defends Tokyo-3 against the angelic threat, oblivious to his father's dark machinations.`,
   },
   {
     title: "Dr. Stone",
@@ -225,8 +263,8 @@ export const animeList: Anime[] = [
     episodes: 70,
     rating: 8.26,
     ratingOutOf: 1130785,
-    rank: 326,
-    popularity: 48,
+    rank: 337,
+    popularity: 49,
     picture: Stone.src,
     tags: [
       "Shōnen",
@@ -236,15 +274,18 @@ export const animeList: Anime[] = [
       "Adventure",
       "Sci-Fi",
     ],
+    shortDescription:
+      "High schooler Taiju awakens from petrification millennia after a blinding light turned humanity to stone. He finds his scientific genius friend Senku working on a plan to rebuild civilization using science.",
+    longDescription: `After five years of harboring unspoken feelings, high-schooler Taiju Ooki is finally ready to confess his love to Yuzuriha Ogawa. Just when Taiju begins his confession however, a blinding green light strikes the Earth and petrifies mankind around the world—turning every single human into stone. Several millennia later, Taiju awakens to find the modern world completely nonexistent, as nature has flourished in the years humanity stood still. Among a stone world of statues, Taiju encounters one other living human: his science-loving friend Senkuu, who has been active for a few months. Taiju learns that Senkuu has developed a grand scheme—to launch the complete revival of civilization with science. Taiju's brawn and Senkuu's brains combine to forge a formidable partnership, and they soon uncover a method to revive those petrified. However, Senkuu's master plan is threatened when his ideologies are challenged by those who awaken. All the while, the reason for mankind's petrification remains unknown.`,
   },
   {
     title: "Chainsaw Man",
     year: 2022,
     episodes: 12,
     rating: 8.45,
-    ratingOutOf: 1007903,
-    rank: 170,
-    popularity: 59,
+    ratingOutOf: 1008054,
+    rank: 175,
+    popularity: 58,
     picture: ChainsawManMovie.src,
     tags: ["Dark Fantasy", "Shōnen", "Action", "Comedy", "Fantasy"],
     shortDescription:
@@ -258,7 +299,7 @@ export const animeList: Anime[] = [
     episodes: 28,
     rating: 8.64,
     ratingOutOf: 944958,
-    rank: 79,
+    rank: 81,
     popularity: 67,
     picture: Gurren.src,
     tags: [
@@ -280,7 +321,7 @@ export const animeList: Anime[] = [
     year: 2019,
     episodes: 48,
     rating: 8.77,
-    ratingOutOf: 986901,
+    ratingOutOf: 987002,
     rank: 42,
     popularity: 69,
     picture: VinlandSaga.src,
@@ -293,6 +334,9 @@ export const animeList: Anime[] = [
       "Action",
       "Adventure",
     ],
+    shortDescription:
+      "Following a tragedy, Thorfinn embarks on a journey with the man responsible for it to take his life in a duel as a true and honorable warrior to pay homage.",
+    longDescription: `Young Thorfinn grew up listening to the stories of old sailors that had traveled the ocean and reached the place of legend, Vinland. It's said to be warm and fertile, a place where there would be no need for fighting—not at all like the frozen village in Iceland where he was born, and certainly not like his current life as a mercenary. War is his home now. Though his father once told him, "You have no enemies, nobody does. There is nobody who it's okay to hurt," as he grew, Thorfinn knew that nothing was further from the truth. The war between England and the Danes grows worse with each passing year. Death has become commonplace, and the viking mercenaries are loving every moment of it. Allying with either side will cause a massive swing in the balance of power, and the vikings are happy to make names for themselves and take any spoils they earn along the way. Among the chaos, Thorfinn must take his revenge and kill Askeladd, the man who murdered his father. The only paradise for the vikings, it seems, is the era of war and death that rages on.`,
   },
   {
     title: "Samurai Champloo",
