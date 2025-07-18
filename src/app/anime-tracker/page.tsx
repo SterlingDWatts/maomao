@@ -11,6 +11,7 @@ import Chip from "@mui/material/Chip";
 import Container from "@mui/material/Container";
 import CssBaseline from "@mui/material/CssBaseline";
 import FormControl from "@mui/material/FormControl";
+import IconButton from "@mui/material/IconButton";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import Paper from "@mui/material/Paper";
@@ -20,6 +21,7 @@ import Typography from "@mui/material/Typography";
 
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import SortIcon from "@mui/icons-material/Sort";
 
 import { animeList } from "../nextAnime";
 
@@ -164,7 +166,6 @@ export default function AnimeTrackerPage() {
               sx={{
                 mb: 3,
                 display: "flex",
-                gap: 2,
                 alignItems: "center",
                 flexWrap: "wrap",
                 marginTop: 2,
@@ -175,22 +176,24 @@ export default function AnimeTrackerPage() {
               <FormControl
                 size="small"
                 sx={{
-                  minWidth: 110,
+                  minWidth: 90,
                 }}
                 variant="standard"
                 color="primary"
               >
-                <InputLabel
+                {/* <InputLabel
                   id="sort-select-label"
                   sx={{ color: "black", fontWeight: "bold" }}
                 >
                   Sort By
-                </InputLabel>
+                </InputLabel> */}
                 <Select
                   labelId="sort-select-label"
                   value={sortBy}
                   label="Sort By"
                   onChange={handleSortChange}
+                  endAdornment={<SortIcon />}
+                  id="anime-tracker-sort-select"
                   sx={{
                     color: "primary.main",
                     fontWeight: "bold",
@@ -198,6 +201,10 @@ export default function AnimeTrackerPage() {
                       backgroundColor: "tertiary.main",
                       color: "black",
                     },
+                    "& .MuiSvgIcon-root": {
+                      display: "none",
+                    },
+                    "& div#anime-tracker-sort-select ": { paddingRight: 0 },
                   }}
                 >
                   <MenuItem value="title">Title</MenuItem>
@@ -208,24 +215,22 @@ export default function AnimeTrackerPage() {
                 </Select>
               </FormControl>
 
-              <Button
-                variant="text"
+              <IconButton
                 color="primary"
                 size="medium"
                 onClick={toggleSortDirection}
-                startIcon={
-                  sortDirection === "asc" ? (
-                    <ArrowUpwardIcon />
-                  ) : (
-                    <ArrowDownwardIcon />
-                  )
-                }
                 sx={{
                   "&:hover": {
                     backgroundColor: "tertiary.main",
                   },
                 }}
-              ></Button>
+              >
+                {sortDirection === "asc" ? (
+                  <ArrowUpwardIcon />
+                ) : (
+                  <ArrowDownwardIcon />
+                )}
+              </IconButton>
             </Box>
 
             <Stack>
