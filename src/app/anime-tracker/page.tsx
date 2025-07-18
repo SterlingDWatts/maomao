@@ -7,6 +7,7 @@ import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
 import Chip from "@mui/material/Chip";
 import Container from "@mui/material/Container";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -22,6 +23,8 @@ import Typography from "@mui/material/Typography";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import SortIcon from "@mui/icons-material/Sort";
+
+import Placeholder from "../assets/placeholder.jpg";
 
 import { animeList } from "../nextAnime";
 
@@ -242,10 +245,12 @@ export default function AnimeTrackerPage() {
               {sortedAnimeList.map((anime) => (
                 <Card
                   key={anime.title}
+                  raised={false}
                   sx={{
                     position: "relative",
                     overflow: "hidden",
                     backgroundColor: "rgb(0, 0, 0, 0)",
+                    boxShadow: "none",
                   }}
                 >
                   {anime.maomaoRecommendation && (
@@ -270,33 +275,21 @@ export default function AnimeTrackerPage() {
                       maomao recom
                     </Box>
                   )}
-                  <CardContent>
-                    <Typography
-                      sx={{
-                        color: "black",
-                        fontWeight: "bold",
-                        fontSize: 14,
-                        "& sup": { fontSize: 8 },
-                      }}
-                    >
-                      {anime.year} {bull} {anime.episodes}
-                      <sup> episodes</sup>
-                    </Typography>
-                    <Typography
-                      variant="h5"
-                      sx={{
-                        color: "black",
-                        fontSize: 16,
-                        fontWeight: "bold",
-                      }}
-                    >
-                      {anime.title}
-                    </Typography>
-                    <Stack
-                      direction="row"
-                      gap={2}
-                      sx={{ lineHeight: "1.1", mb: 1 }}
-                    >
+                  <Box sx={{ position: "relative", display: "flex" }}>
+                    <Box sx={{ width: "100px", height: "100px" }}>
+                      <CardMedia
+                        component="img"
+                        image={anime.picture || Placeholder.src}
+                        width={100}
+                        height={100}
+                        sx={{
+                          mt: 2,
+                          objectPosition: "50% 50%",
+                          objectFit: "cover",
+                        }}
+                      />
+                    </Box>
+                    <CardContent sx={{ width: "calc(100vw - 100px)" }}>
                       <Typography
                         sx={{
                           color: "black",
@@ -305,61 +298,89 @@ export default function AnimeTrackerPage() {
                           "& sup": { fontSize: 8 },
                         }}
                       >
-                        {anime.rating}
-                        <sup> {formatNumber(anime.ratingOutOf)}</sup>
+                        {anime.year} {bull} {anime.episodes}
+                        <sup> episodes</sup>
                       </Typography>
-                      {bull}
                       <Typography
+                        variant="h5"
                         sx={{
                           color: "black",
+                          fontSize: 16,
                           fontWeight: "bold",
-                          fontSize: 14,
-                          "& sup": { fontSize: 8 },
                         }}
                       >
-                        #{anime.rank}
-                        <sup> RANK</sup>
+                        {anime.title}
                       </Typography>
-                      {bull}
-                      <Typography
-                        sx={{
-                          color: "black",
-                          fontWeight: "bold",
-                          fontSize: 14,
-                          "& sup": { fontSize: 8 },
-                        }}
+                      <Stack
+                        direction="row"
+                        gap={2}
+                        sx={{ lineHeight: "1.1", mb: 1 }}
                       >
-                        #{anime.popularity}
-                        <sup> POPULARITY</sup>
-                      </Typography>
-                    </Stack>
+                        <Typography
+                          sx={{
+                            color: "black",
+                            fontWeight: "bold",
+                            fontSize: 14,
+                            "& sup": { fontSize: 8 },
+                          }}
+                        >
+                          {anime.rating}
+                          <sup> {formatNumber(anime.ratingOutOf)}</sup>
+                        </Typography>
+                        <Typography
+                          sx={{
+                            color: "black",
+                            fontWeight: "bold",
+                            fontSize: 14,
+                            "& sup": { fontSize: 8 },
+                          }}
+                        >
+                          #{anime.rank}
+                          <sup> RANK</sup>
+                        </Typography>
 
-                    <Stack
-                      direction="row"
-                      spacing={1}
-                      useFlexGap
-                      sx={{
-                        overflowX: "auto",
-                        overflowY: "visible",
-                        flexWrap: { xs: "nowrap", sm: "wrap" },
-                        width: { xs: "100vw", sm: "auto" },
-                        marginLeft: { xs: -2, sm: 0 },
-                        paddingLeft: { xs: 2, sm: 0 },
-                        paddingRight: { xs: 2, sm: 0 },
-                        paddingBottom: { xs: 0.5, sm: 0 },
-                      }}
-                    >
-                      {anime.tags.map((tag) => (
-                        <Chip
-                          key={tag}
-                          label={tag}
-                          size="small"
-                          color="primary"
-                          sx={{ fontSize: "0.75rem" }}
-                        />
-                      ))}
-                    </Stack>
-                    {anime.shortDescription && (
+                        <Typography
+                          sx={{
+                            color: "black",
+                            fontWeight: "bold",
+                            fontSize: 14,
+                            "& sup": { fontSize: 8 },
+                          }}
+                        >
+                          #{anime.popularity}
+                          <sup> POPULARITY</sup>
+                        </Typography>
+                      </Stack>
+
+                      <Stack
+                        direction="row"
+                        spacing={1}
+                        useFlexGap
+                        sx={{
+                          overflowX: "auto",
+                          overflowY: "visible",
+                          flexWrap: { xs: "nowrap", sm: "wrap" },
+                          width: { xs: "100vw", sm: "auto" },
+                          marginLeft: { xs: -2, sm: 0 },
+                          paddingLeft: { xs: 2, sm: 0 },
+                          paddingRight: { xs: 2, sm: 0 },
+                          paddingBottom: { xs: 0.5, sm: 0 },
+                        }}
+                      >
+                        {anime.tags.map((tag) => (
+                          <Chip
+                            key={tag}
+                            label={tag}
+                            size="small"
+                            color="primary"
+                            sx={{ fontSize: "0.75rem" }}
+                          />
+                        ))}
+                      </Stack>
+                    </CardContent>
+                  </Box>{" "}
+                  {anime.shortDescription && (
+                    <CardContent sx={{ paddingTop: 0, marginTop: -3 }}>
                       <Typography
                         variant="body2"
                         mt={1}
@@ -367,8 +388,8 @@ export default function AnimeTrackerPage() {
                       >
                         {anime.shortDescription}
                       </Typography>
-                    )}
-                  </CardContent>
+                    </CardContent>
+                  )}
                 </Card>
               ))}
             </Stack>

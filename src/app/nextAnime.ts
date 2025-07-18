@@ -1,5 +1,12 @@
 ﻿import placeholder from "./assets/placeholder.jpg";
 
+import ApothecaryDiaries from "./assets/ApothecaryDiaries.jpg";
+import Attack from "./assets/Attack.jpg";
+import DanDaDan from "./assets/DanDaDan.jpg";
+import FrierenFrierensParty from "./assets/FrierenFrierensParty.jpg";
+import Stone from "./assets/Stone.jpg";
+import VinlandSaga from "./assets/VinlandSaga.jpg";
+
 interface Anime {
   title: string;
   year: number;
@@ -24,7 +31,7 @@ export const animeList: Anime[] = [
     ratingOutOf: 2955680,
     rank: 109,
     popularity: 1,
-    picture: placeholder.src,
+    picture: Attack.src,
     tags: [
       "Action Epic",
       "Monster Horror",
@@ -197,7 +204,7 @@ export const animeList: Anime[] = [
     ratingOutOf: 1130785,
     rank: 326,
     popularity: 48,
-    picture: placeholder.src,
+    picture: Stone.src,
     tags: [
       "Shōnen",
       "Survival",
@@ -253,7 +260,7 @@ export const animeList: Anime[] = [
     ratingOutOf: 986901,
     rank: 42,
     popularity: 69,
-    picture: placeholder.src,
+    picture: VinlandSaga.src,
     tags: [
       "Historical Epic",
       "One-Person Army Action",
@@ -291,7 +298,7 @@ export const animeList: Anime[] = [
     ratingOutOf: 696386,
     rank: 1,
     popularity: 139,
-    picture: placeholder.src,
+    picture: FrierenFrierensParty.src,
     tags: [
       "Fantasy Epic",
       "Iyashikei",
@@ -399,7 +406,7 @@ export const animeList: Anime[] = [
     ratingOutOf: 456352,
     rank: 142,
     popularity: 293,
-    picture: placeholder.src,
+    picture: DanDaDan.src,
     tags: [
       "Alien Invasion",
       "Romantic Comedy",
@@ -445,7 +452,7 @@ export const animeList: Anime[] = [
     ratingOutOf: 370974,
     rank: 25,
     popularity: 353,
-    picture: placeholder.src,
+    picture: ApothecaryDiaries.src,
     tags: [
       "Medical Drama",
       "Slice of Life",
