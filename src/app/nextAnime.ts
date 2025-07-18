@@ -2,8 +2,15 @@
 
 import ApothecaryDiaries from "./assets/ApothecaryDiaries.jpg";
 import Attack from "./assets/Attack.jpg";
+import Bleach from "./assets/Bleach.jpg";
 import DanDaDan from "./assets/DanDaDan.jpg";
+import Delicious from "./assets/Delicious.jpg";
 import FrierenFrierensParty from "./assets/FrierenFrierensParty.jpg";
+import Fullmetal from "./assets/Fullmetal.jpg";
+import Gurren from "./assets/Gurren.jpg";
+import Jujutsu from "./assets/Jujutsu.jpg";
+import Samurai from "./assets/Samurai.jpg";
+import Steins from "./assets/Steins.jpg";
 import Stone from "./assets/Stone.jpg";
 import VinlandSaga from "./assets/VinlandSaga.jpg";
 
@@ -50,7 +57,7 @@ export const animeList: Anime[] = [
     ratingOutOf: 2231996,
     rank: 2,
     popularity: 3,
-    picture: placeholder.src,
+    picture: Fullmetal.src,
     tags: [
       "Shōnen",
       "Steampunk",
@@ -116,7 +123,7 @@ export const animeList: Anime[] = [
     ratingOutOf: 1866904,
     rank: 117,
     popularity: 13,
-    picture: placeholder.src,
+    picture: Jujutsu.src,
     tags: [
       "Dark Fantasy",
       "Psychological Drama",
@@ -139,7 +146,7 @@ export const animeList: Anime[] = [
     ratingOutOf: 1472681,
     rank: 3,
     popularity: 14,
-    picture: placeholder.src,
+    picture: Steins.src,
     tags: [
       "Time Travel",
       "Comedy",
@@ -237,7 +244,7 @@ export const animeList: Anime[] = [
     ratingOutOf: 944958,
     rank: 79,
     popularity: 67,
-    picture: placeholder.src,
+    picture: Gurren.src,
     tags: [
       "Dystopian Sci-Fi",
       "Mecha",
@@ -279,7 +286,7 @@ export const animeList: Anime[] = [
     ratingOutOf: 667549,
     rank: 136,
     popularity: 108,
-    picture: placeholder.src,
+    picture: Samurai.src,
     tags: [
       "Martial Arts",
       "Samurai",
@@ -470,7 +477,7 @@ export const animeList: Anime[] = [
     ratingOutOf: 345035,
     rank: 12,
     popularity: 366,
-    picture: placeholder.src,
+    picture: Bleach.src,
     tags: [
       "Shōnen",
       "Supernatural Fantasy",
@@ -508,7 +515,7 @@ export const animeList: Anime[] = [
     ratingOutOf: 251298,
     rank: 101,
     popularity: 488,
-    picture: placeholder.src,
+    picture: Delicious.src,
     tags: [
       "Adventure Epic",
       "Quest",
