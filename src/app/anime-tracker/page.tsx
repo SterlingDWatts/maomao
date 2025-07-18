@@ -214,7 +214,7 @@ export default function AnimeTrackerPage() {
                   key={anime.title}
                   sx={{ position: "relative", overflow: "hidden" }}
                 >
-                  {anime.maomaoReccommendation && (
+                  {anime.maomaoRecommendation && (
                     <Box
                       sx={{
                         position: "absolute",
