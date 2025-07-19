@@ -23,12 +23,11 @@ import Typography from "@mui/material/Typography";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import SortIcon from "@mui/icons-material/Sort";
+import { createTheme, ThemeOptions, ThemeProvider } from "@mui/material/styles";
 
 import Placeholder from "../assets/placeholder.jpg";
 
 import { animeList } from "../nextAnime";
-
-import { createTheme, ThemeOptions, ThemeProvider } from "@mui/material/styles";
 
 import DrawerAppBar from "../../components/appBarWithResponsiveMenu";
 
@@ -324,7 +323,7 @@ export default function AnimeTrackerPage() {
                         }}
                       >
                         {anime.year} {bull} {anime.episodes}
-                        <sup> episodes</sup>
+                        <sup> EPISODES</sup>
                       </Typography>
                       <Typography
                         variant="h5"
