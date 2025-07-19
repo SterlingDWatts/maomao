@@ -23,6 +23,7 @@ import OnePunch from "./assets/OnePunch.jpg";
 import Raven from "./assets/Raven.jpg";
 import Saiunkoku from "./assets/Saiunkoku.jpg";
 import Samurai from "./assets/Samurai.jpg";
+import SpyXFamily from "./assets/SpyXFamily.jpg";
 import SnowWhite from "./assets/SnowWhite.jpg";
 import Solo from "./assets/Solo.jpg";
 import Steins from "./assets/Steins.jpg";
@@ -292,6 +293,20 @@ export const animeList: Anime[] = [
       "Following a betrayal, a young man left for dead is reborn as a powerful devil-human hybrid after merging with his pet devil and is soon enlisted into an organization dedicated to hunting devils.",
     longDescription:
       "Denji is robbed of a normal teenage life, left with nothing but his deadbeat father's overwhelming debt. His only companion is his pet, the chainsaw devil Pochita, with whom he slays devils for money that inevitably ends up in the yakuza's pockets. All Denji can do is dream of a good, simple life: one with delicious food and a beautiful girlfriend by his side. But an act of greedy betrayal by the yakuza leads to Denji's brutal, untimely death, crushing all hope of him ever achieving happiness. Remarkably, an old contract allows Pochita to merge with the deceased Denji and bestow devil powers on him, changing him into a hybrid able to transform his body parts into chainsaws. Because Denji's new abilities pose a significant risk to society, the Public Safety Bureau's elite devil hunter Makima takes him in, letting him live as long as he obeys her command. Guided by the promise of a content life alongside an attractive woman, Denji devotes everything and fights with all his might to make his naive dreams a reality.",
+  },
+  {
+    title: "Spy x Family",
+    year: 2022,
+    episodes: 38,
+    rating: 8.45,
+    ratingOutOf: 1086053,
+    rank: 180,
+    popularity: 60,
+    picture: SpyXFamily.src,
+    tags: ["Shōnen", "Slice of Life", "Spy", "Action", "Comedy", "Thriller"],
+    shortDescription:
+      "A spy on an undercover mission gets married and adopts a child as part of his cover. His wife and daughter have secrets of their own, and all three must strive to keep together.",
+    longDescription: `Corrupt politicians, frenzied nationalists, and other warmongering forces constantly jeopardize the thin veneer of peace between neighboring countries Ostania and Westalis. In spite of their plots, renowned spy and master of disguise "Twilight" fulfills dangerous missions one after another in the hope that no child will have to experience the horrors of war. In the bustling Ostanian city of Berlint, Twilight dons the alias of "Loid Forger," an esteemed psychiatrist. However, his true intention is to gather intelligence on prominent politician Donovan Desmond, who only appears rarely in public at his sons' school: the prestigious Eden Academy. Enlisting the help of unmarried city hall clerk Yor Briar to act as his wife and adopting the curious six-year-old orphan Anya as his daughter, Loid enacts his master plan. He will enroll Anya in Eden Academy, where Loid hopes she will excel and give him the opportunity to meet Donovan without arousing suspicion. Unfortunately for Loid, even a man of his talents has trouble playing the figure of a loving father and husband. And just like Loid is hiding his true identity, Yor—who is an underground assassin known as "Thorn Princess"—and Anya—an esper who can read people's minds—have no plans to disclose their own secrets either. Although this picture-perfect family is founded on deception, the Forgers gradually come to understand that the love they share for one another trumps all else.`,
   },
   {
     title: "Gurren Lagann",
