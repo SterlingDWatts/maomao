@@ -86,22 +86,6 @@ export interface UpNextProps extends AvailableNowProps {
 
 export const availableNow: AvailableNowProps[] = [
   {
-    avatar: FoundationAvatar.src,
-    title: "Foundation",
-    subheader: "Shadows in the Math",
-    season: 3,
-    episode: 2,
-    cardMedia: FoundationSeason3Episode2.src,
-    cardMediaAlt: "Brother Day in a towel",
-    releaseDateTime: "July 18 2025 03:00:00 GMT-0700",
-    synopsis:
-      "Gaal and Hari advance their plans on Ignis. Empire grapples with an unforeseen prediction. Pritcher enlists help to investigate the Mule.",
-    watchUrl:
-      "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
-    objectPosition: "50% 15%",
-    SiteLogo: AppleLogo,
-  },
-  {
     avatar: SupermanLogo.src,
     title: "Superman",
     subheader: "",
@@ -162,21 +146,6 @@ export const availableNow: AvailableNowProps[] = [
     SiteLogo: CrunchyrollLogo,
   },
   {
-    avatar: VinlandLogo.src,
-    title: "Vinland Saga",
-    subheader: "The King and the Sword",
-    season: 2,
-    episode: 11,
-    cardMedia: VinlandSaga.src,
-    cardMediaAlt: "Vinland Saga",
-    releaseDateTime: "March 21 2023 03:00:00 GMT-0700",
-    synopsis:
-      "With Canute's newfound additional throne and the land of Denmark, he aims to fund his armies with drastic means. Ketil meets with Lief Ericson who finds out he has a slave named Thorfinn. Ketil pays tribute to the new king Canute.",
-    watchUrl: "https://www.crunchyroll.com/series/GEXH3WKK0/vinland-saga",
-    objectPosition: "50% 34%",
-    SiteLogo: CrunchyrollLogo,
-  },
-  {
     avatar: MasterchefLogo.src,
     title: "Masterchef",
     subheader: "Mister-y & Mrs. Box",
@@ -233,6 +202,21 @@ export const availableNow: AvailableNowProps[] = [
     synopsis: `The battle against Acrobatic Silky is over, Aira's romantic feelings stem from how Okarun saved her. As Momo, Okarun, and Aira's feelings intertwine, Serpoians make another appearance, and the three of them are trapped in void space.`,
     watchUrl: "https://www.crunchyroll.com/series/GG5H5XQ0D/dan-da-dan",
     objectPosition: "50% 40%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: VinlandLogo.src,
+    title: "Vinland Saga",
+    subheader: "For the Love That Was Lost",
+    season: 2,
+    episode: 12,
+    cardMedia: VinlandSaga.src,
+    cardMediaAlt: "Vinland Saga",
+    releaseDateTime: "March 21 2023 03:00:00 GMT-0700",
+    synopsis:
+      "Olmar recieves some upsetting news, causing him to reach his breaking point. Meawhile, tensions arise as Canute sets his sights on Ketil's farm.",
+    watchUrl: "https://www.crunchyroll.com/series/GEXH3WKK0/vinland-saga",
+    objectPosition: "50% 34%",
     SiteLogo: CrunchyrollLogo,
   },
 ];
