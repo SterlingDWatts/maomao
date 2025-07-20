@@ -192,7 +192,7 @@ export const availableNow: AvailableNowProps[] = [
   },
   {
     avatar: DandadanLogo.src,
-    title: "Dan Da Dan",
+    title: "Dandadan",
     subheader: "I've Got This Funny Feeling",
     season: 1,
     episode: 8,
@@ -240,7 +240,7 @@ export const upNext: UpNextProps[] = [
   },
   {
     avatar: DandadanLogo.src,
-    title: "Dan Da Dan",
+    title: "Dandadan",
     subheader: "",
     season: 2,
     episode: 4,
@@ -289,7 +289,7 @@ export const upNext: UpNextProps[] = [
   },
   {
     avatar: DandadanLogo.src,
-    title: "Dan Da Dan",
+    title: "Dandadan",
     subheader: "",
     season: 2,
     episode: 5,
@@ -335,7 +335,7 @@ export const upNext: UpNextProps[] = [
   },
   {
     avatar: DandadanLogo.src,
-    title: "Dan Da Dan",
+    title: "Dandadan",
     subheader: "",
     season: 2,
     episode: 6,
@@ -381,7 +381,7 @@ export const upNext: UpNextProps[] = [
   },
   {
     avatar: DandadanLogo.src,
-    title: "Dan Da Dan",
+    title: "Dandadan",
     subheader: "",
     season: 2,
     episode: 7,
@@ -427,7 +427,7 @@ export const upNext: UpNextProps[] = [
   },
   {
     avatar: DandadanLogo.src,
-    title: "Dan Da Dan",
+    title: "Dandadan",
     subheader: "",
     season: 2,
     episode: 8,
@@ -506,7 +506,7 @@ export const upNext: UpNextProps[] = [
   },
   {
     avatar: DandadanLogo.src,
-    title: "Dan Da Dan",
+    title: "Dandadan",
     subheader: "",
     season: 2,
     episode: 9,
@@ -568,7 +568,7 @@ export const upNext: UpNextProps[] = [
   },
   {
     avatar: DandadanLogo.src,
-    title: "Dan Da Dan",
+    title: "Dandadan",
     subheader: "",
     season: 2,
     episode: 10,
@@ -629,7 +629,7 @@ export const upNext: UpNextProps[] = [
   },
   {
     avatar: DandadanLogo.src,
-    title: "Dan Da Dan",
+    title: "Dandadan",
     subheader: "",
     season: 2,
     episode: 11,
@@ -691,7 +691,7 @@ export const upNext: UpNextProps[] = [
   },
   {
     avatar: DandadanLogo.src,
-    title: "Dan Da Dan",
+    title: "Dandadan",
     subheader: "",
     season: 2,
     episode: 12,
