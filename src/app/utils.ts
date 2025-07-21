@@ -1,3 +1,12 @@
+export const abbreviateNumber = (num: number) => {
+  if (num >= 1000000) {
+    return Math.floor(num / 1000000) + "MIL";
+  } else if (num >= 1000) {
+    return Math.floor(num / 1000) + "k";
+  }
+  return num.toString();
+};
+
 export const formatNumber = (num: number) => {
   return num < 10 ? `0${num}` : num.toString();
 };

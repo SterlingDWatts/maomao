@@ -14,46 +14,7 @@ import TallTimerCard from "../components/tallTimerCard";
 
 import { upNext, availableNow } from "./showsAndMovies";
 
-const theme = createTheme({
-  components: {
-    MuiCssBaseline: {
-      styleOverrides: `
-        html {
-          box-sizing: border-box;
-        }
-        *, *::before, *::after {
-          box-sizing: inherit;
-        }
-      `,
-    },
-  },
-  palette: {
-    primary: {
-      main: "#FFDE03",
-      light: "#FCF267",
-      dark: "#FFAB00",
-      darker: "#FF7F00",
-      lighter: "#FDF795",
-      contrastText: "#000",
-    },
-    secondary: {
-      main: "#0336FF",
-      light: "#5954FF",
-      dark: "#0026EB",
-      darker: "#001BE6",
-      lighter: "#8173FF",
-      contrastText: "#fff",
-    },
-    tertiary: {
-      main: "#FF0266",
-      light: "#FF6297",
-      dark: "#C2005D",
-      darker: "#9E0057",
-      lighter: "#FFBCD3",
-      contrastText: "#000",
-    },
-  },
-} as ThemeOptions);
+import { theme } from "./theme";
 
 export default function Page() {
   return (

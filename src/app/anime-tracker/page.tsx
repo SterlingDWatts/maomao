@@ -23,40 +23,15 @@ import Typography from "@mui/material/Typography";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import SortIcon from "@mui/icons-material/Sort";
-import { createTheme, ThemeOptions, ThemeProvider } from "@mui/material/styles";
-
-import Placeholder from "../assets/placeholder.jpg";
-
-import { animeList } from "../nextAnime";
+import { ThemeProvider } from "@mui/material/styles";
 
 import DrawerAppBar from "../../components/appBarWithResponsiveMenu";
 
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: "#FFDE03",
-      light: "#FCF267",
-      dark: "#FFAB00",
-      darker: "#FF7F00",
-      lighter: "#FDF795",
-    },
-    secondary: {
-      main: "#0336FF",
-      light: "#5954FF",
-      dark: "#0026EB",
-      darker: "#001BE6",
-      lighter: "#8173FF",
-    },
-    tertiary: {
-      main: "#FF0266",
-      light: "#FF6297",
-      dark: "#C2005D",
-      darker: "#9E0057",
-      lighter: "#FFBCD3",
-      contrastText: "#000",
-    },
-  },
-} as Omit<ThemeOptions, "components">);
+import Placeholder from "../assets/placeholder.jpg";
+
+import { theme } from "../theme";
+import { animeList } from "../nextAnime";
+import { abbreviateNumber } from "../utils";
 
 const bull = (
   <Box
@@ -79,15 +54,6 @@ export default function AnimeTrackerPage() {
   const [sortDirection, setSortDirection] = React.useState<"asc" | "desc">(
     "asc",
   );
-
-  const formatNumber = (num: number) => {
-    if (num >= 1000000) {
-      return Math.floor(num / 1000000) + "MIL";
-    } else if (num >= 1000) {
-      return Math.floor(num / 1000) + "k";
-    }
-    return num.toString();
-  };
 
   const sortedAnimeList = React.useMemo(() => {
     return [...animeList].sort((a, b) => {
@@ -143,6 +109,7 @@ export default function AnimeTrackerPage() {
   const toggleSortDirection = () => {
     setSortDirection((prev) => (prev === "asc" ? "desc" : "asc"));
   };
+
   return (
     <React.Fragment>
       <ThemeProvider theme={theme}>
@@ -349,7 +316,7 @@ export default function AnimeTrackerPage() {
                           }}
                         >
                           {anime.rating}
-                          <sup> {formatNumber(anime.ratingOutOf)}</sup>
+                          <sup> {abbreviateNumber(anime.ratingOutOf)}</sup>
                         </Typography>
                         <Typography
                           sx={{
