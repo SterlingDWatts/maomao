@@ -940,7 +940,6 @@ export const upNext: UpNextProps[] = [
     objectPosition: "50% 25%",
     TimerCard: LargeTimerCard,
     SiteLogo: FandangoLogo,
-    addContrastToTimer: true,
   },
   {
     avatar: StrangerLogo.src,
