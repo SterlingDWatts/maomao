@@ -10,22 +10,20 @@ import {
   NetflixLogo,
 } from "./svgs/svgLogos";
 
-import ADTheBeginning from "./assets/ADTheBeginning.jpg";
-import ApothecaryDiaries from "./assets/ApothecaryDiaries.jpg";
 import AllCreaturesSeason3Episode3 from "./assets/AllCreaturesSeason3Episode3.jpg";
 import Attack from "./assets/Attack.jpg";
 import AttackLogo from "./assets/AttackLogo.jpg";
 import ChainsawManMovie from "./assets/ChainsawManMovie.jpg";
 import DanDaDan from "./assets/DanDaDan.jpg";
 import DandadanLogo from "./assets/DandadanLogo.jpg";
+import Fantastic from "./assets/Fantastic.jpg";
+import FantasticLogo from "./assets/FantasticLogo.jpg";
 import FoundationAvatar from "./assets/FoundationAvatar.jpg";
 import FoundationSeason3 from "./assets/FoundationSeason3.jpg";
-import FoundationSeason3Episode2 from "./assets/FoundationSeason3Episode2.jpg";
 import FoundationSeason3Episode3 from "./assets/FoundationSeason3Episode3.jpg";
 import FrierenFrierensParty from "./assets/FrierenFrierensParty.jpg";
 import FrierenLogo from "./assets/FrierenLogo.jpg";
 import JamesLogo from "./assets/JamesLogo.jpg";
-import MaomaoSmall from "./assets/MaomaoSmall.jpg";
 import Masterchef from "./assets/Masterchef.jpg";
 import MasterchefLogo from "./assets/MasterchefLogo.jpg";
 import MyHeroFinalSeason from "./assets/MyHeroFinalSeason.jpg";
@@ -34,11 +32,17 @@ import NobodyWants from "./assets/NobodyWants.jpg";
 import NobodyWantsLogo from "./assets/NobodyWantsLogo.jpg";
 import Nyaight from "./assets/Nyaight.jpg";
 import NyaightLogo from "./assets/NyaightLogo.jpg";
+import Odyssey from "./assets/Odyssey.jpg";
+import OdysseyLogo from "./assets/OdysseyLogo.jpg";
+import OneBattle from "./assets/OneBattle.jpg";
+import OneBattleLogo from "./assets/OneBattleLogo.jpg";
 import OnlyMurdersintheBuilding from "./assets/OnlyMurdersintheBuilding.jpg";
 import OnlyMurdersLogo from "./assets/OnlyMurdersLogo.jpg";
 import PeacemakerLogo from "./assets/PeacemakerLogo.jpg";
 import PeacemakerSeason2 from "./assets/PeacemakerSeason2.jpg";
 import Pochita from "./assets/Pochita.jpg";
+import RunningMan from "./assets/RunningMan.jpg";
+import RunningManLogo from "./assets/RunningManLogo.jpg";
 import SlowHorsesBig from "./assets/SlowHorses.jpg";
 import SlowHorsesLogo from "./assets/SlowHorsesLogo.jpg";
 import SoloLeveling from "./assets/SoloLeveling.jpg";
@@ -131,21 +135,6 @@ export const availableNow: AvailableNowProps[] = [
     SiteLogo: HuluLogo,
   },
   {
-    avatar: AttackLogo.src,
-    title: "Attack on Titan",
-    subheader: "Historia",
-    season: 2,
-    episode: 5,
-    cardMedia: Attack.src,
-    cardMediaAlt: "Attack on Titan",
-    releaseDateTime: "April 29 2017 03:00:00 GMT-0700",
-    synopsis:
-      "Utgard Castle comes crumbling down as Ymir desperately battles the Titans. Now, Christa must fulfill the promise they made long ago during winter training.",
-    watchUrl: "https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan",
-    objectPosition: "15% 50%",
-    SiteLogo: CrunchyrollLogo,
-  },
-  {
     avatar: MasterchefLogo.src,
     title: "Masterchef",
     subheader: "Mister-y & Mrs. Box",
@@ -177,82 +166,66 @@ export const availableNow: AvailableNowProps[] = [
     SiteLogo: CrunchyrollLogo,
   },
   {
-    avatar: StoneLogo.src,
-    title: "Dr. Stone",
-    subheader: "Stone Wars Beginning",
-    season: 2,
-    episode: 1,
-    cardMedia: Stone.src,
-    cardMediaAlt: "Dr. Stone",
-    releaseDateTime: "May 16 2021 03:00:00 GMT-0700",
-    synopsis: `Senku continues in trying to advance the Stone World, this time he makes "space food", it is in actuality cup noodles. After Senku finishes his project, Gen has an epiphany and devises a plan to take down Tsukasa's army without violence.`,
+    avatar: DandadanLogo.src,
+    title: "Dandadan",
+    subheader: "Merge! Serpo Dover Demon Nessie!",
+    season: 1,
+    episode: 9,
+    cardMedia: DanDaDan.src,
+    cardMediaAlt: "Dandadan",
+    releaseDateTime: "November 28 2024 03:00:00 GMT-0700",
+    synopsis: `Aira has awakened the powers of Acrobatic Silky within her and proceeds to have a seesaw battle against the Serpoians and the Dover Demon. Momo and Okarun join the fray, intensifying the battle.`,
     watchUrl: "https://www.crunchyroll.com/series/GYEXQKJG6/dr-stone",
     objectPosition: "50% 50%",
     SiteLogo: CrunchyrollLogo,
   },
   {
-    avatar: DandadanLogo.src,
-    title: "Dandadan",
-    subheader: "I've Got This Funny Feeling",
-    season: 1,
-    episode: 8,
-    cardMedia: DanDaDan.src,
-    cardMediaAlt: "Dandadan",
-    releaseDateTime: "November 21 2024 03:00:00 GMT-0700",
-    synopsis: `The battle against Acrobatic Silky is over, Aira's romantic feelings stem from how Okarun saved her. As Momo, Okarun, and Aira's feelings intertwine, Serpoians make another appearance, and the three of them are trapped in void space.`,
-    watchUrl: "https://www.crunchyroll.com/series/GG5H5XQ0D/dan-da-dan",
-    objectPosition: "50% 40%",
+    avatar: StoneLogo.src,
+    title: "Dr. Stone",
+    subheader: "Hot Line",
+    season: 2,
+    episode: 2,
+    cardMedia: Stone.src,
+    cardMediaAlt: "Dr. Stone",
+    releaseDateTime: "May 23 2021 03:00:00 GMT-0700",
+    synopsis: `While Senku's diversion buys Gen and others some time, soon Homura realizes something is not right.`,
+    watchUrl: "https://www.crunchyroll.com/series/GYEXQKJG6/dr-stone",
+    objectPosition: "50% 50%",
     SiteLogo: CrunchyrollLogo,
   },
   {
     avatar: VinlandLogo.src,
     title: "Vinland Saga",
-    subheader: "For the Love That Was Lost",
+    subheader: "Dark Clouds",
     season: 2,
-    episode: 12,
+    episode: 13,
     cardMedia: VinlandSaga.src,
     cardMediaAlt: "Vinland Saga",
-    releaseDateTime: "March 21 2023 03:00:00 GMT-0700",
+    releaseDateTime: "April 03 2023 03:00:00 GMT-0700",
     synopsis:
-      "Olmar recieves some upsetting news, causing him to reach his breaking point. Meawhile, tensions arise as Canute sets his sights on Ketil's farm.",
+      "A slave kills his master and all his sons, as a result, a bounty amounting to three horses is placed on his head. The old master collapses tending the field and must be taken care of due to his poor health.",
     watchUrl: "https://www.crunchyroll.com/series/GEXH3WKK0/vinland-saga",
     objectPosition: "50% 34%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: AttackLogo.src,
+    title: "Attack on Titan",
+    subheader: "Close Combat",
+    season: 2,
+    episode: 7,
+    cardMedia: Attack.src,
+    cardMediaAlt: "Attack on Titan",
+    releaseDateTime: "May 13 2017 03:00:00 GMT-0700",
+    synopsis:
+      "With a new enemy revealed, Eren and the Scouts fight back using all the techniques at their disposal. However, the Armored and Colossal Titan have other plans in mind.",
+    watchUrl: "https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan",
+    objectPosition: "15% 50%",
     SiteLogo: CrunchyrollLogo,
   },
 ];
 
 export const upNext: UpNextProps[] = [
-  {
-    avatar: NyaightLogo.src,
-    title: "Nyaight of the Living Cat",
-    subheader: "",
-    season: 1,
-    episode: 3,
-    cardMedia: Nyaight.src,
-    cardMediaAlt: "Nyaight of the Living Cat",
-    releaseDateTime: "July 20 2025 07:15:00 GMT-0700",
-    synopsis: "",
-    watchUrl:
-      "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
-    objectPosition: "50% 20%",
-    TimerCard: LargeTimerCard,
-    SiteLogo: CrunchyrollLogo,
-  },
-  {
-    avatar: DandadanLogo.src,
-    title: "Dandadan",
-    subheader: "",
-    season: 2,
-    episode: 4,
-    cardMedia: DanDaDan.src,
-    cardMediaAlt: "Dandadan",
-    releaseDateTime: "July 24 2025 09:00:00 GMT-0700",
-    synopsis: ``,
-    watchUrl: "https://www.crunchyroll.com/series/GG5H5XQ0D/dan-da-dan",
-    objectPosition: "50% 40%",
-    SiteLogo: CrunchyrollLogo,
-    TimerCard: LargeTimerCard,
-  },
   {
     avatar: FoundationAvatar.src,
     title: "Foundation",
@@ -263,14 +236,27 @@ export const upNext: UpNextProps[] = [
     cardMediaAlt: "Foundation Season 3 Episode 3",
     releaseDateTime: "July 25 2025 03:00:00 GMT-0700",
     synopsis:
-      " An unexpected alliance is formed. Pritcher, Bayta, and Toran come face-to-face with the Mule. Demerzel seeks spiritual guidance.",
+      "An unexpected alliance is formed. Pritcher, Bayta, and Toran come face-to-face with the Mule. Demerzel seeks spiritual guidance.",
     watchUrl:
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
     objectPosition: "100% 40%",
     TimerCard: LargeTimerCard,
     SiteLogo: AppleLogo,
   },
-
+  {
+    avatar: FantasticLogo.src,
+    title: "The Fantastic Four: First Steps",
+    subheader: "",
+    cardMedia: Fantastic.src,
+    cardMediaAlt: "The Fantastic Four: First Steps",
+    releaseDateTime: "July 25 2025 16:00:00 GMT-0700",
+    synopsis:
+      "Forced to balance their roles as heroes with the strength of their family bond, the Fantastic Four must defend Earth from a ravenous space god called Galactus and his enigmatic Herald, Silver Surfer.",
+    watchUrl: "https://www.imdb.com/title/tt10676052/",
+    objectPosition: "100% 15%",
+    TimerCard: LargeTimerCard,
+    SiteLogo: FandangoLogo,
+  },
   {
     avatar: NyaightLogo.src,
     title: "Nyaight of the Living Cat",
@@ -284,7 +270,7 @@ export const upNext: UpNextProps[] = [
     watchUrl:
       "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
     objectPosition: "50% 20%",
-    TimerCard: SmallTimerCard,
+    TimerCard: LargeTimerCard,
     SiteLogo: CrunchyrollLogo,
   },
   {
@@ -300,7 +286,7 @@ export const upNext: UpNextProps[] = [
     watchUrl: "https://www.crunchyroll.com/series/GG5H5XQ0D/dan-da-dan",
     objectPosition: "50% 40%",
     SiteLogo: CrunchyrollLogo,
-    TimerCard: SmallTimerCard,
+    TimerCard: LargeTimerCard,
   },
   {
     avatar: FoundationAvatar.src,
@@ -785,6 +771,21 @@ export const upNext: UpNextProps[] = [
     SiteLogo: HBOLogo,
   },
   {
+    avatar: OneBattleLogo.src,
+    title: "One Battle After Another",
+    subheader: "",
+    cardMedia: OneBattle.src,
+    cardMediaAlt: "One Battle After Another",
+    releaseDateTime: "September 26 2025 16:00:00 GMT-0700",
+    watchUrl:
+      "https://www.imdb.com/title/tt30144839/?ref_=nm_flmg_job_1_unrel_t_1",
+    objectPosition: "50% 70%",
+    synopsis:
+      "When their evil enemy resurfaces after 16 years, a group of ex-revolutionaries reunite to rescue one of their own's daughter.",
+    TimerCard: LargeTimerCard,
+    SiteLogo: FandangoLogo,
+  },
+  {
     avatar: SlowHorsesLogo.src,
     title: "Slow Horses",
     subheader: "",
@@ -927,6 +928,21 @@ export const upNext: UpNextProps[] = [
     addContrastToTimer: true,
   },
   {
+    avatar: RunningManLogo.src,
+    title: "The Running Man",
+    subheader: "",
+    cardMedia: RunningMan.src,
+    cardMediaAlt: "The Running Man",
+    releaseDateTime: "November 07, 2025 16:00:00",
+    synopsis: `A man joins a game show where contestants, allowed to go anywhere in the world, are pursued by "hunters" hired to kill them.`,
+    isMovie: true,
+    watchUrl: "https://www.imdb.com/title/tt14107334/?ref_=mv_close",
+    objectPosition: "50% 25%",
+    TimerCard: LargeTimerCard,
+    SiteLogo: FandangoLogo,
+    addContrastToTimer: true,
+  },
+  {
     avatar: StrangerLogo.src,
     title: "Stranger Things",
     subheader: "Chapter One: The Crawl",
@@ -1056,5 +1072,21 @@ export const upNext: UpNextProps[] = [
     TimerCard: LargeTimerCard,
     SiteLogo: CrunchyrollLogo,
     addContrastToTimer: true,
+  },
+  {
+    avatar: OdysseyLogo.src,
+    title: "The Odyssey",
+    subheader: "",
+    cardMedia: Odyssey.src,
+    cardMediaAlt: "The Odyssey",
+    releaseDateTime: "July 17, 2026 16:00:00",
+    synopsis: `Follows Odysseus in his perilous journey home after the Trojan War, showcasing his encounters with Polyphemus, the Sirens, Circe, and finishing with his reunion with his wife, Penelope.`,
+    isMovie: true,
+    watchUrl:
+      "https://www.imdb.com/title/tt33764258/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_the%2520ody",
+    objectPosition: "50% 80%",
+    TimerCard: LargeTimerCard,
+    SiteLogo: FandangoLogo,
+    // addContrastToTimer: true,
   },
 ];
