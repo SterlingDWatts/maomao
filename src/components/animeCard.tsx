@@ -202,19 +202,25 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
             }}
           >
             <Box
-              sx={{ cursor: "pointer", position: "relative" }}
               onClick={() => setExpanded((prev) => !prev)}
+              sx={{
+                cursor: "pointer",
+                position: "relative",
+                color: "primary.dark",
+                overflow: expanded ? "visible" : "hidden",
+                textOverflow: expanded ? "clip" : "ellipsis",
+                whiteSpace: expanded ? "normal" : "nowrap",
+                transition: "all 0.2s",
+                fontWeight: "bold",
+              }}
             >
               <Typography
                 variant="body2"
+                component={"span"}
                 mt={1}
                 sx={{
                   color: "black",
                   fontWeight: "bold",
-                  overflow: expanded ? "visible" : "hidden",
-                  whiteSpace: expanded ? "normal" : "nowrap",
-                  textOverflow: expanded ? "clip" : "ellipsis",
-                  transition: "all 0.2s",
                 }}
               >
                 {anime.shortDescription}
