@@ -227,6 +227,20 @@ export const availableNow: AvailableNowProps[] = [
 
 export const upNext: UpNextProps[] = [
   {
+    avatar: FantasticLogo.src,
+    title: "The Fantastic Four: First Steps",
+    subheader: "",
+    cardMedia: Fantastic.src,
+    cardMediaAlt: "The Fantastic Four: First Steps",
+    releaseDateTime: "July 25 2025 16:00:00 GMT-0700",
+    synopsis:
+      "Forced to balance their roles as heroes with the strength of their family bond, the Fantastic Four must defend Earth from a ravenous space god called Galactus and his enigmatic Herald, Silver Surfer.",
+    watchUrl: "https://www.imdb.com/title/tt10676052/",
+    objectPosition: "100% 15%",
+    TimerCard: LargeTimerCard,
+    SiteLogo: FandangoLogo,
+  },
+  {
     avatar: FoundationAvatar.src,
     title: "Foundation",
     subheader: "",
@@ -242,37 +256,6 @@ export const upNext: UpNextProps[] = [
     objectPosition: "100% 40%",
     TimerCard: LargeTimerCard,
     SiteLogo: AppleLogo,
-  },
-  {
-    avatar: MasterchefLogo.src,
-    title: "Masterchef",
-    subheader: "Train to Table",
-    season: 15,
-    episode: 9,
-    cardMedia: Masterchef.src,
-    cardMediaAlt: "Masterchef",
-    releaseDateTime: "July 23 2025 21:00:00 GMT-0700",
-    synopsis:
-      "Two teams must prepare a VIP dining experience aboard a moving steam train.",
-    watchUrl:
-      "https://www.hulu.com/series/45d67197-5346-4adb-9d90-6ed2d7b7bd85",
-    objectPosition: "100% 27%",
-    TimerCard: LargeTimerCard,
-    SiteLogo: HuluLogo,
-  },
-  {
-    avatar: FantasticLogo.src,
-    title: "The Fantastic Four: First Steps",
-    subheader: "",
-    cardMedia: Fantastic.src,
-    cardMediaAlt: "The Fantastic Four: First Steps",
-    releaseDateTime: "July 25 2025 16:00:00 GMT-0700",
-    synopsis:
-      "Forced to balance their roles as heroes with the strength of their family bond, the Fantastic Four must defend Earth from a ravenous space god called Galactus and his enigmatic Herald, Silver Surfer.",
-    watchUrl: "https://www.imdb.com/title/tt10676052/",
-    objectPosition: "100% 15%",
-    TimerCard: LargeTimerCard,
-    SiteLogo: FandangoLogo,
   },
   {
     avatar: NyaightLogo.src,

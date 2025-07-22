@@ -46,7 +46,9 @@ export interface Anime {
   tags: string[];
   shortDescription?: string;
   longDescription?: string;
-  maomaoRecommendation?: boolean;
+  isMaomaoRecommendation?: boolean;
+  hasSterlingSeen?: boolean;
+  hasDawnSeen?: boolean;
 }
 
 export const animeList: Anime[] = [
@@ -71,6 +73,8 @@ export const animeList: Anime[] = [
     shortDescription:
       "After his hometown is destroyed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.",
     longDescription: `Centuries ago, mankind was slaughtered to near extinction by monstrous humanoid creatures called Titans, forcing humans to hide in fear behind enormous concentric walls. What makes these giants truly terrifying is that their taste for human flesh is not born out of hunger but what appears to be out of pleasure. To ensure their survival, the remnants of humanity began living within defensive barriers, resulting in one hundred years without a single titan encounter. However, that fragile calm is soon shattered when a colossal Titan manages to breach the supposedly impregnable outer wall, reigniting the fight for survival against the man-eating abominations. After witnessing a horrific personal loss at the hands of the invading creatures, Eren Yeager dedicates his life to their eradication by enlisting into the Survey Corps, an elite military unit that combats the merciless humanoids outside the protection of the walls. Eren, his adopted sister Mikasa Ackerman, and his childhood friend Armin Arlert join the brutal war against the Titans and race to discover a way of defeating them before the last walls are breached.`,
+    hasDawnSeen: true,
+    hasSterlingSeen: true,
   },
   {
     title: "Fullmetal Alchemist Brotherhood",
@@ -94,6 +98,8 @@ export const animeList: Anime[] = [
     shortDescription:
       "Two brothers search for a Philosopher's Stone after an attempt to revive their deceased mother goes awry and leaves them in damaged physical forms.",
     longDescription: `After a horrific alchemy experiment goes wrong in the Elric household, brothers Edward and Alphonse are left in a catastrophic new reality. Ignoring the alchemical principle banning human transmutation, the boys attempted to bring their recently deceased mother back to life. Instead, they suffered brutal personal loss: Alphonse's body disintegrated while Edward lost a leg and then sacrificed an arm to keep Alphonse's soul in the physical realm by binding it to a hulking suit of armor. The brothers are rescued by their neighbor Pinako Rockbell and her granddaughter Winry. Known as a bio-mechanical engineering prodigy, Winry creates prosthetic limbs for Edward by utilizing "automail," a tough, versatile metal used in robots and combat armor. After years of training, the Elric brothers set off on a quest to restore their bodies by locating the Philosopher's Stone—a powerful gem that allows an alchemist to defy the traditional laws of Equivalent Exchange. As Edward becomes an infamous alchemist and gains the nickname "Fullmetal," the boys' journey embroils them in a growing conspiracy that threatens the fate of the world.`,
+    hasDawnSeen: true,
+    hasSterlingSeen: true,
   },
   {
     title: "One Punch Man",
@@ -109,6 +115,8 @@ export const animeList: Anime[] = [
       "The story of Saitama, a hero that does it just for fun & can defeat his enemies with a single punch.",
     longDescription:
       "The seemingly unimpressive Saitama has a rather unique hobby: being a hero. In order to pursue his childhood dream, Saitama relentlessly trained for three years, losing all of his hair in the process. Now, Saitama is so powerful, he can defeat any enemy with just one punch. However, having no one capable of matching his strength has led Saitama to an unexpected problem—he is no longer able to enjoy the thrill of battling and has become quite bored. One day, Saitama catches the attention of 19-year-old cyborg Genos, who witnesses his power and wishes to become Saitama's disciple. Genos proposes that the two join the Hero Association in order to become certified heroes that will be recognized for their positive contributions to society. Saitama, who is shocked that no one knows who he is, quickly agrees. Meeting new allies and taking on new foes, Saitama embarks on a new journey as a member of the Hero Association to experience the excitement of battle he once felt.",
+
+    hasSterlingSeen: true,
   },
   {
     title: "My Hero Academia",
@@ -123,6 +131,8 @@ export const animeList: Anime[] = [
     shortDescription:
       "A superhero-admiring boy enrolls in a prestigious hero academy and learns what it really means to be a hero, after the strongest superhero grants him his own powers.",
     longDescription: `The appearance of "quirks," newly discovered super powers, has been steadily increasing over the years, with 80 percent of humanity possessing various abilities from manipulation of elements to shapeshifting. This leaves the remainder of the world completely powerless, and Izuku Midoriya is one such individual. Since he was a child, the ambitious middle schooler has wanted nothing more than to be a hero. Izuku's unfair fate leaves him admiring heroes and taking notes on them whenever he can. But it seems that his persistence has borne some fruit: Izuku meets the number one hero and his personal idol, All Might. All Might's quirk is a unique ability that can be inherited, and he has chosen Izuku to be his successor! Enduring many months of grueling training, Izuku enrolls in UA High, a prestigious high school famous for its excellent hero training program, and this year's freshmen look especially promising. With his bizarre but talented classmates and the looming threat of a villainous organization, Izuku will soon learn what it really means to be a hero.`,
+    hasDawnSeen: true,
+    hasSterlingSeen: true,
   },
   {
     title: "Naruto",
@@ -146,6 +156,8 @@ export const animeList: Anime[] = [
     shortDescription:
       "Naruto Uzumaki, a mischievous adolescent ninja, struggles as he searches for recognition and dreams of becoming the Hokage, the village's leader and strongest ninja.",
     longDescription: `Moments before Naruto Uzumaki's birth, a huge demon known as the Nine-Tailed Fox attacked Konohagakure, the Hidden Leaf Village, and wreaked havoc. In order to put an end to the demon's rampage, the leader of the village, the Fourth Hokage, sacrificed his life and sealed the monstrous beast inside the newborn Naruto. In the present, Naruto is a hyperactive and knuckle-headed ninja growing up within Konohagakure. Shunned because of the demon inside him, Naruto struggles to find his place in the village. His one burning desire to become the Hokage and be acknowledged by the villagers who despise him. However, while his goal leads him to unbreakable bonds with lifelong friends, it also lands him in the crosshairs of many deadly foes.`,
+    hasDawnSeen: true,
+    hasSterlingSeen: true,
   },
   {
     title: "Jujutsu Kaisen",
@@ -215,6 +227,7 @@ export const animeList: Anime[] = [
       "Naruto Uzumaki, is a loud, hyperactive, adolescent ninja who constantly searches for approval and recognition, as well as to become Hokage, who is acknowledged as the leader and strongest of all ninja in the village.",
     longDescription:
       "It has been two and a half years since Naruto Uzumaki left Konohagakure, the Hidden Leaf Village, for intense training following events which fueled his desire to be stronger. Now Akatsuki, the mysterious organization of elite rogue ninja, is closing in on their grand plan which may threaten the safety of the entire shinobi world. Although Naruto is older and sinister events loom on the horizon, he has changed little in personality—still rambunctious and childish—though he is now far more confident and possesses an even greater determination to protect his friends and home. Come whatever may, Naruto will carry on with the fight for what is important to him, even at the expense of his own body, in the continuation of the saga about the boy who wishes to become Hokage.",
+    hasSterlingSeen: true,
   },
   {
     title: "Assassination Classroom",
@@ -237,6 +250,8 @@ export const animeList: Anime[] = [
     shortDescription:
       "A powerful creature claims that within a year, Earth will be destroyed by him, but he offers mankind a chance by becoming a homeroom teacher where he teaches his students about how to kill him. An assassination classroom begins.",
     longDescription: `Tucked in the mountains near the elite Kunugigaoka Middle School lies a small derelict building that houses the delinquents and dropouts of Class 3-E. Looked down upon by their peers, the students in this class appear to have little hope in advancing their academic careers. That is, until the national government tasks them with eliminating the greatest threat to their planet: their new teacher. Having already destroyed the moon, the octopus-like professor—dubbed "Koro-sensei"—has now threatened to destroy the Earth by March of the following year. In light of their mission, the students have found that killing him is easier said than done. Not only can Koro-sensei move at speeds of up to Mach 20, but he can also resist almost every earthly weapon. Ironically, he also proves to be one of the best teachers Class 3-E has ever had. Training the class to excel in both their studies as students and skills as assassins, Koro-sensei is confident that his students' ingenuity and indomitable will could return them to the main campus. Through trial and error, Nagisa Shiota, as well as the other students of Class 3-E, must figure out Koro-sensei's weaknesses—and fast, for the very fate of the world depends upon it.`,
+    hasDawnSeen: true,
+    hasSterlingSeen: true,
   },
   {
     title: "Neon Genesis Evangelion",
@@ -259,6 +274,7 @@ export const animeList: Anime[] = [
     shortDescription:
       "A teenage boy finds himself recruited as a member of an elite team of pilots by his father.",
     longDescription: `Fifteen years after a cataclysmic event known as the Second Impact, the world faces a new threat: monstrous celestial beings called Angels invade Tokyo-3 one by one. Mankind is unable to defend themselves against the Angels despite utilizing their most advanced munitions and military tactics. The only hope for human salvation rests in the hands of NERV, a mysterious organization led by the cold Gendou Ikari. NERV operates giant humanoid robots dubbed "Evangelions" to combat the Angels with state-of-the-art advanced weaponry and protective barriers known as Absolute Terror Fields. Years after being abandoned by his father, Shinji Ikari, Gendou's 14-year-old son, returns to Tokyo-3. Shinji undergoes a perpetual internal battle against the deeply buried trauma caused by the loss of his mother and the emotional neglect he suffered at the hands of his father. Terrified to open himself up to another, Shinji's life is forever changed upon meeting 29-year-old Misato Katsuragi, a high-ranking NERV officer who shows him a free-spirited maternal kindness he has never experienced. A devastating Angel attack forces Shinji into action as Gendou reveals his true motive for inviting his son back to Tokyo-3: Shinji is the only child capable of efficiently piloting Evangelion Unit-01, a new robot that synchronizes with his biometrics. Despite the brutal psychological trauma brought about by piloting an Evangelion, Shinji defends Tokyo-3 against the angelic threat, oblivious to his father's dark machinations.`,
+    hasSterlingSeen: true,
   },
   {
     title: "Dr. Stone",
@@ -280,6 +296,8 @@ export const animeList: Anime[] = [
     shortDescription:
       "High schooler Taiju awakens from petrification millennia after a blinding light turned humanity to stone. He finds his scientific genius friend Senku working on a plan to rebuild civilization using science.",
     longDescription: `After five years of harboring unspoken feelings, high-schooler Taiju Ooki is finally ready to confess his love to Yuzuriha Ogawa. Just when Taiju begins his confession however, a blinding green light strikes the Earth and petrifies mankind around the world—turning every single human into stone. Several millennia later, Taiju awakens to find the modern world completely nonexistent, as nature has flourished in the years humanity stood still. Among a stone world of statues, Taiju encounters one other living human: his science-loving friend Senkuu, who has been active for a few months. Taiju learns that Senkuu has developed a grand scheme—to launch the complete revival of civilization with science. Taiju's brawn and Senkuu's brains combine to forge a formidable partnership, and they soon uncover a method to revive those petrified. However, Senkuu's master plan is threatened when his ideologies are challenged by those who awaken. All the while, the reason for mankind's petrification remains unknown.`,
+    hasDawnSeen: true,
+    hasSterlingSeen: true,
   },
   {
     title: "Chainsaw Man",
@@ -295,6 +313,7 @@ export const animeList: Anime[] = [
       "Following a betrayal, a young man left for dead is reborn as a powerful devil-human hybrid after merging with his pet devil and is soon enlisted into an organization dedicated to hunting devils.",
     longDescription:
       "Denji is robbed of a normal teenage life, left with nothing but his deadbeat father's overwhelming debt. His only companion is his pet, the chainsaw devil Pochita, with whom he slays devils for money that inevitably ends up in the yakuza's pockets. All Denji can do is dream of a good, simple life: one with delicious food and a beautiful girlfriend by his side. But an act of greedy betrayal by the yakuza leads to Denji's brutal, untimely death, crushing all hope of him ever achieving happiness. Remarkably, an old contract allows Pochita to merge with the deceased Denji and bestow devil powers on him, changing him into a hybrid able to transform his body parts into chainsaws. Because Denji's new abilities pose a significant risk to society, the Public Safety Bureau's elite devil hunter Makima takes him in, letting him live as long as he obeys her command. Guided by the promise of a content life alongside an attractive woman, Denji devotes everything and fights with all his might to make his naive dreams a reality.",
+    hasSterlingSeen: true,
   },
   {
     title: "Spy x Family",
@@ -309,6 +328,7 @@ export const animeList: Anime[] = [
     shortDescription:
       "A spy on an undercover mission gets married and adopts a child as part of his cover. His wife and daughter have secrets of their own, and all three must strive to keep together.",
     longDescription: `Corrupt politicians, frenzied nationalists, and other warmongering forces constantly jeopardize the thin veneer of peace between neighboring countries Ostania and Westalis. In spite of their plots, renowned spy and master of disguise "Twilight" fulfills dangerous missions one after another in the hope that no child will have to experience the horrors of war. In the bustling Ostanian city of Berlint, Twilight dons the alias of "Loid Forger," an esteemed psychiatrist. However, his true intention is to gather intelligence on prominent politician Donovan Desmond, who only appears rarely in public at his sons' school: the prestigious Eden Academy. Enlisting the help of unmarried city hall clerk Yor Briar to act as his wife and adopting the curious six-year-old orphan Anya as his daughter, Loid enacts his master plan. He will enroll Anya in Eden Academy, where Loid hopes she will excel and give him the opportunity to meet Donovan without arousing suspicion. Unfortunately for Loid, even a man of his talents has trouble playing the figure of a loving father and husband. And just like Loid is hiding his true identity, Yor—who is an underground assassin known as "Thorn Princess"—and Anya—an esper who can read people's minds—have no plans to disclose their own secrets either. Although this picture-perfect family is founded on deception, the Forgers gradually come to understand that the love they share for one another trumps all else.`,
+    isMaomaoRecommendation: true,
   },
   {
     title: "Gurren Lagann",
@@ -332,6 +352,7 @@ export const animeList: Anime[] = [
       "Two friends, Simon and Kamina, become the symbols of rebellion against the powerful Spiral King, who forced mankind into subterranean villages.",
     longDescription:
       "Simon and Kamina were born and raised in a deep, underground village, hidden from the fabled surface. Kamina is a free-spirited loose cannon bent on making a name for himself, while Simon is a timid young boy with no real aspirations. One day while excavating the earth, Simon stumbles upon a mysterious object that turns out to be the ignition key to an ancient artifact of war, which the duo dubs Lagann. Using their new weapon, Simon and Kamina fend off a surprise attack from the surface with the help of Yoko Littner, a hot-blooded redhead wielding a massive gun who wanders the world above. In the aftermath of the battle, the sky is now in plain view, prompting Simon and Kamina to set off on a journey alongside Yoko to explore the wastelands of the surface. Soon, they join the fight against the 'Beastmen,' humanoid creatures that terrorize the remnants of humanity in powerful robots called 'Gunmen.' Although they face some challenges and setbacks, the trio bravely fights these new enemies alongside other survivors to reclaim the surface, while slowly unraveling a galaxy-sized mystery.",
+    hasSterlingSeen: true,
   },
   {
     title: "Vinland Saga",
@@ -354,6 +375,8 @@ export const animeList: Anime[] = [
     shortDescription:
       "Following a tragedy, Thorfinn embarks on a journey with the man responsible for it to take his life in a duel as a true and honorable warrior to pay homage.",
     longDescription: `Young Thorfinn grew up listening to the stories of old sailors that had traveled the ocean and reached the place of legend, Vinland. It's said to be warm and fertile, a place where there would be no need for fighting—not at all like the frozen village in Iceland where he was born, and certainly not like his current life as a mercenary. War is his home now. Though his father once told him, "You have no enemies, nobody does. There is nobody who it's okay to hurt," as he grew, Thorfinn knew that nothing was further from the truth. The war between England and the Danes grows worse with each passing year. Death has become commonplace, and the viking mercenaries are loving every moment of it. Allying with either side will cause a massive swing in the balance of power, and the vikings are happy to make names for themselves and take any spoils they earn along the way. Among the chaos, Thorfinn must take his revenge and kill Askeladd, the man who murdered his father. The only paradise for the vikings, it seems, is the era of war and death that rages on.`,
+    hasDawnSeen: true,
+    hasSterlingSeen: true,
   },
   {
     title: "Kaguya-sama: Love is War",
@@ -377,6 +400,7 @@ export const animeList: Anime[] = [
     longDescription: `After a slow but eventful summer vacation, Shuchiin Academy's second term is now starting in full force. As August transitions into September, Miyuki Shirogane's birthday looms ever closer, leaving Kaguya Shinomiya in a serious predicament as to how to celebrate it. Furthermore, the tenure of the school's 67th student council is coming to an end. Due to the council members being in different classes, the only time Kaguya and Miyuki have to be together will soon disappear, putting all of their cunning plans at risk.
 
 A long and difficult election that will decide the fate of the new student council awaits, as multiple challengers fight for the coveted title of president.`,
+    isMaomaoRecommendation: true,
   },
   {
     title: "Samurai Champloo",
@@ -398,6 +422,8 @@ A long and difficult election that will decide the fate of the new student counc
     ],
     shortDescription: `Fuu, a waitress who works in a teahouse, rescues two master swordsmen, Mugen and Jin, from their execution to help her find the "samurai who smells of sunflowers."`,
     longDescription: `Fuu Kasumi is a young and clumsy waitress who spends her days peacefully working in a small teahouse. That is, until she accidentally spills a drink all over one of her customers! With a group of samurai now incessantly harassing her, Fuu desperately calls upon another samurai in the shop, Mugen, who quickly defeats them with his wild fighting technique, utilizing movements reminiscent to that of breakdancing. Unfortunately, Mugen decides to pick a fight with the unwilling ronin Jin, who wields a more precise and traditional style of swordfighting, and the latter proves to be a formidable opponent. The only problem is, they end up destroying the entire shop as well as accidentally killing the local magistrate's son. For their crime, the two samurai are captured and set to be executed. However, they are rescued by Fuu, who hires the duo as her bodyguards. Though she no longer has a place to return to, the former waitress wishes to find a certain samurai who smells of sunflowers and enlists the help of the now exonerated pair to do so. Despite initially disapproving of this idea, the two eventually agree to assist the girl in her quest; thus, the trio embark upon an adventure to find this mysterious warrior—that is, if Fuu can keep Mugen and Jin from killing each other. Set in an alternate Edo Period of Japan, Samurai Champloo follows the journey of these three eccentric individuals in an epic quest full of action, comedy, and dynamic sword fighting, all set to the beat of a unique hip-hop infused soundtrack.`,
+    hasDawnSeen: true,
+    hasSterlingSeen: true,
   },
   {
     title: "Frieren: Beyond Journey's End",
@@ -421,6 +447,8 @@ A long and difficult election that will decide the fate of the new student counc
     shortDescription:
       "Elf mage Frieren and her fellow adventurers have defeated the Demon King and brought peace to the land. But Frieren will long outlive the rest of her former party. How will she come to understand what life means to the people around her?",
     longDescription: `During their decade-long quest to defeat the Demon King, the members of the hero's party—Himmel himself, the priest Heiter, the dwarf warrior Eisen, and the elven mage Frieren—forge bonds through adventures and battles, creating unforgettable precious memories for most of them. However, the time that Frieren spends with her comrades is equivalent to merely a fraction of her life, which has lasted over a thousand years. When the party disbands after their victory, Frieren casually returns to her "usual" routine of collecting spells across the continent. Due to her different sense of time, she seemingly holds no strong feelings toward the experiences she went through. As the years pass, Frieren gradually realizes how her days in the hero's party truly impacted her. Witnessing the deaths of two of her former companions, Frieren begins to regret having taken their presence for granted; she vows to better understand humans and create real personal connections. Although the story of that once memorable journey has long ended, a new tale is about to begin.`,
+    hasDawnSeen: true,
+    hasSterlingSeen: true,
   },
   {
     title: "Solo Leveling",
@@ -444,6 +472,8 @@ A long and difficult election that will decide the fate of the new student counc
     shortDescription:
       "Follows the adventures of Sung Jinwoo in a world that is constantly threatened by monsters and evil forces. In his battles Sung transforms himself from the weakest hunter of all mankind to one of the strongest hunters in existence.",
     longDescription: ``,
+    hasDawnSeen: true,
+    hasSterlingSeen: true,
   },
   {
     title: "Yona of the Dawn",
@@ -467,6 +497,9 @@ A long and difficult election that will decide the fate of the new student counc
     shortDescription:
       "Princess Yona makes a new life after fleeing the palace when the man she loves kills her father.",
     longDescription: `The kingdom of Kouka is blessed with a beautiful princess whose childlike innocence charms all who come across her. Named Yona, she has grown up sheltered in the royal palace, shielded from any danger that may befall her. However, all good things must come to an end. Yona's perfect world comes crashing down when a heinous act of treason threatens to erase all that she holds dear, including her birthright as the princess of Kouka. Left with no one to trust but her childhood friend and loyal bodyguard Son Hak, she is forced to flee the palace. Faced with the perils of surviving in the wild with a target on her back, Yona realizes that her kingdom is no longer the safe haven it once was. Free from the shackles of naivety, Yona vows to do everything in her power to become strong enough to crush her enemies. With Hak by her side, she must piece together the remains of an ancient legend that might be the key to reclaiming her kingdom from those who conspired to steal it from her.`,
+    hasDawnSeen: true,
+    hasSterlingSeen: true,
+    isMaomaoRecommendation: true,
   },
   {
     title: "Fruits Basket",
@@ -491,7 +524,7 @@ A long and difficult election that will decide the fate of the new student counc
       "After Tohru is taken in by the Soma family, she learns that twelve family members transform involuntarily into animals of the Chinese zodiac and helps them deal with the emotional pain caused by the transformations.",
     longDescription:
       'Tooru Honda has always been fascinated by the story of the Chinese zodiac that her beloved mother told her as a child. However, a sudden family tragedy changes her life, and subsequent circumstances leave her all alone. Tooru is now forced to live in a tent, but little does she know that her temporary home resides on the private property of the esteemed Souma family. Stumbling upon their home one day, she encounters Shigure, an older Souma cousin, and Yuki, the "prince" of her school. Tooru explains that she lives nearby, but the Soumas eventually discover her well-kept secret of being homeless when they see her walking back to her tent one night. Things start to look up for Tooru as they kindly offer to take her in after hearing about her situation. But soon after, she is caught up in a fight between Yuki and his hot-tempered cousin, Kyou. While trying to stop them, she learns that the Souma family has a well-kept secret of their own: whenever they are hugged by a member of the opposite sex, they transform into the animals of the Chinese zodiac. With this new revelation, Tooru will find that living with the Soumas is an unexpected adventure filled with laughter and romance.',
-    maomaoRecommendation: true,
+    isMaomaoRecommendation: true,
   },
   {
     title: "Trigun",
@@ -515,6 +548,7 @@ A long and difficult election that will decide the fate of the new student counc
       "Vash the Stampede is the most infamous outlaw on the planet Gunsmoke and with a 60 billion double dollar price on his head the most sought after.",
     longDescription:
       "Vash the Stampede is the man with a $$60,000,000,000 bounty on his head. The reason: he's a merciless villain who lays waste to all those that oppose him and flattens entire cities for fun, garnering him the title \"The Humanoid Typhoon.\" He leaves a trail of death and destruction wherever he goes, and anyone can count themselves dead if they so much as make eye contact—or so the rumors say. In actuality, Vash is a huge softie who claims to have never taken a life and avoids violence at all costs. With his crazy doughnut obsession and buffoonish attitude in tow, Vash traverses the wasteland of the planet Gunsmoke, all the while followed by two insurance agents, Meryl Stryfe and Milly Thompson, who attempt to minimize his impact on the public. But soon, their misadventures evolve into life-or-death situations as a group of legendary assassins are summoned to bring about suffering to the trio. Vash's agonizing past will be unraveled and his morality and principles pushed to the breaking point.",
+    hasSterlingSeen: true,
   },
   {
     title: "Dandadan",
@@ -539,6 +573,8 @@ A long and difficult election that will decide the fate of the new student counc
     shortDescription:
       "When Momo and Okarun's beliefs clash, they're thrown into a world of ghosts, aliens and awakened powers. ",
     longDescription: `Reeling from her recent breakup, Momo Ayase, a popular high schooler, shows kindness to her socially awkward schoolmate, Ken Takakura, by standing up to his bullies. Ken misunderstands her intentions, believing he has made a new friend who shares his obsession with aliens and UFOs. However, Momo's own eccentric occult beliefs lie in the supernatural realm; she thinks aliens do not exist. A rivalry quickly brews as each becomes determined to prove the other wrong. Despite their initial clash over their opposing beliefs, Momo and Ken form an unexpected but intimate friendship, a bond forged in a series of supernatural battles and bizarre encounters with urban legends and paranormal entities. As both develop unique superhuman abilities, they learn to supplement each other's weaknesses, leading them to wonder if their newfound partnership may be about more than just survival.`,
+    hasDawnSeen: true,
+    hasSterlingSeen: true,
   },
   {
     title: "Snow White with the Red Hair",
@@ -563,7 +599,7 @@ A long and difficult election that will decide the fate of the new student counc
       "Although her name means 'white as snow', Shirayuki is a cheerful red-haired girl who lives in the town of Tanbarun and works diligently as an apothecary in her herbal shop.",
     longDescription:
       "Although her name means \"snow white,\" Shirayuki is a cheerful, red-haired girl living in the country of Tanbarun who works diligently as an apothecary at her herbal shop. Her life changes drastically when she is noticed by the silly prince of Tanbarun, Prince Raji, who then tries to force her to become his concubine. Unwilling to give up her freedom, Shirayuki cuts her long red hair and escapes into the forest, where she is rescued from Raji by Zen Wistalia, the second prince of a neighboring country, and his two aides. Hoping to repay her debt to the trio someday, Shirayuki sets her sights on pursuing a career as the court herbalist in Zen's country, Clarines. Akagami no Shirayuki-hime depicts Shirayuki's journey toward a new life at the royal palace of Clarines, as well as Zen's endeavor to become a prince worthy of his title. As loyal friendships are forged and deadly enemies formed, Shirayuki and Zen slowly learn to support each other as they walk their own paths.",
-    maomaoRecommendation: true,
+    isMaomaoRecommendation: true,
   },
   {
     title: "The Apothecary Diaries",
@@ -585,6 +621,9 @@ A long and difficult election that will decide the fate of the new student counc
     shortDescription:
       "A young maiden is kidnapped and sold into servitude at the emperor's palace, where she secretly employs her pharmacist skills with the help of the head eunuch to unravel medical mysteries in the inner court.",
     longDescription: `Maomao, an apothecary's daughter, has been plucked from her peaceful life and sold to the lowest echelons of the imperial court. Now merely a maid, Maomao settles into her new mundane life and hides her extensive knowledge of medicine in order to avoid any unwanted attention. Not long after Maomao's arrival, the emperor's infant children inexplicably begin to experience grave symptoms—almost as if a curse has been cast. The curious Maomao easily solves the mystery and, to remain out of the limelight, attempts to leave an anonymous tip. Unfortunately, the dashing and perceptive eunuch Jinshi sees through it and manages to single her out. In recognition of her talent, Maomao is promoted to lady-in-waiting for the emperor's favorite concubine, Gyokuyou. As Maomao continues to remedy the numerous ailments afflicting the imperial court, her pharmaceutical expertise quickly proves indispensable.`,
+    hasDawnSeen: true,
+    hasSterlingSeen: true,
+    isMaomaoRecommendation: true,
   },
   {
     title: "Bleach: Thousand-Year Blood War",
@@ -623,6 +662,7 @@ A long and difficult election that will decide the fate of the new student counc
       "A brilliant Japanese student teams up with an enigmatic young female prodigy to unravel mysteries across 1920s Europe, with their sleuthing adventures leading them through a web of intrigue and suspense.",
     longDescription:
       'Kazuya Kujou is a foreign student at Saint Marguerite Academy, a luxurious boarding school in the Southern European country of Sauville. Originally from Japan, his jet-black hair and dark brown eyes cause his peers to shun him and give him the nickname "Black Reaper," based on a popular urban legend about the traveler who brings death in the spring. On a day like any other, Kujou visits the school\'s extravagant library in search of ghost stories. However, his focus soon changes as he becomes curious about a golden strand of hair on the stairs. The steps lead him to a large garden and a beautiful doll-like girl known as Victorique de Blois, whose complex and imaginative foresight allows her to predict their futures, now intertwined. With more mysteries quickly developing—including the appearance of a ghost ship and an alchemist with the power of transmutation—Victorique and Kujou, bound by fate and their unique skills, have no choice but to rely on each other.',
+    isMaomaoRecommendation: true,
   },
   {
     title: "Delicious in Dungeon",
@@ -669,7 +709,7 @@ A long and difficult election that will decide the fate of the new student counc
       "Urano, a young Japanese soon-to-be librarian, dies in an earthquake. She is reincarnated in another world as a young girl named Mayne, but learns books are scarce and only provided to prestigious elites.",
     longDescription:
       "Urano Motosu loves books and has an endless desire to read literature, no matter the subject. She almost fulfills her dream job of becoming a librarian before her life is ended in an accident. As she draws her last breath, she wishes to be able to read more books in her next life. As if fate was listening to her prayer, she wakes up reincarnated as Myne—a frail five-year-old girl living in a medieval era. What immediately comes to her mind is her passion. She tries to find something to read, only to become frustrated by the lack of books at her disposal. Without the printing press, books have to be written and copied by hand, making them very expensive; as such, only a few nobles can afford them—but this won't stop Myne. She will prove that her will to read is unbreakable, and if there are no books around, she will make them herself!",
-    maomaoRecommendation: true,
+    isMaomaoRecommendation: true,
   },
   {
     title: "Lazarus",
@@ -684,6 +724,8 @@ A long and difficult election that will decide the fate of the new student counc
     shortDescription:
       "In 2052, an emergency task force is assembled when a miracle cure is hijacked for purging populations.",
     longDescription: `In the year 2048, Dr. Deniz Skinner, a scientific genius dubbed second only to Einstein, developed the revolutionary painkiller Hapna. Being cheap with no reported side effects, the drug gained widespread acceptance, even though Skinner himself silently vanished one year after launching the drug. Everyone revelled in the heaven of relief and ecstasy provided by Hapna, but they would suddenly come crashing down to Earth. It is now 2052, and Skinner reappears, giving the shocking announcement that Hapna was designed to mutate into a lethal toxin, killing anyone who had consumed it. While he claims to have a cure, he will only hand it over if he is physically found within 30 days. Axel Gilberto, a maverick youngster serving a sentence of 888 years in a high-security prison, is unwillingly recruited by a group calling themselves Lazarus. Composed of eccentric misfits, the group has only one task—to find Skinner. With no means to escape and their lives on the line, Lazarus begins the hunt to find Skinner before the countdown to the end of humanity ends.`,
+    hasDawnSeen: true,
+    hasSterlingSeen: true,
   },
   {
     title: "Raven of the Inner Palace",
@@ -699,7 +741,7 @@ A long and difficult election that will decide the fate of the new student counc
       "The Raven Consort is a special consort living deep in the inner palace; Shouxue has the ability to use mysterious arts and will accept any favor asked of her, whether it is to find something lost or to curse someone to death.",
     longDescription:
       "Among the royal court, there is an individual feared as much as revered: the Raven Consort Ryuu Jusetsu. Residing in her jet-black palace and isolated from the emperor, she is the subject of countless rumors. Claimed to possess mystic abilities, she is said to take on any request—from finding lost items to inflicting curses. While some call her an immortal sage, others believe her to be a terrifying revenant. But such comments fail to faze Jusetsu, who prefers to spend her days in quiet solitude. That is, until the emperor, Ka Koushun, barges into her court and asks for her assistance with a mysterious case. The young emperor's request requires Jusetsu to step out of her palace for the first time. Despite Ka Koushun's frequent visits annoying her to no end, she cannot bring herself to turn him away. Her predecessor's teachings echo in her ears: the Raven Consort is destined to remain forever alone and never desire anything. Yet Jusetsu finds herself making the first of several bonds when she asks Jiujiu, an innocently inquisitive court girl, to be her sole attendant. Together, they begin fulfilling requests from the people of the palace. However, unknown perils lurk in the outside world, and drawing attention to herself may bring Jusetsu face-to-face with a past that is better left undisturbed.",
-    maomaoRecommendation: true,
+    isMaomaoRecommendation: true,
   },
   {
     title: "The Story of Saiunkoku",
@@ -725,6 +767,6 @@ A long and difficult election that will decide the fate of the new student counc
       "A girl called Sho Ruurei is offered 500 gold coins to become the King's consort. She carelessly accepts the offer and has to tutor the King. The King falls in love with her however his brother is in love with her too.",
     longDescription:
       "Shuurei Kou, the daughter of a noble yet impoverished family, is a clever young lady who dreams of becoming a government official and contributing toward her country. However, her dream is out of her reach as such a position is forbidden to women. While her father works a low wage job as an archivist at the palace, Shuurei has to juggle odd jobs to make ends meet. Then, one day, an unexpected visit changes her life. Shuurei is called to assist Ryuuki Shi, the new emperor who is known for slacking on his duties and preferring the company of men. Tempted by the generous compensation, she readily accepts the chance to become the young emperor's consort for six months. Luckily, she is not alone as Seiran Shi, her trusty friend, joins her as Ryuuki's bodyguard. While tasked with transforming the new emperor into a responsible ruler, court life and politics prove troublesome as Shuurei faces the challenges of her new life. Set in a fictional country, Saiunkoku Monogatari centers on the idea of meaningful leadership, its adversities and the rewards that come alongside a prospering nation.",
-    maomaoRecommendation: true,
+    isMaomaoRecommendation: true,
   },
 ];

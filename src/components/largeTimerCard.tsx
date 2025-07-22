@@ -13,6 +13,7 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import LocalMoviesIcon from "@mui/icons-material/LocalMovies";
 
 import Timer from "./timer";
@@ -207,9 +208,9 @@ export default function LargeTimerCard({
                 <ExpandLessIcon />
               </IconButton>
             ) : (
-              <Button component="button" color="secondary">
-                Plot
-              </Button>
+              <IconButton>
+                <ExpandMoreIcon />
+              </IconButton>
             )}
           </ExpandMore>
         )}

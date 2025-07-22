@@ -190,14 +190,7 @@ export default function AnimeTrackerPage() {
               </Typography>
             </Box>
 
-            <Stack
-            // sx={{
-            //   "& .MuiCard-root:not(:first-child) > .MuiBox-root > .MuiCardContent-root":
-            //     {
-            //       borderTop: "1px solid rgb(0, 0, 0)",
-            //     },
-            // }}
-            >
+            <Stack>
               {sortedAnimeList.map((anime) => (
                 <AnimeCard key={anime.title} anime={anime} />
               ))}

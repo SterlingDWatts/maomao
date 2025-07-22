@@ -13,10 +13,14 @@ import IconButton from "@mui/material/IconButton";
 import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
 import Stack from "@mui/material/Stack";
+import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import Face3Icon from "@mui/icons-material/Face3";
+import Face5Icon from "@mui/icons-material/Face5";
+import LocalFloristIcon from "@mui/icons-material/LocalFlorist";
 
 import { abbreviateNumber } from "@/app/utils";
 
@@ -53,28 +57,6 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
           boxShadow: "none",
         }}
       >
-        {anime.maomaoRecommendation && (
-          <Box
-            sx={{
-              position: "absolute",
-              top: -4,
-              right: -45,
-              backgroundColor: "tertiary.darker",
-              color: "white",
-              padding: "0px 40px 0px 120px",
-              fontSize: "0.7rem",
-              fontWeight: "bold",
-              textAlign: "center",
-              transform: "rotate(15deg)",
-              transformOrigin: "center",
-              zIndex: 10,
-              boxShadow: "0 2px 4px rgba(0,0,0,0.2)",
-              borderRadius: "2px",
-            }}
-          >
-            maomao recom
-          </Box>
-        )}
         <Box
           sx={{
             position: "relative",
@@ -108,17 +90,40 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
               "&.MuiCardContent-root:last-child": { pb: 1.5 },
             }}
           >
-            <Typography
-              sx={{
-                color: "black",
-                fontWeight: "bold",
-                fontSize: 14,
-                "& sup": { fontSize: 8 },
-              }}
+            <Stack
+              direction="row"
+              justifyContent={"space-between"}
+              sx={{ width: "100%" }}
             >
-              {anime.year} <Bullet /> {anime.episodes}
-              <sup> EPISODES</sup>
-            </Typography>
+              <Typography
+                sx={{
+                  color: "black",
+                  fontWeight: "bold",
+                  fontSize: 14,
+                  "& sup": { fontSize: 8 },
+                }}
+              >
+                {anime.year} <Bullet /> {anime.episodes}
+                <sup> EPISODES</sup>
+              </Typography>
+              <Stack direction="row" spacing={1}>
+                {anime.isMaomaoRecommendation && (
+                  <Tooltip title="maomao recommendation">
+                    <LocalFloristIcon sx={{ fontSize: 14 }} />
+                  </Tooltip>
+                )}
+                {anime.hasDawnSeen && (
+                  <Tooltip title="Dawn has watched this">
+                    <Face3Icon sx={{ fontSize: 14 }} />
+                  </Tooltip>
+                )}
+                {anime.hasSterlingSeen && (
+                  <Tooltip title="Sterling has watched this">
+                    <Face5Icon sx={{ fontSize: 14 }} />
+                  </Tooltip>
+                )}
+              </Stack>
+            </Stack>
             <Typography
               variant="h5"
               sx={{
@@ -197,7 +202,7 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
           <CardContent
             sx={{
               paddingTop: 0,
-              marginTop: -1.5,
+              marginTop: -1,
               "&:last-child": { paddingBottom: 1 },
             }}
           >
