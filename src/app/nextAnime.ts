@@ -16,6 +16,8 @@ import Gosick from "./assets/Gosick.jpg";
 import Gurren from "./assets/Gurren.jpg";
 import Hero from "./assets/Hero.jpg";
 import Jujutsu from "./assets/Jujutsu.jpg";
+import KaguyaSama from "./assets/KaguyaSama.jpg";
+import KaguyaSamaLogo from "./assets/KaguyaSamaLogo.png";
 import Lazarus from "./assets/Lazarus.jpg";
 import Naruto from "./assets/Naruto.jpg";
 import NarutoShippuden from "./assets/NarutoShippuden.jpg";
@@ -352,6 +354,29 @@ export const animeList: Anime[] = [
     shortDescription:
       "Following a tragedy, Thorfinn embarks on a journey with the man responsible for it to take his life in a duel as a true and honorable warrior to pay homage.",
     longDescription: `Young Thorfinn grew up listening to the stories of old sailors that had traveled the ocean and reached the place of legend, Vinland. It's said to be warm and fertile, a place where there would be no need for fighting—not at all like the frozen village in Iceland where he was born, and certainly not like his current life as a mercenary. War is his home now. Though his father once told him, "You have no enemies, nobody does. There is nobody who it's okay to hurt," as he grew, Thorfinn knew that nothing was further from the truth. The war between England and the Danes grows worse with each passing year. Death has become commonplace, and the viking mercenaries are loving every moment of it. Allying with either side will cause a massive swing in the balance of power, and the vikings are happy to make names for themselves and take any spoils they earn along the way. Among the chaos, Thorfinn must take his revenge and kill Askeladd, the man who murdered his father. The only paradise for the vikings, it seems, is the era of war and death that rages on.`,
+  },
+  {
+    title: "Kaguya-sama: Love is War",
+    year: 2019,
+    episodes: 43,
+    rating: 8.62,
+    ratingOutOf: 922046,
+    rank: 89,
+    popularity: 99,
+    picture: KaguyaSama.src,
+    tags: [
+      "Romantic Comedy",
+      "Seinen",
+      "Slice of Life",
+      "Teen Romance",
+      "Comedy",
+      "Romance",
+    ],
+    shortDescription:
+      "The proudly privileged top two students of an elite school each makes it their mission to be the first to extract a confession of love from the other.",
+    longDescription: `After a slow but eventful summer vacation, Shuchiin Academy's second term is now starting in full force. As August transitions into September, Miyuki Shirogane's birthday looms ever closer, leaving Kaguya Shinomiya in a serious predicament as to how to celebrate it. Furthermore, the tenure of the school's 67th student council is coming to an end. Due to the council members being in different classes, the only time Kaguya and Miyuki have to be together will soon disappear, putting all of their cunning plans at risk.
+
+A long and difficult election that will decide the fate of the new student council awaits, as multiple challengers fight for the coveted title of president.`,
   },
   {
     title: "Samurai Champloo",
