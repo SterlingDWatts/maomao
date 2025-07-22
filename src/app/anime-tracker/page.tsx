@@ -11,6 +11,8 @@ import Container from "@mui/material/Container";
 import CssBaseline from "@mui/material/CssBaseline";
 import FormControl from "@mui/material/FormControl";
 import IconButton from "@mui/material/IconButton";
+import InputAdornment from "@mui/material/InputAdornment";
+import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
 import Stack from "@mui/material/Stack";
@@ -18,7 +20,9 @@ import Typography from "@mui/material/Typography";
 
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import FilterListIcon from "@mui/icons-material/FilterList";
 import SortIcon from "@mui/icons-material/Sort";
+
 import { ThemeProvider } from "@mui/material/styles";
 
 import DrawerAppBar from "../../components/appBarWithResponsiveMenu";
@@ -32,14 +36,35 @@ import { abbreviateNumber } from "../utils";
 
 export default function AnimeTrackerPage() {
   const [sortBy, setSortBy] = React.useState<
-    "title" | "year" | "rating" | "rank" | "popularity"
-  >("rank");
+    "title" | "year" | "rating" | "rank" | "popularity" | ""
+  >("");
   const [sortDirection, setSortDirection] = React.useState<"asc" | "desc">(
     "asc",
   );
+  const [filterBy, setFilterBy] = React.useState<
+    "all" | "maomao" | "dawn" | "sterling" | "neither" | ""
+  >("");
 
   const sortedAnimeList = React.useMemo(() => {
-    return [...animeList].sort((a, b) => {
+    // First filter the anime list
+    const filteredList = animeList.filter((anime) => {
+      switch (filterBy) {
+        case "maomao":
+          return anime.isMaomaoRecommendation === true;
+        case "dawn":
+          return anime.hasDawnSeen === true;
+        case "sterling":
+          return anime.hasSterlingSeen === true;
+        case "neither":
+          return anime.hasDawnSeen !== true && anime.hasSterlingSeen !== true;
+        case "all":
+        default:
+          return true;
+      }
+    });
+
+    // Then sort the filtered list
+    return [...filteredList].sort((a, b) => {
       let aValue: string | number;
       let bValue: string | number;
 
@@ -65,8 +90,8 @@ export default function AnimeTrackerPage() {
           bValue = b.popularity;
           break;
         default:
-          aValue = a.title.toLowerCase();
-          bValue = b.title.toLowerCase();
+          aValue = a.rank;
+          bValue = b.rank;
       }
 
       if (typeof aValue === "string" && typeof bValue === "string") {
@@ -83,10 +108,14 @@ export default function AnimeTrackerPage() {
         }
       }
     });
-  }, [sortBy, sortDirection]);
+  }, [sortBy, sortDirection, filterBy]);
 
   const handleSortChange = (event: any) => {
     setSortBy(event.target.value);
+  };
+
+  const handleFilterChange = (event: any) => {
+    setFilterBy(event.target.value);
   };
 
   const toggleSortDirection = () => {
@@ -118,7 +147,7 @@ export default function AnimeTrackerPage() {
               sx={{
                 mb: 3,
                 display: "flex",
-                alignItems: "center",
+                alignItems: "end",
                 flexWrap: "wrap",
                 marginTop: 2,
                 paddingLeft: { xs: 1, sm: 0 },
@@ -128,18 +157,34 @@ export default function AnimeTrackerPage() {
               <FormControl
                 size="small"
                 sx={{
-                  minWidth: 90,
+                  minWidth: 112,
                 }}
                 variant="standard"
                 color="primary"
               >
+                <InputLabel id="anime-tracker-sort-select">Sort By</InputLabel>
                 <Select
                   labelId="sort-select-label"
                   value={sortBy}
                   label="Sort By"
                   onChange={handleSortChange}
-                  endAdornment={<SortIcon />}
                   id="anime-tracker-sort-select"
+                  endAdornment={
+                    <InputAdornment position="end">
+                      <IconButton
+                        color="primary"
+                        size="medium"
+                        onClick={toggleSortDirection}
+                        sx={{ padding: 0 }}
+                      >
+                        {sortDirection === "asc" ? (
+                          <ArrowUpwardIcon />
+                        ) : (
+                          <ArrowDownwardIcon />
+                        )}
+                      </IconButton>
+                    </InputAdornment>
+                  }
                   sx={{
                     color: "primary.main",
                     fontWeight: "bold",
@@ -147,7 +192,7 @@ export default function AnimeTrackerPage() {
                       backgroundColor: "tertiary.main",
                       color: "black",
                     },
-                    "& .MuiSvgIcon-root": {
+                    "& .MuiSvgIcon-root.MuiSelect-icon": {
                       display: "none",
                     },
                     "& div#anime-tracker-sort-select ": { paddingRight: 0 },
@@ -161,22 +206,49 @@ export default function AnimeTrackerPage() {
                 </Select>
               </FormControl>
 
-              <IconButton
-                color="primary"
-                size="medium"
-                onClick={toggleSortDirection}
+              <FormControl
+                size="small"
                 sx={{
-                  "&:hover": {
-                    backgroundColor: "tertiary.main",
-                  },
+                  minWidth: 177,
+                  ml: 2,
                 }}
+                variant="standard"
+                color="primary"
               >
-                {sortDirection === "asc" ? (
-                  <ArrowUpwardIcon />
-                ) : (
-                  <ArrowDownwardIcon />
-                )}
-              </IconButton>
+                <InputLabel id="anime-tracker-filter-select">
+                  Filter By
+                </InputLabel>
+                <Select
+                  labelId="filter-select-label"
+                  value={filterBy}
+                  label="Filter By"
+                  onChange={handleFilterChange}
+                  id="anime-tracker-filter-select"
+                  endAdornment={
+                    <InputAdornment position="end">
+                      <FilterListIcon color="primary" />
+                    </InputAdornment>
+                  }
+                  sx={{
+                    color: "primary.main",
+                    fontWeight: "bold",
+                    "&:hover": {
+                      backgroundColor: "tertiary.main",
+                      color: "black",
+                    },
+                    "& .MuiSvgIcon-root.MuiSelect-icon": {
+                      display: "none",
+                    },
+                    "& div#anime-tracker-filter-select ": { paddingRight: 0 },
+                  }}
+                >
+                  <MenuItem value="all">All Anime</MenuItem>
+                  <MenuItem value="maomao">Maomao Recommends</MenuItem>
+                  <MenuItem value="dawn">Dawn Has Watched</MenuItem>
+                  <MenuItem value="sterling">Sterling Has Watched</MenuItem>
+                  <MenuItem value="neither">Neither Have Watched</MenuItem>
+                </Select>
+              </FormControl>
 
               <Typography
                 sx={{
