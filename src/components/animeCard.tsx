@@ -234,7 +234,7 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
           </CardContent>
         )}
       </Card>
-      <Divider variant="middle" />
+      <Divider color="black" />
     </>
   );
 }
