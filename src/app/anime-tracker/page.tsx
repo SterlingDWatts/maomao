@@ -150,6 +150,7 @@ export default function AnimeTrackerPage() {
                 alignItems: "end",
                 flexWrap: "wrap",
                 marginTop: 2,
+                gap: 2,
                 paddingLeft: { xs: 1, sm: 0 },
                 paddingRight: { xs: 1, sm: 0 },
               }}
@@ -173,7 +174,6 @@ export default function AnimeTrackerPage() {
                     <InputAdornment position="end">
                       <IconButton
                         color="primary"
-                        size="medium"
                         onClick={toggleSortDirection}
                         sx={{ padding: 0 }}
                       >
@@ -209,8 +209,7 @@ export default function AnimeTrackerPage() {
               <FormControl
                 size="small"
                 sx={{
-                  minWidth: 177,
-                  ml: 2,
+                  minWidth: 209,
                 }}
                 variant="standard"
                 color="primary"
