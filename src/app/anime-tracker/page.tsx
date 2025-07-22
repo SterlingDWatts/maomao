@@ -30,20 +30,6 @@ import { theme } from "../theme";
 import { animeList } from "../nextAnime";
 import { abbreviateNumber } from "../utils";
 
-const bull = (
-  <Box
-    component="span"
-    sx={{
-      display: "inline-block",
-      mx: "2px",
-      transform: "scale(0.8)",
-      color: "black",
-    }}
-  >
-    •
-  </Box>
-);
-
 export default function AnimeTrackerPage() {
   const [sortBy, setSortBy] = React.useState<
     "title" | "year" | "rating" | "rank" | "popularity"
@@ -205,12 +191,12 @@ export default function AnimeTrackerPage() {
             </Box>
 
             <Stack
-              sx={{
-                "& .MuiCard-root:not(:first-child) > .MuiBox-root > .MuiCardContent-root":
-                  {
-                    borderTop: "1px solid rgb(0, 0, 0)",
-                  },
-              }}
+            // sx={{
+            //   "& .MuiCard-root:not(:first-child) > .MuiBox-root > .MuiCardContent-root":
+            //     {
+            //       borderTop: "1px solid rgb(0, 0, 0)",
+            //     },
+            // }}
             >
               {sortedAnimeList.map((anime) => (
                 <AnimeCard key={anime.title} anime={anime} />
