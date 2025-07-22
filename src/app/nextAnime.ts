@@ -32,7 +32,7 @@ import Trigun from "./assets/Trigun.jpg";
 import VinlandSaga from "./assets/VinlandSaga.jpg";
 import Yona from "./assets/Yona.jpg";
 
-interface Anime {
+export interface Anime {
   title: string;
   year: number;
   episodes: number;
