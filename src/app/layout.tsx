@@ -18,7 +18,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Watchlist",
   description: "Watchlist",
-  themeColor: "#FFDE03",
 };
 
 export default function RootLayout({
