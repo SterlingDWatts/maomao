@@ -217,18 +217,36 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
                 whiteSpace: expanded ? "normal" : "nowrap",
                 transition: "all 0.2s",
                 fontWeight: "bold",
+                lineHeight: 1.25,
               }}
             >
               <Typography
                 variant="body2"
                 component={"span"}
-                mt={1}
                 sx={{
                   color: "black",
-                  fontWeight: "bold",
                 }}
               >
                 {anime.shortDescription}
+              </Typography>
+              <Divider
+                variant="middle"
+                sx={{
+                  mt: 1,
+                  mb: 1,
+                  display: expanded ? "block" : "none",
+                  lineHeight: 1.25,
+                }}
+              />
+              <Typography
+                variant="body2"
+                component={"span"}
+                sx={{
+                  color: "black",
+                  display: expanded ? "initial" : "none",
+                }}
+              >
+                {anime.longDescription}
               </Typography>
             </Box>
           </CardContent>
