@@ -108,17 +108,20 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
               </Typography>
               <Stack direction="row" spacing={1}>
                 {anime.isMaomaoRecommendation && (
-                  <Tooltip title="maomao recommendation">
+                  <Tooltip title="maomao recommendation" disableFocusListener>
                     <LocalFloristIcon color="primary" sx={{ fontSize: 14 }} />
                   </Tooltip>
                 )}
                 {anime.hasDawnSeen && (
-                  <Tooltip title="Dawn has watched this">
+                  <Tooltip disableFocusListener title="Dawn has watched this">
                     <Face3Icon color="primary" sx={{ fontSize: 14 }} />
                   </Tooltip>
                 )}
                 {anime.hasSterlingSeen && (
-                  <Tooltip title="Sterling has watched this">
+                  <Tooltip
+                    title="Sterling has watched this"
+                    disableFocusListener
+                  >
                     <Face5Icon color="primary" sx={{ fontSize: 14 }} />
                   </Tooltip>
                 )}
