@@ -13,7 +13,6 @@ import IconButton from "@mui/material/IconButton";
 import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
 import Stack from "@mui/material/Stack";
-import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
@@ -108,22 +107,13 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
               </Typography>
               <Stack direction="row" spacing={1}>
                 {anime.isMaomaoRecommendation && (
-                  <Tooltip title="maomao recommendation" disableFocusListener>
-                    <LocalFloristIcon color="primary" sx={{ fontSize: 14 }} />
-                  </Tooltip>
+                  <LocalFloristIcon color="primary" sx={{ fontSize: 14 }} />
                 )}
                 {anime.hasDawnSeen && (
-                  <Tooltip disableFocusListener title="Dawn has watched this">
-                    <Face3Icon color="primary" sx={{ fontSize: 14 }} />
-                  </Tooltip>
+                  <Face3Icon color="primary" sx={{ fontSize: 14 }} />
                 )}
                 {anime.hasSterlingSeen && (
-                  <Tooltip
-                    title="Sterling has watched this"
-                    disableFocusListener
-                  >
-                    <Face5Icon color="primary" sx={{ fontSize: 14 }} />
-                  </Tooltip>
+                  <Face5Icon color="primary" sx={{ fontSize: 14 }} />
                 )}
               </Stack>
             </Stack>

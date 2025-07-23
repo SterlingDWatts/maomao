@@ -23,6 +23,7 @@ import FoundationSeason3 from "./assets/FoundationSeason3.jpg";
 import FoundationSeason3Episode3 from "./assets/FoundationSeason3Episode3.jpg";
 import FrierenFrierensParty from "./assets/FrierenFrierensParty.jpg";
 import FrierenLogo from "./assets/FrierenLogo.jpg";
+import Fruits from "./assets/Fruits.jpg";
 import JamesLogo from "./assets/JamesLogo.jpg";
 import Masterchef from "./assets/Masterchef.jpg";
 import MasterchefLogo from "./assets/MasterchefLogo.jpg";
@@ -90,20 +91,6 @@ export interface UpNextProps extends AvailableNowProps {
 
 export const availableNow: AvailableNowProps[] = [
   {
-    avatar: SupermanLogo.src,
-    title: "Superman",
-    subheader: "",
-    cardMedia: Superman.src,
-    cardMediaAlt: "Superman",
-    releaseDateTime: "July 11, 2025 16:00:00",
-    synopsis:
-      "Superman must reconcile his alien Kryptonian heritage with his human upbringing as reporter Clark Kent. As the embodiment of truth, justice and the human way he soon finds himself in a world that views these as old-fashioned.",
-    isMovie: true,
-    watchUrl: "https://www.fandango.com/superman-2025-230934/movie-overview",
-    objectPosition: "50% 50%",
-    SiteLogo: FandangoLogo,
-  },
-  {
     avatar: JamesLogo.src,
     title: "All Creatures Great And Small",
     subheader: "Surviving Siegfried",
@@ -133,34 +120,6 @@ export const availableNow: AvailableNowProps[] = [
       "https://www.hulu.com/series/05eb6a8e-90ed-4947-8c0b-e6536cbddd5f",
     objectPosition: "30% 50%",
     SiteLogo: HuluLogo,
-  },
-  {
-    avatar: DandadanLogo.src,
-    title: "Dandadan",
-    subheader: "Merge! Serpo Dover Demon Nessie!",
-    season: 1,
-    episode: 9,
-    cardMedia: DanDaDan.src,
-    cardMediaAlt: "Dandadan",
-    releaseDateTime: "November 28 2024 03:00:00 GMT-0700",
-    synopsis: `Aira has awakened the powers of Acrobatic Silky within her and proceeds to have a seesaw battle against the Serpoians and the Dover Demon. Momo and Okarun join the fray, intensifying the battle.`,
-    watchUrl: "https://www.crunchyroll.com/series/GYEXQKJG6/dr-stone",
-    objectPosition: "50% 50%",
-    SiteLogo: CrunchyrollLogo,
-  },
-  {
-    avatar: StoneLogo.src,
-    title: "Dr. Stone",
-    subheader: "Hot Line",
-    season: 2,
-    episode: 2,
-    cardMedia: Stone.src,
-    cardMediaAlt: "Dr. Stone",
-    releaseDateTime: "May 23 2021 03:00:00 GMT-0700",
-    synopsis: `While Senku's diversion buys Gen and others some time, soon Homura realizes something is not right.`,
-    watchUrl: "https://www.crunchyroll.com/series/GYEXQKJG6/dr-stone",
-    objectPosition: "50% 50%",
-    SiteLogo: CrunchyrollLogo,
   },
   {
     avatar: MasterchefLogo.src,
@@ -221,6 +180,48 @@ export const availableNow: AvailableNowProps[] = [
       "Without a way to pursue the Titans, the Scouts have no choice but to recuperate as they wait for reinforcements. But do they still have faith in Eren?",
     watchUrl: "https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan",
     objectPosition: "15% 50%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: DandadanLogo.src,
+    title: "Dandadan",
+    subheader: "Have You Ever Seen a Cattle Mutilation?",
+    season: 1,
+    episode: 10,
+    cardMedia: DanDaDan.src,
+    cardMediaAlt: "Dandadan",
+    releaseDateTime: "December 05 2024 03:00:00 GMT-0700",
+    synopsis: `Momo, Okarun, and Aira make it through the alien assault by combining their powers. However, the Dover Demon that they thought they had defeated appears before them.`,
+    watchUrl: "https://www.crunchyroll.com/series/GYEXQKJG6/dr-stone",
+    objectPosition: "50% 50%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: Fruits.src,
+    title: "Fruits Basket",
+    subheader: "Let's Play Rich Man-Poor Man!",
+    season: 1,
+    episode: 3,
+    cardMedia: Fruits.src,
+    cardMediaAlt: "Fruits Basket",
+    releaseDateTime: "April 20 2019 03:00:00 GMT-0700",
+    synopsis: `Kyo and Yuki both confide in Tohru about their insecurities, and she discovers that they have a lot in common for people who seem like such opposites.`,
+    watchUrl: "https://www.crunchyroll.com/series/G6ZJMGEXY/fruits-basket",
+    objectPosition: "50% 50%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: StoneLogo.src,
+    title: "Dr. Stone",
+    subheader: "Call from the Dead",
+    season: 2,
+    episode: 3,
+    cardMedia: Stone.src,
+    cardMediaAlt: "Dr. Stone",
+    releaseDateTime: "May 30 2021 03:00:00 GMT-0700",
+    synopsis: `Taiju and Yuzuriha are on the verge of tears after they hear Senku's voice, and Senku informs them of his plan to win the war without any bloodshed.`,
+    watchUrl: "https://www.crunchyroll.com/series/GYEXQKJG6/dr-stone",
+    objectPosition: "50% 50%",
     SiteLogo: CrunchyrollLogo,
   },
 ];

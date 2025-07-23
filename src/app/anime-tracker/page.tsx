@@ -129,7 +129,7 @@ export default function AnimeTrackerPage() {
         <Container
           disableGutters
           maxWidth={false}
-          sx={{ backgroundColor: "tertiary.main", minHeight: "100vh" }}
+          sx={{ backgroundColor: "tertiary.light", minHeight: "100vh" }}
         >
           <Container
             maxWidth="lg"
@@ -141,7 +141,7 @@ export default function AnimeTrackerPage() {
               overflowX: "hidden",
             }}
           >
-            <DrawerAppBar backgroundColor="tertiary.dark" color="white" />
+            <DrawerAppBar backgroundColor="tertiary.main" color="white" />
 
             <Box
               sx={{
