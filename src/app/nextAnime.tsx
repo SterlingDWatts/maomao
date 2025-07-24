@@ -25,6 +25,7 @@ import OnePunch from "./assets/OnePunch.jpg";
 import Raven from "./assets/Raven.jpg";
 import Saiunkoku from "./assets/Saiunkoku.jpg";
 import Samurai from "./assets/Samurai.jpg";
+import Seventh from "./assets/Seventh.jpg";
 import SpyXFamily from "./assets/SpyXFamily.jpg";
 import SnowWhite from "./assets/SnowWhite.jpg";
 import Solo from "./assets/Solo.jpg";
@@ -1379,6 +1380,43 @@ export const animeList: Anime[] = [
     ),
     hasDawnSeen: true,
     hasSterlingSeen: true,
+  },
+  {
+    title:
+      "7th Time Loop: The Villainess Enjoys a Carefree Life Married to Her Worst Enemy",
+    year: 2024,
+    episodes: 12,
+    rating: 7.52,
+    ratingOutOf: 104969,
+    rank: 1958,
+    popularity: 1282,
+    picture: Seventh.src,
+    tags: ["Isekai", "Fantasy", "Romance"],
+    shortDescription:
+      "Rishe is already on her seventh time around being reborn and has had all kinds of excitement in her previous lives. But to savor the high life, she first has to marry the handsome prince, the same one who happens to be her murderer.",
+    longDescription: (
+      <>
+        Rishe Irmgard Weitzner finds herself in a familiar situation: her fiancé
+        is publicly breaking off their engagement, and her ducal family is about
+        to disown her in shame. However, Rishe is not distraught; she has
+        already had six chances to rebuild her life and chase a different
+        passion each time. But she would always get swept up in a war and die,
+        so now she wishes for her seventh reincarnation to be easygoing and
+        uneventful.
+        <br />
+        <br />
+        What Rishe does not take into account is the presence of Arnold Hein,
+        the crown prince of the Galkhein Kingdom. He is destined to usurp the
+        throne and become a tyrant who starts a large-scale invasion of
+        neighboring countries. To make their encounter worse, Arnold is the one
+        who killed Rishe in her previous life. That is why it is all the more
+        shocking when he proposes to Rishe on the spot. In pursuit of her
+        desired life, Rishe must consider accepting Arnold's proposal and
+        discover the reasons behind his brutal actions to stop the war from ever
+        happening.
+      </>
+    ),
+    isMaomaoRecommendation: true,
   },
   {
     title: "Raven of the Inner Palace",
