@@ -129,7 +129,7 @@ export default function AnimeTrackerPage() {
         <Container
           disableGutters
           maxWidth={false}
-          sx={{ backgroundColor: "tertiary.light", minHeight: "100vh" }}
+          sx={{ backgroundColor: "tertiary.main", minHeight: "100vh" }}
         >
           <Container
             maxWidth="lg"
@@ -141,7 +141,7 @@ export default function AnimeTrackerPage() {
               overflowX: "hidden",
             }}
           >
-            <DrawerAppBar backgroundColor="tertiary.main" color="white" />
+            <DrawerAppBar backgroundColor="tertiary.dark" color="white" />
 
             <Box
               sx={{
@@ -261,7 +261,15 @@ export default function AnimeTrackerPage() {
               </Typography>
             </Box>
 
-            <Stack>
+            <Stack
+              sx={{
+                "& .MuiCard-root:not(:first-child) .MuiCardContent-root.anime-card-content-main":
+                  {
+                    borderTop: 1,
+                    borderColor: "black",
+                  },
+              }}
+            >
               {sortedAnimeList.map((anime) => (
                 <AnimeCard key={anime.title} anime={anime} />
               ))}

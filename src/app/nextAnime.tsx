@@ -1,4 +1,4 @@
-﻿import placeholder from "./assets/placeholder.jpg";
+﻿import * as React from "react";
 
 import ApothecaryDiaries from "./assets/ApothecaryDiaries.jpg";
 import Ascendance from "./assets/Ascendance.jpg";
@@ -22,6 +22,7 @@ import Lazarus from "./assets/Lazarus.jpg";
 import Naruto from "./assets/Naruto.jpg";
 import NarutoShippuden from "./assets/NarutoShippuden.jpg";
 import OnePunch from "./assets/OnePunch.jpg";
+import placeholder from "./assets/placeholder.jpg";
 import Raven from "./assets/Raven.jpg";
 import Saiunkoku from "./assets/Saiunkoku.jpg";
 import Samurai from "./assets/Samurai.jpg";
@@ -35,8 +36,6 @@ import Trigun from "./assets/Trigun.jpg";
 import VinlandSaga from "./assets/VinlandSaga.jpg";
 import Yona from "./assets/Yona.jpg";
 
-import { ReactNode } from "react";
-
 export interface Anime {
   title: string;
   year: number;
@@ -48,7 +47,7 @@ export interface Anime {
   picture: string;
   tags: string[];
   shortDescription?: string;
-  longDescription?: string | ReactNode;
+  longDescription?: string | React.ReactNode;
   isMaomaoRecommendation?: boolean;
   hasSterlingSeen?: boolean;
   hasDawnSeen?: boolean;

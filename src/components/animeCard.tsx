@@ -49,6 +49,7 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
       <Card
         key={anime.title}
         raised={false}
+        onClick={() => setExpanded((prev) => !prev)}
         sx={{
           position: "relative",
           overflow: "hidden",
@@ -64,8 +65,8 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
         >
           <Box
             sx={{
-              width: "100px",
-              height: "100px",
+              width: "98px",
+              height: "98px",
               mt: 1.5,
               zIndex: 100,
             }}
@@ -73,8 +74,8 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
             <CardMedia
               component="img"
               image={anime.picture || Placeholder.src}
-              width={100}
-              height={100}
+              width={98}
+              height={98}
               sx={{
                 objectPosition: "50% 50%",
                 objectFit: "cover",
@@ -83,6 +84,7 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
             />
           </Box>
           <CardContent
+            className="anime-card-content-main"
             sx={{
               width: "calc(100vw - 100px)",
               pt: 1.5,
@@ -97,23 +99,22 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
               <Typography
                 sx={{
                   color: "black",
-                  fontWeight: "bold",
-                  fontSize: 14,
-                  "& sup": { fontSize: 8 },
+                  fontSize: 16,
+                  "& sup": { fontSize: 8, fontWeight: "bold" },
                 }}
               >
                 {anime.year} <Bullet /> {anime.episodes}
                 <sup> EPISODES</sup>
               </Typography>
-              <Stack direction="row" spacing={1}>
+              <Stack direction="row" spacing={1.5}>
                 {anime.isMaomaoRecommendation && (
-                  <LocalFloristIcon color="primary" sx={{ fontSize: 14 }} />
+                  <LocalFloristIcon color="primary" sx={{ fontSize: 16 }} />
                 )}
                 {anime.hasDawnSeen && (
-                  <Face3Icon color="primary" sx={{ fontSize: 14 }} />
+                  <Face3Icon color="primary" sx={{ fontSize: 16 }} />
                 )}
                 {anime.hasSterlingSeen && (
-                  <Face5Icon color="primary" sx={{ fontSize: 14 }} />
+                  <Face5Icon color="primary" sx={{ fontSize: 16 }} />
                 )}
               </Stack>
             </Stack>
@@ -127,13 +128,12 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
             >
               {anime.title}
             </Typography>
-            <Stack direction="row" gap={2} sx={{ lineHeight: "1.1", mb: 1 }}>
+            <Stack direction="row" gap={2} sx={{ lineHeight: "1.1" }}>
               <Typography
                 sx={{
                   color: "black",
-                  fontWeight: "bold",
-                  fontSize: 14,
-                  "& sup": { fontSize: 8 },
+                  fontSize: 16,
+                  "& sup": { fontSize: 8, fontWeight: "bold" },
                 }}
               >
                 {anime.rating}
@@ -142,9 +142,8 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
               <Typography
                 sx={{
                   color: "black",
-                  fontWeight: "bold",
-                  fontSize: 14,
-                  "& sup": { fontSize: 8 },
+                  fontSize: 16,
+                  "& sup": { fontSize: 8, fontWeight: "bold" },
                 }}
               >
                 #{anime.rank}
@@ -154,13 +153,12 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
               <Typography
                 sx={{
                   color: "black",
-                  fontWeight: "bold",
-                  fontSize: 14,
-                  "& sup": { fontSize: 8 },
+                  fontSize: 16,
+                  "& sup": { fontSize: 8, fontWeight: "bold" },
                 }}
               >
                 #{anime.popularity}
-                <sup> POPULARITY</sup>
+                <sup> POP</sup>
               </Typography>
             </Stack>
 
@@ -195,12 +193,11 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
           <CardContent
             sx={{
               paddingTop: 0,
-              marginTop: -1,
               "&:last-child": { paddingBottom: 1 },
+              display: expanded ? "block" : "none",
             }}
           >
             <Box
-              onClick={() => setExpanded((prev) => !prev)}
               sx={{
                 cursor: "pointer",
                 position: "relative",
@@ -218,6 +215,7 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
                 component={"span"}
                 sx={{
                   color: "black",
+                  fontSize: 16,
                 }}
               >
                 {anime.shortDescription}
@@ -237,6 +235,7 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
                 sx={{
                   color: "black",
                   display: expanded ? "initial" : "none",
+                  fontSize: 16,
                 }}
               >
                 {anime.longDescription}
@@ -245,7 +244,6 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
           </CardContent>
         )}
       </Card>
-      <Divider color="black" />
     </>
   );
 }
