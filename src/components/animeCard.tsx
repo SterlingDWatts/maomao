@@ -65,8 +65,8 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
         >
           <Box
             sx={{
-              width: "94px",
-              height: "94px",
+              width: "100px",
+              height: "90px",
               mt: 2,
               zIndex: 100,
             }}
@@ -74,8 +74,8 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
             <CardMedia
               component="img"
               image={anime.picture || Placeholder.src}
-              width={94}
-              height={94}
+              width={100}
+              height={90}
               sx={{
                 objectPosition: "50% 50%",
                 objectFit: "cover",
@@ -86,7 +86,7 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
           <CardContent
             className="anime-card-content-main"
             sx={{
-              width: "calc(100vw - 94px)",
+              width: "calc(100vw - 100px)",
               // pt: 1.5,
               "&.MuiCardContent-root:last-child": { pb: 2 },
               position: "relative",
@@ -102,7 +102,13 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
                 sx={{
                   color: "black",
                   fontSize: 16,
-                  "& sup": { fontSize: 8, fontWeight: "bold" },
+                  lineHeight: 1.25,
+                  "& sup": {
+                    fontSize: 10,
+                    fontWeight: "bold",
+                    lineHeight: 1,
+                    verticalAlign: "5px",
+                  },
                 }}
               >
                 {anime.year} <Bullet /> {anime.episodes}
@@ -135,17 +141,25 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
                 sx={{
                   color: "black",
                   fontSize: 16,
-                  "& sup": { fontSize: 8, fontWeight: "bold" },
+                  "& sub": {
+                    fontSize: 13,
+                    lineHeight: 1,
+                    verticalAlign: "baseline",
+                  },
                 }}
               >
-                {anime.rating}
-                <sup> {abbreviateNumber(anime.ratingOutOf)}</sup>
+                {anime.rating}/<sub>{abbreviateNumber(anime.ratingOutOf)}</sub>
               </Typography>
               <Typography
                 sx={{
                   color: "black",
                   fontSize: 16,
-                  "& sup": { fontSize: 8, fontWeight: "bold" },
+                  "& sup": {
+                    fontSize: 10,
+                    fontWeight: "bold",
+                    lineHeight: 1,
+                    verticalAlign: "5px",
+                  },
                 }}
               >
                 #{anime.rank}
@@ -156,7 +170,12 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
                 sx={{
                   color: "black",
                   fontSize: 16,
-                  "& sup": { fontSize: 8, fontWeight: "bold" },
+                  "& sup": {
+                    fontSize: 10,
+                    fontWeight: "bold",
+                    lineHeight: 1,
+                    verticalAlign: "5px",
+                  },
                 }}
               >
                 #{anime.popularity}
@@ -173,8 +192,8 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
                 overflowY: "visible",
                 flexWrap: { xs: "nowrap", sm: "wrap" },
                 width: { xs: "100vw", sm: "auto" },
-                marginLeft: { xs: "calc(-16px - 94px)", sm: 0 },
-                paddingLeft: { xs: "calc(16px + 94px)", sm: 0 },
+                marginLeft: { xs: "calc(-16px - 100px)", sm: 0 },
+                paddingLeft: { xs: "calc(16px + 100px)", sm: 0 },
                 paddingRight: { xs: 2, sm: 0 },
                 paddingBottom: { xs: 0.5, sm: 0 },
                 marginBottom: { xs: -0.5, sm: 0 },
