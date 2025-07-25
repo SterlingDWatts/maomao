@@ -21,6 +21,7 @@ import FantasticLogo from "./assets/FantasticLogo.jpg";
 import FoundationAvatar from "./assets/FoundationAvatar.jpg";
 import FoundationSeason3 from "./assets/FoundationSeason3.jpg";
 import FoundationSeason3Episode3 from "./assets/FoundationSeason3Episode3.jpg";
+import FoundationS3E4 from "./assets/FoundationS3E4.jpg";
 import FrierenFrierensParty from "./assets/FrierenFrierensParty.jpg";
 import FrierenLogo from "./assets/FrierenLogo.jpg";
 import Fruits from "./assets/Fruits.jpg";
@@ -245,7 +246,7 @@ export const upNext: UpNextProps[] = [
   {
     avatar: FoundationAvatar.src,
     title: "Foundation",
-    subheader: "",
+    subheader: "When a Book Finds You",
     season: 3,
     episode: 3,
     cardMedia: FoundationSeason3Episode3.src,
@@ -309,15 +310,17 @@ export const upNext: UpNextProps[] = [
   {
     avatar: FoundationAvatar.src,
     title: "Foundation",
-    subheader: "",
+    subheader: "The Stress of Her Regard",
     season: 3,
     episode: 4,
-    cardMedia: FoundationSeason3.src,
+    cardMedia: FoundationS3E4.src,
     cardMediaAlt: "Foundation Season 3 Episode 4",
     releaseDateTime: "August 1 2025 03:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
-    objectPosition: "100% 20%",
+    objectPosition: "100% 17%",
+    synopsis:
+      " Demerzel struggles with the paradox of her programming. Pritcher’s true loyalties are revealed. Day sets off on a quest for answers.",
     TimerCard: LargeTimerCard,
     SiteLogo: AppleLogo,
   },

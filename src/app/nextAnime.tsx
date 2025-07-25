@@ -1,6 +1,7 @@
 ﻿import * as React from "react";
 
 import ApothecaryDiaries from "./assets/ApothecaryDiaries.jpg";
+import Arte from "./assets/Arte.jpg";
 import Ascendance from "./assets/Ascendance.jpg";
 import Assassination from "./assets/Assassination.jpg";
 import Attack from "./assets/Attack.jpg";
@@ -8,6 +9,7 @@ import Bleach from "./assets/Bleach.jpg";
 import ChainsawManMovie from "./assets/ChainsawManMovie.jpg";
 import DanDaDan from "./assets/DanDaDan.jpg";
 import Delicious from "./assets/Delicious.jpg";
+import DrElise from "./assets/DrElise.jpg";
 import Evangelion from "./assets/Evangelion.jpg";
 import FrierenFrierensParty from "./assets/FrierenFrierensParty.jpg";
 import Fruits from "./assets/Fruits.jpg";
@@ -19,10 +21,16 @@ import Jujutsu from "./assets/Jujutsu.jpg";
 import KaguyaSama from "./assets/KaguyaSama.jpg";
 import KaguyaSamaLogo from "./assets/KaguyaSamaLogo.png";
 import Lazarus from "./assets/Lazarus.jpg";
+import Mermaid from "./assets/Mermaid.jpg";
+import MushiShi from "./assets/MushiShi.jpg";
+import MyHappyMarriage from "./assets/MyHappyMarriage.jpg";
 import Naruto from "./assets/Naruto.jpg";
 import NarutoShippuden from "./assets/NarutoShippuden.jpg";
+import NoDoubt from "./assets/NoDoubt.jpg";
 import OnePunch from "./assets/OnePunch.jpg";
 import placeholder from "./assets/placeholder.jpg";
+import PsychicPrincess from "./assets/PsychicPrincess.jpg";
+import Raeliana from "./assets/Raeliana.jpg";
 import Raven from "./assets/Raven.jpg";
 import Saiunkoku from "./assets/Saiunkoku.jpg";
 import Samurai from "./assets/Samurai.jpg";
@@ -32,6 +40,7 @@ import SnowWhite from "./assets/SnowWhite.jpg";
 import Solo from "./assets/Solo.jpg";
 import Steins from "./assets/Steins.jpg";
 import Stone from "./assets/Stone.jpg";
+import TheRose from "./assets/TheRose.jpg";
 import Trigun from "./assets/Trigun.jpg";
 import VinlandSaga from "./assets/VinlandSaga.jpg";
 import Yona from "./assets/Yona.jpg";
@@ -997,6 +1006,56 @@ export const animeList: Anime[] = [
     hasSterlingSeen: true,
   },
   {
+    title: "Mushi-Shi",
+    year: 2005,
+    episodes: 27,
+    rating: 8.65,
+    ratingOutOf: 291067,
+    rank: 78,
+    popularity: 225,
+    picture: MushiShi.src,
+    tags: [
+      "Iyashikei",
+      "Seinen",
+      "Supernatural Fantasy",
+      "Tragedy",
+      "Drama",
+      "Fantasy",
+      "Horror",
+    ],
+    shortDescription:
+      "Mushi Master Ginko travels from place to place investigating occurrences that could be tied to supernatural creatures called Mushi.",
+    longDescription: (
+      <>
+        "Mushi": the most basic forms of life in the world. They exist without
+        any goals or purposes aside from simply "being." They are beyond the
+        shackles of the words "good" and "evil." Mushi can exist in countless
+        forms and are capable of mimicking things from the natural world such as
+        plants, diseases, and even phenomena like rainbows.
+        <br />
+        <br />
+        This is, however, just a vague definition of these entities that inhabit
+        the vibrant world of Mushishi, as to even call them a form of life would
+        be an oversimplification. Detailed information on Mushi is scarce
+        because the majority of humans are unaware of their existence.
+        <br />
+        <br />
+        So what are Mushi and why do they exist? This is the question that a
+        "Mushishi," Ginko, ponders constantly. Mushishi are those who research
+        Mushi in hopes of understanding their place in the world's hierarchy of
+        life.
+        <br />
+        <br />
+        Ginko chases rumors of occurrences that could be tied to Mushi, all for
+        the sake of finding an answer.
+        <br />
+        <br />
+        It could, after all, lead to the meaning of life itself.
+      </>
+    ),
+    isMaomaoRecommendation: true,
+  },
+  {
     title: "Trigun",
     year: 1998,
     episodes: 26,
@@ -1302,6 +1361,43 @@ export const animeList: Anime[] = [
     ),
   },
   {
+    title: "My Happy Marriage",
+    year: 2023,
+    episodes: 26,
+    rating: 7.71,
+    ratingOutOf: 178722,
+    rank: 1299,
+    popularity: 740,
+    picture: MyHappyMarriage.src,
+    tags: ["Slice of Life", "Drama", "Fantasy", "History", "Romance"],
+    shortDescription:
+      "An unhappy young woman from an abusive family is married off to a fearsome and chilly army commander. But the two learn more about each other, love may have a chance.",
+    longDescription: (
+      <>
+        Misery seems everlasting in Miyo Saimori's life. Born from an arranged
+        marriage, she was quickly discarded after her mother's tragic death. Her
+        father remarried, and her younger half-sister Kaya received all the
+        affection, while Miyo was degraded to a lowly servant. Lacking the
+        strength to fight against her family's abuse, Miyo loses hope that her
+        luck will ever turn.
+        <br />
+        <br />
+        Unexpectedly, Miyo's father summons her to deliver surprising news: she
+        is to marry Kiyoka Kudou, the head of the distinguished Kudou family.
+        Despite his noble background, Kiyoka is known to be a callous man who
+        has thus far dismissed all of his former fiancées.
+        <br />
+        <br />
+        Upon arriving at the Kudou household, Miyo expects coarse treatment and
+        to be tossed aside. However, contrary to her assumptions, Kiyoka shows
+        her the kindness and love that she has desperately needed. Marrying
+        Kiyoka may be Miyo's one chance to break free from her neglectful family
+        and embrace a life of happiness.
+      </>
+    ),
+    isMaomaoRecommendation: true,
+  },
+  {
     title: "Ascendance of a Bookworm",
     year: 2019,
     episodes: 37,
@@ -1420,6 +1516,84 @@ export const animeList: Anime[] = [
     isMaomaoRecommendation: true,
   },
   {
+    title: "Why Raeliana Ended up at the Duke's Mansion",
+    year: 2023,
+    episodes: 12,
+    rating: 7.53,
+    ratingOutOf: 82853,
+    rank: 1900,
+    popularity: 1447,
+    picture: Raeliana.src,
+    tags: [
+      "Fairy Tale",
+      "Isekai",
+      "Sword & Sorcery",
+      "Drama",
+      "Fantasy",
+      "Romance",
+    ],
+    shortDescription:
+      "Living in a fairy tale may seem like a dream, but for this young heroine it is more like a nightmare.",
+    longDescription: (
+      <>
+        When, after her sudden death, Rinko Hanasaki is reborn as Raeliana
+        McMillan, she is not sure whether to curse her luck. Raeliana was a
+        minor character in a novel Rinko read, and as the eldest daughter of a
+        nouveau-riche baron, she led a carefree life until her unfortunate
+        demise at the hands of her fiancé, Lord Francis Brooks. To avoid her
+        destined fate, Raeliana is determined to end her engagement with
+        Francis.
+        <br />
+        <br />
+        However, when Francis refuses to break things off, Raeliana decides to
+        seek help from someone of higher standing and approaches Duke Noah
+        Wynknight—the novel's male protagonist. Using her knowledge of the plot,
+        Raeliana captures the duke's interest by proposing a deal: she will not
+        expose his secrets if Noah agrees to act as her fiancé. Little does she
+        know that getting involved with a duke who only shows his true colors
+        around her may lead to more than she bargained for..
+      </>
+    ),
+    isMaomaoRecommendation: true,
+  },
+  {
+    title: "Arte",
+    year: 2020,
+    episodes: 12,
+    rating: 7.2,
+    ratingOutOf: 60897,
+    rank: 3453,
+    popularity: 1776,
+    picture: Arte.src,
+    tags: ["Drama", "Romance"],
+    shortDescription:
+      "Arte was born into an aristocratic family in Florence during the 16th century Renaissance era. Being female, it was unheard of for one to become an artist. She is willing to cast aside her aristocratic lifestyle to become an artist.",
+    longDescription: (
+      <>
+        In the 16th century, the city of Florence booms with cultural and
+        creative revival in celebration of the Renaissance. Arte, a delightful
+        young lady from an aristocratic family, dreams of being an artist and
+        contributing to the renewal of civilization. However, with her father's
+        death, she ends up losing the only person who believed in her passion
+        for art. Now she is expected to marry a nobleman and live as a refined
+        housewife without disgracing her family name. Reluctant to accept her
+        fate, the headstrong Arte steps into the streets in search of a master
+        artisan to take her on as an apprentice.
+        <br />
+        <br />
+        In her quest for a mentor, Arte has to face harsh reality when she is
+        completely shunned for being a female artist. No one believes that women
+        are capable of fine craftsmanship, and therefore none are willing to
+        accept her. Luckily, a renowned artisan by the name of Leo is persuaded
+        to take her as his disciple since he has none anyway. And thus, Arte's
+        new life begins, far from the comfort of her noble upbringing. As an
+        apprentice, she must earn her keep while tackling various challenges
+        along the difficult path to becoming a full-fledged, master artisan.
+      </>
+    ),
+    isMaomaoRecommendation: true,
+  },
+  {
     title: "Raven of the Inner Palace",
     year: 2022,
     episodes: 13,
@@ -1457,6 +1631,189 @@ export const animeList: Anime[] = [
         However, unknown perils lurk in the outside world, and drawing attention
         to herself may bring Jusetsu face-to-face with a past that is better
         left undisturbed.
+      </>
+    ),
+    isMaomaoRecommendation: true,
+  },
+  {
+    title: "The Rose of Versailles",
+    year: 1979,
+    episodes: 41,
+    rating: 8.35,
+    ratingOutOf: 32795,
+    rank: 256,
+    popularity: 2157,
+    picture: TheRose.src,
+    tags: ["Shōjo", "Action", "Drama", "History", "Romance"],
+    shortDescription:
+      "The story of Lady Oscar, a female military commander who served during the time of the French Revolution.",
+    longDescription: (
+      <>
+        n a time of class stratification and rising tensions amongst the
+        impoverished population, the Austrian Empire sends Princess Marie
+        Antoinette to France to be wed to Crown Prince Louis XVI. The political
+        marriage is arranged to strengthen the alliance between both countries,
+        but the future queen is deeply unsatisfied with her fate being decided
+        for her. Upon arrival in the country, Marie Antoinette is acquainted
+        with Oscar Fançois de Jarjayes—Commander of the Royal Guard.
+        <br />
+        <br />
+        Due to her father's desire for a son, Oscar is raised as a boy with an
+        expectation to inherit his title as The Commander. Though she is revered
+        by both men and women alike, Oscar cannot help but desire to live life
+        as a woman instead of masquerading as a man. As Oscar reluctantly serves
+        the young, spoiled queen, the growing resentment and suffering of the
+        poor become harder for her to ignore—especially when Marie Antoinette
+        frivolously spends her wealth.
+      </>
+    ),
+    isMaomaoRecommendation: true,
+  },
+  {
+    title: "Doctor Elise: The Royal Lady with the Lamp",
+    year: 2024,
+    episodes: 12,
+    rating: 7.26,
+    ratingOutOf: 48966,
+    rank: 3134,
+    popularity: 2194,
+    picture: DrElise.src,
+    tags: [
+      "Isekai",
+      "Medical Drama",
+      "Supernatural Fantasy",
+      "Fantasy",
+      "Romance",
+    ],
+    shortDescription:
+      "A mean princess who lost everything to her foolish behaviour and to an epidemic gets thrown back in time to before it happened. Now she wishes to become a better person and a doctor to protect her family and kingdom.",
+    longDescription: (
+      <>
+        In her first life, the renowned and genius surgeon Dr. Aoi Takamoto was
+        Elise de Clorance, a villainess of noble descent. Elise's selfishness,
+        insolence, and obsessive love for her fiancé—Prince Linden de
+        Romanoff—led to the deaths of her family members and, eventually,
+        herself. Only after being reborn did Elise realize the error of her ways
+        and decide that, instead of ruining lives, she would devote herself to
+        saving them. But a tragic airplane crash robs her of her dreams too
+        soon.
+        <br />
+        <br />
+        By a miracle, Elise wakes up in her original body before her official
+        engagement to Linden. Recognizing the chance to cherish her loving
+        family and free Linden from an unwanted marriage, Elise wishes to use
+        her advanced medical knowledge to continue down the path of saving
+        lives. In a deal with the emperor, Elise is given only six months to
+        prove that her true place is not on the throne, but rather with the
+        wounded and ailing who desperately need her help.
+      </>
+    ),
+    isMaomaoRecommendation: true,
+  },
+  {
+    title: "Psychic Princess",
+    year: 2018,
+    episodes: 16,
+    rating: 7.62,
+    ratingOutOf: 23349,
+    rank: 1549,
+    popularity: 3281,
+    picture: PsychicPrincess.src,
+    tags: ["Action", "Comedy", "Drama", "Romance"],
+    shortDescription: `Qian Yunxi, a young girl sent to live in the mountains at the age of eight for possessing "strange abilities". Her noble family marries her off to an enemy prince, Ye Youming, to restore peace and harmony, instead of her younger sister.`,
+    longDescription: (
+      <>
+        When Qian Yunshang's marriage to Ye Youming is arranged by the emperor,
+        she is terrified that the bad blood between their families will lead to
+        her being treated miserably in the Ye household. Torn between duty and
+        concern for his daughter, Qian Aotian devises a reckless plan. He
+        summons his firstborn daughter—her existence unknown to all but his own
+        family—to be the stand-in for her younger sister.
+        <br />
+        <br />
+        Due to her unusual powers, Qian Yun Xi was exiled by her family when she
+        was a child. Deprived of filial affection, she made a life of her own
+        amid the wilderness on Mt. Ling Yun. However, everything begins to
+        change when she marries Ye Youming in her sister's stead.
+        <br />
+        <br />
+        Harboring immense contempt for the family of Qian, Ye Youming refuses to
+        acknowledge Qian Yun Xi as his wife and treats her coldly, going so far
+        as to banish her from his palace grounds. But he can only resist her
+        childlike charm and boldness for so long...
+      </>
+    ),
+    isMaomaoRecommendation: true,
+  },
+  {
+    title: "Mermaid Forest",
+    year: 2003,
+    episodes: 13,
+    rating: 7.01,
+    ratingOutOf: 10122,
+    rank: 4439,
+    popularity: 4440,
+    picture: Mermaid.src,
+    tags: ["Adventure", "Drama", "Fantasy", "Horror"],
+    shortDescription:
+      "A young man unknowingly eats a piece of mermaid's flesh and becomes immortal. For a long time he searches for other mermaids hoping they'll grant him mortality. Finally, he finds them, but they're about to eat a girl and he can't let that happen.",
+    longDescription: (
+      <>
+        According to an ancient legend, mermaid's flesh can grant immortality if
+        eaten. 500 years ago, Yuta unknowingly ate a piece of mermaid's flesh.
+        For centuries, he travels across Japan, hoping to find a mermaid,
+        thinking she may be able to make him a normal human again. When he
+        finally finds one, he discovers that she and her companions have been
+        raising a girl to be their food so they can eat her and take on her
+        youthful looks. That is how mermaids stay young. Yuta kills the mermaids
+        and rescues her, but she has already eaten some of the mermaid's flesh.
+        Although he had to kill the mermaids, Yuta isn't too disappointed.
+        Yuta's once lonely existence is now over, as he has found a companion in
+        Mana. And Mana, who had been trapped in a small hut her whole life,
+        finds delight in even the simplest of things. Together, Yuta and Mana
+        attempt to seek out more mermaids, trying to become normal humans again.
+      </>
+    ),
+    isMaomaoRecommendation: true,
+  },
+  {
+    title: "No Doubt In Us",
+    year: 2021,
+    episodes: 48,
+    rating: 7.76,
+    ratingOutOf: 4647,
+    rank: 1179,
+    popularity: 6176,
+    picture: NoDoubt.src,
+    tags: [
+      "Body Swap Comedy",
+      "Martial Arts",
+      "Romantic Comedy",
+      "Supernatural Fantasy",
+      "Comedy",
+      "Fantasy",
+      "Romance",
+    ],
+    shortDescription:
+      "When an emperor accidentally switches bodies with his empress, the two must deal with the awkward fallouts as they learn to accept each other.",
+    longDescription: (
+      <>
+        Within the Chinese imperial court, stern-faced Emperor Xiao Jinyun and
+        spirited Empress Xu Yu are at constant odds with one another. But the
+        universe has an interesting way to solve their issues: an accident
+        causes the two to switch bodies, forcing them to put themselves in the
+        other's shoes—literally. Now responsible for unfamiliar duties and court
+        dynamics, the emperor and empress must navigate the maintenance of their
+        identities, unruly concubines, and the nation itself. In doing so, Xiao
+        Jinyun and Xu Yu's personal qualities and unconventional skills find new
+        purpose, and a sense of understanding and compassion grows between the
+        two.
+        <br />
+        <br />
+        However, great threats loom within and outside the court. If the
+        imperial astrologer cannot discover the key to switching them back in
+        time, then internal strife and suspicion may lead to the duo's untimely
+        demise.
       </>
     ),
     isMaomaoRecommendation: true,
