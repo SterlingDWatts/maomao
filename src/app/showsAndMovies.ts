@@ -93,6 +93,19 @@ export interface UpNextProps extends AvailableNowProps {
 
 export const availableNow: AvailableNowProps[] = [
   {
+    avatar: FantasticLogo.src,
+    title: "The Fantastic Four: First Steps",
+    subheader: "",
+    cardMedia: Fantastic.src,
+    cardMediaAlt: "The Fantastic Four: First Steps",
+    releaseDateTime: "July 25 2025 16:00:00 GMT-0700",
+    synopsis:
+      "Forced to balance their roles as heroes with the strength of their family bond, the Fantastic Four must defend Earth from a ravenous space god called Galactus and his enigmatic Herald, Silver Surfer.",
+    watchUrl: "https://www.imdb.com/title/tt10676052/",
+    objectPosition: "47% 15%",
+    SiteLogo: FandangoLogo,
+  },
+  {
     avatar: JamesLogo.src,
     title: "All Creatures Great And Small",
     subheader: "Surviving Siegfried",
@@ -230,20 +243,6 @@ export const availableNow: AvailableNowProps[] = [
 
 export const upNext: UpNextProps[] = [
   {
-    avatar: FantasticLogo.src,
-    title: "The Fantastic Four: First Steps",
-    subheader: "",
-    cardMedia: Fantastic.src,
-    cardMediaAlt: "The Fantastic Four: First Steps",
-    releaseDateTime: "July 25 2025 16:00:00 GMT-0700",
-    synopsis:
-      "Forced to balance their roles as heroes with the strength of their family bond, the Fantastic Four must defend Earth from a ravenous space god called Galactus and his enigmatic Herald, Silver Surfer.",
-    watchUrl: "https://www.imdb.com/title/tt10676052/",
-    objectPosition: "100% 15%",
-    TimerCard: LargeTimerCard,
-    SiteLogo: FandangoLogo,
-  },
-  {
     avatar: FoundationAvatar.src,
     title: "Foundation",
     subheader: "",
@@ -318,8 +317,8 @@ export const upNext: UpNextProps[] = [
     releaseDateTime: "August 1 2025 03:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
-    objectPosition: "100% 40%",
-    TimerCard: SmallTimerCard,
+    objectPosition: "100% 20%",
+    TimerCard: LargeTimerCard,
     SiteLogo: AppleLogo,
   },
   {
@@ -380,7 +379,7 @@ export const upNext: UpNextProps[] = [
     releaseDateTime: "August 8 2025 03:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
-    objectPosition: "100% 40%",
+    objectPosition: "100% 20%",
     TimerCard: SmallTimerCard,
     SiteLogo: AppleLogo,
   },
@@ -442,7 +441,7 @@ export const upNext: UpNextProps[] = [
     releaseDateTime: "August 15 2025 03:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
-    objectPosition: "100% 40%",
+    objectPosition: "100% 20%",
     TimerCard: SmallTimerCard,
     SiteLogo: AppleLogo,
   },
@@ -520,7 +519,7 @@ export const upNext: UpNextProps[] = [
     releaseDateTime: "August 22 2025 03:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
-    objectPosition: "100% 40%",
+    objectPosition: "100% 20%",
     TimerCard: SmallTimerCard,
     SiteLogo: AppleLogo,
   },
@@ -596,7 +595,7 @@ export const upNext: UpNextProps[] = [
     releaseDateTime: "August 29 2025 03:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
-    objectPosition: "100% 40%",
+    objectPosition: "100% 20%",
     TimerCard: SmallTimerCard,
     SiteLogo: AppleLogo,
   },
@@ -672,7 +671,7 @@ export const upNext: UpNextProps[] = [
     releaseDateTime: "September 05 2025 03:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
-    objectPosition: "100% 40%",
+    objectPosition: "100% 20%",
     TimerCard: SmallTimerCard,
     SiteLogo: AppleLogo,
   },
@@ -793,7 +792,7 @@ export const upNext: UpNextProps[] = [
     releaseDateTime: "September 12 2025 03:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
-    objectPosition: "100% 40%",
+    objectPosition: "100% 20%",
     TimerCard: SmallTimerCard,
     SiteLogo: AppleLogo,
     finale: true,
