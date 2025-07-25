@@ -261,10 +261,15 @@ export default function AnimeTrackerPage() {
 
             <Stack
               sx={{
-                "& .MuiCard-root:not(:first-child) .MuiCardContent-root.anime-card-content-main":
+                "& .MuiCard-root:not(:first-child) .MuiCardContent-root .anime-card-content-divider":
                   {
-                    borderTop: 1,
-                    borderColor: "primary.main",
+                    position: "absolute",
+                    top: 0,
+                    left: 16,
+                    right: 0,
+                    borderTopWidth: 1,
+                    borderTopColor: "primary.main",
+                    borderTopStyle: "solid",
                   },
                 "& .MuiCard-root:first-child ": {
                   borderTop: 1,

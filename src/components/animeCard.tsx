@@ -89,8 +89,10 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
               width: "calc(100vw - 94px)",
               // pt: 1.5,
               "&.MuiCardContent-root:last-child": { pb: 2 },
+              position: "relative",
             }}
           >
+            <Box className="anime-card-content-divider"></Box>
             <Stack
               direction="row"
               justifyContent={"space-between"}
@@ -171,11 +173,16 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
                 overflowY: "visible",
                 flexWrap: { xs: "nowrap", sm: "wrap" },
                 width: { xs: "100vw", sm: "auto" },
-                marginLeft: { xs: "calc(-16px - 100px)", sm: 0 },
-                paddingLeft: { xs: "calc(16px + 100px)", sm: 0 },
+                marginLeft: { xs: "calc(-16px - 94px)", sm: 0 },
+                paddingLeft: { xs: "calc(16px + 94px)", sm: 0 },
                 paddingRight: { xs: 2, sm: 0 },
                 paddingBottom: { xs: 0.5, sm: 0 },
                 marginBottom: { xs: -0.5, sm: 0 },
+                scrollbarWidth: "none",
+                "-ms-overflow-style": "none",
+                "&::-webkit-scrollbar": {
+                  display: "none",
+                },
               }}
             >
               {anime.tags.map((tag) => (
