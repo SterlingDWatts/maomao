@@ -24,6 +24,8 @@ import FoundationSeason3Episode3 from "./assets/FoundationSeason3Episode3.jpg";
 import FrierenFrierensParty from "./assets/FrierenFrierensParty.jpg";
 import FrierenLogo from "./assets/FrierenLogo.jpg";
 import Fruits from "./assets/Fruits.jpg";
+import Invasion from "./assets/Invasion.jpg";
+import InvasionLogo from "./assets/InvasionLogo.jpg";
 import JamesLogo from "./assets/JamesLogo.jpg";
 import Masterchef from "./assets/Masterchef.jpg";
 import MasterchefLogo from "./assets/MasterchefLogo.jpg";
@@ -184,13 +186,13 @@ export const availableNow: AvailableNowProps[] = [
   {
     avatar: DandadanLogo.src,
     title: "Dandadan",
-    subheader: "First Love",
+    subheader: "Let's Go to the Cursed House",
     season: 1,
-    episode: 11,
+    episode: 12,
     cardMedia: DanDaDan.src,
     cardMediaAlt: "Dandadan",
-    releaseDateTime: "December 12 2024 03:00:00 GMT-0700",
-    synopsis: `Momo's childhood friend, Jiji, appears and begins living in Momo's house. Jiji has been worrying about apparitions in the house he moved into. Okarun is clearly disturbed hearing that Jiji is Momo's first love.`,
+    releaseDateTime: "December 19 2024 03:00:00 GMT-0700",
+    synopsis: `Momo and Okarun head to Jiji's house in a hot springs district to investigate the case of Jiji's family. Okarun feels gloomy looking at how close Momo and Jiji are.`,
     watchUrl: "https://www.crunchyroll.com/series/GYEXQKJG6/dr-stone",
     objectPosition: "50% 50%",
     SiteLogo: CrunchyrollLogo,
@@ -198,13 +200,13 @@ export const availableNow: AvailableNowProps[] = [
   {
     avatar: Fruits.src,
     title: "Fruits Basket",
-    subheader: "What Year Is She?",
+    subheader: "I've Been Fooling Myself?",
     season: 1,
-    episode: 4,
+    episode: 5,
     cardMedia: Fruits.src,
     cardMediaAlt: "Fruits Basket",
-    releaseDateTime: "April 27 2019 03:00:00 GMT-0700",
-    synopsis: `Kagura Soma visits and expresses her rather explosive love for Kyo. At first she regards Tohru as a potential rival, but she soon comes to realize that Tohru is interested in friendship, not fighting.`,
+    releaseDateTime: "May 04 2019 03:00:00 GMT-0700",
+    synopsis: `Tohru has come to think of the Somas as her new family, but her faith in herself and in her relationships is shaken when her biological family says they're ready to take her back.`,
     watchUrl: "https://www.crunchyroll.com/series/G6ZJMGEXY/fruits-basket",
     objectPosition: "50% 50%",
     SiteLogo: CrunchyrollLogo,
@@ -212,14 +214,14 @@ export const availableNow: AvailableNowProps[] = [
   {
     avatar: SoloLogo.src,
     title: "Solo Leveling",
-    subheader: "Don't Look Down on My Guys",
+    subheader: "The 10th S-Rank Hunter",
     season: 2,
-    episode: 6,
+    episode: 7,
     cardMedia: SoloLeveling.src,
     cardMediaAlt: "Solo Leveling",
-    releaseDateTime: "February 08 2025 03:00:00 GMT-0700",
+    releaseDateTime: "February 15 2025 03:00:00 GMT-0700",
     synopsis:
-      "Jinwoo decides to help hunters guild strike team who is confronting the high orc Shaman Kargalgan which results in the epic fight.",
+      "Jinwoo officially becomes an S-Rank hunter, allowing him to finalize his preparations for the Demon's Castle.",
     watchUrl: "https://www.crunchyroll.com/series/GDKHZEJ0K/solo-leveling",
     objectPosition: "10% 50%",
     SiteLogo: CrunchyrollLogo,
@@ -522,7 +524,21 @@ export const upNext: UpNextProps[] = [
     TimerCard: SmallTimerCard,
     SiteLogo: AppleLogo,
   },
-
+  {
+    avatar: InvasionLogo.src,
+    title: "Invasion",
+    subheader: "",
+    season: 3,
+    episode: 1,
+    cardMedia: Invasion.src,
+    cardMediaAlt: "Invasion",
+    releaseDateTime: "August 22 2025 21:00:00 GMT-0700",
+    watchUrl:
+      "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
+    objectPosition: "35% 50%",
+    TimerCard: LargeTimerCard,
+    SiteLogo: AppleLogo,
+  },
   {
     avatar: NyaightLogo.src,
     title: "Nyaight of the Living Cat",
@@ -584,7 +600,21 @@ export const upNext: UpNextProps[] = [
     TimerCard: SmallTimerCard,
     SiteLogo: AppleLogo,
   },
-
+  {
+    avatar: InvasionLogo.src,
+    title: "Invasion",
+    subheader: "",
+    season: 3,
+    episode: 2,
+    cardMedia: Invasion.src,
+    cardMediaAlt: "Invasion",
+    releaseDateTime: "August 29 2025 21:00:00 GMT-0700",
+    watchUrl:
+      "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
+    objectPosition: "35% 50%",
+    TimerCard: SmallTimerCard,
+    SiteLogo: AppleLogo,
+  },
   {
     avatar: NyaightLogo.src,
     title: "Nyaight of the Living Cat",
@@ -643,6 +673,21 @@ export const upNext: UpNextProps[] = [
     watchUrl:
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
     objectPosition: "100% 40%",
+    TimerCard: SmallTimerCard,
+    SiteLogo: AppleLogo,
+  },
+  {
+    avatar: InvasionLogo.src,
+    title: "Invasion",
+    subheader: "",
+    season: 3,
+    episode: 3,
+    cardMedia: Invasion.src,
+    cardMediaAlt: "Invasion",
+    releaseDateTime: "September 05 2025 21:00:00 GMT-0700",
+    watchUrl:
+      "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
+    objectPosition: "35% 50%",
     TimerCard: SmallTimerCard,
     SiteLogo: AppleLogo,
   },
@@ -754,6 +799,21 @@ export const upNext: UpNextProps[] = [
     finale: true,
   },
   {
+    avatar: InvasionLogo.src,
+    title: "Invasion",
+    subheader: "",
+    season: 3,
+    episode: 4,
+    cardMedia: Invasion.src,
+    cardMediaAlt: "Invasion",
+    releaseDateTime: "September 12 2025 21:00:00 GMT-0700",
+    watchUrl:
+      "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
+    objectPosition: "35% 50%",
+    TimerCard: SmallTimerCard,
+    SiteLogo: AppleLogo,
+  },
+  {
     avatar: NyaightLogo.src,
     title: "Nyaight of the Living Cat",
     subheader: "",
@@ -814,6 +874,21 @@ export const upNext: UpNextProps[] = [
     objectPosition: "50% 35%",
     TimerCard: SmallTimerCard,
     SiteLogo: HBOLogo,
+  },
+  {
+    avatar: InvasionLogo.src,
+    title: "Invasion",
+    subheader: "",
+    season: 3,
+    episode: 5,
+    cardMedia: Invasion.src,
+    cardMediaAlt: "Invasion",
+    releaseDateTime: "September 19 2025 21:00:00 GMT-0700",
+    watchUrl:
+      "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
+    objectPosition: "35% 50%",
+    TimerCard: SmallTimerCard,
+    SiteLogo: AppleLogo,
   },
   {
     avatar: NyaightLogo.src,
@@ -910,6 +985,21 @@ export const upNext: UpNextProps[] = [
     SiteLogo: FandangoLogo,
   },
   {
+    avatar: InvasionLogo.src,
+    title: "Invasion",
+    subheader: "",
+    season: 3,
+    episode: 6,
+    cardMedia: Invasion.src,
+    cardMediaAlt: "Invasion",
+    releaseDateTime: "September 26 2025 21:00:00 GMT-0700",
+    watchUrl:
+      "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
+    objectPosition: "35% 50%",
+    TimerCard: SmallTimerCard,
+    SiteLogo: AppleLogo,
+  },
+  {
     avatar: OnlyMurdersLogo.src,
     title: "Only Murders In The Building",
     subheader: "",
@@ -954,6 +1044,21 @@ export const upNext: UpNextProps[] = [
     objectPosition: "50% 50%",
     TimerCard: SmallTimerCard,
     SiteLogo: HBOLogo,
+  },
+  {
+    avatar: InvasionLogo.src,
+    title: "Invasion",
+    subheader: "",
+    season: 3,
+    episode: 7,
+    cardMedia: Invasion.src,
+    cardMediaAlt: "Invasion",
+    releaseDateTime: "October 03 2025 21:00:00 GMT-0700",
+    watchUrl:
+      "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
+    objectPosition: "35% 50%",
+    TimerCard: SmallTimerCard,
+    SiteLogo: AppleLogo,
   },
   {
     avatar: MyHeroLogo.src,
@@ -1018,6 +1123,21 @@ export const upNext: UpNextProps[] = [
     finale: true,
   },
   {
+    avatar: InvasionLogo.src,
+    title: "Invasion",
+    subheader: "",
+    season: 3,
+    episode: 8,
+    cardMedia: Invasion.src,
+    cardMediaAlt: "Invasion",
+    releaseDateTime: "October 10 2025 21:00:00 GMT-0700",
+    watchUrl:
+      "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
+    objectPosition: "35% 50%",
+    TimerCard: SmallTimerCard,
+    SiteLogo: AppleLogo,
+  },
+  {
     avatar: OnlyMurdersLogo.src,
     title: "Only Murders In The Building",
     subheader: "",
@@ -1047,6 +1167,21 @@ export const upNext: UpNextProps[] = [
     TimerCard: SmallTimerCard,
     SiteLogo: AppleLogo,
     addContrastToTimer: true,
+  },
+  {
+    avatar: InvasionLogo.src,
+    title: "Invasion",
+    subheader: "",
+    season: 3,
+    episode: 9,
+    cardMedia: Invasion.src,
+    cardMediaAlt: "Invasion",
+    releaseDateTime: "October 17 2025 21:00:00 GMT-0700",
+    watchUrl:
+      "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
+    objectPosition: "35% 50%",
+    TimerCard: SmallTimerCard,
+    SiteLogo: AppleLogo,
   },
   {
     avatar: OnlyMurdersLogo.src,
@@ -1093,6 +1228,22 @@ export const upNext: UpNextProps[] = [
     objectPosition: "50% 50%",
     TimerCard: LargeTimerCard,
     SiteLogo: NetflixLogo,
+  },
+  {
+    avatar: InvasionLogo.src,
+    title: "Invasion",
+    subheader: "",
+    season: 3,
+    episode: 10,
+    cardMedia: Invasion.src,
+    cardMediaAlt: "Invasion",
+    releaseDateTime: "October 24 2025 21:00:00 GMT-0700",
+    watchUrl:
+      "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
+    objectPosition: "35% 50%",
+    TimerCard: SmallTimerCard,
+    SiteLogo: AppleLogo,
+    finale: true,
   },
   {
     avatar: OnlyMurdersLogo.src,
