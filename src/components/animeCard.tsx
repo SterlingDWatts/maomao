@@ -65,8 +65,8 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
         >
           <Box
             sx={{
-              width: "98px",
-              height: "98px",
+              width: "94px",
+              height: "94px",
               mt: 1.5,
               zIndex: 100,
             }}
@@ -74,8 +74,8 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
             <CardMedia
               component="img"
               image={anime.picture || Placeholder.src}
-              width={98}
-              height={98}
+              width={94}
+              height={94}
               sx={{
                 objectPosition: "50% 50%",
                 objectFit: "cover",
@@ -175,6 +175,7 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
                 paddingLeft: { xs: "calc(16px + 100px)", sm: 0 },
                 paddingRight: { xs: 2, sm: 0 },
                 paddingBottom: { xs: 0.5, sm: 0 },
+                marginBottom: { xs: -0.5, sm: 0 },
               }}
             >
               {anime.tags.map((tag) => (

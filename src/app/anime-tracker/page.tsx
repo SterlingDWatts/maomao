@@ -46,7 +46,6 @@ export default function AnimeTrackerPage() {
   >("");
 
   const sortedAnimeList = React.useMemo(() => {
-    // First filter the anime list
     const filteredList = animeList.filter((anime) => {
       switch (filterBy) {
         case "maomao":
@@ -63,7 +62,6 @@ export default function AnimeTrackerPage() {
       }
     });
 
-    // Then sort the filtered list
     return [...filteredList].sort((a, b) => {
       let aValue: string | number;
       let bValue: string | number;
@@ -266,8 +264,12 @@ export default function AnimeTrackerPage() {
                 "& .MuiCard-root:not(:first-child) .MuiCardContent-root.anime-card-content-main":
                   {
                     borderTop: 1,
-                    borderColor: "black",
+                    borderColor: "primary.main",
                   },
+                "& .MuiCard-root:first-child ": {
+                  borderTop: 1,
+                  borderColor: "primary.main",
+                },
               }}
             >
               {sortedAnimeList.map((anime) => (
