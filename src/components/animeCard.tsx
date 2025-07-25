@@ -67,7 +67,7 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
             sx={{
               width: "94px",
               height: "94px",
-              mt: 1.5,
+              mt: 2,
               zIndex: 100,
             }}
           >
@@ -86,9 +86,9 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
           <CardContent
             className="anime-card-content-main"
             sx={{
-              width: "calc(100vw - 100px)",
-              pt: 1.5,
-              "&.MuiCardContent-root:last-child": { pb: 1.5 },
+              width: "calc(100vw - 94px)",
+              // pt: 1.5,
+              "&.MuiCardContent-root:last-child": { pb: 2 },
             }}
           >
             <Stack
