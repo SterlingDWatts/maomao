@@ -109,7 +109,15 @@ export default function AnimeTrackerPage() {
   }, [sortBy, sortDirection, filterBy]);
 
   const handleSortChange = (event: any) => {
-    setSortBy(event.target.value);
+    setSortBy((prevSortBy) => {
+      if (
+        (prevSortBy === "rating" && event.target.value !== "rating") ||
+        (prevSortBy !== "rating" && event.target.value === "rating")
+      ) {
+        setSortDirection(sortDirection === "asc" ? "desc" : "asc");
+      }
+      return event.target.value;
+    });
   };
 
   const handleFilterChange = (event: any) => {
