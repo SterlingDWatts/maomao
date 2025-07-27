@@ -116,13 +116,13 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
               </Typography>
               <Stack direction="row" spacing={1.5}>
                 {anime.isMaomaoRecommendation && (
-                  <LocalFloristIcon color="black" sx={{ fontSize: 16 }} />
+                  <LocalFloristIcon color="inherit" sx={{ fontSize: 16 }} />
                 )}
                 {anime.hasDawnSeen && (
-                  <Face3Icon color="black" sx={{ fontSize: 16 }} />
+                  <Face3Icon color="inherit" sx={{ fontSize: 16 }} />
                 )}
                 {anime.hasSterlingSeen && (
-                  <Face5Icon color="black" sx={{ fontSize: 16 }} />
+                  <Face5Icon color="inherit" sx={{ fontSize: 16 }} />
                 )}
               </Stack>
             </Stack>
@@ -198,7 +198,7 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
                 paddingBottom: { xs: 0.5, sm: 0 },
                 marginBottom: { xs: -0.5, sm: 0 },
                 scrollbarWidth: "none",
-                "-ms-overflow-style": "none",
+                msOverflowStyle: "none",
                 "&::-webkit-scrollbar": {
                   display: "none",
                 },
