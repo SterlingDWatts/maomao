@@ -116,13 +116,13 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
               </Typography>
               <Stack direction="row" spacing={1.5}>
                 {anime.isMaomaoRecommendation && (
-                  <LocalFloristIcon color="primary" sx={{ fontSize: 16 }} />
+                  <LocalFloristIcon color="black" sx={{ fontSize: 16 }} />
                 )}
                 {anime.hasDawnSeen && (
-                  <Face3Icon color="primary" sx={{ fontSize: 16 }} />
+                  <Face3Icon color="black" sx={{ fontSize: 16 }} />
                 )}
                 {anime.hasSterlingSeen && (
-                  <Face5Icon color="primary" sx={{ fontSize: 16 }} />
+                  <Face5Icon color="black" sx={{ fontSize: 16 }} />
                 )}
               </Stack>
             </Stack>

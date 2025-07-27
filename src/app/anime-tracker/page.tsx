@@ -37,13 +37,13 @@ import { abbreviateNumber } from "../utils";
 export default function AnimeTrackerPage() {
   const [sortBy, setSortBy] = React.useState<
     "title" | "year" | "rating" | "rank" | "popularity" | ""
-  >("");
+  >("rank");
   const [sortDirection, setSortDirection] = React.useState<"asc" | "desc">(
     "asc",
   );
   const [filterBy, setFilterBy] = React.useState<
     "all" | "maomao" | "dawn" | "sterling" | "neither" | ""
-  >("");
+  >("all");
 
   const sortedAnimeList = React.useMemo(() => {
     const filteredList = animeList.filter((anime) => {
@@ -151,11 +151,10 @@ export default function AnimeTrackerPage() {
 
             <Box
               sx={{
-                mb: 3,
                 display: "flex",
                 alignItems: "end",
                 flexWrap: "wrap",
-                marginTop: 2,
+                marginTop: 1,
                 gap: 2,
                 paddingLeft: { xs: 1, sm: 0 },
                 paddingRight: { xs: 1, sm: 0 },
@@ -276,13 +275,9 @@ export default function AnimeTrackerPage() {
                     left: 16,
                     right: 0,
                     borderTopWidth: 1,
-                    borderTopColor: "primary.main",
+                    borderTopColor: "black",
                     borderTopStyle: "solid",
                   },
-                "& .MuiCard-root:first-child ": {
-                  borderTop: 1,
-                  borderColor: "primary.main",
-                },
               }}
             >
               {sortedAnimeList.map((anime) => (
