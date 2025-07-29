@@ -504,7 +504,7 @@ export const upNext: UpNextProps[] = [
     releaseDateTime: "August 22 2025 21:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
-    objectPosition: "35% 50%",
+    objectPosition: "35% 30%",
     TimerCard: LargeTimerCard,
     SiteLogo: AppleLogo,
   },
@@ -580,7 +580,7 @@ export const upNext: UpNextProps[] = [
     releaseDateTime: "August 29 2025 21:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
-    objectPosition: "35% 50%",
+    objectPosition: "35% 30%",
     TimerCard: SmallTimerCard,
     SiteLogo: AppleLogo,
   },
@@ -656,7 +656,7 @@ export const upNext: UpNextProps[] = [
     releaseDateTime: "September 05 2025 21:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
-    objectPosition: "35% 50%",
+    objectPosition: "35% 30%",
     TimerCard: SmallTimerCard,
     SiteLogo: AppleLogo,
   },
@@ -778,7 +778,7 @@ export const upNext: UpNextProps[] = [
     releaseDateTime: "September 12 2025 21:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
-    objectPosition: "35% 50%",
+    objectPosition: "35% 30%",
     TimerCard: SmallTimerCard,
     SiteLogo: AppleLogo,
   },
@@ -855,7 +855,7 @@ export const upNext: UpNextProps[] = [
     releaseDateTime: "September 19 2025 21:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
-    objectPosition: "35% 50%",
+    objectPosition: "35% 30%",
     TimerCard: SmallTimerCard,
     SiteLogo: AppleLogo,
   },
@@ -964,7 +964,7 @@ export const upNext: UpNextProps[] = [
     releaseDateTime: "September 26 2025 21:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
-    objectPosition: "35% 50%",
+    objectPosition: "35% 30%",
     TimerCard: SmallTimerCard,
     SiteLogo: AppleLogo,
   },
@@ -1025,7 +1025,7 @@ export const upNext: UpNextProps[] = [
     releaseDateTime: "October 03 2025 21:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
-    objectPosition: "35% 50%",
+    objectPosition: "35% 30%",
     TimerCard: SmallTimerCard,
     SiteLogo: AppleLogo,
   },
@@ -1102,7 +1102,7 @@ export const upNext: UpNextProps[] = [
     releaseDateTime: "October 10 2025 21:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
-    objectPosition: "35% 50%",
+    objectPosition: "35% 30%",
     TimerCard: SmallTimerCard,
     SiteLogo: AppleLogo,
   },
@@ -1148,7 +1148,7 @@ export const upNext: UpNextProps[] = [
     releaseDateTime: "October 17 2025 21:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
-    objectPosition: "35% 50%",
+    objectPosition: "35% 30%",
     TimerCard: SmallTimerCard,
     SiteLogo: AppleLogo,
   },
@@ -1209,7 +1209,7 @@ export const upNext: UpNextProps[] = [
     releaseDateTime: "October 24 2025 21:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
-    objectPosition: "35% 50%",
+    objectPosition: "35% 30%",
     TimerCard: SmallTimerCard,
     SiteLogo: AppleLogo,
     finale: true,
