@@ -7,6 +7,7 @@ import {
   GooglePlayMoviesLogo,
   HBOLogo,
   HuluLogo,
+  IMDBLogo,
   NetflixLogo,
 } from "./svgs/svgLogos";
 
@@ -30,6 +31,8 @@ import Highest2LowestLogo from "./assets/Highest2LowestLogo.jpg";
 import Invasion from "./assets/Invasion.jpg";
 import InvasionLogo from "./assets/InvasionLogo.jpg";
 import JamesLogo from "./assets/JamesLogo.jpg";
+import LostBus from "./assets/LostBus.jpg";
+import LostBusLogo from "./assets/LostBusLogo.jpg";
 import Masterchef from "./assets/Masterchef.jpg";
 import MasterchefLogo from "./assets/MasterchefLogo.jpg";
 import MyHeroFinalSeason from "./assets/MyHeroFinalSeason.jpg";
@@ -862,6 +865,22 @@ export const upNext: UpNextProps[] = [
     objectPosition: "50% 35%",
     TimerCard: SmallTimerCard,
     SiteLogo: HBOLogo,
+  },
+  {
+    avatar: LostBusLogo.src,
+    title: "The Lost Bus",
+    subheader: "",
+    synopsis:
+      "Explores what went wrong in California's Camp Fire, the nation's deadliest wildfire in a century, and how to prevent future tragedies, also including stories of a bus driver and school teacher who helped through a wildfire.",
+    cardMedia: LostBus.src,
+    cardMediaAlt: "The Lost Bus",
+    releaseDateTime: "September 19 2025 16:00:00 GMT-0700",
+    watchUrl:
+      "https://www.imdb.com/title/tt21103218/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_the%2520lost%2520bus",
+    objectPosition: "50% 20%",
+    TimerCard: LargeTimerCard,
+    SiteLogo: IMDBLogo,
+    isMovie: true,
   },
   {
     avatar: InvasionLogo.src,
