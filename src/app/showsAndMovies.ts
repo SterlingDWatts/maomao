@@ -25,6 +25,8 @@ import FoundationS3E4 from "./assets/FoundationS3E4.jpg";
 import FrierenFrierensParty from "./assets/FrierenFrierensParty.jpg";
 import FrierenLogo from "./assets/FrierenLogo.jpg";
 import Fruits from "./assets/Fruits.jpg";
+import Highest2Lowest from "./assets/Highest2Lowest.jpg";
+import Highest2LowestLogo from "./assets/Highest2LowestLogo.jpg";
 import Invasion from "./assets/Invasion.jpg";
 import InvasionLogo from "./assets/InvasionLogo.jpg";
 import JamesLogo from "./assets/JamesLogo.jpg";
@@ -102,7 +104,8 @@ export const availableNow: AvailableNowProps[] = [
     releaseDateTime: "July 25 2025 16:00:00 GMT-0700",
     synopsis:
       "Forced to balance their roles as heroes with the strength of their family bond, the Fantastic Four must defend Earth from a ravenous space god called Galactus and his enigmatic Herald, Silver Surfer.",
-    watchUrl: "https://www.imdb.com/title/tt10676052/",
+    watchUrl:
+      "https://www.fandango.com/the-fantastic-four-first-steps-2025-236967/movie-overview",
     objectPosition: "47% 15%",
     SiteLogo: FandangoLogo,
   },
@@ -414,6 +417,22 @@ export const upNext: UpNextProps[] = [
     objectPosition: "100% 20%",
     TimerCard: SmallTimerCard,
     SiteLogo: AppleLogo,
+  },
+  {
+    avatar: Highest2LowestLogo.src,
+    title: "Highest 2 Lowest",
+    subheader: "",
+    synopsis:
+      "When a titan music mogul is targeted with a ransom plot, he is jammed up in a life-or-death moral dilemma.",
+    cardMedia: Highest2Lowest.src,
+    cardMediaAlt: "Highest 2 Lowest",
+    releaseDateTime: "August 15 2025 16:00:00 GMT-0700",
+    watchUrl:
+      "https://www.fandango.com/highest-2-lowest-2025-240338/movie-overview",
+    objectPosition: "50% 80%",
+    TimerCard: LargeTimerCard,
+    SiteLogo: FandangoLogo,
+    isMovie: true,
   },
   {
     avatar: NyaightLogo.src,
@@ -946,7 +965,7 @@ export const upNext: UpNextProps[] = [
     cardMediaAlt: "One Battle After Another",
     releaseDateTime: "September 26 2025 16:00:00 GMT-0700",
     watchUrl:
-      "https://www.imdb.com/title/tt30144839/?ref_=nm_flmg_job_1_unrel_t_1",
+      "https://www.fandango.com/one-battle-after-another-2025-241516/movie-overview",
     objectPosition: "50% 70%",
     synopsis:
       "When their evil enemy resurfaces after 16 years, a group of ex-revolutionaries reunite to rescue one of their own's daughter.",
@@ -1256,7 +1275,8 @@ export const upNext: UpNextProps[] = [
     releaseDateTime: "November 07, 2025 16:00:00",
     synopsis: `A man joins a game show where contestants, allowed to go anywhere in the world, are pursued by "hunters" hired to kill them.`,
     isMovie: true,
-    watchUrl: "https://www.imdb.com/title/tt14107334/?ref_=mv_close",
+    watchUrl:
+      "https://www.fandango.com/the-running-man-2025-241290/movie-overview",
     objectPosition: "50% 25%",
     TimerCard: LargeTimerCard,
     SiteLogo: FandangoLogo,
@@ -1401,8 +1421,7 @@ export const upNext: UpNextProps[] = [
     releaseDateTime: "July 17, 2026 16:00:00",
     synopsis: `Follows Odysseus in his perilous journey home after the Trojan War, showcasing his encounters with Polyphemus, the Sirens, Circe, and finishing with his reunion with his wife, Penelope.`,
     isMovie: true,
-    watchUrl:
-      "https://www.imdb.com/title/tt33764258/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_the%2520ody",
+    watchUrl: "https://www.fandango.com/the-odyssey-2026-241283/movie-overview",
     objectPosition: "50% 80%",
     TimerCard: LargeTimerCard,
     SiteLogo: FandangoLogo,
