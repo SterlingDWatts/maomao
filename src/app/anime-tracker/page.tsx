@@ -36,7 +36,7 @@ import { abbreviateNumber } from "../utils";
 
 export default function AnimeTrackerPage() {
   const [sortBy, setSortBy] = React.useState<
-    "title" | "year" | "rating" | "rank" | "popularity" | ""
+    "rank" | "rating" | "popularity" | "title" | "year" | "episodes" | ""
   >("rank");
   const [sortDirection, setSortDirection] = React.useState<"asc" | "desc">(
     "asc",
@@ -86,6 +86,10 @@ export default function AnimeTrackerPage() {
         case "popularity":
           aValue = a.popularity;
           bValue = b.popularity;
+          break;
+        case "episodes":
+          aValue = a.episodes;
+          bValue = b.episodes;
           break;
         default:
           aValue = a.rank;
@@ -203,11 +207,12 @@ export default function AnimeTrackerPage() {
                     "& div#anime-tracker-sort-select ": { paddingRight: 0 },
                   }}
                 >
+                  <MenuItem value="rank">Rank</MenuItem>
+                  <MenuItem value="rating">Rating</MenuItem>
+                  <MenuItem value="popularity">Popularity</MenuItem>
                   <MenuItem value="title">Title</MenuItem>
                   <MenuItem value="year">Year</MenuItem>
-                  <MenuItem value="rating">Rating</MenuItem>
-                  <MenuItem value="rank">Rank</MenuItem>
-                  <MenuItem value="popularity">Popularity</MenuItem>
+                  <MenuItem value="episodes">Episodes</MenuItem>
                 </Select>
               </FormControl>
 

@@ -66,7 +66,7 @@ export default function Page() {
                     component="span"
                     sx={{ fontWeight: 900 }}
                   >
-                    |{" ‎‎ "}
+                    I{" ‎‎ "}
                   </Typography>
                   Next Episode or Movie
                 </Typography>

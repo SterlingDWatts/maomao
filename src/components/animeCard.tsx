@@ -105,7 +105,6 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
                   lineHeight: 1.25,
                   "& sup": {
                     fontSize: 10,
-                    fontWeight: "bold",
                     lineHeight: 1,
                     verticalAlign: "5px",
                   },
@@ -156,7 +155,6 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
                   fontSize: 16,
                   "& sup": {
                     fontSize: 10,
-                    fontWeight: "bold",
                     lineHeight: 1,
                     verticalAlign: "5px",
                   },
@@ -172,7 +170,6 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
                   fontSize: 16,
                   "& sup": {
                     fontSize: 10,
-                    fontWeight: "bold",
                     lineHeight: 1,
                     verticalAlign: "5px",
                   },
