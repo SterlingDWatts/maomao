@@ -12,7 +12,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import DrawerAppBar from "../components/appBarWithResponsiveMenu";
 import TallTimerCard from "../components/tallTimerCard";
 
-import { upNext, availableNow } from "./showsAndMovies";
+import { upNext, backlog, availableNow } from "./showsAndMovies";
 
 import { theme } from "./theme";
 
@@ -39,7 +39,7 @@ export default function Page() {
             <DrawerAppBar />
 
             <Stack spacing={2} sx={{ marginTop: 2 }}>
-              <Stack>
+              <Stack position="relative">
                 <Typography
                   variant="h6"
                   component="div"
@@ -54,41 +54,86 @@ export default function Page() {
                   <TimerCard key={i} {...{ TimerCard, ...props }} />
                 ))}
               </Stack>
-              <Stack>
-                <Typography
-                  variant="h6"
-                  component="div"
-                  sx={{ fontWeight: "bold", color: "black" }}
-                >
+              <Stack
+                direction="row"
+                spacing={1.5}
+                sx={{
+                  overflowX: "auto",
+                  overflowY: "visible",
+                  flexWrap: "nowrap",
+                  position: "relative",
+                  width: { xs: "100vw", sm: "initial" },
+                  "&.MuiStack-root": {
+                    marginLeft: { xs: -1, sm: 0 },
+                  },
+                  paddingLeft: { xs: 1, sm: 0 },
+                  paddingRight: { xs: 1, sm: 0 },
+                  paddingBottom: { xs: 0.5, sm: 0 },
+                  marginBottom: { xs: -0.5, sm: 0 },
+                  scrollbarWidth: { xs: "none", sm: "thin" },
+                  msOverflowStyle: { xs: "none", sm: "scrollbar" },
+                  "&::-webkit-scrollbar": {
+                    display: { xs: "none", sm: "initial" },
+                  },
+                }}
+              >
+                <Stack position="relative">
                   <Typography
                     variant="h6"
-                    color="secondary.light"
-                    component="span"
-                    sx={{ fontWeight: 900 }}
+                    component="div"
+                    sx={{
+                      fontWeight: "bold",
+                      color: "black",
+                      position: "sticky",
+                      left: 0,
+                      width: "fit-content",
+                      backgroundColor: "primary.light",
+                    }}
                   >
-                    I{" ‎‎ "}
+                    <Typography
+                      variant="h6"
+                      color="secondary.light"
+                      component="span"
+                      sx={{ fontWeight: 900 }}
+                    >
+                      I{" ‎‎ "}
+                    </Typography>
+                    Next Episode or Movie
                   </Typography>
-                  Next Episode or Movie
-                </Typography>
-                <Stack
-                  direction="row"
-                  spacing={1.5}
-                  sx={{
-                    overflowX: "auto",
-                    overflowY: "visible",
-                    flexWrap: "nowrap",
-                    position: "relative",
-                    width: { xs: "100vw", sm: "initial" },
-                    marginLeft: { xs: -1, sm: 0 },
-                    marginBottom: { xs: -0.5, sm: 0 },
-                    paddingLeft: { xs: 1, sm: 0 },
-                    paddingRight: { xs: 1, sm: 0 },
-                    paddingBottom: { xs: 0.5, sm: 0 },
-                  }}
-                >
-                  {availableNow.map((props, i) => (
-                    <TallTimerCard key={i} {...props} />
-                  ))}
+                  <Stack direction="row" spacing={1.5}>
+                    {availableNow.map((props, i) => (
+                      <TallTimerCard key={i} {...props} />
+                    ))}
+                  </Stack>
+                </Stack>
+                <Stack>
+                  <Typography
+                    variant="h6"
+                    component="div"
+                    sx={{
+                      fontWeight: "bold",
+                      color: "black",
+                      position: "sticky",
+                      left: 0,
+                      width: "fit-content",
+                      backgroundColor: "primary.light",
+                    }}
+                  >
+                    <Typography
+                      variant="h6"
+                      color="secondary.light"
+                      component="span"
+                      sx={{ fontWeight: 900 }}
+                    >
+                      I{" ‎‎ "}
+                    </Typography>
+                    Backlog
+                  </Typography>
+                  <Stack direction="row" spacing={1.5} sx={{ height: "100%" }}>
+                    {backlog.map((props, i) => (
+                      <TallTimerCard key={i} {...props} />
+                    ))}
+                  </Stack>
                 </Stack>
               </Stack>
 

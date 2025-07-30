@@ -15,6 +15,8 @@ import AllCreaturesSeason3Episode3 from "./assets/AllCreaturesSeason3Episode3.jp
 import Attack from "./assets/Attack.jpg";
 import AttackLogo from "./assets/AttackLogo.jpg";
 import ChainsawManMovie from "./assets/ChainsawManMovie.jpg";
+import Creature from "./assets/Creature.jpg";
+import CreatureLogo from "./assets/CreatureLogo.jpg";
 import DanDaDan from "./assets/DanDaDan.jpg";
 import DandadanLogo from "./assets/DandadanLogo.jpg";
 import Fantastic from "./assets/Fantastic.jpg";
@@ -50,12 +52,18 @@ import OnlyMurdersLogo from "./assets/OnlyMurdersLogo.jpg";
 import PeacemakerLogo from "./assets/PeacemakerLogo.jpg";
 import PeacemakerSeason2 from "./assets/PeacemakerSeason2.jpg";
 import Pochita from "./assets/Pochita.jpg";
+import ResidentAlien from "./assets/ResidentAlien.jpg";
+import ResidentAlienLogo from "./assets/ResidentAlienLogo.jpg";
 import RunningMan from "./assets/RunningMan.jpg";
 import RunningManLogo from "./assets/RunningManLogo.jpg";
+import Sandman from "./assets/Sandman.jpg";
+import SandmanLogo from "./assets/SandmanLogo.jpg";
 import SlowHorsesBig from "./assets/SlowHorses.jpg";
 import SlowHorsesLogo from "./assets/SlowHorsesLogo.jpg";
 import SoloLeveling from "./assets/SoloLeveling.jpg";
 import SoloLogo from "./assets/SoloLogo.jpg";
+import SquidGame from "./assets/SquidGameCoffins.jpg";
+import SquidLogo from "./assets/SquidLogo.jpg";
 import Stone from "./assets/Stone.jpg";
 import StoneLogo from "./assets/StoneLogo.jpg";
 import StrangerLogo from "./assets/StrangerLogo.jpg";
@@ -129,20 +137,6 @@ export const availableNow: AvailableNowProps[] = [
     SiteLogo: GooglePlayMoviesLogo,
   },
   {
-    avatar: StoneLogo.src,
-    title: "Dr. Stone",
-    subheader: "Call from the Dead",
-    season: 2,
-    episode: 3,
-    cardMedia: Stone.src,
-    cardMediaAlt: "Dr. Stone",
-    releaseDateTime: "May 30 2021 03:00:00 GMT-0700",
-    synopsis: `Taiju and Yuzuriha are on the verge of tears after they hear Senku's voice, and Senku informs them of his plan to win the war without any bloodshed.`,
-    watchUrl: "https://www.crunchyroll.com/series/GYEXQKJG6/dr-stone",
-    objectPosition: "50% 50%",
-    SiteLogo: CrunchyrollLogo,
-  },
-  {
     avatar: AttackLogo.src,
     title: "Attack on Titan",
     subheader: "Opening",
@@ -173,66 +167,6 @@ export const availableNow: AvailableNowProps[] = [
     SiteLogo: HuluLogo,
   },
   {
-    avatar: MasterchefLogo.src,
-    title: "Masterchef",
-    subheader: "Mystery Box",
-    season: 15,
-    episode: 7,
-    cardMedia: Masterchef.src,
-    cardMediaAlt: "Masterchef",
-    releaseDateTime: "July 09 2025 03:00:00 GMT-0700",
-    synopsis:
-      "The five duos on the losing team from the previous challenge face the first pressure test of the season: a dessert mystery box challenge.",
-    watchUrl:
-      "https://www.hulu.com/series/45d67197-5346-4adb-9d90-6ed2d7b7bd85",
-    objectPosition: "50% 30%",
-    SiteLogo: HuluLogo,
-  },
-  {
-    avatar: VinlandLogo.src,
-    title: "Vinland Saga",
-    subheader: "Cause",
-    season: 2,
-    episode: 16,
-    cardMedia: VinlandSaga.src,
-    cardMediaAlt: "Vinland Saga",
-    releaseDateTime: "April 25 2023 03:00:00 GMT-0700",
-    synopsis:
-      "Having realized Gardar is escaped, Einar and Thorfinn make their way to the old master's home to find Arnheid. The two find her and both decide to help her and her husband escape, with the three colluding in a plan to help save Gardar.",
-    watchUrl: "https://www.crunchyroll.com/series/GEXH3WKK0/vinland-saga",
-    objectPosition: "50% 34%",
-    SiteLogo: CrunchyrollLogo,
-  },
-  {
-    avatar: DandadanLogo.src,
-    title: "Dandadan",
-    subheader: "You Won't Get Away with This!",
-    season: 2,
-    episode: 3,
-    cardMedia: DanDaDan.src,
-    cardMediaAlt: "Dandadan",
-    releaseDateTime: "July 17 2025 03:00:00 GMT-0700",
-    synopsis: `Jiji's body is possessed by the Evil Eye. Okarun fights Jiji, but combined with the Mongolian Death Worm's poison attacks, he needs to escape from underground as soon as possible. However, he can't leave Jiji behind, so he lets Momo escape by herself instead. Once on the surface, Momo thinks of ways to shine sunlight onto the Mongolian Death Worm.`,
-    watchUrl: "https://www.crunchyroll.com/series/GYEXQKJG6/dr-stone",
-    objectPosition: "50% 50%",
-    SiteLogo: CrunchyrollLogo,
-  },
-  {
-    avatar: SoloLogo.src,
-    title: "Solo Leveling",
-    subheader: "It Was All Worth It",
-    season: 2,
-    episode: 9,
-    cardMedia: SoloLeveling.src,
-    cardMediaAlt: "Solo Leveling",
-    releaseDateTime: "March 01 2025 03:00:00 GMT-0700",
-    synopsis:
-      "Jinwoo tries to cure his mother with the Elixir of Life while preparations for the 4th Jeju Island Raid begin.",
-    watchUrl: "https://www.crunchyroll.com/series/GDKHZEJ0K/solo-leveling",
-    objectPosition: "10% 50%",
-    SiteLogo: CrunchyrollLogo,
-  },
-  {
     avatar: Fruits.src,
     title: "Fruits Basket",
     subheader: "See You When You Get Back",
@@ -245,6 +179,143 @@ export const availableNow: AvailableNowProps[] = [
     watchUrl: "https://www.crunchyroll.com/series/G6ZJMGEXY/fruits-basket",
     objectPosition: "50% 50%",
     SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: StoneLogo.src,
+    title: "Dr. Stone",
+    subheader: "Full Assault",
+    season: 2,
+    episode: 4,
+    cardMedia: Stone.src,
+    cardMediaAlt: "Dr. Stone",
+    releaseDateTime: "June 06 2021 03:00:00 GMT-0700",
+    synopsis: `Chrome and Magma struggle with Ukyo, while Senku, gets his hands busy with building up an invention; a new hope.`,
+    watchUrl: "https://www.crunchyroll.com/series/GYEXQKJG6/dr-stone",
+    objectPosition: "50% 50%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: DandadanLogo.src,
+    title: "Dandadan",
+    subheader: "That's, Like, Way Deadly",
+    season: 2,
+    episode: 4,
+    cardMedia: DanDaDan.src,
+    cardMediaAlt: "Dandadan",
+    releaseDateTime: "July 24 2025 03:00:00 GMT-0700",
+    synopsis: `Momo surfaces the Mongolian Death Worm, triggering a volcano. She uses the worm as a fire hose against the lava, but the Kito family interferes. Evil Eye-possessed Jiji appears, worsening the situation.`,
+    watchUrl: "https://www.crunchyroll.com/series/GYEXQKJG6/dr-stone",
+    objectPosition: "50% 50%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: MasterchefLogo.src,
+    title: "Masterchef",
+    subheader: "Recipe Telephone",
+    season: 15,
+    episode: 8,
+    cardMedia: Masterchef.src,
+    cardMediaAlt: "Masterchef",
+    releaseDateTime: "July 16 2025 03:00:00 GMT-0700",
+    synopsis:
+      "Each duo is split up, and one teammate begins cooking, but the second teammate must complete the dish.",
+    watchUrl:
+      "https://www.hulu.com/series/45d67197-5346-4adb-9d90-6ed2d7b7bd85",
+    objectPosition: "50% 30%",
+    SiteLogo: HuluLogo,
+  },
+  {
+    avatar: VinlandLogo.src,
+    title: "Vinland Saga",
+    subheader: "Way Home",
+    season: 2,
+    episode: 17,
+    cardMedia: VinlandSaga.src,
+    cardMediaAlt: "Vinland Saga",
+    releaseDateTime: "May 01 2023 03:00:00 GMT-0700",
+    synopsis:
+      "Thorfinn, after being left with no other choice, must break a sworn oath to defend Gardar from Snake.",
+    watchUrl: "https://www.crunchyroll.com/series/GEXH3WKK0/vinland-saga",
+    objectPosition: "50% 34%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: SoloLogo.src,
+    title: "Solo Leveling",
+    subheader: "We Need a Hero",
+    season: 2,
+    episode: 10,
+    cardMedia: SoloLeveling.src,
+    cardMediaAlt: "Solo Leveling",
+    releaseDateTime: "March 08 2025 03:00:00 GMT-0700",
+    synopsis:
+      "S-Rank hunters spar in preparation for the Jeju Island raid, honing their skills for the imminent battle against powerful magic beasts.",
+    watchUrl: "https://www.crunchyroll.com/series/GDKHZEJ0K/solo-leveling",
+    objectPosition: "10% 50%",
+    SiteLogo: CrunchyrollLogo,
+  },
+];
+
+export const backlog: AvailableNowProps[] = [
+  {
+    avatar: ResidentAlienLogo.src,
+    title: "Resident Alien",
+    subheader: "Prisoners",
+    season: 4,
+    episode: 1,
+    cardMedia: ResidentAlien.src,
+    cardMediaAlt: "Resident Alien",
+    releaseDateTime: "June 06 2025 16:00:00 GMT-0700",
+    synopsis:
+      "Harry must escape an outer space prison to stop a dangerous threat in town.",
+    watchUrl: "https://www.imdb.com/title/tt8690918/?ref_=ttep_ov_bk",
+    objectPosition: "50% 50%",
+    SiteLogo: IMDBLogo,
+  },
+  {
+    avatar: CreatureLogo.src,
+    title: "Creature Commandos",
+    subheader: "The Collywobbles",
+    season: 1,
+    episode: 1,
+    cardMedia: Creature.src,
+    cardMediaAlt: "Creature Commandos",
+    releaseDateTime: "December 05 2024 16:00:00 GMT-0700",
+    synopsis:
+      "Amanda Waller assembles the Creature Commandos - led by General Rick Flag, Sr. - and sends them to Pokolistan to protect Princess Ilana Rostovic.",
+    watchUrl: "https://www.netflix.com/us/title/81150303",
+    objectPosition: "50% 50%",
+    SiteLogo: NetflixLogo,
+  },
+  {
+    avatar: SquidLogo.src,
+    title: "Squid Game",
+    subheader: "Keys and Knives",
+    season: 3,
+    episode: 1,
+    cardMedia: SquidGame.src,
+    cardMediaAlt: "Squid Game",
+    releaseDateTime: "July 27 2025 16:00:00 GMT-0700",
+    synopsis:
+      "No-eul infiltrates a dangerous operation with a risky plan. A new game is announced: hide-and-seek, where one group holds a key and the other a knife.",
+    watchUrl: "https://www.netflix.com/us/title/81040344",
+    objectPosition: "50% 50%",
+    SiteLogo: NetflixLogo,
+  },
+  {
+    avatar: SandmanLogo.src,
+    title: "The Sandman",
+    subheader: "Season of Mists",
+    season: 2,
+    episode: 1,
+    cardMedia: Sandman.src,
+    cardMediaAlt: "The Sandman",
+    releaseDateTime: "July 03 2025 16:00:00 GMT-0700",
+    synopsis:
+      "When a gathering of the Endless exposes deep-seated grievances, Morpheus embarks on a mission to Hell to free the soul of a condemned mortal.",
+    watchUrl: "https://www.netflix.com/us/title/81150303",
+    objectPosition: "50% 50%",
+    SiteLogo: NetflixLogo,
   },
 ];
 
