@@ -258,21 +258,6 @@ export const availableNow: AvailableNowProps[] = [
 
 export const backlog: AvailableNowProps[] = [
   {
-    avatar: ResidentAlienLogo.src,
-    title: "Resident Alien",
-    subheader: "Prisoners",
-    season: 4,
-    episode: 1,
-    cardMedia: ResidentAlien.src,
-    cardMediaAlt: "Resident Alien",
-    releaseDateTime: "June 06 2025 16:00:00 GMT-0700",
-    synopsis:
-      "Harry must escape an outer space prison to stop a dangerous threat in town.",
-    watchUrl: "https://www.imdb.com/title/tt8690918/?ref_=ttep_ov_bk",
-    objectPosition: "50% 50%",
-    SiteLogo: IMDBLogo,
-  },
-  {
     avatar: CreatureLogo.src,
     title: "Creature Commandos",
     subheader: "The Collywobbles",
@@ -286,6 +271,21 @@ export const backlog: AvailableNowProps[] = [
     watchUrl: "https://www.netflix.com/us/title/81150303",
     objectPosition: "50% 50%",
     SiteLogo: NetflixLogo,
+  },
+  {
+    avatar: ResidentAlienLogo.src,
+    title: "Resident Alien",
+    subheader: "Prisoners",
+    season: 4,
+    episode: 1,
+    cardMedia: ResidentAlien.src,
+    cardMediaAlt: "Resident Alien",
+    releaseDateTime: "June 06 2025 16:00:00 GMT-0700",
+    synopsis:
+      "Harry must escape an outer space prison to stop a dangerous threat in town.",
+    watchUrl: "https://www.imdb.com/title/tt8690918/?ref_=ttep_ov_bk",
+    objectPosition: "50% 50%",
+    SiteLogo: IMDBLogo,
   },
   {
     avatar: SquidLogo.src,
