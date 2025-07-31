@@ -56,7 +56,7 @@ export default function Page() {
               </Stack>
               <Stack
                 direction="row"
-                spacing={1.5}
+                spacing={4.5}
                 sx={{
                   overflowX: "auto",
                   overflowY: "visible",

@@ -11,6 +11,8 @@ import {
   NetflixLogo,
 } from "./svgs/svgLogos";
 
+import TwentyEightYears from "./assets/28Years.jpg";
+import TwentyEightYearsLogo from "./assets/28YearsLogo.jpg";
 import AllCreaturesSeason3Episode3 from "./assets/AllCreaturesSeason3Episode3.jpg";
 import Attack from "./assets/Attack.jpg";
 import AttackLogo from "./assets/AttackLogo.jpg";
@@ -33,12 +35,17 @@ import Highest2LowestLogo from "./assets/Highest2LowestLogo.jpg";
 import Invasion from "./assets/Invasion.jpg";
 import InvasionLogo from "./assets/InvasionLogo.jpg";
 import JamesLogo from "./assets/JamesLogo.jpg";
+import JeffBuckley from "./assets/JeffBuckley.jpg";
+import JeffBuckleyLogo from "./assets/JeffBuckleyLogo.jpg";
 import LostBus from "./assets/LostBus.jpg";
 import LostBusLogo from "./assets/LostBusLogo.jpg";
 import Masterchef from "./assets/Masterchef.jpg";
 import MasterchefLogo from "./assets/MasterchefLogo.jpg";
+import Mickey17 from "./assets/Mickey17.jpg";
+import Mickey17Logo from "./assets/Mickey17Logo.jpg";
 import MyHeroFinalSeason from "./assets/MyHeroFinalSeason.jpg";
 import MyHeroLogo from "./assets/MyHeroLogo.jpg";
+import Naruto from "./assets/Naruto.jpg";
 import NobodyWants from "./assets/NobodyWants.jpg";
 import NobodyWantsLogo from "./assets/NobodyWantsLogo.jpg";
 import Nyaight from "./assets/Nyaight.jpg";
@@ -68,12 +75,18 @@ import Stone from "./assets/Stone.jpg";
 import StoneLogo from "./assets/StoneLogo.jpg";
 import StrangerLogo from "./assets/StrangerLogo.jpg";
 import StrangerThings from "./assets/StrangerThings.jpg";
-import Superman from "./assets/Superman.jpg";
-import SupermanLogo from "./assets/SupermanLogo.jpg";
+import Tar from "./assets/Tar.jpg";
+import TarLogo from "./assets/TarLogo.jpg";
 import TheBearLogo from "./assets/TheBearLogo.jpg";
 import TheBearSeason4Episode4 from "./assets/TheBearSeason4Episode4.jpg";
+import TheBrutalist from "./assets/TheBrutalist.jpg";
+import TheBrutalistLogo from "./assets/TheBrutalistLogo.jpg";
 import VinlandLogo from "./assets/VinlandLogo.jpg";
 import VinlandSaga from "./assets/VinlandSaga.jpg";
+import WhiteLotusLogo from "./assets/WhiteLotusLogo.jpg";
+import WhiteLotusS2 from "./assets/WhiteLotusS2.jpg";
+import ZoneOfInterest from "./assets/ZoneOfInterest.jpg";
+import ZoneOfInterestLogo from "./assets/ZoneOfInterestLogo.jpg";
 
 export interface AvailableNowProps {
   avatar: string;
@@ -167,20 +180,6 @@ export const availableNow: AvailableNowProps[] = [
     SiteLogo: HuluLogo,
   },
   {
-    avatar: Fruits.src,
-    title: "Fruits Basket",
-    subheader: "See You When You Get Back",
-    season: 1,
-    episode: 8,
-    cardMedia: Fruits.src,
-    cardMediaAlt: "Fruits Basket",
-    releaseDateTime: "May 25 2019 03:00:00 GMT-0700",
-    synopsis: `Kyo fights Yuki, Yuki fights a cold, and Tohru meets a new Soma whose mood swings may be even more extreme than Kagura's.`,
-    watchUrl: "https://www.crunchyroll.com/series/G6ZJMGEXY/fruits-basket",
-    objectPosition: "50% 50%",
-    SiteLogo: CrunchyrollLogo,
-  },
-  {
     avatar: StoneLogo.src,
     title: "Dr. Stone",
     subheader: "Full Assault",
@@ -195,30 +194,16 @@ export const availableNow: AvailableNowProps[] = [
     SiteLogo: CrunchyrollLogo,
   },
   {
-    avatar: DandadanLogo.src,
-    title: "Dandadan",
-    subheader: "That's, Like, Way Deadly",
-    season: 2,
-    episode: 4,
-    cardMedia: DanDaDan.src,
-    cardMediaAlt: "Dandadan",
-    releaseDateTime: "July 24 2025 03:00:00 GMT-0700",
-    synopsis: `Momo surfaces the Mongolian Death Worm, triggering a volcano. She uses the worm as a fire hose against the lava, but the Kito family interferes. Evil Eye-possessed Jiji appears, worsening the situation.`,
-    watchUrl: "https://www.crunchyroll.com/series/GYEXQKJG6/dr-stone",
-    objectPosition: "50% 50%",
-    SiteLogo: CrunchyrollLogo,
-  },
-  {
     avatar: MasterchefLogo.src,
     title: "Masterchef",
-    subheader: "Recipe Telephone",
+    subheader: "Train to Table",
     season: 15,
-    episode: 8,
+    episode: 9,
     cardMedia: Masterchef.src,
     cardMediaAlt: "Masterchef",
-    releaseDateTime: "July 16 2025 03:00:00 GMT-0700",
+    releaseDateTime: "July 23 2025 03:00:00 GMT-0700",
     synopsis:
-      "Each duo is split up, and one teammate begins cooking, but the second teammate must complete the dish.",
+      "Two teams must prepare a VIP dining experience aboard a moving steam train.",
     watchUrl:
       "https://www.hulu.com/series/45d67197-5346-4adb-9d90-6ed2d7b7bd85",
     objectPosition: "50% 30%",
@@ -227,29 +212,43 @@ export const availableNow: AvailableNowProps[] = [
   {
     avatar: VinlandLogo.src,
     title: "Vinland Saga",
-    subheader: "Way Home",
+    subheader: "The First Measure",
     season: 2,
-    episode: 17,
+    episode: 18,
     cardMedia: VinlandSaga.src,
     cardMediaAlt: "Vinland Saga",
-    releaseDateTime: "May 01 2023 03:00:00 GMT-0700",
+    releaseDateTime: "May 18 2023 03:00:00 GMT-0700",
     synopsis:
-      "Thorfinn, after being left with no other choice, must break a sworn oath to defend Gardar from Snake.",
+      "As Canute and his men are approaching the farm, Ketil returns home and learns about the events that occurred while he was gone.",
     watchUrl: "https://www.crunchyroll.com/series/GEXH3WKK0/vinland-saga",
     objectPosition: "50% 34%",
     SiteLogo: CrunchyrollLogo,
   },
   {
+    avatar: Fruits.src,
+    title: "Fruits Basket",
+    subheader: "Yuki Was My First Love",
+    season: 1,
+    episode: 9,
+    cardMedia: Fruits.src,
+    cardMediaAlt: "Fruits Basket",
+    releaseDateTime: "June 01 2019 03:00:00 GMT-0700",
+    synopsis: `Kyo fights Yuki, Yuki fights a cold, and Tohru meets a new Soma whose mood swings may be even more extreme than Kagura's.`,
+    watchUrl: "https://www.crunchyroll.com/series/G6ZJMGEXY/fruits-basket",
+    objectPosition: "50% 50%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
     avatar: SoloLogo.src,
     title: "Solo Leveling",
-    subheader: "We Need a Hero",
+    subheader: "It's Going to Get Even More Intense",
     season: 2,
-    episode: 10,
+    episode: 11,
     cardMedia: SoloLeveling.src,
     cardMediaAlt: "Solo Leveling",
-    releaseDateTime: "March 08 2025 03:00:00 GMT-0700",
+    releaseDateTime: "March 15 2025 03:00:00 GMT-0700",
     synopsis:
-      "S-Rank hunters spar in preparation for the Jeju Island raid, honing their skills for the imminent battle against powerful magic beasts.",
+      "As the S-rank hunters continue fighting, they're confronted by a new magic beast resembling a humanoid ant.",
     watchUrl: "https://www.crunchyroll.com/series/GDKHZEJ0K/solo-leveling",
     objectPosition: "10% 50%",
     SiteLogo: CrunchyrollLogo,
@@ -317,6 +316,106 @@ export const backlog: AvailableNowProps[] = [
     objectPosition: "50% 50%",
     SiteLogo: NetflixLogo,
   },
+  {
+    avatar: Naruto.src,
+    title: "Naruto",
+    subheader: "Identify Yourself: Powerful New Rivals",
+    season: 1,
+    episode: 21,
+    cardMedia: Naruto.src,
+    cardMediaAlt: "Naruto",
+    releaseDateTime: "February 27 2003 16:00:00 GMT-0700",
+    synopsis:
+      "After the three ninjas take their leave, Sasuke realizes he has a powerful rival out there. The next day, Kakashi announces that he has recommended all of them for the Chuunin Exams. While Naruto and Sasuke are pleased, Sakura is afraid of letting everyone down. Also, someone decides they aren't ready and decides to test their abilities.",
+    watchUrl: "https://www.crunchyroll.com/series/GY9PJ5KWR/naruto",
+    objectPosition: "50% 50%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: WhiteLotusLogo.src,
+    title: "White Lotus",
+    subheader: "Ciao",
+    season: 2,
+    episode: 1,
+    cardMedia: WhiteLotusS2.src,
+    cardMediaAlt: "White Lotus",
+    releaseDateTime: "October 30 2022 16:00:00 GMT-0700",
+    synopsis:
+      "Two couples navigate awkwardness, an Italian American family deals with a conspicuous absence, and Tanya arrives with her new assistant.",
+    watchUrl:
+      "https://play.hbomax.com/show/14f9834d-bc23-41a8-ab61-5c8abdbea505",
+    objectPosition: "50% 50%",
+    SiteLogo: HBOLogo,
+  },
+  {
+    avatar: ZoneOfInterestLogo.src,
+    title: "The Zone of Interest",
+    subheader: "",
+    cardMedia: ZoneOfInterest.src,
+    cardMediaAlt: "The Zone of Interest",
+    releaseDateTime: "December 15 2023 16:00:00 GMT-0700",
+    synopsis:
+      "Auschwitz commandant Rudolf Höss and his wife Hedwig strive to build a dream life for their family in a house and garden beside the camp.",
+    watchUrl: "https://www.imdb.com/title/tt7160372/",
+    objectPosition: "50% 50%",
+    SiteLogo: IMDBLogo,
+    isMovie: true,
+  },
+  {
+    avatar: TheBrutalistLogo.src,
+    title: "The Brutalist",
+    subheader: "",
+    cardMedia: TheBrutalist.src,
+    cardMediaAlt: "The Brutalist",
+    releaseDateTime: "January 2024 16:00:00 GMT-0700",
+    synopsis:
+      "A visionary architect flees post-war Europe in 1947 for a brighter future in the United States and finds his life forever changed by a wealthy client.",
+    watchUrl: "https://www.imdb.com/title/tt8999762/",
+    objectPosition: "50% 50%",
+    SiteLogo: IMDBLogo,
+    isMovie: true,
+  },
+  {
+    avatar: TarLogo.src,
+    title: "Tár",
+    subheader: "",
+    cardMedia: Tar.src,
+    cardMediaAlt: "Tár",
+    releaseDateTime: "October 07 2022 16:00:00 GMT-0700",
+    synopsis:
+      "Set in the international world of Western classical music, the film centers on Lydia Tár, widely considered one of the greatest living composer-conductors and the very first female director of a major German orchestra.",
+    watchUrl: "https://www.imdb.com/title/tt14444726/",
+    objectPosition: "50% 50%",
+    SiteLogo: IMDBLogo,
+    isMovie: true,
+  },
+  {
+    avatar: TwentyEightYearsLogo.src,
+    title: "28 Years Later",
+    subheader: "",
+    cardMedia: TwentyEightYears.src,
+    cardMediaAlt: "28 Years Later",
+    releaseDateTime: "June 20 2025 16:00:00 GMT-0700",
+    synopsis:
+      "A group of survivors of the rage virus live on a small island. When one of the group leaves the island on a mission into the mainland, he discovers secrets, wonders, and horrors that have mutated not only the infected but other survivors.",
+    watchUrl: "https://www.imdb.com/title/tt10548174/",
+    objectPosition: "50% 50%",
+    SiteLogo: IMDBLogo,
+    isMovie: true,
+  },
+  {
+    avatar: Mickey17Logo.src,
+    title: "Mickey 17",
+    subheader: "",
+    cardMedia: Mickey17.src,
+    cardMediaAlt: "Mickey 17",
+    releaseDateTime: "March 07 2025 16:00:00 GMT-0700",
+    synopsis: `During a human expedition to colonize space, Mickey 17, a so-called "expendable" employee, is sent to explore an ice planet.`,
+    watchUrl: "https://www.imdb.com/title/tt12299608/",
+    objectPosition: "50% 50%",
+    SiteLogo: IMDBLogo,
+    isMovie: true,
+  },
 ];
 
 export const upNext: UpNextProps[] = [
@@ -334,22 +433,6 @@ export const upNext: UpNextProps[] = [
     objectPosition: "50% 40%",
     SiteLogo: CrunchyrollLogo,
     TimerCard: LargeTimerCard,
-  },
-  {
-    avatar: NyaightLogo.src,
-    title: "Nyaight of the Living Cat",
-    subheader: "",
-    season: 1,
-    episode: 4,
-    cardMedia: Nyaight.src,
-    cardMediaAlt: "Nyaight of the Living Cat",
-    releaseDateTime: "July 27 2025 07:15:00 GMT-0700",
-    synopsis: "",
-    watchUrl:
-      "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
-    objectPosition: "50% 20%",
-    TimerCard: LargeTimerCard,
-    SiteLogo: CrunchyrollLogo,
   },
   {
     avatar: FoundationAvatar.src,
@@ -381,7 +464,7 @@ export const upNext: UpNextProps[] = [
     watchUrl:
       "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
     objectPosition: "50% 20%",
-    TimerCard: SmallTimerCard,
+    TimerCard: LargeTimerCard,
     SiteLogo: CrunchyrollLogo,
   },
   {
@@ -429,6 +512,22 @@ export const upNext: UpNextProps[] = [
     objectPosition: "100% 20%",
     TimerCard: SmallTimerCard,
     SiteLogo: AppleLogo,
+  },
+  {
+    avatar: JeffBuckleyLogo.src,
+    title: "It's Never Over, Jeff Buckley",
+    subheader: "",
+    synopsis:
+      "Never-before-seen footage, exclusive voice messages, and accounts from Jeff Buckley's inner circle paint a captivating portrait of the gifted musician who died tragically in 1997, having only released one album.",
+    cardMedia: JeffBuckley.src,
+    cardMediaAlt: "It's Never Over, Jeff Buckley",
+    releaseDateTime: "August 08 2025 16:00:00 GMT-0700",
+    watchUrl:
+      "https://www.fandango.com/its-never-over-jeff-buckley-2025-241047/movie-overview",
+    objectPosition: "50% 40%",
+    TimerCard: LargeTimerCard,
+    SiteLogo: FandangoLogo,
+    isMovie: true,
   },
   {
     avatar: NyaightLogo.src,
