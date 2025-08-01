@@ -25,6 +25,7 @@ import Fantastic from "./assets/Fantastic.jpg";
 import FantasticLogo from "./assets/FantasticLogo.jpg";
 import FoundationAvatar from "./assets/FoundationAvatar.jpg";
 import FoundationSeason3 from "./assets/FoundationSeason3.jpg";
+import FoundationS3E5 from "./assets/FoundationS3E5.jpg";
 import FrierenFrierensParty from "./assets/FrierenFrierensParty.jpg";
 import FrierenLogo from "./assets/FrierenLogo.jpg";
 import Fruits from "./assets/Fruits.jpg";
@@ -462,21 +463,23 @@ export const upNext: UpNextProps[] = [
     watchUrl: "https://www.crunchyroll.com/series/GG5H5XQ0D/dan-da-dan",
     objectPosition: "50% 40%",
     SiteLogo: CrunchyrollLogo,
-    TimerCard: SmallTimerCard,
+    TimerCard: LargeTimerCard,
   },
   {
     avatar: FoundationAvatar.src,
     title: "Foundation",
-    subheader: "",
+    subheader: "Where Tyrants Spend Eternity",
+    synopsis:
+      "Day enters uncharted territory. Dawn and Gaal put their plan in motion. Magnifico’s worth becomes clear. Demerzel attempts to restore power.",
     season: 3,
     episode: 5,
-    cardMedia: FoundationSeason3.src,
+    cardMedia: FoundationS3E5.src,
     cardMediaAlt: "Foundation Season 3 Episode 5",
     releaseDateTime: "August 8 2025 03:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
-    objectPosition: "100% 20%",
-    TimerCard: SmallTimerCard,
+    objectPosition: "100% 30%",
+    TimerCard: LargeTimerCard,
     SiteLogo: AppleLogo,
   },
   {
