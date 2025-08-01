@@ -25,8 +25,6 @@ import Fantastic from "./assets/Fantastic.jpg";
 import FantasticLogo from "./assets/FantasticLogo.jpg";
 import FoundationAvatar from "./assets/FoundationAvatar.jpg";
 import FoundationSeason3 from "./assets/FoundationSeason3.jpg";
-import FoundationSeason3Episode3 from "./assets/FoundationSeason3Episode3.jpg";
-import FoundationS3E4 from "./assets/FoundationS3E4.jpg";
 import FrierenFrierensParty from "./assets/FrierenFrierensParty.jpg";
 import FrierenLogo from "./assets/FrierenLogo.jpg";
 import Fruits from "./assets/Fruits.jpg";
@@ -181,21 +179,6 @@ export const availableNow: AvailableNowProps[] = [
     SiteLogo: HuluLogo,
   },
   {
-    avatar: SoloLogo.src,
-    title: "Solo Leveling",
-    subheader: "It's Going to Get Even More Intense",
-    season: 2,
-    episode: 11,
-    cardMedia: SoloLeveling.src,
-    cardMediaAlt: "Solo Leveling",
-    releaseDateTime: "March 15 2025 03:00:00 GMT-0700",
-    synopsis:
-      "As the S-rank hunters continue fighting, they're confronted by a new magic beast resembling a humanoid ant.",
-    watchUrl: "https://www.crunchyroll.com/series/GDKHZEJ0K/solo-leveling",
-    objectPosition: "10% 50%",
-    SiteLogo: CrunchyrollLogo,
-  },
-  {
     avatar: AttackLogo.src,
     title: "Attack on Titan",
     subheader: "Children",
@@ -251,6 +234,21 @@ export const availableNow: AvailableNowProps[] = [
     synopsis: `Shigure does some serious scheming while Kagura, Kyo, Yuki, and Tohru all go on a double date.`,
     watchUrl: "https://www.crunchyroll.com/series/G6ZJMGEXY/fruits-basket",
     objectPosition: "50% 50%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: SoloLogo.src,
+    title: "Solo Leveling",
+    subheader: "You Are the King of Humans",
+    season: 2,
+    episode: 12,
+    cardMedia: SoloLeveling.src,
+    cardMediaAlt: "Solo Leveling",
+    releaseDateTime: "March 22 2025 03:00:00 GMT-0700",
+    synopsis:
+      "Jinwoo arrives at Jeju Island to save the S-Rank hunters, but to do that he'll have to face the Ant King.",
+    watchUrl: "https://www.crunchyroll.com/series/GDKHZEJ0K/solo-leveling",
+    objectPosition: "10% 50%",
     SiteLogo: CrunchyrollLogo,
   },
 ];
@@ -419,23 +417,6 @@ export const backlog: AvailableNowProps[] = [
 ];
 
 export const upNext: UpNextProps[] = [
-  {
-    avatar: FoundationAvatar.src,
-    title: "Foundation",
-    subheader: "The Stress of Her Regard",
-    season: 3,
-    episode: 4,
-    cardMedia: FoundationS3E4.src,
-    cardMediaAlt: "Foundation Season 3 Episode 4",
-    releaseDateTime: "August 1 2025 03:00:00 GMT-0700",
-    watchUrl:
-      "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
-    objectPosition: "100% 17%",
-    synopsis:
-      " Demerzel struggles with the paradox of her programming. Pritcher’s true loyalties are revealed. Day sets off on a quest for answers.",
-    TimerCard: LargeTimerCard,
-    SiteLogo: AppleLogo,
-  },
   {
     avatar: NyaightLogo.src,
     title: "Nyaight of the Living Cat",
