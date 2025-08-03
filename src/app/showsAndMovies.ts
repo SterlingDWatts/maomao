@@ -14,6 +14,7 @@ import {
 import TwentyEightYears from "./assets/28Years.jpg";
 import TwentyEightYearsLogo from "./assets/28YearsLogo.jpg";
 import AllCreaturesSeason3Episode3 from "./assets/AllCreaturesSeason3Episode3.jpg";
+import AllCreaturesS3E4 from "./assets/AllCreaturesS3E4.jpg";
 import Attack from "./assets/Attack.jpg";
 import AttackLogo from "./assets/AttackLogo.jpg";
 import ChainsawManMovie from "./assets/ChainsawManMovie.jpg";
@@ -133,22 +134,6 @@ export const availableNow: AvailableNowProps[] = [
     SiteLogo: FandangoLogo,
   },
   {
-    avatar: JamesLogo.src,
-    title: "All Creatures Great And Small",
-    subheader: "Surviving Siegfried",
-    season: 3,
-    episode: 3,
-    cardMedia: AllCreaturesSeason3Episode3.src,
-    cardMediaAlt: "Siegfried and a racehorse",
-    releaseDateTime: "January 22, 2023 21:00:00",
-    synopsis:
-      "Siegfried receives some news and channels his feelings into saving a young racehorse. James struggles to get farmers to agree to his newly adopted TB testing scheme.",
-    watchUrl:
-      "https://play.google.com/store/tv/show?id=gbQjVgRNYkg.P&cdid=tvseason-mjGu8FIpiU4.P&hl=en_US",
-    objectPosition: "50% 47%",
-    SiteLogo: GooglePlayMoviesLogo,
-  },
-  {
     avatar: TheBearLogo.src,
     title: "The Bear",
     subheader: "Worms",
@@ -209,16 +194,32 @@ export const availableNow: AvailableNowProps[] = [
     SiteLogo: CrunchyrollLogo,
   },
   {
+    avatar: JamesLogo.src,
+    title: "All Creatures Great And Small",
+    subheader: "What a Balls Up!",
+    season: 3,
+    episode: 4,
+    cardMedia: AllCreaturesS3E4.src,
+    cardMediaAlt: "All Creatures Great And Small Season 3 Episode 4",
+    releaseDateTime: "January 29, 2023 21:00:00",
+    synopsis:
+      "James is finally succeeding with the farmers' uptake of the Ministry of Ag's TB testing scheme. Tristan is outgrowing running the small animal surgery and buys a car to help with errands at the practice, enabling him also taking a date out",
+    watchUrl:
+      "https://play.google.com/store/tv/show?id=gbQjVgRNYkg.P&cdid=tvseason-mjGu8FIpiU4.P&hl=en_US",
+    objectPosition: "50% 50%",
+    SiteLogo: GooglePlayMoviesLogo,
+  },
+  {
     avatar: VinlandLogo.src,
     title: "Vinland Saga",
-    subheader: "War at Ketil's Farm",
+    subheader: "Pain",
     season: 2,
-    episode: 19,
+    episode: 20,
     cardMedia: VinlandSaga.src,
     cardMediaAlt: "Vinland Saga",
-    releaseDateTime: "May 15 2023 03:00:00 GMT-0700",
+    releaseDateTime: "May 22 2023 03:00:00 GMT-0700",
     synopsis:
-      "Ketil gathers men to fight and defend his farm from the King's forces. Meanwhile, Thorfinn and his friends try to escape with Arnheid before the battle ends.",
+      "As Thorfinn and Einar head for their escape, Arnheid regains consciousness and asks where they are going and if there are slaves and wars there, too.",
     watchUrl: "https://www.crunchyroll.com/series/GEXH3WKK0/vinland-saga",
     objectPosition: "50% 34%",
     SiteLogo: CrunchyrollLogo,
@@ -226,30 +227,15 @@ export const availableNow: AvailableNowProps[] = [
   {
     avatar: Fruits.src,
     title: "Fruits Basket",
-    subheader: "It's Valentine's, After All",
+    subheader: "This Is a Wonderful Inn",
     season: 1,
-    episode: 10,
+    episode: 11,
     cardMedia: Fruits.src,
     cardMediaAlt: "Fruits Basket",
-    releaseDateTime: "June 08 2019 03:00:00 GMT-0700",
-    synopsis: `Shigure does some serious scheming while Kagura, Kyo, Yuki, and Tohru all go on a double date.`,
+    releaseDateTime: "June 15 2019 03:00:00 GMT-0700",
+    synopsis: `It's "White Day," the day that boys who received chocolates on Valentine's Day give their return gifts to the girls. And Momiji has one big surprise gift for Tohru.`,
     watchUrl: "https://www.crunchyroll.com/series/G6ZJMGEXY/fruits-basket",
     objectPosition: "50% 50%",
-    SiteLogo: CrunchyrollLogo,
-  },
-  {
-    avatar: SoloLogo.src,
-    title: "Solo Leveling",
-    subheader: "You Are the King of Humans",
-    season: 2,
-    episode: 12,
-    cardMedia: SoloLeveling.src,
-    cardMediaAlt: "Solo Leveling",
-    releaseDateTime: "March 22 2025 03:00:00 GMT-0700",
-    synopsis:
-      "Jinwoo arrives at Jeju Island to save the S-Rank hunters, but to do that he'll have to face the Ant King.",
-    watchUrl: "https://www.crunchyroll.com/series/GDKHZEJ0K/solo-leveling",
-    objectPosition: "10% 50%",
     SiteLogo: CrunchyrollLogo,
   },
 ];
