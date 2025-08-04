@@ -13,7 +13,6 @@ import {
 
 import TwentyEightYears from "./assets/28Years.jpg";
 import TwentyEightYearsLogo from "./assets/28YearsLogo.jpg";
-import AllCreaturesSeason3Episode3 from "./assets/AllCreaturesSeason3Episode3.jpg";
 import AllCreaturesS3E4 from "./assets/AllCreaturesS3E4.jpg";
 import Attack from "./assets/Attack.jpg";
 import AttackLogo from "./assets/AttackLogo.jpg";
@@ -30,6 +29,7 @@ import FoundationS3E5 from "./assets/FoundationS3E5.jpg";
 import FrierenFrierensParty from "./assets/FrierenFrierensParty.jpg";
 import FrierenLogo from "./assets/FrierenLogo.jpg";
 import Fruits from "./assets/Fruits.jpg";
+import Gurren from "./assets/Gurren.jpg";
 import Highest2Lowest from "./assets/Highest2Lowest.jpg";
 import Highest2LowestLogo from "./assets/Highest2LowestLogo.jpg";
 import Invasion from "./assets/Invasion.jpg";
@@ -78,7 +78,7 @@ import StrangerThings from "./assets/StrangerThings.jpg";
 import Tar from "./assets/Tar.jpg";
 import TarLogo from "./assets/TarLogo.jpg";
 import TheBearLogo from "./assets/TheBearLogo.jpg";
-import TheBearSeason4Episode4 from "./assets/TheBearSeason4Episode4.jpg";
+import TheBearS4E5 from "./assets/TheBearS4E5.jpg";
 import TheBrutalist from "./assets/TheBrutalist.jpg";
 import TheBrutalistLogo from "./assets/TheBrutalistLogo.jpg";
 import VinlandLogo from "./assets/VinlandLogo.jpg";
@@ -134,21 +134,6 @@ export const availableNow: AvailableNowProps[] = [
     SiteLogo: FandangoLogo,
   },
   {
-    avatar: TheBearLogo.src,
-    title: "The Bear",
-    subheader: "Worms",
-    season: 4,
-    episode: 4,
-    cardMedia: TheBearSeason4Episode4.src,
-    cardMediaAlt: "The Bear Season 4 Episode 4",
-    releaseDateTime: "June 25, 2025 21:00:00",
-    synopsis: "Decisions.",
-    watchUrl:
-      "https://www.hulu.com/series/05eb6a8e-90ed-4947-8c0b-e6536cbddd5f",
-    objectPosition: "30% 50%",
-    SiteLogo: HuluLogo,
-  },
-  {
     avatar: MasterchefLogo.src,
     title: "Masterchef",
     subheader: "Train to Table",
@@ -163,35 +148,6 @@ export const availableNow: AvailableNowProps[] = [
       "https://www.hulu.com/series/45d67197-5346-4adb-9d90-6ed2d7b7bd85",
     objectPosition: "50% 30%",
     SiteLogo: HuluLogo,
-  },
-  {
-    avatar: AttackLogo.src,
-    title: "Attack on Titan",
-    subheader: "Children",
-    season: 2,
-    episode: 10,
-    cardMedia: Attack.src,
-    cardMediaAlt: "Attack on Titan",
-    releaseDateTime: "June 03 2017 03:00:00 GMT-0700",
-    synopsis:
-      "When the group finally flees, Ymir wonders whether she should lie or stay true to herself, even if it means ruining the lives and future of those she cares about.",
-    watchUrl: "https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan",
-    objectPosition: "15% 50%",
-    SiteLogo: CrunchyrollLogo,
-  },
-  {
-    avatar: StoneLogo.src,
-    title: "Dr. Stone",
-    subheader: "Steam Gorilla",
-    season: 2,
-    episode: 5,
-    cardMedia: Stone.src,
-    cardMediaAlt: "Dr. Stone",
-    releaseDateTime: "June 13 2021 03:00:00 GMT-0700",
-    synopsis: `The final touches to the automobile are made and it is used to transport the science supplies to a fortified cliffside that's close to the Tsukasa empire. From there the automobile is upgraded into a tank, but unbeknownst to the rescue group preparations by the empire have been made to counter any vehicular attack.`,
-    watchUrl: "https://www.crunchyroll.com/series/GYEXQKJG6/dr-stone",
-    objectPosition: "50% 50%",
-    SiteLogo: CrunchyrollLogo,
   },
   {
     avatar: JamesLogo.src,
@@ -210,30 +166,104 @@ export const availableNow: AvailableNowProps[] = [
     SiteLogo: GooglePlayMoviesLogo,
   },
   {
+    avatar: AttackLogo.src,
+    title: "Attack on Titan",
+    subheader: "Charge",
+    season: 2,
+    episode: 11,
+    cardMedia: Attack.src,
+    cardMediaAlt: "Attack on Titan",
+    releaseDateTime: "June 10 2017 03:00:00 GMT-0700",
+    synopsis:
+      "While the recruits attempt to reason with Bertholdt, Commander Erwin charges forth in a desperate strategy to topple the Armored Titan.",
+    watchUrl: "https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan",
+    objectPosition: "15% 50%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: StoneLogo.src,
+    title: "Dr. Stone",
+    subheader: "Prison Break",
+    season: 2,
+    episode: 6,
+    cardMedia: Stone.src,
+    cardMediaAlt: "Dr. Stone",
+    releaseDateTime: "June 20 2021 03:00:00 GMT-0700",
+    synopsis: `Chrome must use all of his scientific knowledge to escape from his prison and save Senku and others.`,
+    watchUrl: "https://www.crunchyroll.com/series/GYEXQKJG6/dr-stone",
+    objectPosition: "50% 50%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: CreatureLogo.src,
+    title: "Creature Commandos",
+    subheader: "The Tourmaline Necklace",
+    season: 1,
+    episode: 2,
+    cardMedia: Creature.src,
+    cardMediaAlt: "Creature Commandos",
+    releaseDateTime: "December 05 2024 16:00:00 GMT-0700",
+    synopsis:
+      "As Ilana continues her pursuit of Flag, The Bride shows Nina where she was created - and relives Frankenstein's rocky attempts to woo her.",
+    watchUrl: "https://www.netflix.com/us/title/81150303",
+    objectPosition: "50% 50%",
+    SiteLogo: NetflixLogo,
+  },
+  {
+    avatar: TheBearLogo.src,
+    title: "The Bear",
+    subheader: "Replicants",
+    season: 4,
+    episode: 5,
+    cardMedia: TheBearS4E5.src,
+    cardMediaAlt: "The Bear Season 4 Episode 5",
+    releaseDateTime: "June 25, 2025 21:00:00",
+    synopsis: "The team resets.",
+    watchUrl:
+      "https://www.hulu.com/series/05eb6a8e-90ed-4947-8c0b-e6536cbddd5f",
+    objectPosition: "50% 50%",
+    SiteLogo: HuluLogo,
+  },
+  {
     avatar: VinlandLogo.src,
     title: "Vinland Saga",
-    subheader: "Pain",
+    subheader: "Courage",
     season: 2,
-    episode: 20,
+    episode: 21,
     cardMedia: VinlandSaga.src,
     cardMediaAlt: "Vinland Saga",
-    releaseDateTime: "May 22 2023 03:00:00 GMT-0700",
+    releaseDateTime: "May 30 2023 03:00:00 GMT-0700",
     synopsis:
-      "As Thorfinn and Einar head for their escape, Arnheid regains consciousness and asks where they are going and if there are slaves and wars there, too.",
+      "The battle has left heartbreaking casualties in its wake. Though Thorgil and Ketil's wife want to continue the fight, Canute demands their surrender.",
     watchUrl: "https://www.crunchyroll.com/series/GEXH3WKK0/vinland-saga",
     objectPosition: "50% 34%",
     SiteLogo: CrunchyrollLogo,
   },
   {
+    avatar: Gurren.src,
+    title: "Gurren Lagann",
+    subheader: "Who Do You Think You Are, Having Two Faces?!",
+    season: 1,
+    episode: 3,
+    cardMedia: Gurren.src,
+    cardMediaAlt: "Gurren Lagann",
+    releaseDateTime: "April 15 2007 03:00:00 GMT-0700",
+    synopsis:
+      "Yoko goes hunting with Kamina and Simon. They encounter a beastman named Viral in a hunting-ground.",
+    watchUrl: "https://www.crunchyroll.com/series/GEXH3WKK0/vinland-saga",
+    objectPosition: "50% 20%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
     avatar: Fruits.src,
     title: "Fruits Basket",
-    subheader: "This Is a Wonderful Inn",
+    subheader: "How Have You Been, My Brother?",
     season: 1,
-    episode: 11,
+    episode: 13,
     cardMedia: Fruits.src,
     cardMediaAlt: "Fruits Basket",
-    releaseDateTime: "June 15 2019 03:00:00 GMT-0700",
-    synopsis: `It's "White Day," the day that boys who received chocolates on Valentine's Day give their return gifts to the girls. And Momiji has one big surprise gift for Tohru.`,
+    releaseDateTime: "June 29 2019 03:00:00 GMT-0700",
+    synopsis: `Tohru meets a man she never knew existed, and learns something about Yuki that she never knew before.`,
     watchUrl: "https://www.crunchyroll.com/series/G6ZJMGEXY/fruits-basket",
     objectPosition: "50% 50%",
     SiteLogo: CrunchyrollLogo,
@@ -241,21 +271,6 @@ export const availableNow: AvailableNowProps[] = [
 ];
 
 export const backlog: AvailableNowProps[] = [
-  {
-    avatar: CreatureLogo.src,
-    title: "Creature Commandos",
-    subheader: "The Collywobbles",
-    season: 1,
-    episode: 1,
-    cardMedia: Creature.src,
-    cardMediaAlt: "Creature Commandos",
-    releaseDateTime: "December 05 2024 16:00:00 GMT-0700",
-    synopsis:
-      "Amanda Waller assembles the Creature Commandos - led by General Rick Flag, Sr. - and sends them to Pokolistan to protect Princess Ilana Rostovic.",
-    watchUrl: "https://www.netflix.com/us/title/81150303",
-    objectPosition: "50% 50%",
-    SiteLogo: NetflixLogo,
-  },
   {
     avatar: ResidentAlienLogo.src,
     title: "Resident Alien",
@@ -405,20 +420,19 @@ export const backlog: AvailableNowProps[] = [
 
 export const upNext: UpNextProps[] = [
   {
-    avatar: NyaightLogo.src,
-    title: "Nyaight of the Living Cat",
+    avatar: DandadanLogo.src,
+    title: "Dandadan",
     subheader: "",
-    season: 1,
-    episode: 5,
-    cardMedia: Nyaight.src,
-    cardMediaAlt: "Nyaight of the Living Cat",
-    releaseDateTime: "August 03 2025 07:15:00 GMT-0700",
-    synopsis: "",
-    watchUrl:
-      "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
-    objectPosition: "50% 20%",
-    TimerCard: LargeTimerCard,
+    season: 2,
+    episode: 6,
+    cardMedia: DanDaDan.src,
+    cardMediaAlt: "Dandadan",
+    releaseDateTime: "August 07 2025 09:00:00 GMT-0700",
+    synopsis: ``,
+    watchUrl: "https://www.crunchyroll.com/series/GG5H5XQ0D/dan-da-dan",
+    objectPosition: "50% 40%",
     SiteLogo: CrunchyrollLogo,
+    TimerCard: LargeTimerCard,
   },
   {
     avatar: MasterchefLogo.src,
@@ -435,21 +449,6 @@ export const upNext: UpNextProps[] = [
     objectPosition: "100% 27%",
     TimerCard: LargeTimerCard,
     SiteLogo: HuluLogo,
-  },
-  {
-    avatar: DandadanLogo.src,
-    title: "Dandadan",
-    subheader: "",
-    season: 2,
-    episode: 6,
-    cardMedia: DanDaDan.src,
-    cardMediaAlt: "Dandadan",
-    releaseDateTime: "August 07 2025 09:00:00 GMT-0700",
-    synopsis: ``,
-    watchUrl: "https://www.crunchyroll.com/series/GG5H5XQ0D/dan-da-dan",
-    objectPosition: "50% 40%",
-    SiteLogo: CrunchyrollLogo,
-    TimerCard: LargeTimerCard,
   },
   {
     avatar: FoundationAvatar.src,
@@ -497,7 +496,7 @@ export const upNext: UpNextProps[] = [
     watchUrl:
       "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
     objectPosition: "50% 20%",
-    TimerCard: SmallTimerCard,
+    TimerCard: LargeTimerCard,
     SiteLogo: CrunchyrollLogo,
   },
   {
