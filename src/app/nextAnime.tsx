@@ -673,6 +673,7 @@ export const animeList: Anime[] = [
       </>
     ),
     hasSterlingSeen: true,
+    hasDawnSeen: true,
   },
   {
     title: "Vinland Saga",
