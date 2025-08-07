@@ -120,20 +120,6 @@ export interface UpNextProps extends AvailableNowProps {
 
 export const availableNow: AvailableNowProps[] = [
   {
-    avatar: FantasticLogo.src,
-    title: "The Fantastic Four: First Steps",
-    subheader: "",
-    cardMedia: Fantastic.src,
-    cardMediaAlt: "The Fantastic Four: First Steps",
-    releaseDateTime: "July 25 2025 16:00:00 GMT-0700",
-    synopsis:
-      "Forced to balance their roles as heroes with the strength of their family bond, the Fantastic Four must defend Earth from a ravenous space god called Galactus and his enigmatic Herald, Silver Surfer.",
-    watchUrl:
-      "https://www.fandango.com/the-fantastic-four-first-steps-2025-236967/movie-overview",
-    objectPosition: "47% 15%",
-    SiteLogo: FandangoLogo,
-  },
-  {
     avatar: MasterchefLogo.src,
     title: "Masterchef",
     subheader: "Train to Table",
@@ -272,6 +258,20 @@ export const availableNow: AvailableNowProps[] = [
 ];
 
 export const backlog: AvailableNowProps[] = [
+  {
+    avatar: FantasticLogo.src,
+    title: "The Fantastic Four: First Steps",
+    subheader: "",
+    cardMedia: Fantastic.src,
+    cardMediaAlt: "The Fantastic Four: First Steps",
+    releaseDateTime: "July 25 2025 16:00:00 GMT-0700",
+    synopsis:
+      "Forced to balance their roles as heroes with the strength of their family bond, the Fantastic Four must defend Earth from a ravenous space god called Galactus and his enigmatic Herald, Silver Surfer.",
+    watchUrl:
+      "https://www.fandango.com/the-fantastic-four-first-steps-2025-236967/movie-overview",
+    objectPosition: "47% 15%",
+    SiteLogo: FandangoLogo,
+  },
   {
     avatar: ResidentAlienLogo.src,
     title: "Resident Alien",
@@ -421,21 +421,6 @@ export const backlog: AvailableNowProps[] = [
 
 export const upNext: UpNextProps[] = [
   {
-    avatar: DandadanLogo.src,
-    title: "Dandadan",
-    subheader: "",
-    season: 2,
-    episode: 6,
-    cardMedia: DanDaDan.src,
-    cardMediaAlt: "Dandadan",
-    releaseDateTime: "August 07 2025 09:00:00 GMT-0700",
-    synopsis: ``,
-    watchUrl: "https://www.crunchyroll.com/series/GG5H5XQ0D/dan-da-dan",
-    objectPosition: "50% 40%",
-    SiteLogo: CrunchyrollLogo,
-    TimerCard: LargeTimerCard,
-  },
-  {
     avatar: FoundationAvatar.src,
     title: "Foundation",
     subheader: "Where Tyrants Spend Eternity",
@@ -513,7 +498,7 @@ export const upNext: UpNextProps[] = [
     watchUrl: "https://www.crunchyroll.com/series/GG5H5XQ0D/dan-da-dan",
     objectPosition: "50% 40%",
     SiteLogo: CrunchyrollLogo,
-    TimerCard: SmallTimerCard,
+    TimerCard: LargeTimerCard,
   },
   {
     avatar: FoundationAvatar.src,
