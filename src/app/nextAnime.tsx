@@ -20,6 +20,7 @@ import Hero from "./assets/Hero.jpg";
 import Jujutsu from "./assets/Jujutsu.jpg";
 import KaguyaSama from "./assets/KaguyaSama.jpg";
 import KaguyaSamaLogo from "./assets/KaguyaSamaLogo.png";
+import Kaiju from "./assets/Kaiju.jpg";
 import Lazarus from "./assets/Lazarus.jpg";
 import Mermaid from "./assets/Mermaid.jpg";
 import MushiShi from "./assets/MushiShi.jpg";
@@ -31,6 +32,7 @@ import OnePunch from "./assets/OnePunch.jpg";
 import placeholder from "./assets/placeholder.jpg";
 import PsychicPrincess from "./assets/PsychicPrincess.jpg";
 import Raeliana from "./assets/Raeliana.jpg";
+import Ranma from "./assets/Ranma.jpg";
 import Raven from "./assets/Raven.jpg";
 import Saiunkoku from "./assets/Saiunkoku.jpg";
 import Samurai from "./assets/Samurai.jpg";
@@ -60,6 +62,7 @@ export interface Anime {
   isMaomaoRecommendation?: boolean;
   hasSterlingSeen?: boolean;
   hasDawnSeen?: boolean;
+  objectPosition?: string;
 }
 
 export const animeList: Anime[] = [
@@ -907,6 +910,55 @@ export const animeList: Anime[] = [
     hasSterlingSeen: true,
   },
   {
+    title: "Kaiju No. 8",
+    year: 2024,
+    episodes: 17,
+    rating: 8.27,
+    ratingOutOf: 359515,
+    rank: 330,
+    popularity: 376,
+    picture: Kaiju.src,
+    tags: [
+      "Kaiju",
+      "Shōnen",
+      "Superhero",
+      "Urban Adventure",
+      "Action",
+      "Adventure",
+      "Sci-Fi",
+    ],
+    shortDescription:
+      "A man working a job far removed from his childhood dreams gets wrapped up in an unexpected situation - becoming a monster, he aims once again to fulfill his lifelong dream.",
+    longDescription: (
+      <>
+        After the destruction of their hometown, childhood friends Kafka Hibino
+        and Mina Ashiro make a pact to become officers in the Defense Force—a
+        militarized organization tasked with protecting Japan from colossal
+        monsters known as "kaijuu." Decades later, the 32-year-old Kafka has all
+        but given up on his dreams of heroism. Instead, he cleans up the remains
+        of the slaughtered kaijuu after they are defeated by valiant
+        soldiers—including Mina, who has successfully achieved their shared
+        goal. <br />
+        <br />
+        Upon meeting his new coworker, Reno Ichikawa, Kafka faces a mirror of
+        his past self: an ambitious young man whose one desire is to fight as a
+        member of the Defense Force. Unfortunately, the two are soon involved in
+        a freak encounter with a rogue kaijuu. Though Kafka demonstrates his
+        innate heroic nature and rescues Reno from certain doom, he is left
+        gravely injured. <br />
+        <br />
+        While both men recover in a hospital, Kafka is seemingly attacked by
+        another one of the beasts. As a result, he gains the ability to
+        transform into a humanoid kaijuu with the strength and powers of the
+        massive monsters menacing Japan. Dubbed "Kaijuu No. 8" by the military,
+        Kafka resolves to use his newfound gifts for the greater good. Tied
+        together by mutual respect, Kafka and Reno set out to join warriors like
+        Mina at the forefront of the Defense Force.
+      </>
+    ),
+    objectPosition: "30% 50%",
+  },
+  {
     title: "Yona of the Dawn",
     year: 2014,
     episodes: 24,
@@ -1595,6 +1647,49 @@ export const animeList: Anime[] = [
     isMaomaoRecommendation: true,
   },
   {
+    title: "Ranma ½",
+    year: 2024,
+    episodes: 12,
+    rating: 8.01,
+    ratingOutOf: 67367,
+    rank: 680,
+    popularity: 1787,
+    picture: Ranma.src,
+    tags: [
+      "Body Swap Comedy",
+      "Kung Fu",
+      "Martial Arts",
+      "Romantic Comedy",
+      "Shōnen",
+      "Slapstick",
+      "Teen Comedy",
+      "Teen Fantasy",
+    ],
+    shortDescription:
+      "Akane Tendo meets her new fiancé, Ranma Saotome, a martial arts prodigy with a twist: he magically transforms into a girl upon touching cold water.",
+    longDescription: (
+      <>
+        During their martial arts training expedition in China, Ranma Saotome
+        and his father Genma suffered an accident, which in turn, afflicted them
+        with a curse—whenever they are doused with cold water, Ranma transforms
+        into a girl, while his father turns into a panda! Only hot water can
+        reverse these changes, but any further contact with cold water opens the
+        can of worms once more.
+        <br />
+        <br />
+        Unfortunately, the trouble does not end there, as Ranma finds out about
+        his betrothal to one of the daughters of Soun Tendou, his father's
+        closest friend. During the families' first meeting, it is decided that
+        Ranma is to be married to Akane, the youngest daughter, a decision that
+        is met with vehement protests from both sides. The two are simply not
+        compatible, yet they are forced to live under one roof. Ranma's status
+        quo further adds to the chaos, leading him to a series of comedic
+        situations and misunderstandings that, in the grand scheme of things,
+        may just be what he needs to work with Akane.
+      </>
+    ),
+  },
+  {
     title: "Raven of the Inner Palace",
     year: 2022,
     episodes: 13,
@@ -1669,6 +1764,7 @@ export const animeList: Anime[] = [
       </>
     ),
     isMaomaoRecommendation: true,
+    objectPosition: "20% 50%",
   },
   {
     title: "Doctor Elise: The Royal Lady with the Lamp",

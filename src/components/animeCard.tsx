@@ -77,7 +77,7 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
               width={100}
               height={90}
               sx={{
-                objectPosition: "50% 50%",
+                objectPosition: anime.objectPosition || "50% 50%",
                 objectFit: "cover",
                 zIndex: 100,
               }}
