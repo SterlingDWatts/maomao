@@ -44,6 +44,7 @@ export default function AnimeTrackerPage() {
   const [filterBy, setFilterBy] = React.useState<
     "all" | "maomao" | "dawn" | "sterling" | "neither" | ""
   >("all");
+  const [filterByTag, setFilterByTag] = React.useState<string[]>([]);
 
   const sortedAnimeList = React.useMemo(() => {
     const filteredList = animeList.filter((anime) => {

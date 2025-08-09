@@ -17,10 +17,12 @@ import Fullmetal from "./assets/Fullmetal.jpg";
 import Gosick from "./assets/Gosick.jpg";
 import Gurren from "./assets/Gurren.jpg";
 import Hero from "./assets/Hero.jpg";
+import Inuyasha from "./assets/Inuyasha.jpg";
 import Jujutsu from "./assets/Jujutsu.jpg";
 import KaguyaSama from "./assets/KaguyaSama.jpg";
 import KaguyaSamaLogo from "./assets/KaguyaSamaLogo.png";
 import Kaiju from "./assets/Kaiju.jpg";
+import Kamisama from "./assets/Kamisama.jpg";
 import Lazarus from "./assets/Lazarus.jpg";
 import Mermaid from "./assets/Mermaid.jpg";
 import MushiShi from "./assets/MushiShi.jpg";
@@ -1109,6 +1111,52 @@ export const animeList: Anime[] = [
     isMaomaoRecommendation: true,
   },
   {
+    title: "Inuyasha",
+    year: 2000,
+    episodes: 167,
+    rating: 7.87,
+    ratingOutOf: 407291,
+    rank: 906,
+    popularity: 247,
+    picture: Inuyasha.src,
+    tags: [
+      "Shōnen",
+      "Supernatural Fantasy",
+      "Teen Fantasy",
+      "Teen Romance",
+      "Action",
+      "Adventure",
+      "Comedy",
+    ],
+    shortDescription:
+      "A teenage girl periodically travels back in time to feudal Japan to help a young half-demon recover the shards of a jewel of great power.",
+    longDescription: (
+      <>
+        Kagome Higurashi's 15th birthday takes a sudden turn when she is
+        forcefully pulled by a demon into the old well of her family's shrine.
+        Brought to the past, when demons were a common sight in feudal Japan,
+        Kagome finds herself persistently hunted by these vile creatures, all
+        yearning for an item she unknowingly carries: the Shikon Jewel, a small
+        sphere holding extraordinary power.
+        <br />
+        <br />
+        Amid such a predicament, Kagome encounters a half-demon boy named
+        Inuyasha who mistakes her for Kikyou, a shrine maiden he seems to
+        resent. Because of her resemblance to Kikyou, Inuyasha takes a violent
+        dislike to Kagome. However, after realizing the dire circumstances they
+        are both in, he sets aside his hostility and lends her a hand.
+        <br />
+        <br />
+        Unfortunately, during a fight for the Shikon Jewel, the miraculous
+        object ends up shattered into pieces and scattered across the land.
+        Fearing the disastrous consequences of this accident, Kagome and
+        Inuyasha set out on a challenging quest to recover the shards before
+        they fall into the wrong hands.
+      </>
+    ),
+    hasSterlingSeen: true,
+  },
+  {
     title: "Trigun",
     year: 1998,
     episodes: 26,
@@ -1236,6 +1284,44 @@ export const animeList: Anime[] = [
         prince worthy of his title. As loyal friendships are forged and deadly
         enemies formed, Shirayuki and Zen slowly learn to support each other as
         they walk their own paths.
+      </>
+    ),
+    isMaomaoRecommendation: true,
+  },
+  {
+    title: "Kamisama Kiss",
+    year: 2012,
+    episodes: 31,
+    rating: 8.12,
+    ratingOutOf: 360286,
+    rank: 516,
+    popularity: 321,
+    picture: Kamisama.src,
+    tags: ["Shōjo", "Comedy", "Fantasy", "Romance"],
+    shortDescription:
+      "Nanami is left homeless after her father runs away due to debts. When she saves a man named Mikage from dogs, he gives her his house which turns out to be a shrine and she becomes the new deity.",
+    longDescription: (
+      <>
+        High schooler Nanami Momozono has quite a few problems of late,
+        beginning with her absentee father being in such extreme debt that they
+        lose everything. Downtrodden and homeless, she runs into a man being
+        harassed by a dog. After helping him, she explains her situation, and to
+        her surprise, he offers her his home in gratitude. But when she
+        discovers that said home is a rundown shrine, she tries to leave;
+        however, she is caught by two shrine spirits and a fox familiar named
+        Tomoe. They mistake her for the man Nanami rescued—the land god of the
+        shrine, Mikage. Realizing that Mikage must have sent her there as a
+        replacement god, Tomoe leaves abruptly, refusing to serve a human.
+        <br />
+        <br />
+        Rather than going back to being homeless, Nanami immerses herself in her
+        divine duties. But if she must keep things running smoothly, she will
+        need the help of a certain hot-headed fox. In her fumbling attempt to
+        seek out Tomoe, she lands in trouble and ends up sealing a contract with
+        him. Now the two must traverse the path of godhood together as god and
+        familiar; but it will not be easy, for new threats arise in the form of
+        a youkai who wants to devour the girl, a snake that wants to marry her,
+        and Nanami's own unexpected feelings for her new familiar.
       </>
     ),
     isMaomaoRecommendation: true,
