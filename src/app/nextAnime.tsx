@@ -20,7 +20,6 @@ import Hero from "./assets/Hero.jpg";
 import Inuyasha from "./assets/Inuyasha.jpg";
 import Jujutsu from "./assets/Jujutsu.jpg";
 import KaguyaSama from "./assets/KaguyaSama.jpg";
-import KaguyaSamaLogo from "./assets/KaguyaSamaLogo.png";
 import Kaiju from "./assets/Kaiju.jpg";
 import Kamisama from "./assets/Kamisama.jpg";
 import Lazarus from "./assets/Lazarus.jpg";
@@ -959,6 +958,8 @@ export const animeList: Anime[] = [
       </>
     ),
     objectPosition: "30% 50%",
+    hasDawnSeen: true,
+    hasSterlingSeen: true,
   },
   {
     title: "Yona of the Dawn",
