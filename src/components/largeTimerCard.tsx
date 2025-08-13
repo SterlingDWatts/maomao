@@ -7,6 +7,7 @@ import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
+import CircularProgress from "@mui/material/CircularProgress";
 import Collapse from "@mui/material/Collapse";
 import Grow from "@mui/material/Grow";
 import IconButton from "@mui/material/IconButton";
@@ -55,6 +56,7 @@ export default function LargeTimerCard({
   subheader,
   season,
   episode,
+  episodesInSeason,
   cardMedia,
   cardMediaAlt,
   releaseDateTime,
@@ -152,6 +154,20 @@ export default function LargeTimerCard({
             width: 48,
           }}
         />
+        {episode && episodesInSeason && (
+          <CircularProgress
+            variant="determinate"
+            value={(episode / episodesInSeason) * 100}
+            size={48}
+            thickness={2}
+            sx={{
+              position: "absolute",
+              top: -26,
+              left: "Calc(50% - 24px)",
+              color: "primary.dark",
+            }}
+          />
+        )}
         <Typography
           id={`large-timer-card-${[title, season, episode, subheader]
             .filter(Boolean)
