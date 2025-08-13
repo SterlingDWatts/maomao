@@ -95,6 +95,7 @@ export interface AvailableNowProps {
   subheader: string;
   season?: number;
   episode?: number;
+  episodesInSeason?: number;
   cardMedia: string;
   cardMediaAlt: string;
   releaseDateTime: string;
@@ -121,26 +122,12 @@ export interface UpNextProps extends AvailableNowProps {
 
 export const availableNow: AvailableNowProps[] = [
   {
-    avatar: JeffBuckleyLogo.src,
-    title: "It's Never Over, Jeff Buckley",
-    subheader: "",
-    synopsis:
-      "Never-before-seen footage, exclusive voice messages, and accounts from Jeff Buckley's inner circle paint a captivating portrait of the gifted musician who died tragically in 1997, having only released one album.",
-    cardMedia: JeffBuckley.src,
-    cardMediaAlt: "It's Never Over, Jeff Buckley",
-    releaseDateTime: "August 08 2025 16:00:00 GMT-0700",
-    watchUrl:
-      "https://www.fandango.com/its-never-over-jeff-buckley-2025-241047/movie-overview",
-    objectPosition: "65% 40%",
-    SiteLogo: FandangoLogo,
-    isMovie: true,
-  },
-  {
     avatar: JamesLogo.src,
     title: "All Creatures Great And Small",
     subheader: "What a Balls Up!",
     season: 3,
     episode: 4,
+    episodesInSeason: 7,
     cardMedia: AllCreaturesS3E4.src,
     cardMediaAlt: "All Creatures Great And Small Season 3 Episode 4",
     releaseDateTime: "January 29, 2023 21:00:00",
@@ -157,6 +144,7 @@ export const availableNow: AvailableNowProps[] = [
     subheader: "Replicants",
     season: 4,
     episode: 5,
+    episodesInSeason: 10,
     cardMedia: TheBearS4E5.src,
     cardMediaAlt: "The Bear Season 4 Episode 5",
     releaseDateTime: "June 25, 2025 21:00:00",
@@ -172,6 +160,7 @@ export const availableNow: AvailableNowProps[] = [
     subheader: "Chasing Squirrels",
     season: 1,
     episode: 4,
+    episodesInSeason: 7,
     cardMedia: Creature.src,
     cardMediaAlt: "Creature Commandos",
     releaseDateTime: "December 19 2024 16:00:00 GMT-0700",
@@ -201,6 +190,7 @@ export const availableNow: AvailableNowProps[] = [
     subheader: "Macaron Mayhem",
     season: 15,
     episode: 11,
+    episodesInSeason: 13,
     cardMedia: Masterchef.src,
     cardMediaAlt: "Masterchef",
     releaseDateTime: "August 06 2025 03:00:00 GMT-0700",
@@ -216,6 +206,7 @@ export const availableNow: AvailableNowProps[] = [
     subheader: "Trust",
     season: 3,
     episode: 3,
+    episodesInSeason: 22,
     cardMedia: Attack.src,
     cardMediaAlt: "Attack on Titan",
     releaseDateTime: "August 13 2018 03:00:00 GMT-0700",
@@ -230,6 +221,7 @@ export const availableNow: AvailableNowProps[] = [
     subheader: "Well Met, Everyone",
     season: 1,
     episode: 14,
+    episodesInSeason: 27,
     cardMedia: Gurren.src,
     cardMediaAlt: "Gurren Lagann",
     releaseDateTime: "September 22 2007 03:00:00 GMT-0700",
@@ -244,6 +236,7 @@ export const availableNow: AvailableNowProps[] = [
     subheader: "New World Map",
     season: 3,
     episode: 1,
+    episodesInSeason: 22,
     cardMedia: Stone.src,
     cardMediaAlt: "Dr. Stone",
     releaseDateTime: "June 04 2023 03:00:00 GMT-0700",
@@ -258,6 +251,7 @@ export const availableNow: AvailableNowProps[] = [
     subheader: "Are You Really This Stupid?",
     season: 2,
     episode: 6,
+    episodesInSeason: 25,
     cardMedia: Fruits.src,
     cardMediaAlt: "Fruits Basket",
     releaseDateTime: "May 12 2020 03:00:00 GMT-0700",
@@ -269,6 +263,21 @@ export const availableNow: AvailableNowProps[] = [
 ];
 
 export const backlog: AvailableNowProps[] = [
+  {
+    avatar: JeffBuckleyLogo.src,
+    title: "It's Never Over, Jeff Buckley",
+    subheader: "",
+    synopsis:
+      "Never-before-seen footage, exclusive voice messages, and accounts from Jeff Buckley's inner circle paint a captivating portrait of the gifted musician who died tragically in 1997, having only released one album.",
+    cardMedia: JeffBuckley.src,
+    cardMediaAlt: "It's Never Over, Jeff Buckley",
+    releaseDateTime: "August 08 2025 16:00:00 GMT-0700",
+    watchUrl:
+      "https://www.fandango.com/its-never-over-jeff-buckley-2025-241047/movie-overview",
+    objectPosition: "65% 40%",
+    SiteLogo: FandangoLogo,
+    isMovie: true,
+  },
   {
     avatar: FantasticLogo.src,
     title: "The Fantastic Four: First Steps",

@@ -20,6 +20,7 @@ export default function TallTimerCard({
   subheader,
   season,
   episode,
+  episodesInSeason,
   cardMedia,
   cardMediaAlt,
   watchUrl,
@@ -51,7 +52,29 @@ export default function TallTimerCard({
       <Stack
         sx={{ height: "calc(100% - 194px)", justifyContent: "space-between" }}
       >
-        <CardContent sx={{ paddingBottom: 0 }}>
+        <CardContent
+          sx={{
+            paddingBottom: 0,
+            position: "relative",
+          }}
+        >
+          <Box
+            sx={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              bottom: 0,
+              borderTopWidth: 3,
+              borderTopStyle: "solid",
+              borderTopColor:
+                episode && episodesInSeason ? "primary.dark" : "transparent",
+              width:
+                episode && episodesInSeason
+                  ? `${(episode / episodesInSeason) * 100}%`
+                  : "100%",
+              height: 3,
+            }}
+          />
           <Typography
             id={`tall-timer-card-${[title, season, episode, subheader]
               .filter(Boolean)
