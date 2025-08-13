@@ -9,6 +9,7 @@ import Bleach from "./assets/Bleach.jpg";
 import ChainsawManMovie from "./assets/ChainsawManMovie.jpg";
 import DanDaDan from "./assets/DanDaDan.jpg";
 import Delicious from "./assets/Delicious.jpg";
+import DemonSlayer from "./assets/DemonSlayer.jpg";
 import DrElise from "./assets/DrElise.jpg";
 import Evangelion from "./assets/Evangelion.jpg";
 import FrierenFrierensParty from "./assets/FrierenFrierensParty.jpg";
@@ -197,6 +198,48 @@ export const animeList: Anime[] = [
     ),
 
     hasSterlingSeen: true,
+  },
+  {
+    title: "Demon Slayer: Kimetsu no Yaiba",
+    year: 2019,
+    episodes: 69,
+    rating: 8.43,
+    ratingOutOf: 2263792,
+    rank: 183,
+    popularity: 5,
+    picture: DemonSlayer.src,
+    tags: [
+      "Dark Fantasy",
+      "Shōnen",
+      "Supernatural Fantasy",
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Thriller",
+    ],
+    shortDescription: `A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cure his sister.`,
+    longDescription: (
+      <>
+        Ever since the death of his father, the burden of supporting the family
+        has fallen upon Tanjirou Kamado's shoulders. Though living impoverished
+        on a remote mountain, the Kamado family are able to enjoy a relatively
+        peaceful and happy life. One day, Tanjirou decides to go down to the
+        local village to make a little money selling charcoal. On his way back,
+        night falls, forcing Tanjirou to take shelter in the house of a strange
+        man, who warns him of the existence of flesh-eating demons that lurk in
+        the woods at night.
+        <br />
+        <br />
+        When he finally arrives back home the next day, he is met with a
+        horrifying sight—his whole family has been slaughtered. Worse still, the
+        sole survivor is his sister Nezuko, who has been turned into a
+        bloodthirsty demon. Consumed by rage and hatred, Tanjirou swears to
+        avenge his family and stay by his only remaining sibling. Alongside the
+        mysterious group calling themselves the Demon Slayer Corps, Tanjirou
+        will do whatever it takes to slay the demons and protect the remnants of
+        his beloved sister's humanity.
+      </>
+    ),
   },
   {
     title: "My Hero Academia",
