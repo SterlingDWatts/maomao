@@ -510,6 +510,7 @@ export const upNext: UpNextProps[] = [
     subheader: "",
     season: 1,
     episode: 7,
+    episodesInSeason: 12,
     cardMedia: Nyaight.src,
     cardMediaAlt: "Nyaight of the Living Cat",
     releaseDateTime: "August 17 2025 07:15:00 GMT-0700",
