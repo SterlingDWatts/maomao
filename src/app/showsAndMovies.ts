@@ -494,6 +494,7 @@ export const upNext: UpNextProps[] = [
     subheader: "",
     season: 2,
     episode: 5,
+    episodesInSeason: 11,
     cardMedia: Kaiju.src,
     cardMediaAlt: "Kaiju No. 8",
     releaseDateTime: "August 16 2025 07:30:00 GMT-0700",
