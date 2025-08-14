@@ -25,7 +25,7 @@ import Fantastic from "./assets/Fantastic.jpg";
 import FantasticLogo from "./assets/FantasticLogo.jpg";
 import FoundationAvatar from "./assets/FoundationAvatar.jpg";
 import FoundationSeason3 from "./assets/FoundationSeason3.jpg";
-import FoundationS3E5 from "./assets/FoundationS3E5.jpg";
+import FoundationS3E6 from "./assets/FoundationS3E6.jpg";
 import FrierenFrierensParty from "./assets/FrierenFrierensParty.jpg";
 import FrierenLogo from "./assets/FrierenLogo.jpg";
 import Fruits from "./assets/Fruits.jpg";
@@ -69,8 +69,6 @@ import Sandman from "./assets/Sandman.jpg";
 import SandmanLogo from "./assets/SandmanLogo.jpg";
 import SlowHorsesBig from "./assets/SlowHorses.jpg";
 import SlowHorsesLogo from "./assets/SlowHorsesLogo.jpg";
-import SoloLeveling from "./assets/SoloLeveling.jpg";
-import SoloLogo from "./assets/SoloLogo.jpg";
 import SquidGame from "./assets/SquidGameCoffins.jpg";
 import SquidLogo from "./assets/SquidLogo.jpg";
 import Stone from "./assets/Stone.jpg";
@@ -83,8 +81,6 @@ import TheBearLogo from "./assets/TheBearLogo.jpg";
 import TheBearS4E5 from "./assets/TheBearS4E5.jpg";
 import TheBrutalist from "./assets/TheBrutalist.jpg";
 import TheBrutalistLogo from "./assets/TheBrutalistLogo.jpg";
-import VinlandLogo from "./assets/VinlandLogo.jpg";
-import VinlandSaga from "./assets/VinlandSaga.jpg";
 import WhiteLotusLogo from "./assets/WhiteLotusLogo.jpg";
 import WhiteLotusS2 from "./assets/WhiteLotusS2.jpg";
 import ZoneOfInterest from "./assets/ZoneOfInterest.jpg";
@@ -202,36 +198,6 @@ export const availableNow: AvailableNowProps[] = [
     SiteLogo: HuluLogo,
   },
   {
-    avatar: AttackLogo.src,
-    title: "Attack on Titan",
-    subheader: "Trust",
-    season: 3,
-    episode: 3,
-    episodesInSeason: 22,
-    cardMedia: Attack.src,
-    cardMediaAlt: "Attack on Titan",
-    releaseDateTime: "August 13 2018 03:00:00 GMT-0700",
-    synopsis: `On the run and running out of time, the Scouts must entrust their lives to others if they plan on surviving.`,
-    watchUrl: "https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan",
-    objectPosition: "15% 50%",
-    SiteLogo: CrunchyrollLogo,
-  },
-  {
-    avatar: Gurren.src,
-    title: "Gurren Lagann",
-    subheader: "Well Met, Everyone",
-    season: 1,
-    episode: 14,
-    episodesInSeason: 27,
-    cardMedia: Gurren.src,
-    cardMediaAlt: "Gurren Lagann",
-    releaseDateTime: "September 22 2007 03:00:00 GMT-0700",
-    synopsis: `One month has passed since the battle with Viral, and it's the sixth day of the battle for Teppelin. Guame and Cytomander with their troops confront Team Dai-Gurren.`,
-    watchUrl: "https://www.crunchyroll.com/series/GEXH3WKK0/vinland-saga",
-    objectPosition: "50% 20%",
-    SiteLogo: CrunchyrollLogo,
-  },
-  {
     avatar: StoneLogo.src,
     title: "Dr. Stone",
     subheader: "New World Map",
@@ -259,6 +225,36 @@ export const availableNow: AvailableNowProps[] = [
     synopsis: `Momiji convinces Tohru to join the Somas at their vacation house by the ocean for some fun in the sun.`,
     watchUrl: "https://www.crunchyroll.com/series/G6ZJMGEXY/fruits-basket",
     objectPosition: "50% 50%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: Gurren.src,
+    title: "Gurren Lagann",
+    subheader: "I Will Head Towards Tomorrow",
+    season: 1,
+    episode: 15,
+    episodesInSeason: 27,
+    cardMedia: Gurren.src,
+    cardMediaAlt: "Gurren Lagann",
+    releaseDateTime: "September 29 2007 03:00:00 GMT-0700",
+    synopsis: `Teppelin begins to collapse. Also it begins the final battle against Lord Genome.`,
+    watchUrl: "https://www.crunchyroll.com/series/GEXH3WKK0/vinland-saga",
+    objectPosition: "50% 20%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: AttackLogo.src,
+    title: "Attack on Titan",
+    subheader: "Reply",
+    season: 3,
+    episode: 5,
+    episodesInSeason: 22,
+    cardMedia: Attack.src,
+    cardMediaAlt: "Attack on Titan",
+    releaseDateTime: "August 20 2018 03:00:00 GMT-0700",
+    synopsis: `Erwin pleads his case for the Scouts to be spared, but an unforeseen announcement puts the fate of humanity at risk.`,
+    watchUrl: "https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan",
+    objectPosition: "15% 50%",
     SiteLogo: CrunchyrollLogo,
   },
 ];
@@ -442,34 +438,19 @@ export const backlog: AvailableNowProps[] = [
 
 export const upNext: UpNextProps[] = [
   {
-    avatar: DandadanLogo.src,
-    title: "Dandadan",
-    subheader: "",
-    season: 2,
-    episode: 7,
-    episodesInSeason: 12,
-    cardMedia: DanDaDan.src,
-    cardMediaAlt: "Dandadan",
-    releaseDateTime: "August 14 2025 09:00:00 GMT-0700",
-    synopsis: ``,
-    watchUrl: "https://www.crunchyroll.com/series/GG5H5XQ0D/dan-da-dan",
-    objectPosition: "50% 40%",
-    SiteLogo: CrunchyrollLogo,
-    TimerCard: LargeTimerCard,
-  },
-  {
     avatar: FoundationAvatar.src,
     title: "Foundation",
-    subheader: "",
+    subheader: "The Shape of Time",
     season: 3,
     episode: 6,
     episodesInSeason: 10,
-    cardMedia: FoundationSeason3.src,
+    cardMedia: FoundationS3E6.src,
     cardMediaAlt: "Foundation Season 3 Episode 6",
     releaseDateTime: "August 15 2025 03:00:00 GMT-0700",
+    synopsis: `A long-awaited reunion turns violent. Day looks for Song. On New Terminus, the Vault opens—and the Mule takes aim.`,
     watchUrl:
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
-    objectPosition: "100% 20%",
+    objectPosition: "100% 50%",
     TimerCard: LargeTimerCard,
     SiteLogo: AppleLogo,
   },

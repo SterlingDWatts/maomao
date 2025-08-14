@@ -61,7 +61,7 @@ export default function TallTimerCard({
           <Box
             sx={{
               position: "absolute",
-              top: 0,
+              top: 1,
               left: 0,
               bottom: 0,
               borderTopWidth: 3,

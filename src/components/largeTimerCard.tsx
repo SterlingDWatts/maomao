@@ -159,7 +159,7 @@ export default function LargeTimerCard({
             variant="determinate"
             value={(episode / episodesInSeason) * 100}
             size={48}
-            thickness={2}
+            thickness={4}
             sx={{
               position: "absolute",
               top: -26,
