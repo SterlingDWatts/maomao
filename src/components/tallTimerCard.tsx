@@ -67,7 +67,9 @@ export default function TallTimerCard({
               borderTopWidth: 3,
               borderTopStyle: "solid",
               borderTopColor:
-                episode && episodesInSeason ? "primary.dark" : "transparent",
+                episode && episodesInSeason
+                  ? "secondary.darker"
+                  : "transparent",
               width:
                 episode && episodesInSeason
                   ? `${(episode / episodesInSeason) * 100}%`

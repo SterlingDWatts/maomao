@@ -164,7 +164,7 @@ export default function LargeTimerCard({
               position: "absolute",
               top: -26,
               left: "Calc(50% - 24px)",
-              color: "primary.dark",
+              color: "secondary.darker",
             }}
           />
         )}
