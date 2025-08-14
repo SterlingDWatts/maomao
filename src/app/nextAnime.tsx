@@ -85,6 +85,9 @@ export const animeList: Anime[] = [
       "Tragedy",
       "Action",
       "Adventure",
+      "Epic",
+      "Monster",
+      "Horror",
     ],
     shortDescription:
       "After his hometown is destroyed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.",
@@ -216,6 +219,8 @@ export const animeList: Anime[] = [
       "Adventure",
       "Fantasy",
       "Thriller",
+      "Dark",
+      "Supernatural",
     ],
     shortDescription: `A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cure his sister.`,
     longDescription: (
@@ -298,6 +303,7 @@ export const animeList: Anime[] = [
       "Adventure",
       "Comedy",
       "Fantasy",
+      "Teen",
     ],
     shortDescription:
       "Naruto Uzumaki, a mischievous adolescent ninja, struggles as he searches for recognition and dreams of becoming the Hokage, the village's leader and strongest ninja.",
@@ -338,6 +344,11 @@ export const animeList: Anime[] = [
       "Urban Adventure",
       "Action",
       "Adventure",
+      "Dark",
+      "Fantasy",
+      "Psychological",
+      "Drama",
+      "Supernatural",
     ],
     shortDescription:
       "A boy swallows a cursed talisman - the finger of a demon - and becomes cursed himself. He enters a shaman's school to be able to locate the demon's other body parts and thus exorcise himself.",
@@ -464,6 +475,7 @@ export const animeList: Anime[] = [
       "Family",
       "Fantasy",
       "Sci-Fi",
+      "Teen",
     ],
     shortDescription:
       "A powerful creature claims that within a year, Earth will be destroyed by him, but he offers mankind a chance by becoming a homeroom teacher where he teaches his students about how to kill him. An assassination classroom begins.",
@@ -514,6 +526,9 @@ export const animeList: Anime[] = [
       "Dystopian Sci-Fi",
       "Epic",
       "Kaiju",
+      "Action",
+      "Dystopian",
+      "Sci-Fi",
     ],
     shortDescription:
       "A teenage boy finds himself recruited as a member of an elite team of pilots by his father.",
@@ -566,6 +581,7 @@ export const animeList: Anime[] = [
       "Action",
       "Adventure",
       "Sci-Fi",
+      "Teen",
     ],
     shortDescription:
       "High schooler Taiju awakens from petrification millennia after a blinding light turned humanity to stone. He finds his scientific genius friend Senku working on a plan to rebuild civilization using science.",
@@ -605,7 +621,7 @@ export const animeList: Anime[] = [
     rank: 175,
     popularity: 58,
     picture: ChainsawManMovie.src,
-    tags: ["Dark Fantasy", "Shōnen", "Action", "Comedy", "Fantasy"],
+    tags: ["Dark Fantasy", "Shōnen", "Action", "Comedy", "Fantasy", "Dark"],
     shortDescription:
       "Following a betrayal, a young man left for dead is reborn as a powerful devil-human hybrid after merging with his pet devil and is soon enlisted into an organization dedicated to hunting devils.",
     longDescription: (
@@ -693,6 +709,7 @@ export const animeList: Anime[] = [
       "Comedy",
       "Drama",
       "Sci-Fi",
+      "Dystopian",
     ],
     shortDescription:
       "Two friends, Simon and Kamina, become the symbols of rebellion against the powerful Spiral King, who forced mankind into subterranean villages.",
@@ -739,6 +756,10 @@ export const animeList: Anime[] = [
       "Tragedy",
       "Action",
       "Adventure",
+      "History",
+      "Epic",
+      "Period",
+      "Drama",
     ],
     shortDescription:
       "Following a tragedy, Thorfinn embarks on a journey with the man responsible for it to take his life in a duel as a true and honorable warrior to pay homage.",
@@ -783,6 +804,7 @@ export const animeList: Anime[] = [
       "Teen Romance",
       "Comedy",
       "Romance",
+      "Teen",
     ],
     shortDescription:
       "The proudly privileged top two students of an elite school each makes it their mission to be the first to extract a confession of love from the other.",
@@ -878,6 +900,7 @@ export const animeList: Anime[] = [
       "Comedy",
       "Drama",
       "Fantasy",
+      "Epic",
     ],
     shortDescription:
       "Elf mage Frieren and her fellow adventurers have defeated the Demon King and brought peace to the land. But Frieren will long outlive the rest of her former party. How will she come to understand what life means to the people around her?",
@@ -926,6 +949,9 @@ export const animeList: Anime[] = [
       "Action",
       "Adventure",
       "Fantasy",
+      "Epic",
+      "Dark",
+      "Supernatural",
     ],
     shortDescription:
       "Follows the adventures of Sung Jinwoo in a world that is constantly threatened by monsters and evil forces. In his battles Sung transforms himself from the weakest hunter of all mankind to one of the strongest hunters in existence.",
@@ -970,6 +996,7 @@ export const animeList: Anime[] = [
       "Action",
       "Adventure",
       "Sci-Fi",
+      "Urban",
     ],
     shortDescription:
       "A man working a job far removed from his childhood dreams gets wrapped up in an unexpected situation - becoming a monster, he aims once again to fulfill his lifelong dream.",
@@ -1022,6 +1049,8 @@ export const animeList: Anime[] = [
       "Action",
       "Adventure",
       "Comedy",
+      "Fantasy",
+      "Epic",
     ],
     shortDescription:
       "Princess Yona makes a new life after fleeing the palace when the man she loves kills her father.",
@@ -1071,6 +1100,10 @@ export const animeList: Anime[] = [
       "Teen Romance",
       "Comedy",
       "Drama",
+      "Supernatural",
+      "Fantasy",
+      "Teen",
+      "Romance",
     ],
     shortDescription:
       "After Tohru is taken in by the Soma family, she learns that twelve family members transform involuntarily into animals of the Chinese zodiac and helps them deal with the emotional pain caused by the transformations.",
@@ -1121,6 +1154,7 @@ export const animeList: Anime[] = [
       "Drama",
       "Fantasy",
       "Horror",
+      "Supernatural",
     ],
     shortDescription:
       "Mushi Master Ginko travels from place to place investigating occurrences that could be tied to supernatural creatures called Mushi.",
@@ -1171,6 +1205,10 @@ export const animeList: Anime[] = [
       "Action",
       "Adventure",
       "Comedy",
+      "Supernatural",
+      "Fantasy",
+      "Teen",
+      "Romance",
     ],
     shortDescription:
       "A teenage girl periodically travels back in time to feudal Japan to help a young half-demon recover the shards of a jewel of great power.",
@@ -1217,6 +1255,7 @@ export const animeList: Anime[] = [
       "Adventure",
       "Comedy",
       "Drama",
+      "Desert",
     ],
     shortDescription:
       "Vash the Stampede is the most infamous outlaw on the planet Gunsmoke and with a 60 billion double dollar price on his head the most sought after.",
@@ -1263,6 +1302,12 @@ export const animeList: Anime[] = [
       "Urban Adventure",
       "Action",
       "Adventure",
+      "Romance",
+      "Comedy",
+      "Supernatural",
+      "Fantasy",
+      "Teen",
+      "Urban",
     ],
     shortDescription:
       "When Momo and Okarun's beliefs clash, they're thrown into a world of ghosts, aliens and awakened powers. ",
@@ -1306,6 +1351,10 @@ export const animeList: Anime[] = [
       "Drama",
       "Fantasy",
       "Romance",
+      "Adventure",
+      "Epic",
+      "Medical",
+      "Teen",
     ],
     shortDescription:
       "Although her name means 'white as snow', Shirayuki is a cheerful red-haired girl who lives in the town of Tanbarun and works diligently as an apothecary in her herbal shop.",
@@ -1386,6 +1435,8 @@ export const animeList: Anime[] = [
       "History",
       "Mystery",
       "Romance",
+      "Medical",
+      "Drama",
     ],
     shortDescription:
       "A young maiden is kidnapped and sold into servitude at the emperor's palace, where she secretly employs her pharmacist skills with the help of the head eunuch to unravel medical mysteries in the inner court.",
@@ -1432,6 +1483,8 @@ export const animeList: Anime[] = [
       "Adventure",
       "Animation",
       "Fantasy",
+      "Supernatural",
+      "Urban",
     ],
     shortDescription:
       "The peace is suddenly broken when warning sirens blare through the Soul Society. Residents are disappearing without a trace and nobody knows who's behind it. Meanwhile, a darkness is approaching Ichigo and his friends in Karakura Town.",
@@ -1513,6 +1566,7 @@ export const animeList: Anime[] = [
       "Adventure",
       "Comedy",
       "Fantasy",
+      "Epic",
     ],
     shortDescription:
       "Can sisters be reincarnated from dragon poop? Laios and his friends Marcille and Chilchuck delve into an endless dungeon in search of his fallen sister, fighting monsters, starvation, and corruption.",
@@ -1794,6 +1848,11 @@ export const animeList: Anime[] = [
       "Slapstick",
       "Teen Comedy",
       "Teen Fantasy",
+      "Body Swap",
+      "Comedy",
+      "Romance",
+      "Teen",
+      "Fantasy",
     ],
     shortDescription:
       "Akane Tendo meets her new fiancé, Ranma Saotome, a martial arts prodigy with a twist: he magically transforms into a girl upon touching cold water.",
@@ -1828,7 +1887,14 @@ export const animeList: Anime[] = [
     rank: 1852,
     popularity: 2098,
     picture: Raven.src,
-    tags: ["Josei", "Supernatural Fantasy", "Fantasy", "History", "Mystery"],
+    tags: [
+      "Josei",
+      "Supernatural Fantasy",
+      "Fantasy",
+      "History",
+      "Mystery",
+      "Supernatural",
+    ],
     shortDescription:
       "The Raven Consort is a special consort living deep in the inner palace; Shouxue has the ability to use mysterious arts and will accept any favor asked of her, whether it is to find something lost or to curse someone to death.",
     longDescription: (
@@ -1911,6 +1977,9 @@ export const animeList: Anime[] = [
       "Supernatural Fantasy",
       "Fantasy",
       "Romance",
+      "Medical",
+      "Drama",
+      "Supernatural",
     ],
     shortDescription:
       "A mean princess who lost everything to her foolish behaviour and to an epidemic gets thrown back in time to before it happened. Now she wishes to become a better person and a doctor to protect her family and kingdom.",
@@ -2020,6 +2089,8 @@ export const animeList: Anime[] = [
       "Comedy",
       "Fantasy",
       "Romance",
+      "Body Swap",
+      "Supernatural",
     ],
     shortDescription:
       "When an emperor accidentally switches bodies with his empress, the two must deal with the awkward fallouts as they learn to accept each other.",
