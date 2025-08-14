@@ -6,6 +6,7 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import IconButton from "@mui/material/IconButton";
+import LinearProgress from "@mui/material/LinearProgress";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 
@@ -58,25 +59,20 @@ export default function TallTimerCard({
             position: "relative",
           }}
         >
-          <Box
-            sx={{
-              position: "absolute",
-              top: 1,
-              left: 0,
-              bottom: 0,
-              borderTopWidth: 3,
-              borderTopStyle: "solid",
-              borderTopColor:
-                episode && episodesInSeason
-                  ? "secondary.darker"
-                  : "transparent",
-              width:
-                episode && episodesInSeason
-                  ? `${(episode / episodesInSeason) * 100}%`
-                  : "100%",
-              height: 3,
-            }}
-          />
+          {episode && episodesInSeason && (
+            <LinearProgress
+              variant="determinate"
+              value={(episode / episodesInSeason) * 100}
+              color="secondary"
+              sx={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                right: 0,
+                height: 4,
+              }}
+            />
+          )}
           <Typography
             id={`tall-timer-card-${[title, season, episode, subheader]
               .filter(Boolean)
