@@ -3,9 +3,6 @@
 import * as React from "react";
 
 import Box from "@mui/material/Box";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Chip from "@mui/material/Chip";
 import Container from "@mui/material/Container";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -21,18 +18,15 @@ import Typography from "@mui/material/Typography";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import FilterListIcon from "@mui/icons-material/FilterList";
-import SortIcon from "@mui/icons-material/Sort";
+import CloseIcon from "@mui/icons-material/Close";
 
 import { ThemeProvider } from "@mui/material/styles";
 
 import DrawerAppBar from "../../components/appBarWithResponsiveMenu";
 import AnimeCard from "../../components/animeCard";
 
-import Placeholder from "../assets/placeholder.jpg";
-
 import { theme } from "../theme";
 import { animeList } from "../nextAnime";
-import { abbreviateNumber } from "../utils";
 
 export default function AnimeTrackerPage() {
   const [sortBy, setSortBy] = React.useState<
@@ -48,19 +42,33 @@ export default function AnimeTrackerPage() {
 
   const sortedAnimeList = React.useMemo(() => {
     const filteredList = animeList.filter((anime) => {
+      // Apply base filter
+      let baseFilterPassed = false;
       switch (filterBy) {
         case "maomao":
-          return anime.isMaomaoRecommendation === true;
+          baseFilterPassed = anime.isMaomaoRecommendation === true;
+          break;
         case "dawn":
-          return anime.hasDawnSeen === true;
+          baseFilterPassed = anime.hasDawnSeen === true;
+          break;
         case "sterling":
-          return anime.hasSterlingSeen === true;
+          baseFilterPassed = anime.hasSterlingSeen === true;
+          break;
         case "neither":
-          return anime.hasDawnSeen !== true && anime.hasSterlingSeen !== true;
+          baseFilterPassed =
+            anime.hasDawnSeen !== true && anime.hasSterlingSeen !== true;
+          break;
         case "all":
         default:
-          return true;
+          baseFilterPassed = true;
       }
+
+      // Apply tag filter (intersection - anime must have ALL selected tags)
+      const tagFilterPassed =
+        filterByTag.length === 0 ||
+        filterByTag.every((tag) => anime.tags.includes(tag));
+
+      return baseFilterPassed && tagFilterPassed;
     });
 
     return [...filteredList].sort((a, b) => {
@@ -111,7 +119,7 @@ export default function AnimeTrackerPage() {
         }
       }
     });
-  }, [sortBy, sortDirection, filterBy]);
+  }, [sortBy, sortDirection, filterBy, filterByTag]);
 
   const handleSortChange = (event: any) => {
     setSortBy((prevSortBy) => {
@@ -127,6 +135,24 @@ export default function AnimeTrackerPage() {
 
   const handleFilterChange = (event: any) => {
     setFilterBy(event.target.value);
+  };
+
+  const handleTagSelect = (tag: string) => {
+    setFilterByTag((prevTags) => {
+      // Only add the tag if it's not already selected and is a valid string
+      if (tag && typeof tag === "string" && !prevTags.includes(tag)) {
+        return [...prevTags, tag];
+      }
+      return prevTags;
+    });
+  };
+
+  const handleTagRemove = (tagToRemove: string) => {
+    setFilterByTag((prevTags) => prevTags.filter((tag) => tag !== tagToRemove));
+  };
+
+  const clearAllTags = () => {
+    setFilterByTag([]);
   };
 
   const toggleSortDirection = () => {
@@ -272,6 +298,66 @@ export default function AnimeTrackerPage() {
               </Typography>
             </Box>
 
+            {/* Selected Tags Display */}
+            {filterByTag.length > 0 && (
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  flexWrap: "wrap",
+                  gap: 1,
+                  marginTop: 2,
+                  paddingLeft: { xs: 1, sm: 0 },
+                  paddingRight: { xs: 1, sm: 0 },
+                  paddingTop: 1,
+                  paddingBottom: 1,
+                  backgroundColor: "rgba(255, 255, 255, 0.05)",
+                  borderRadius: 1,
+                }}
+              >
+                <Typography
+                  sx={{
+                    color: "primary.main",
+                    fontWeight: "bold",
+                    fontSize: 14,
+                    marginRight: 1,
+                  }}
+                >
+                  Filtered by:
+                </Typography>
+                {filterByTag.map((tag) => (
+                  <Chip
+                    key={tag}
+                    label={tag}
+                    size="small"
+                    color="primary"
+                    onDelete={() => handleTagRemove(tag)}
+                    deleteIcon={<CloseIcon />}
+                    sx={{
+                      fontSize: "0.75rem",
+                      "& .MuiChip-deleteIcon": {
+                        fontSize: "1rem",
+                      },
+                    }}
+                  />
+                ))}
+                <Chip
+                  label="Clear all"
+                  size="small"
+                  variant="outlined"
+                  color="primary"
+                  onClick={clearAllTags}
+                  sx={{
+                    fontSize: "0.75rem",
+                    cursor: "pointer",
+                    "&:hover": {
+                      backgroundColor: "rgba(255, 255, 255, 0.1)",
+                    },
+                  }}
+                />
+              </Box>
+            )}
+
             <Stack
               sx={{
                 "& .MuiCard-root:not(:first-child) .MuiCardContent-root .anime-card-content-divider":
@@ -287,7 +373,11 @@ export default function AnimeTrackerPage() {
               }}
             >
               {sortedAnimeList.map((anime) => (
-                <AnimeCard key={anime.title} anime={anime} />
+                <AnimeCard
+                  key={anime.title}
+                  anime={anime}
+                  onTagClick={handleTagSelect}
+                />
               ))}
             </Stack>
           </Container>

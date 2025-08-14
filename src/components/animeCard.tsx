@@ -41,7 +41,13 @@ const Bullet = () => (
   </Box>
 );
 
-export default function AnimeCard({ anime }: { anime: Anime }) {
+export default function AnimeCard({
+  anime,
+  onTagClick,
+}: {
+  anime: Anime;
+  onTagClick?: (tag: string) => void;
+}) {
   const [expanded, setExpanded] = React.useState(false);
 
   return (
@@ -207,7 +213,26 @@ export default function AnimeCard({ anime }: { anime: Anime }) {
                   label={tag}
                   size="small"
                   color="primary"
-                  sx={{ fontSize: "0.75rem" }}
+                  onClick={
+                    onTagClick
+                      ? (event) => {
+                          event.stopPropagation();
+                          onTagClick(tag);
+                        }
+                      : undefined
+                  }
+                  sx={{
+                    fontSize: "0.75rem",
+                    cursor: onTagClick ? "pointer" : "default",
+                    transition: "all 0.2s ease-in-out",
+                    "&:hover": onTagClick
+                      ? {
+                          backgroundColor: "primary.dark",
+                          transform: "scale(1.05)",
+                          boxShadow: "0 2px 4px rgba(0,0,0,0.2)",
+                        }
+                      : {},
+                  }}
                 />
               ))}
             </Stack>
