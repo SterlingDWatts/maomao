@@ -98,6 +98,7 @@ export interface AvailableNowProps {
   releaseDateTime: string;
   synopsis?: string;
   watchUrl: string;
+  imdbUrl?: string;
   estimate?: boolean;
   estimateDate?: string;
   isMovie?: boolean;
@@ -132,6 +133,7 @@ export const availableNow: AvailableNowProps[] = [
       "James is finally succeeding with the farmers' uptake of the Ministry of Ag's TB testing scheme. Tristan is outgrowing running the small animal surgery and buys a car to help with errands at the practice, enabling him also taking a date out",
     watchUrl:
       "https://play.google.com/store/tv/show?id=gbQjVgRNYkg.P&cdid=tvseason-mjGu8FIpiU4.P&hl=en_US",
+    imdbUrl: "https://www.imdb.com/title/tt16971180/?ref_=ttep_ep_4",
     objectPosition: "50% 50%",
     SiteLogo: GooglePlayMoviesLogo,
   },
@@ -148,6 +150,7 @@ export const availableNow: AvailableNowProps[] = [
     synopsis: "The team resets.",
     watchUrl:
       "https://www.hulu.com/series/05eb6a8e-90ed-4947-8c0b-e6536cbddd5f",
+    imdbUrl: "https://www.imdb.com/title/tt36943997/?ref_=ttep_ep_5",
     objectPosition: "50% 50%",
     SiteLogo: HuluLogo,
   },
@@ -163,21 +166,23 @@ export const availableNow: AvailableNowProps[] = [
     releaseDateTime: "June 04 2023 03:00:00 GMT-0700",
     synopsis: `While continuing to use the hot air balloon to search for the oil, it's decided that Ishigami Village needs to take up agriculture to prevent future food shortages, as well as to produce preserved food for their upcoming sea voyage.`,
     watchUrl: "https://www.crunchyroll.com/series/GYEXQKJG6/dr-stone",
+    imdbUrl: "https://www.imdb.com/title/tt21479732/?ref_=ttep_ep_1",
     objectPosition: "50% 50%",
     SiteLogo: CrunchyrollLogo,
   },
   {
     avatar: Gurren.src,
     title: "Gurren Lagann",
-    subheader: "Compilation Episode",
+    subheader: "You Don't Know Anything",
     season: 1,
-    episode: 16,
+    episode: 17,
     episodesInSeason: 27,
     cardMedia: Gurren.src,
     cardMediaAlt: "Gurren Lagann",
-    releaseDateTime: "September 29 2007 03:00:00 GMT-0700",
-    synopsis: `The journey of Simon's boyhood. Compilation episode.`,
+    releaseDateTime: "October 06 2007 03:00:00 GMT-0700",
+    synopsis: `7 years have passed since the fall of Teppelin. A new capital named Kamina-city has been built, and the human advanced in civilization. However, Simon and Rossiu feel very anxious about Lord Genome's last words.`,
     watchUrl: "https://www.crunchyroll.com/series/GEXH3WKK0/vinland-saga",
+    imdbUrl: "https://www.imdb.com/title/tt1785148/?ref_=ttep_ep_17",
     objectPosition: "50% 20%",
     SiteLogo: CrunchyrollLogo,
   },
@@ -193,6 +198,7 @@ export const availableNow: AvailableNowProps[] = [
     releaseDateTime: "July 26 2025 03:00:00 GMT-0700",
     synopsis: `Two skilled agents earn their promotion to the elite First Division of the Defense Force, facing new challenges and responsibilities in their roles.`,
     watchUrl: "https://www.crunchyroll.com/series/GG5H5XQ7D/kaiju-no-8",
+    imdbUrl: "https://www.imdb.com/title/tt37675686/?ref_=ttep_ep_2",
     objectPosition: "40% 50%",
     SiteLogo: CrunchyrollLogo,
   },
@@ -209,6 +215,7 @@ export const availableNow: AvailableNowProps[] = [
     synopsis: `Frankenstein is nursed to health by a new friend. Later, Flag and Frankenstein team up to disprove Circe's visions about the Princess.`,
     watchUrl:
       "https://play.hbomax.com/show/44f3a3fd-107e-49ac-bf74-c0383525b8ca",
+    imdbUrl: "https://www.imdb.com/title/tt26546836/?ref_=ttep_ep_5",
     objectPosition: "50% 50%",
     SiteLogo: HBOLogo,
   },
@@ -218,13 +225,14 @@ export const availableNow: AvailableNowProps[] = [
     subheader: "Backyard BBQ",
     season: 15,
     episode: 12,
-    episodesInSeason: 13,
+    episodesInSeason: 16,
     cardMedia: Masterchef.src,
     cardMediaAlt: "Masterchef",
     releaseDateTime: "August 13 2025 03:00:00 GMT-0700",
     synopsis: `The MasterChef garden is decked out for a sunny backyard BBQ and the Top 6 duos feel the burn. Split into two teams, they must serve a garden full of BBQ aficionados. The losing team will go straight into a pressure test, where one couple will be eliminated.`,
     watchUrl:
       "https://www.hulu.com/series/45d67197-5346-4adb-9d90-6ed2d7b7bd85",
+    imdbUrl: "https://www.imdb.com/title/tt37717860/?ref_=ttep_ep_12",
     objectPosition: "50% 30%",
     SiteLogo: HuluLogo,
   },
@@ -240,6 +248,7 @@ export const availableNow: AvailableNowProps[] = [
     releaseDateTime: "August 27 2018 03:00:00 GMT-0700",
     synopsis: `While sins of the past reveal new truths, both sides prepare for the upcoming showdown before they run out of time.`,
     watchUrl: "https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan",
+    imdbUrl: "https://www.imdb.com/title/tt8543958/?ref_=ttep_ep_6",
     objectPosition: "15% 50%",
     SiteLogo: CrunchyrollLogo,
   },
@@ -255,6 +264,7 @@ export const availableNow: AvailableNowProps[] = [
     releaseDateTime: "May 19 2020 03:00:00 GMT-0700",
     synopsis: `During their stay at the vacation house, Tohru and the Somas get exciting news and surprise visitors.`,
     watchUrl: "https://www.crunchyroll.com/series/G6ZJMGEXY/fruits-basket",
+    imdbUrl: "https://www.imdb.com/title/tt12291040/?ref_=ttep_ep_7",
     objectPosition: "50% 50%",
     SiteLogo: CrunchyrollLogo,
   },
@@ -272,6 +282,8 @@ export const backlog: AvailableNowProps[] = [
     releaseDateTime: "August 08 2025 16:00:00 GMT-0700",
     watchUrl:
       "https://www.fandango.com/its-never-over-jeff-buckley-2025-241047/movie-overview",
+    imdbUrl:
+      "https://www.imdb.com/title/tt34966650/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_jeff%2520buck",
     objectPosition: "65% 40%",
     SiteLogo: FandangoLogo,
     isMovie: true,
@@ -287,6 +299,8 @@ export const backlog: AvailableNowProps[] = [
       "Forced to balance their roles as heroes with the strength of their family bond, the Fantastic Four must defend Earth from a ravenous space god called Galactus and his enigmatic Herald, Silver Surfer.",
     watchUrl:
       "https://www.fandango.com/the-fantastic-four-first-steps-2025-236967/movie-overview",
+    imdbUrl:
+      "https://www.imdb.com/title/tt10676052/?ref_=nv_sr_srsg_2_tt_6_nm_0_in_0_q_fantasti",
     objectPosition: "47% 15%",
     SiteLogo: FandangoLogo,
   },
@@ -303,6 +317,7 @@ export const backlog: AvailableNowProps[] = [
     synopsis:
       "Harry must escape an outer space prison to stop a dangerous threat in town.",
     watchUrl: "https://www.imdb.com/title/tt8690918/?ref_=ttep_ov_bk",
+    imdbUrl: "https://www.imdb.com/title/tt32641415/?ref_=ttep_ep_1",
     objectPosition: "50% 50%",
     SiteLogo: IMDBLogo,
   },
@@ -319,6 +334,7 @@ export const backlog: AvailableNowProps[] = [
     synopsis:
       "No-eul infiltrates a dangerous operation with a risky plan. A new game is announced: hide-and-seek, where one group holds a key and the other a knife.",
     watchUrl: "https://www.netflix.com/us/title/81040344",
+    imdbUrl: "https://www.imdb.com/title/tt33056155/?ref_=ttep_ep_1",
     objectPosition: "50% 50%",
     SiteLogo: NetflixLogo,
   },
@@ -335,6 +351,7 @@ export const backlog: AvailableNowProps[] = [
     synopsis:
       "When a gathering of the Endless exposes deep-seated grievances, Morpheus embarks on a mission to Hell to free the soul of a condemned mortal.",
     watchUrl: "https://www.netflix.com/us/title/81150303",
+    imdbUrl: "https://www.imdb.com/title/tt23218892/?ref_=ttep_ep_1",
     objectPosition: "50% 50%",
     SiteLogo: NetflixLogo,
   },
@@ -351,6 +368,7 @@ export const backlog: AvailableNowProps[] = [
     synopsis:
       "After the three ninjas take their leave, Sasuke realizes he has a powerful rival out there. The next day, Kakashi announces that he has recommended all of them for the Chuunin Exams. While Naruto and Sasuke are pleased, Sakura is afraid of letting everyone down. Also, someone decides they aren't ready and decides to test their abilities.",
     watchUrl: "https://www.crunchyroll.com/series/GY9PJ5KWR/naruto",
+    imdbUrl: "https://www.imdb.com/title/tt0878183/?ref_=ttep_ep_21",
     objectPosition: "50% 50%",
     SiteLogo: CrunchyrollLogo,
   },
@@ -368,6 +386,7 @@ export const backlog: AvailableNowProps[] = [
       "Two couples navigate awkwardness, an Italian American family deals with a conspicuous absence, and Tanya arrives with her new assistant.",
     watchUrl:
       "https://play.hbomax.com/show/14f9834d-bc23-41a8-ab61-5c8abdbea505",
+    imdbUrl: "https://www.imdb.com/title/tt15208848/?ref_=ttep_ep_1",
     objectPosition: "50% 50%",
     SiteLogo: HBOLogo,
   },
@@ -515,7 +534,7 @@ export const upNext: UpNextProps[] = [
     subheader: "Divide & Conquer",
     season: 15,
     episode: 13,
-    episodesInSeason: 13,
+    episodesInSeason: 16,
     cardMedia: Masterchef.src,
     cardMediaAlt: "Masterchef",
     releaseDateTime: "August 20 2025 21:00:00 GMT-0700",
@@ -525,7 +544,6 @@ export const upNext: UpNextProps[] = [
     objectPosition: "100% 27%",
     TimerCard: LargeTimerCard,
     SiteLogo: HuluLogo,
-    finale: true,
   },
   {
     avatar: DandadanLogo.src,
@@ -609,6 +627,23 @@ export const upNext: UpNextProps[] = [
     SiteLogo: CrunchyrollLogo,
   },
   {
+    avatar: MasterchefLogo.src,
+    title: "Masterchef",
+    subheader: "The Wall",
+    season: 15,
+    episode: 14,
+    episodesInSeason: 16,
+    cardMedia: Masterchef.src,
+    cardMediaAlt: "Masterchef",
+    releaseDateTime: "August 27 2025 21:00:00 GMT-0700",
+    synopsis: "",
+    watchUrl:
+      "https://www.hulu.com/series/45d67197-5346-4adb-9d90-6ed2d7b7bd85",
+    objectPosition: "100% 27%",
+    TimerCard: SmallTimerCard,
+    SiteLogo: HuluLogo,
+  },
+  {
     avatar: DandadanLogo.src,
     title: "Dandadan",
     subheader: "",
@@ -688,6 +723,23 @@ export const upNext: UpNextProps[] = [
     objectPosition: "50% 20%",
     TimerCard: SmallTimerCard,
     SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: MasterchefLogo.src,
+    title: "Masterchef",
+    subheader: "Keeping up with Gordon - Tag Team Style!",
+    season: 15,
+    episode: 15,
+    episodesInSeason: 16,
+    cardMedia: Masterchef.src,
+    cardMediaAlt: "Masterchef",
+    releaseDateTime: "September 03 2025 21:00:00 GMT-0700",
+    synopsis: "",
+    watchUrl:
+      "https://www.hulu.com/series/45d67197-5346-4adb-9d90-6ed2d7b7bd85",
+    objectPosition: "100% 27%",
+    TimerCard: SmallTimerCard,
+    SiteLogo: HuluLogo,
   },
   {
     avatar: DandadanLogo.src,
@@ -817,6 +869,24 @@ export const upNext: UpNextProps[] = [
     objectPosition: "100% 20%",
     TimerCard: SmallTimerCard,
     SiteLogo: HuluLogo,
+  },
+  {
+    avatar: MasterchefLogo.src,
+    title: "Masterchef",
+    subheader: "",
+    season: 15,
+    episode: 16,
+    episodesInSeason: 16,
+    cardMedia: Masterchef.src,
+    cardMediaAlt: "Masterchef",
+    releaseDateTime: "September 10 2025 21:00:00 GMT-0700",
+    synopsis: "",
+    watchUrl:
+      "https://www.hulu.com/series/45d67197-5346-4adb-9d90-6ed2d7b7bd85",
+    objectPosition: "100% 27%",
+    TimerCard: SmallTimerCard,
+    SiteLogo: HuluLogo,
+    finale: true,
   },
   {
     avatar: DandadanLogo.src,
