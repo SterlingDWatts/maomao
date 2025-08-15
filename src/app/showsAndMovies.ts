@@ -120,6 +120,40 @@ export interface UpNextProps extends AvailableNowProps {
 
 export const availableNow: AvailableNowProps[] = [
   {
+    avatar: FoundationAvatar.src,
+    title: "Foundation",
+    subheader: "The Shape of Time",
+    season: 3,
+    episode: 6,
+    episodesInSeason: 10,
+    cardMedia: FoundationS3E6.src,
+    cardMediaAlt: "Foundation Season 3 Episode 6",
+    releaseDateTime: "August 15 2025 03:00:00 GMT-0700",
+    synopsis: `A long-awaited reunion turns violent. Day looks for Song. On New Terminus, the Vault opens—and the Mule takes aim.`,
+    watchUrl:
+      "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
+    imdbUrl: "https://www.imdb.com/title/tt32429277/?ref_=ttep_ep_6",
+    objectPosition: "100% 50%",
+    SiteLogo: AppleLogo,
+  },
+  {
+    avatar: Highest2LowestLogo.src,
+    title: "Highest 2 Lowest",
+    subheader: "",
+    synopsis:
+      "When a titan music mogul is targeted with a ransom plot, he is jammed up in a life-or-death moral dilemma.",
+    cardMedia: Highest2Lowest.src,
+    cardMediaAlt: "Highest 2 Lowest",
+    releaseDateTime: "August 15 2025 16:00:00 GMT-0700",
+    watchUrl:
+      "https://www.fandango.com/highest-2-lowest-2025-240338/movie-overview",
+    imdbUrl:
+      "https://www.imdb.com/title/tt31194612/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_highest",
+    objectPosition: "50% 80%",
+    SiteLogo: FandangoLogo,
+    isMovie: true,
+  },
+  {
     avatar: JamesLogo.src,
     title: "All Creatures Great And Small",
     subheader: "What a Balls Up!",
@@ -463,39 +497,6 @@ export const backlog: AvailableNowProps[] = [
 
 export const upNext: UpNextProps[] = [
   {
-    avatar: FoundationAvatar.src,
-    title: "Foundation",
-    subheader: "The Shape of Time",
-    season: 3,
-    episode: 6,
-    episodesInSeason: 10,
-    cardMedia: FoundationS3E6.src,
-    cardMediaAlt: "Foundation Season 3 Episode 6",
-    releaseDateTime: "August 15 2025 03:00:00 GMT-0700",
-    synopsis: `A long-awaited reunion turns violent. Day looks for Song. On New Terminus, the Vault opens—and the Mule takes aim.`,
-    watchUrl:
-      "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
-    objectPosition: "100% 50%",
-    TimerCard: LargeTimerCard,
-    SiteLogo: AppleLogo,
-  },
-  {
-    avatar: Highest2LowestLogo.src,
-    title: "Highest 2 Lowest",
-    subheader: "",
-    synopsis:
-      "When a titan music mogul is targeted with a ransom plot, he is jammed up in a life-or-death moral dilemma.",
-    cardMedia: Highest2Lowest.src,
-    cardMediaAlt: "Highest 2 Lowest",
-    releaseDateTime: "August 15 2025 16:00:00 GMT-0700",
-    watchUrl:
-      "https://www.fandango.com/highest-2-lowest-2025-240338/movie-overview",
-    objectPosition: "50% 80%",
-    TimerCard: LargeTimerCard,
-    SiteLogo: FandangoLogo,
-    isMovie: true,
-  },
-  {
     avatar: KaijuLogo.src,
     title: "Kaiju No. 8",
     subheader: "",
@@ -505,8 +506,10 @@ export const upNext: UpNextProps[] = [
     cardMedia: Kaiju.src,
     cardMediaAlt: "Kaiju No. 8",
     releaseDateTime: "August 16 2025 07:30:00 GMT-0700",
-    synopsis: "",
+    synopsis:
+      "Kafka is now a member of the Defense Force, if not a full-fledged one. But Hoshina tells him he has three months to prove himself before he's fired.",
     watchUrl: "https://www.crunchyroll.com/series/GG5H5XQ7D/kaiju-no-8",
+    imdbUrl: "https://www.imdb.com/title/tt31521163/?ref_=ttep_ep_5",
     objectPosition: "50% 50%",
     TimerCard: LargeTimerCard,
     SiteLogo: CrunchyrollLogo,
@@ -524,6 +527,7 @@ export const upNext: UpNextProps[] = [
     synopsis: "",
     watchUrl:
       "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
+    imdbUrl: "https://www.imdb.com/title/tt31435652/?ref_=tt_ov_srs",
     objectPosition: "50% 20%",
     TimerCard: LargeTimerCard,
     SiteLogo: CrunchyrollLogo,
@@ -538,9 +542,11 @@ export const upNext: UpNextProps[] = [
     cardMedia: Masterchef.src,
     cardMediaAlt: "Masterchef",
     releaseDateTime: "August 20 2025 21:00:00 GMT-0700",
-    synopsis: "",
+    synopsis:
+      "The three duos from last week's losing team face the final Pressure Test of the season. It's the toughest one yet, as each duo is challenged to create a three course meal that replicates an appetizer from Joe Bastianich's restaurant, an entree from Tiffany Derry's restaurant, and a dessert from Gordon Ramsay's",
     watchUrl:
       "https://www.hulu.com/series/45d67197-5346-4adb-9d90-6ed2d7b7bd85",
+    imdbUrl: "https://www.imdb.com/title/tt37717866/?ref_=ttep_ep_13",
     objectPosition: "100% 27%",
     TimerCard: LargeTimerCard,
     SiteLogo: HuluLogo,
@@ -557,6 +563,7 @@ export const upNext: UpNextProps[] = [
     releaseDateTime: "August 21 2025 09:00:00 GMT-0700",
     synopsis: ``,
     watchUrl: "https://www.crunchyroll.com/series/GG5H5XQ0D/dan-da-dan",
+    imdbUrl: "https://www.imdb.com/title/tt37529084/?ref_=ttep_ep_8",
     objectPosition: "50% 40%",
     SiteLogo: CrunchyrollLogo,
     TimerCard: LargeTimerCard,
@@ -573,6 +580,7 @@ export const upNext: UpNextProps[] = [
     releaseDateTime: "August 21 2025 21:00:00 GMT-0700",
     watchUrl:
       "https://play.hbomax.com/show/a939d96b-7ffb-4481-96f6-472838d104ca",
+    imdbUrl: "https://www.imdb.com/title/tt18263680/?ref_=ttep_ep_1",
     objectPosition: "50% 35%",
     TimerCard: LargeTimerCard,
     SiteLogo: HBOLogo,
@@ -587,10 +595,13 @@ export const upNext: UpNextProps[] = [
     cardMedia: FoundationSeason3.src,
     cardMediaAlt: "Foundation Season 3 Episode 7",
     releaseDateTime: "August 22 2025 03:00:00 GMT-0700",
+    synopsis:
+      "Chaos and destruction rain down on New Terminus. Back on Trantor, Dusk and Quent unite to assess the state of the galaxy.",
     watchUrl:
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
+    imdbUrl: "https://www.imdb.com/title/tt32429294/?ref_=ttep_ep_7",
     objectPosition: "100% 20%",
-    TimerCard: SmallTimerCard,
+    TimerCard: LargeTimerCard,
     SiteLogo: AppleLogo,
   },
   {
