@@ -93,8 +93,6 @@ export default function MediaInfoDialog({
             color="text.secondary"
             sx={{ mt: 0.5 }}
           >
-            {season && episode ? `${season}.${episode}` : null}
-            {season && episode && subheader ? " – " : null}
             {subheader}
           </Typography>
         )}
@@ -123,7 +121,8 @@ export default function MediaInfoDialog({
                   sx={{ height: 6, borderRadius: 1 }}
                 />
                 <Typography variant="caption" color="text.secondary">
-                  Episode {episode} of {episodesInSeason}
+                  {season && `Season ${season}`} Episode {episode} of{" "}
+                  {episodesInSeason}
                 </Typography>
               </Box>
             )}
