@@ -895,7 +895,7 @@ export const animeList: Anime[] = [
       "Fantasy Epic",
       "Iyashikei",
       "Shōnen",
-      "Sword and Sorcery",
+      "Sword & Sorcery",
       "Adventure",
       "Comedy",
       "Drama",
