@@ -25,7 +25,7 @@ import Fantastic from "./assets/Fantastic.jpg";
 import FantasticLogo from "./assets/FantasticLogo.jpg";
 import FoundationAvatar from "./assets/FoundationAvatar.jpg";
 import FoundationSeason3 from "./assets/FoundationSeason3.jpg";
-import FoundationS3E6 from "./assets/FoundationS3E6.jpg";
+import FoundationS3E7 from "./assets/FoundationS3E7.jpg";
 import FrierenFrierensParty from "./assets/FrierenFrierensParty.jpg";
 import FrierenLogo from "./assets/FrierenLogo.jpg";
 import Fruits from "./assets/Fruits.jpg";
@@ -553,11 +553,11 @@ export const upNext: UpNextProps[] = [
   {
     avatar: FoundationAvatar.src,
     title: "Foundation",
-    subheader: "",
+    subheader: "Foundation's End",
     season: 3,
     episode: 7,
     episodesInSeason: 10,
-    cardMedia: FoundationSeason3.src,
+    cardMedia: FoundationS3E7.src,
     cardMediaAlt: "Foundation Season 3 Episode 7",
     releaseDateTime: "August 22 2025 03:00:00 GMT-0700",
     synopsis:
