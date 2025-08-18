@@ -1436,7 +1436,6 @@ export const animeList: Anime[] = [
       "Mystery",
       "Romance",
       "Medical",
-      "Drama",
     ],
     shortDescription:
       "A young maiden is kidnapped and sold into servitude at the emperor's palace, where she secretly employs her pharmacist skills with the help of the head eunuch to unravel medical mysteries in the inner court.",

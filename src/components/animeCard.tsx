@@ -5,18 +5,10 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Chip from "@mui/material/Chip";
-import Container from "@mui/material/Container";
-import CssBaseline from "@mui/material/CssBaseline";
 import Divider from "@mui/material/Divider";
-import FormControl from "@mui/material/FormControl";
-import IconButton from "@mui/material/IconButton";
-import MenuItem from "@mui/material/MenuItem";
-import Select from "@mui/material/Select";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 
-import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
-import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import Face3Icon from "@mui/icons-material/Face3";
 import Face5Icon from "@mui/icons-material/Face5";
 import LocalFloristIcon from "@mui/icons-material/LocalFlorist";
@@ -59,7 +51,6 @@ export default function AnimeCard({
         sx={{
           position: "relative",
           overflow: "hidden",
-          backgroundColor: "rgb(0, 0, 0, 0)",
           boxShadow: "none",
         }}
       >
@@ -72,19 +63,20 @@ export default function AnimeCard({
           <Box
             sx={{
               width: "100px",
-              height: "90px",
-              mt: 2,
+              height: "100%",
               zIndex: 100,
             }}
           >
             <CardMedia
               component="img"
               image={anime.picture || Placeholder.src}
-              width={100}
-              height={90}
+              width={"100%"}
+              height={"100%"}
               sx={{
                 objectPosition: anime.objectPosition || "50% 50%",
                 objectFit: "cover",
+                width: "100%",
+                height: "100%",
                 zIndex: 100,
               }}
             />
@@ -119,7 +111,7 @@ export default function AnimeCard({
                 {anime.year} <Bullet /> {anime.episodes}
                 <sup> EPISODES</sup>
               </Typography>
-              <Stack direction="row" spacing={1.5}>
+              <Stack direction="row" spacing={0.125}>
                 {anime.isMaomaoRecommendation && (
                   <LocalFloristIcon color="inherit" sx={{ fontSize: 16 }} />
                 )}
@@ -166,7 +158,7 @@ export default function AnimeCard({
                   },
                 }}
               >
-                #{anime.rank}
+                {anime.rank}
                 <sup> RANK</sup>
               </Typography>
 
@@ -181,7 +173,7 @@ export default function AnimeCard({
                   },
                 }}
               >
-                #{anime.popularity}
+                {anime.popularity}
                 <sup> POP</sup>
               </Typography>
             </Stack>

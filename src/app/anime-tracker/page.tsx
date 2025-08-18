@@ -173,8 +173,8 @@ export default function AnimeTrackerPage() {
             sx={{
               paddingTop: { xs: "56px", sm: "64px" },
               paddingBottom: { xs: 1, sm: 3 },
-              paddingLeft: { xs: 0, sm: 3 },
-              paddingRight: { xs: 0, sm: 3 },
+              paddingLeft: { xs: 1, sm: 3 },
+              paddingRight: { xs: 1, sm: 3 },
               overflowX: "hidden",
             }}
           >
@@ -358,20 +358,7 @@ export default function AnimeTrackerPage() {
               </Box>
             )}
 
-            <Stack
-              sx={{
-                "& .MuiCard-root:not(:first-child) .MuiCardContent-root .anime-card-content-divider":
-                  {
-                    position: "absolute",
-                    top: 0,
-                    left: 16,
-                    right: 0,
-                    borderTopWidth: 1,
-                    borderTopColor: "black",
-                    borderTopStyle: "solid",
-                  },
-              }}
-            >
+            <Stack spacing={2}>
               {sortedAnimeList.map((anime) => (
                 <AnimeCard
                   key={anime.title}
