@@ -78,7 +78,7 @@ import StrangerThings from "./assets/StrangerThings.jpg";
 import Tar from "./assets/Tar.jpg";
 import TarLogo from "./assets/TarLogo.jpg";
 import TheBearLogo from "./assets/TheBearLogo.jpg";
-import TheBearS4E5 from "./assets/TheBearS4E5.jpg";
+import TheBearS4E6 from "./assets/TheBearS4E6.jpg";
 import TheBrutalist from "./assets/TheBrutalist.jpg";
 import TheBrutalistLogo from "./assets/TheBrutalistLogo.jpg";
 import WhiteLotusLogo from "./assets/WhiteLotusLogo.jpg";
@@ -230,7 +230,7 @@ export const availableNow: AvailableNowProps[] = [
     releaseDateTime: "August 09 2025 03:00:00 GMT-0700",
     synopsis: `After achieving his transformation, Kafka faces his greatest challenge yet in the battle against the powerful Kaiju No. 9.`,
     watchUrl: "https://www.crunchyroll.com/series/GG5H5XQ7D/kaiju-no-8",
-    imdbUrl: "https://www.imdb.com/title/tt37786119/?ref_=tt_ov_ep_nx",
+    imdbUrl: "https://www.imdb.com/title/tt37786118/?ref_=ttep_ep_4",
     objectPosition: "40% 50%",
     SiteLogo: CrunchyrollLogo,
   },
@@ -241,13 +241,13 @@ export const availableNow: AvailableNowProps[] = [
     season: 4,
     episode: 6,
     episodesInSeason: 10,
-    cardMedia: TheBearS4E5.src,
+    cardMedia: TheBearS4E6.src,
     cardMediaAlt: "The Bear Season 4 Episode 5",
     releaseDateTime: "June 25, 2025 21:00:00",
     synopsis: "Sophie's here.",
     watchUrl:
       "https://www.hulu.com/series/05eb6a8e-90ed-4947-8c0b-e6536cbddd5f",
-    imdbUrl: "https://www.imdb.com/title/tt36943997/?ref_=ttep_ep_5",
+    imdbUrl: "https://www.imdb.com/title/tt36943999/?ref_=mv_close",
     objectPosition: "50% 50%",
     SiteLogo: HuluLogo,
   },
@@ -264,7 +264,7 @@ export const availableNow: AvailableNowProps[] = [
     synopsis: `Amid Alex's struggle to satisfy those bankrolling his research, Dr. Phosphorus is born. Meanwhile, the Creature Commandos attempt to carry out their directive - and not be killed in the process.`,
     watchUrl:
       "https://play.hbomax.com/show/44f3a3fd-107e-49ac-bf74-c0383525b8ca",
-    imdbUrl: "https://www.imdb.com/title/tt26546836/?ref_=ttep_ep_5",
+    imdbUrl: "https://www.imdb.com/title/tt26546835/?ref_=ttep_ep_6",
     objectPosition: "50% 50%",
     SiteLogo: HBOLogo,
   },
