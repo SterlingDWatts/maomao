@@ -1925,6 +1925,8 @@ export const animeList: Anime[] = [
       </>
     ),
     isMaomaoRecommendation: true,
+    hasDawnSeen: true,
+    hasSterlingSeen: true,
   },
   {
     title: "The Rose of Versailles",
