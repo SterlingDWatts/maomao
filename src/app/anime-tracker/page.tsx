@@ -186,7 +186,9 @@ export default function AnimeTrackerPage() {
                 alignItems: "end",
                 flexWrap: "wrap",
                 marginTop: 1,
-                gap: 2,
+                marginBottom: 1,
+                rowGap: 1,
+                columnGap: 2,
                 paddingLeft: { xs: 1, sm: 0 },
                 paddingRight: { xs: 1, sm: 0 },
               }}
@@ -286,27 +288,63 @@ export default function AnimeTrackerPage() {
                 </Select>
               </FormControl>
 
+              {filterByTag.length > 0 && (
+                <>
+                  {filterByTag.map((tag) => (
+                    <Chip
+                      key={tag}
+                      label={tag}
+                      size="small"
+                      color="primary"
+                      onDelete={() => handleTagRemove(tag)}
+                      deleteIcon={<CloseIcon />}
+                      sx={{
+                        fontSize: "0.75rem",
+                        "& .MuiChip-deleteIcon": {
+                          fontSize: "1rem",
+                        },
+                      }}
+                    />
+                  ))}
+                  <Chip
+                    label="Clear all"
+                    size="small"
+                    variant="outlined"
+                    color="primary"
+                    onClick={clearAllTags}
+                    sx={{
+                      fontSize: "0.75rem",
+                      cursor: "pointer",
+                      "&:hover": {
+                        backgroundColor: "rgba(255, 255, 255, 0.1)",
+                      },
+                    }}
+                  />
+                </>
+              )}
+
               <Typography
                 sx={{
                   color: "primary.main",
                   fontWeight: "bold",
                   fontSize: 14,
+                  lineHeight: 1,
                   "& sup": { fontSize: 8 },
                 }}
               >
-                {sortedAnimeList.length} anime series
+                {sortedAnimeList.length} anime
               </Typography>
             </Box>
 
             {/* Selected Tags Display */}
-            {filterByTag.length > 0 && (
+            {/* {filterByTag.length > 0 && (
               <Box
                 sx={{
                   display: "flex",
                   alignItems: "center",
                   flexWrap: "wrap",
                   gap: 1,
-                  marginTop: 2,
+                  marginTop: -1,
                   paddingLeft: { xs: 1, sm: 0 },
                   paddingRight: { xs: 1, sm: 0 },
                   paddingTop: 1,
@@ -356,7 +394,7 @@ export default function AnimeTrackerPage() {
                   }}
                 />
               </Box>
-            )}
+            )} */}
 
             <Stack spacing={2}>
               {sortedAnimeList.map((anime) => (
