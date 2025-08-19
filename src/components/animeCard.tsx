@@ -70,12 +70,13 @@ export default function AnimeCard({
             <CardMedia
               component="img"
               image={anime.picture || Placeholder.src}
-              width={"100%"}
+              width={"100px"}
               height={"100%"}
               sx={{
                 objectPosition: anime.objectPosition || "50% 50%",
+                position: "absolute",
                 objectFit: "cover",
-                width: "100%",
+                width: "100px",
                 height: "100%",
                 zIndex: 100,
               }}
@@ -84,7 +85,7 @@ export default function AnimeCard({
           <CardContent
             className="anime-card-content-main"
             sx={{
-              width: "calc(100vw - 100px)",
+              width: "calc(100% - 100px)",
               // pt: 1.5,
               "&.MuiCardContent-root:last-child": { pb: 2 },
               position: "relative",
