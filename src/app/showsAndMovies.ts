@@ -501,13 +501,15 @@ export const upNext: UpNextProps[] = [
   {
     avatar: PeacemakerLogo.src,
     title: "Peacemaker",
-    subheader: "",
+    subheader: "The Ties That Grind",
     season: 2,
     episode: 1,
     episodesInSeason: 8,
     cardMedia: PeacemakerSeason2.src,
     cardMediaAlt: "Peacemaker Season 2",
     releaseDateTime: "August 21 2025 21:00:00 GMT-0700",
+    synopsis:
+      "Peacemaker interviews for a spot on the Justice Gang, while Harcourt struggles to find work on the heels of Adebayo's bombshell press conference. Economos is forced to surveil Peacemaker under Rick Flag, Sr.'s new management.",
     watchUrl:
       "https://play.hbomax.com/show/a939d96b-7ffb-4481-96f6-472838d104ca",
     imdbUrl: "https://www.imdb.com/title/tt18263680/?ref_=ttep_ep_1",
