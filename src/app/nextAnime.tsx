@@ -7,6 +7,7 @@ import Assassination from "./assets/Assassination.jpg";
 import Attack from "./assets/Attack.jpg";
 import Bleach from "./assets/Bleach.jpg";
 import ChainsawManMovie from "./assets/ChainsawManMovie.jpg";
+import CyberpunkEdgerunners from "./assets/CyberpunkEdgerunners.jpg";
 import DanDaDan from "./assets/DanDaDan.jpg";
 import Delicious from "./assets/Delicious.jpg";
 import DemonSlayer from "./assets/DemonSlayer.jpg";
@@ -18,13 +19,16 @@ import Fullmetal from "./assets/Fullmetal.jpg";
 import Gosick from "./assets/Gosick.jpg";
 import Gurren from "./assets/Gurren.jpg";
 import Hero from "./assets/Hero.jpg";
+import Househusband from "./assets/Househusband.jpg";
 import Inuyasha from "./assets/Inuyasha.jpg";
 import Jujutsu from "./assets/Jujutsu.jpg";
 import KaguyaSama from "./assets/KaguyaSama.jpg";
 import Kaiju from "./assets/Kaiju.jpg";
 import Kamisama from "./assets/Kamisama.jpg";
+import Komi from "./assets/Komi.jpg";
 import Lazarus from "./assets/Lazarus.jpg";
 import Mermaid from "./assets/Mermaid.jpg";
+import MobPsycho from "./assets/MobPsycho.jpg";
 import MushiShi from "./assets/MushiShi.jpg";
 import MyHappyMarriage from "./assets/MyHappyMarriage.jpg";
 import Naruto from "./assets/Naruto.jpg";
@@ -32,6 +36,7 @@ import NarutoShippuden from "./assets/NarutoShippuden.jpg";
 import NoDoubt from "./assets/NoDoubt.jpg";
 import OnePunch from "./assets/OnePunch.jpg";
 import placeholder from "./assets/placeholder.jpg";
+import Pluto from "./assets/Pluto.jpg";
 import PsychicPrincess from "./assets/PsychicPrincess.jpg";
 import Raeliana from "./assets/Raeliana.jpg";
 import Ranma from "./assets/Ranma.jpg";
@@ -457,6 +462,49 @@ export const animeList: Anime[] = [
       </>
     ),
     hasSterlingSeen: true,
+  },
+  {
+    title: "Mob Psycho 100",
+    year: 2016,
+    episodes: 37,
+    rating: 8.49,
+    ratingOutOf: 1371596,
+    rank: 152,
+    popularity: 28,
+    picture: MobPsycho.src,
+    tags: [
+      "Coming-of-Age",
+      "Shōnen",
+      "Superhero",
+      "Teen Fantasy",
+      "Action",
+      "Comedy",
+      "Drama",
+      "Teen",
+      "Fantasy",
+    ],
+    shortDescription: `A psychic middle school boy tries to live a normal life and keep his growing powers under control, even though he constantly gets into trouble.`,
+    longDescription: (
+      <>
+        Eighth-grader Shigeo "Mob" Kageyama has tapped into his inner wellspring
+        of psychic prowess at a young age. But the power quickly proves to be a
+        liability when he realizes the potential danger in his skills. Choosing
+        to suppress his power, Mob's only present use for his ability is to
+        impress his longtime crush, Tsubomi, who soon grows bored of the same
+        tricks.
+        <br />
+        <br />
+        In order to effectuate control on his skills, Mob enlists himself under
+        the wing of Arataka Reigen, a con artist claiming to be a psychic, who
+        exploits Mob's powers for pocket change. Now, exorcising evil spirits on
+        command has become a part of Mob's daily, monotonous life. However, the
+        psychic energy he exerts is barely the tip of the iceberg; if his vast
+        potential and unrestrained emotions run berserk, a cataclysmic event
+        that would render him completely unrecognizable will be triggered. The
+        progression toward Mob's explosion is rising and attempting to stop it
+        is futile.
+      </>
+    ),
   },
   {
     title: "Assassination Classroom",
@@ -978,6 +1026,103 @@ export const animeList: Anime[] = [
     ),
     hasDawnSeen: true,
     hasSterlingSeen: true,
+  },
+  {
+    title: "Komi Can't Communicate",
+    year: 2021,
+    episodes: 24,
+    rating: 7.81,
+    ratingOutOf: 516798,
+    rank: 1042,
+    popularity: 192,
+    picture: Komi.src,
+    tags: [
+      "Coming-of-Age",
+      "Romantic Comedy",
+      "Shōnen",
+      "Sitcom",
+      "Slice of Life",
+      "Teen Comedy",
+      "Comedy",
+      "Romance",
+      "Teen",
+    ],
+    shortDescription: `An elite and aloof schoolgirl is in fact severely withdrawn and anxious about communicating with others. An ordinary schoolboy befriends her and helps her to open up and talk with people.`,
+    longDescription: (
+      <>
+        Hitohito Tadano is an ordinary boy who heads into his first day of high
+        school with a clear plan: to avoid trouble and do his best to blend in
+        with others. Unfortunately, he fails right away when he takes the seat
+        beside the school's madonna—Shouko Komi. His peers now recognize him as
+        someone to eliminate for a chance to sit next to the most beautiful girl
+        in class.
+        <br />
+        <br />
+        Gorgeous and graceful with long, dark hair, Komi is universally adored
+        and immensely popular despite her mysterious persona. However,
+        unbeknownst to everyone, she has crippling anxiety and a communication
+        disorder which prevents her from wholeheartedly socializing with her
+        classmates.
+        <br />
+        <br />
+        When left alone in the classroom, a chain of events forces Komi to
+        interact with Tadano through writing on the blackboard, as if in a
+        one-way conversation. Being the first person to realize she cannot
+        communicate properly, Tadano picks up the chalk and begins to write as
+        well. He eventually discovers that Komi's goal is to make one hundred
+        friends during her time in high school. To this end, he decides to lend
+        her a helping hand, thus also becoming her first-ever friend.
+      </>
+    ),
+  },
+  {
+    title: "Cyberpunk: Edgerunners",
+    year: 2022,
+    episodes: 20,
+    rating: 8.61,
+    ratingOutOf: 642912,
+    rank: 96,
+    popularity: 199,
+    picture: CyberpunkEdgerunners.src,
+    tags: [
+      "Cyberpunk",
+      "Dystopian Sci-Fi",
+      "Urban Adventure",
+      "Action",
+      "Adventure",
+      "Crime",
+      "Dystopian",
+      "Sci-Fi",
+      "Urban",
+    ],
+    shortDescription: `A Street Kid trying to survive in a technology and body modification-obsessed city of the future. Having everything to lose, he chooses to stay alive by becoming an Edgerunner, a Mercenary outlaw also known as a Cyberpunk.`,
+    longDescription: (
+      <>
+        Dreams are doomed to die in Night City, a futuristic Californian
+        metropolis. As a teenager living in the city's slums, David Martinez is
+        trying to fulfill his mother's lifelong wish for him to reach the top of
+        Arasaka, the world's leading security corporation. To this end, he
+        attends the prestigious Arasaka Academy while his mother works
+        tirelessly to keep their family afloat.
+        <br />
+        <br />
+        When an incident with a street gang leaves David's life in tatters, he
+        stumbles upon Sandevistan cyberware—a prosthetic that grants its wearer
+        superhuman speed. Fueled by rage, David implants the device in his back,
+        using it to exact revenge on one of his tormentors. This gets him
+        expelled from the academy, shattering his hopes of ever making his
+        mother proud.
+        <br />
+        <br />
+        After witnessing David's newfound abilities, the beautiful data thief
+        Lucyna "Lucy" Kushinada offers to team up with him, handing him a ticket
+        to salvation. However, associating with Lucy introduces David to the
+        world of Edgerunners—cyborg criminals who will break any law for money.
+        Edgerunners often lose their lives, if the cyberware does not break
+        their minds first; but in his fight for survival inside a corrupt
+        system, David is ready to risk it all.
+      </>
+    ),
   },
   {
     title: "Kaiju No. 8",
@@ -1597,6 +1742,45 @@ export const animeList: Anime[] = [
     ),
   },
   {
+    title: "The Way of the Househusband",
+    year: 2021,
+    episodes: 15,
+    rating: 7.26,
+    ratingOutOf: 259054,
+    rank: 3129,
+    popularity: 545,
+    picture: Househusband.src,
+    tags: [
+      "Iyashikei",
+      "Seinen",
+      "Slice of Life",
+      "Action",
+      "Comedy",
+      "Crime",
+      "Drama",
+    ],
+    shortDescription: `A retired gangster spends his time as a househusband carrying out home chores.`,
+    longDescription: (
+      <>
+        Who would have ever thought that the most feared gangster of his time
+        now spends his days as a modest househusband? Seemingly giving up the
+        way of the yakuza, the legendary "Immortal Dragon" Tatsu, best known for
+        his prolific skirmishes against rival gangs, has abruptly vanished.
+        Unbeknownst to most, however, Tatsu is currently staying at an apartment
+        with his wife, doing his best to live a peaceful life.
+        <br />
+        <br />
+        Donning his trusty apron, Tatsu is now striving to become an efficient
+        homemaker. Because of this, he has mastered the required skills—be it
+        cooking the most delicious dishes, making sure to get the best deals at
+        supermarkets, and everything in between—garnering the surprise of both
+        of his former subordinates and enemies alike. Despite being a man with
+        quite a controversial past, Tatsu's new way of life will only be more
+        eccentric from here on out!
+      </>
+    ),
+  },
+  {
     title: "My Happy Marriage",
     year: 2023,
     episodes: 26,
@@ -1676,6 +1860,41 @@ export const animeList: Anime[] = [
       </>
     ),
     isMaomaoRecommendation: true,
+  },
+  {
+    title: "Pluto",
+    year: 2023,
+    episodes: 8,
+    rating: 8.45,
+    ratingOutOf: 98658,
+    rank: 171,
+    popularity: 1197,
+    picture: Pluto.src,
+    tags: ["Kaiju", "Seinen", "Superhero", "Action", "Drama", "Mystery"],
+    shortDescription: `When the world's seven most advanced robots and their human allies are murdered one by one, inspector Gesicht soon discovers that he's also in danger.`,
+    longDescription: (
+      <>
+        Gesicht, an android police detective of Europol, is tasked with finding
+        the murderer of Montblanc, a retired war hero robot. Although it appears
+        that only a robot could have committed this crime, the murder of a
+        renowned robot rights activist casts doubts on the criminal's identity.
+        Indeed, outside of an isolated and unexplained incident that occurred
+        eight years ago, robots are programmed to be unable to kill human
+        beings. However, the lack of human evidence on the crime scene and the
+        similarity of modus operandi lead Gesicht to suspect that the two
+        murderers might be the same being—be they man or robot.
+        <br />
+        <br />
+        Shortly after Montblanc's passing, another retired elite war robot is
+        mysteriously eliminated. Gesicht notices a pattern in the choice of
+        murder victim: both dead robots belonged to a group of the seven most
+        powerful war machines ever designed. Determined to stop the murderer
+        from eliminating the five remaining veterans, Gesicht seeks help from
+        Atom, a cutting-edge android who resembles a human boy. The duo must now
+        hunt down the rogue killer before the series of murders is carried on,
+        lest the very fabric of society suffer irremediable damage.
+      </>
+    ),
   },
   {
     title: "Lazarus",
