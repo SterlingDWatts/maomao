@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 
 import Box from "@mui/material/Box";
 import Chip from "@mui/material/Chip";
@@ -29,6 +30,9 @@ import { theme } from "../theme";
 import { animeList } from "../nextAnime";
 
 export default function AnimeTrackerPage() {
+  const router = useRouter();
+  const searchParams = useSearchParams();
+
   const [sortBy, setSortBy] = React.useState<
     "rank" | "rating" | "popularity" | "title" | "year" | "episodes" | ""
   >("rank");
@@ -39,6 +43,99 @@ export default function AnimeTrackerPage() {
     "all" | "maomao" | "dawn" | "sterling" | "neither" | ""
   >("all");
   const [filterByTag, setFilterByTag] = React.useState<string[]>([]);
+
+  // Initialize and sync state from URL parameters
+  React.useEffect(() => {
+    const sort = searchParams.get("sort");
+    const direction = searchParams.get("direction");
+    const filter = searchParams.get("filter");
+    const tags = searchParams.get("tags");
+
+    // Set sort - default to "rank" if not present or invalid
+    if (
+      sort &&
+      ["rank", "rating", "popularity", "title", "year", "episodes"].includes(
+        sort,
+      )
+    ) {
+      setSortBy(sort as typeof sortBy);
+    } else {
+      setSortBy("rank");
+    }
+
+    // Set direction - default to "asc" if not present or invalid
+    if (direction && ["asc", "desc"].includes(direction)) {
+      setSortDirection(direction as "asc" | "desc");
+    } else {
+      setSortDirection("asc");
+    }
+
+    // Set filter - default to "all" if not present or invalid
+    if (
+      filter &&
+      ["all", "maomao", "dawn", "sterling", "neither"].includes(filter)
+    ) {
+      setFilterBy(filter as typeof filterBy);
+    } else {
+      setFilterBy("all");
+    }
+
+    // Set tags - default to empty array if not present
+    if (tags) {
+      const tagArray = tags.split(",").filter((tag) => tag.trim() !== "");
+      setFilterByTag(tagArray);
+    } else {
+      setFilterByTag([]);
+    }
+  }, [searchParams]);
+
+  // Update URL when state changes
+  const updateURL = React.useCallback(
+    (newParams: {
+      sort?: string;
+      direction?: string;
+      filter?: string;
+      tags?: string[];
+    }) => {
+      const params = new URLSearchParams(searchParams);
+
+      if (newParams.sort !== undefined) {
+        if (newParams.sort === "rank") {
+          params.delete("sort");
+        } else {
+          params.set("sort", newParams.sort);
+        }
+      }
+
+      if (newParams.direction !== undefined) {
+        if (newParams.direction === "asc") {
+          params.delete("direction");
+        } else {
+          params.set("direction", newParams.direction);
+        }
+      }
+
+      if (newParams.filter !== undefined) {
+        if (newParams.filter === "all") {
+          params.delete("filter");
+        } else {
+          params.set("filter", newParams.filter);
+        }
+      }
+
+      if (newParams.tags !== undefined) {
+        if (newParams.tags.length === 0) {
+          params.delete("tags");
+        } else {
+          params.set("tags", newParams.tags.join(","));
+        }
+      }
+
+      const newURL = params.toString() ? `?${params.toString()}` : "";
+      router.push(`/anime-tracker${newURL}`, { scroll: false });
+    },
+    [router, searchParams],
+  );
 
   const sortedAnimeList = React.useMemo(() => {
     const filteredList = animeList.filter((anime) => {
@@ -122,41 +219,59 @@ export default function AnimeTrackerPage() {
   }, [sortBy, sortDirection, filterBy, filterByTag]);
 
   const handleSortChange = (event: any) => {
+    const newSort = event.target.value;
     setSortBy((prevSortBy) => {
+      let newDirection = sortDirection;
       if (
-        (prevSortBy === "rating" && event.target.value !== "rating") ||
-        (prevSortBy !== "rating" && event.target.value === "rating")
+        (prevSortBy === "rating" && newSort !== "rating") ||
+        (prevSortBy !== "rating" && newSort === "rating")
       ) {
-        setSortDirection(sortDirection === "asc" ? "desc" : "asc");
+        newDirection = sortDirection === "asc" ? "desc" : "asc";
+        setSortDirection(newDirection);
       }
-      return event.target.value;
+
+      updateURL({ sort: newSort, direction: newDirection });
+      return newSort;
     });
   };
 
   const handleFilterChange = (event: any) => {
-    setFilterBy(event.target.value);
+    const newFilter = event.target.value;
+    setFilterBy(newFilter);
+    updateURL({ filter: newFilter });
   };
 
   const handleTagSelect = (tag: string) => {
     setFilterByTag((prevTags) => {
       // Only add the tag if it's not already selected and is a valid string
       if (tag && typeof tag === "string" && !prevTags.includes(tag)) {
-        return [...prevTags, tag];
+        const newTags = [...prevTags, tag];
+        updateURL({ tags: newTags });
+        return newTags;
       }
       return prevTags;
     });
   };
 
   const handleTagRemove = (tagToRemove: string) => {
-    setFilterByTag((prevTags) => prevTags.filter((tag) => tag !== tagToRemove));
+    setFilterByTag((prevTags) => {
+      const newTags = prevTags.filter((tag) => tag !== tagToRemove);
+      updateURL({ tags: newTags });
+      return newTags;
+    });
   };
 
   const clearAllTags = () => {
     setFilterByTag([]);
+    updateURL({ tags: [] });
   };
 
   const toggleSortDirection = () => {
-    setSortDirection((prev) => (prev === "asc" ? "desc" : "asc"));
+    setSortDirection((prev) => {
+      const newDirection = prev === "asc" ? "desc" : "asc";
+      updateURL({ direction: newDirection });
+      return newDirection;
+    });
   };
 
   return (
