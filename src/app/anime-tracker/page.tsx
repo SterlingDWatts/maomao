@@ -166,7 +166,7 @@ export default function AnimeTrackerPage() {
         <Container
           disableGutters
           maxWidth={false}
-          sx={{ backgroundColor: "tertiary.main", minHeight: "100vh" }}
+          sx={{ backgroundColor: "tertiary.light", minHeight: "100vh" }}
         >
           <Container
             maxWidth="lg"
@@ -178,7 +178,7 @@ export default function AnimeTrackerPage() {
               overflowX: "hidden",
             }}
           >
-            <DrawerAppBar backgroundColor="tertiary.dark" color="white" />
+            <DrawerAppBar backgroundColor="tertiary.main" />
 
             <Box
               sx={{
@@ -199,7 +199,7 @@ export default function AnimeTrackerPage() {
                   minWidth: 112,
                 }}
                 variant="standard"
-                color="primary"
+                color="secondary"
               >
                 <InputLabel id="anime-tracker-sort-select">Sort By</InputLabel>
                 <Select
@@ -211,7 +211,7 @@ export default function AnimeTrackerPage() {
                   endAdornment={
                     <InputAdornment position="end">
                       <IconButton
-                        color="primary"
+                        color="secondary"
                         onClick={toggleSortDirection}
                         sx={{ padding: 0 }}
                       >
@@ -224,7 +224,7 @@ export default function AnimeTrackerPage() {
                     </InputAdornment>
                   }
                   sx={{
-                    color: "primary.main",
+                    color: "secondary.main",
                     fontWeight: "bold",
                     "&:hover": {
                       backgroundColor: "tertiary.main",
@@ -251,7 +251,7 @@ export default function AnimeTrackerPage() {
                   minWidth: 209,
                 }}
                 variant="standard"
-                color="primary"
+                color="secondary"
               >
                 <InputLabel id="anime-tracker-filter-select">
                   Filter By
@@ -264,11 +264,11 @@ export default function AnimeTrackerPage() {
                   id="anime-tracker-filter-select"
                   endAdornment={
                     <InputAdornment position="end">
-                      <FilterListIcon color="primary" />
+                      <FilterListIcon color="secondary" />
                     </InputAdornment>
                   }
                   sx={{
-                    color: "primary.main",
+                    color: "secondary.main",
                     fontWeight: "bold",
                     "&:hover": {
                       backgroundColor: "tertiary.main",
@@ -295,7 +295,7 @@ export default function AnimeTrackerPage() {
                       key={tag}
                       label={tag}
                       size="small"
-                      color="primary"
+                      color="secondary"
                       onDelete={() => handleTagRemove(tag)}
                       deleteIcon={<CloseIcon />}
                       sx={{
@@ -310,7 +310,7 @@ export default function AnimeTrackerPage() {
                     label="Clear all"
                     size="small"
                     variant="outlined"
-                    color="primary"
+                    color="secondary"
                     onClick={clearAllTags}
                     sx={{
                       fontSize: "0.75rem",
@@ -325,7 +325,7 @@ export default function AnimeTrackerPage() {
 
               <Typography
                 sx={{
-                  color: "primary.main",
+                  color: "secondary.main",
                   fontWeight: "bold",
                   fontSize: 14,
                   lineHeight: 1,
