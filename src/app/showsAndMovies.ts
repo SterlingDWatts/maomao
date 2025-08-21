@@ -528,8 +528,7 @@ export const upNext: UpNextProps[] = [
     cardMedia: Invasion.src,
     cardMediaAlt: "Invasion",
     releaseDateTime: "August 22 2025 21:00:00 GMT-0700",
-    watchUrl:
-      "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
+    watchUrl: `https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6`,
     objectPosition: "35% 30%",
     TimerCard: LargeTimerCard,
     SiteLogo: AppleLogo,
