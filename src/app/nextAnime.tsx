@@ -6,18 +6,23 @@ import Ascendance from "./assets/Ascendance.jpg";
 import Assassination from "./assets/Assassination.jpg";
 import Attack from "./assets/Attack.jpg";
 import Bleach from "./assets/Bleach.jpg";
+import BlueLock from "./assets/BlueLock.jpg";
 import ChainsawManMovie from "./assets/ChainsawManMovie.jpg";
+import CowboyBebop from "./assets/CowboyBebop.jpg";
 import CyberpunkEdgerunners from "./assets/CyberpunkEdgerunners.jpg";
 import DanDaDan from "./assets/DanDaDan.jpg";
 import Delicious from "./assets/Delicious.jpg";
 import DemonSlayer from "./assets/DemonSlayer.jpg";
+import Dorohedoro from "./assets/Dorohedoro.jpg";
 import DrElise from "./assets/DrElise.jpg";
 import Evangelion from "./assets/Evangelion.jpg";
 import FrierenFrierensParty from "./assets/FrierenFrierensParty.jpg";
 import Fruits from "./assets/Fruits.jpg";
 import Fullmetal from "./assets/Fullmetal.jpg";
 import Gosick from "./assets/Gosick.jpg";
+import GundamWitch from "./assets/GundamWitch.jpg";
 import Gurren from "./assets/Gurren.jpg";
+import Haikyu from "./assets/Haikyu.jpg";
 import Hero from "./assets/Hero.jpg";
 import Househusband from "./assets/Househusband.jpg";
 import Inuyasha from "./assets/Inuyasha.jpg";
@@ -555,6 +560,96 @@ export const animeList: Anime[] = [
       </>
     ),
     hasDawnSeen: true,
+    hasSterlingSeen: true,
+  },
+  {
+    title: "Haikyu!!",
+    year: 2014,
+    episodes: 89,
+    rating: 8.43,
+    ratingOutOf: 1308004,
+    rank: 186,
+    popularity: 36,
+    picture: Haikyu.src,
+    tags: [
+      "Shōnen",
+      "Teen Comedy",
+      "Teen Drama",
+      "Comedy",
+      "Drama",
+      "Sport",
+      "Teen",
+    ],
+    shortDescription: `Determined to be like the volleyball championship's star player nicknamed "the small giant", Shoyo joins his school's volleyball club.`,
+    longDescription: (
+      <>
+        Ever since having witnessed the "Little Giant" and his astonishing
+        skills on the volleyball court, Shouyou Hinata has been bewitched by the
+        dynamic nature of the sport. Even though his attempt to make his debut
+        as a volleyball regular during a middle school tournament went up in
+        flames, he longs to prove that his less-than-impressive height ceases to
+        be a hindrance in the face of his sheer will and perseverance.
+        <br />
+        <br />
+        When Hinata enrolls in Karasuno High School, the Little Giant's alma
+        mater, he believes that he is one step closer to his goal of becoming a
+        professional volleyball player. Although the school only retains a
+        shadow of its former glory, Hinata's conviction isn't shaken until he
+        learns that Tobio Kageyama—the prodigy who humiliated Hinata's middle
+        school volleyball team in a crushing defeat—is now his teammate.
+        <br />
+        <br />
+        To fulfill his desire of leaving a mark on the realm of volleyball—so
+        often regarded as the domain of the tall and the strong—Hinata must
+        smooth out his differences with Kageyama. Only when Hinata learns what
+        it takes to be a part of a team will he be able to join the race to the
+        top in earnest.
+      </>
+    ),
+  },
+  {
+    title: "Cowboy Bebop",
+    year: 1998,
+    episodes: 26,
+    rating: 8.75,
+    ratingOutOf: 1028530,
+    rank: 47,
+    popularity: 42,
+    picture: CowboyBebop.src,
+    tags: [
+      "Cyberpunk",
+      "Space Sci-Fi",
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Drama",
+      "Space",
+      "Sci-Fi",
+    ],
+    shortDescription: `The futuristic misadventures and tragedies of an easygoing bounty hunter and his partners.`,
+    longDescription: (
+      <>
+        Crime is timeless. By the year 2071, humanity has expanded across the
+        galaxy, filling the surface of other planets with settlements like those
+        on Earth. These new societies are plagued by murder, drug use, and
+        theft, and intergalactic outlaws are hunted by a growing number of tough
+        bounty hunters.
+        <br />
+        <br />
+        Spike Spiegel and Jet Black pursue criminals throughout space to make a
+        humble living. Beneath his goofy and aloof demeanor, Spike is haunted by
+        the weight of his violent past. Meanwhile, Jet manages his own troubled
+        memories while taking care of Spike and the Bebop, their ship. The duo
+        is joined by the beautiful con artist Faye Valentine, odd child Edward
+        Wong Hau Pepelu Tivrusky IV, and Ein, a bioengineered Welsh corgi.
+        <br />
+        <br />
+        While developing bonds and working to catch a colorful cast of
+        criminals, the Bebop crew's lives are disrupted by a menace from Spike's
+        past. As a rival's maniacal plot continues to unravel, Spike must choose
+        between life with his newfound family or revenge for his old wounds.
+      </>
+    ),
     hasSterlingSeen: true,
   },
   {
@@ -1384,6 +1479,40 @@ export const animeList: Anime[] = [
     hasSterlingSeen: true,
   },
   {
+    title: "BlueLock",
+    year: 2022,
+    episodes: 38,
+    rating: 8.17,
+    ratingOutOf: 457086,
+    rank: 458,
+    popularity: 252,
+    picture: BlueLock.src,
+    tags: ["Shōnen", "Soccer", "Sport", "Thriller"],
+    shortDescription: `High school soccer players from across Japan gather for a controversial project designed to create the best and most egoistic striker in the world.`,
+    longDescription: (
+      <>
+        Yoichi Isagi was mere moments away from scoring a goal that would have
+        sent his high school soccer team to the nationals, but a split-second
+        decision to pass the ball to his teammate cost him that reality. Bitter,
+        confused, and disappointed, Isagi wonders if the outcome would have been
+        different had he not made the pass. When the young striker returns home,
+        an invitation from the Japan Football Union awaits him. Through an
+        arbitrary and biased decision-making process, Isagi is one of three
+        hundred U-18 strikers selected for a controversial project named Blue
+        Lock.
+        <br />
+        <br />
+        The project's ultimate goal is to turn one of the selected players into
+        the star striker for the Japanese national team. To find the best
+        participant, each diamond in the rough must compete against others
+        through a series of solo and team competitions to rise to the top.
+        Putting aside his ethical objections to the project, Isagi feels
+        compelled to fight his way to the top, even if it means ruthlessly
+        crushing the dreams of 299 aspiring young strikers.
+      </>
+    ),
+  },
+  {
     title: "Trigun",
     year: 1998,
     episodes: 26,
@@ -1653,6 +1782,51 @@ export const animeList: Anime[] = [
         Hueco Mundo, the home of Hollows and Arrancar. In retaliation, Ichigo
         and his friends must fight alongside old allies and enemies alike to end
         Yhwach's campaign of carnage before the world itself comes to an end.
+      </>
+    ),
+  },
+  {
+    title: "Dorohedoro",
+    year: 2020,
+    episodes: 13,
+    rating: 8.04,
+    ratingOutOf: 303828,
+    rank: 637,
+    popularity: 397,
+    picture: Dorohedoro.src,
+    tags: [
+      "Body Horror",
+      "Dark Fantasy",
+      "Seinen",
+      "Splatter Horror",
+      "Action",
+      "Comedy",
+      "Fantasy",
+      "Dark",
+      "Horror",
+    ],
+    shortDescription: `Amnesiac Caiman seeks to undo his lizard head curse by killing the sorcerer responsible, with his friend Nikaido's help. In the Hole, that's a threat.`,
+    longDescription: (
+      <>
+        Hole—a dark, decrepit, and disorderly district where the strong prey on
+        the weak and death is an ordinary occurrence—is all but befitting of the
+        name given to it. A realm separated from law and ethics, it is a testing
+        ground to the magic users who dominate it. As a race occupying the
+        highest rungs of their society, the magic users think of the denizens of
+        Hole as no more than insects. Murdered, mutilated, and made experiments
+        without a second thought, the powerless Hole dwellers litter the halls
+        of Hole's hospital on a daily basis.
+        <br />
+        <br />
+        Possessing free access to and from the cesspool, and with little
+        challenge to their authority, the magic users appear indomitable to
+        most—aside for a few. Caiman, more reptile than man, is one such
+        individual. He hunts them on a heedless quest for answers with only a
+        trusted pair of bayonets and his immunity to magic. Cursed by his
+        appearance and tormented by nightmares, magic users are his only clue to
+        restoring his life to normal. With his biggest obstacle being his
+        stomach, his female companion Nikaidou, who runs the restaurant Hungry
+        Bug, is his greatest ally.
       </>
     ),
   },
@@ -2010,6 +2184,49 @@ export const animeList: Anime[] = [
       </>
     ),
     isMaomaoRecommendation: true,
+  },
+  {
+    title: "Mobile Suit Gundam: The Witch from Mercury",
+    year: 2022,
+    episodes: 25,
+    rating: 7.85,
+    ratingOutOf: 89232,
+    rank: 970,
+    popularity: 1477,
+    picture: GundamWitch.src,
+    tags: [
+      "Mecha",
+      "Space Sci-Fi",
+      "Action",
+      "Drama",
+      "Romance",
+      "Sci-Fi",
+      "Space",
+    ],
+    shortDescription: `A compassionate girl enrolls herself in the Asticassia School of Technology in Planet Mercury that is run by the Beneritt Group that creates robotic mobile suits.`,
+    longDescription: (
+      <>
+        Suletta Mercury leaves her planet and enters the Asticassia School of
+        Technology at the behest of her mother. There, right and wrong are
+        determined through duels between students, and the top-ranking duelist
+        will receive Miorine Rembran as their fiancée—this prize being decided
+        by Miorine's father.
+        <br />
+        <br />
+        When Guel Jeturk, the best pilot in school and Miorine's current fiancé,
+        demands that his betrothed move in with him, Suletta disapproves, so
+        Guel challenges her. Although she emerges as champion, Suletta is
+        subsequently detained on suspicion of piloting a forbidden type of
+        mobile suit—a GUND-ARM, or "Gundam"—which results in her victory being
+        voided.
+        <br />
+        <br />
+        Miorine refuses to accept any more injustices and proposes another duel
+        with even higher stakes. Now, Suletta must triumph a second time,
+        otherwise she will be expelled and the Gundam Aerial that means so much
+        to her will be destroyed.
+      </>
+    ),
   },
   {
     title: "Arte",
