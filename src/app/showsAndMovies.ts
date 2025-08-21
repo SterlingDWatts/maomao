@@ -121,21 +121,38 @@ export interface UpNextProps extends AvailableNowProps {
 
 export const availableNow: AvailableNowProps[] = [
   {
-    avatar: Highest2LowestLogo.src,
-    title: "Highest 2 Lowest",
+    avatar: DandadanLogo.src,
+    title: "Dandadan",
     subheader: "",
+    season: 2,
+    episode: 8,
+    episodesInSeason: 12,
+    cardMedia: DanDaDan.src,
+    cardMediaAlt: "Dandadan",
+    releaseDateTime: "August 21 2025 09:00:00 GMT-0700",
+    synopsis: ``,
+    watchUrl: "https://www.crunchyroll.com/series/GG5H5XQ0D/dan-da-dan",
+    imdbUrl: "https://www.imdb.com/title/tt37529084/?ref_=ttep_ep_8",
+    objectPosition: "50% 40%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: MasterchefLogo.src,
+    title: "Masterchef",
+    subheader: "Divide & Conquer",
+    season: 15,
+    episode: 13,
+    episodesInSeason: 16,
+    cardMedia: Masterchef.src,
+    cardMediaAlt: "Masterchef",
+    releaseDateTime: "August 20 2025 21:00:00 GMT-0700",
     synopsis:
-      "When a titan music mogul is targeted with a ransom plot, he is jammed up in a life-or-death moral dilemma.",
-    cardMedia: Highest2Lowest.src,
-    cardMediaAlt: "Highest 2 Lowest",
-    releaseDateTime: "August 15 2025 16:00:00 GMT-0700",
+      "The three duos from last week's losing team face the final Pressure Test of the season. It's the toughest one yet, as each duo is challenged to create a three course meal that replicates an appetizer from Joe Bastianich's restaurant, an entree from Tiffany Derry's restaurant, and a dessert from Gordon Ramsay's",
     watchUrl:
-      "https://www.fandango.com/highest-2-lowest-2025-240338/movie-overview",
-    imdbUrl:
-      "https://www.imdb.com/title/tt31194612/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_highest",
-    objectPosition: "50% 80%",
-    SiteLogo: FandangoLogo,
-    isMovie: true,
+      "https://www.hulu.com/series/45d67197-5346-4adb-9d90-6ed2d7b7bd85",
+    imdbUrl: "https://www.imdb.com/title/tt37717866/?ref_=ttep_ep_13",
+    objectPosition: "100% 27%",
+    SiteLogo: HuluLogo,
   },
   {
     avatar: TheBearLogo.src,
@@ -255,6 +272,23 @@ export const availableNow: AvailableNowProps[] = [
 ];
 
 export const backlog: AvailableNowProps[] = [
+  {
+    avatar: Highest2LowestLogo.src,
+    title: "Highest 2 Lowest",
+    subheader: "",
+    synopsis:
+      "When a titan music mogul is targeted with a ransom plot, he is jammed up in a life-or-death moral dilemma.",
+    cardMedia: Highest2Lowest.src,
+    cardMediaAlt: "Highest 2 Lowest",
+    releaseDateTime: "August 15 2025 16:00:00 GMT-0700",
+    watchUrl:
+      "https://www.fandango.com/highest-2-lowest-2025-240338/movie-overview",
+    imdbUrl:
+      "https://www.imdb.com/title/tt31194612/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_highest",
+    objectPosition: "50% 80%",
+    SiteLogo: FandangoLogo,
+    isMovie: true,
+  },
   {
     avatar: JeffBuckleyLogo.src,
     title: "It's Never Over, Jeff Buckley",
@@ -447,42 +481,6 @@ export const backlog: AvailableNowProps[] = [
 
 export const upNext: UpNextProps[] = [
   {
-    avatar: DandadanLogo.src,
-    title: "Dandadan",
-    subheader: "",
-    season: 2,
-    episode: 8,
-    episodesInSeason: 12,
-    cardMedia: DanDaDan.src,
-    cardMediaAlt: "Dandadan",
-    releaseDateTime: "August 21 2025 09:00:00 GMT-0700",
-    synopsis: ``,
-    watchUrl: "https://www.crunchyroll.com/series/GG5H5XQ0D/dan-da-dan",
-    imdbUrl: "https://www.imdb.com/title/tt37529084/?ref_=ttep_ep_8",
-    objectPosition: "50% 40%",
-    SiteLogo: CrunchyrollLogo,
-    TimerCard: LargeTimerCard,
-  },
-  {
-    avatar: MasterchefLogo.src,
-    title: "Masterchef",
-    subheader: "Divide & Conquer",
-    season: 15,
-    episode: 13,
-    episodesInSeason: 16,
-    cardMedia: Masterchef.src,
-    cardMediaAlt: "Masterchef",
-    releaseDateTime: "August 20 2025 21:00:00 GMT-0700",
-    synopsis:
-      "The three duos from last week's losing team face the final Pressure Test of the season. It's the toughest one yet, as each duo is challenged to create a three course meal that replicates an appetizer from Joe Bastianich's restaurant, an entree from Tiffany Derry's restaurant, and a dessert from Gordon Ramsay's",
-    watchUrl:
-      "https://www.hulu.com/series/45d67197-5346-4adb-9d90-6ed2d7b7bd85",
-    imdbUrl: "https://www.imdb.com/title/tt37717866/?ref_=ttep_ep_13",
-    objectPosition: "100% 27%",
-    TimerCard: LargeTimerCard,
-    SiteLogo: HuluLogo,
-  },
-  {
     avatar: PeacemakerLogo.src,
     title: "Peacemaker",
     subheader: "The Ties That Grind",
@@ -584,7 +582,7 @@ export const upNext: UpNextProps[] = [
     watchUrl:
       "https://www.hulu.com/series/45d67197-5346-4adb-9d90-6ed2d7b7bd85",
     objectPosition: "100% 27%",
-    TimerCard: SmallTimerCard,
+    TimerCard: LargeTimerCard,
     SiteLogo: HuluLogo,
   },
   {
@@ -601,7 +599,7 @@ export const upNext: UpNextProps[] = [
     watchUrl: "https://www.crunchyroll.com/series/GG5H5XQ0D/dan-da-dan",
     objectPosition: "50% 40%",
     SiteLogo: CrunchyrollLogo,
-    TimerCard: SmallTimerCard,
+    TimerCard: LargeTimerCard,
   },
   {
     avatar: PeacemakerLogo.src,
