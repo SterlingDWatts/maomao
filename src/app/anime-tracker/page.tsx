@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 
 import Box from "@mui/material/Box";
@@ -15,6 +16,7 @@ import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
+import CircularProgress from "@mui/material/CircularProgress";
 
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
@@ -29,7 +31,7 @@ import AnimeCard from "../../components/animeCard";
 import { theme } from "../theme";
 import { animeList } from "../nextAnime";
 
-export default function AnimeTrackerPage() {
+function AnimeTrackerContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -524,5 +526,42 @@ export default function AnimeTrackerPage() {
         </Container>
       </ThemeProvider>
     </React.Fragment>
+  );
+}
+
+function LoadingFallback() {
+  return (
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Container
+        disableGutters
+        maxWidth={false}
+        sx={{ backgroundColor: "tertiary.light", minHeight: "100vh" }}
+      >
+        <Container
+          maxWidth="lg"
+          sx={{
+            paddingTop: { xs: "56px", sm: "64px" },
+            paddingBottom: { xs: 1, sm: 3 },
+            paddingLeft: { xs: 1, sm: 3 },
+            paddingRight: { xs: 1, sm: 3 },
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            minHeight: "50vh",
+          }}
+        >
+          <CircularProgress color="secondary" size={60} />
+        </Container>
+      </Container>
+    </ThemeProvider>
+  );
+}
+
+export default function AnimeTrackerPage() {
+  return (
+    <Suspense fallback={<LoadingFallback />}>
+      <AnimeTrackerContent />
+    </Suspense>
   );
 }
