@@ -316,7 +316,7 @@ function AnimeTrackerContent() {
                   minWidth: 112,
                 }}
                 variant="standard"
-                color="secondary"
+                color="primary"
               >
                 <InputLabel id="anime-tracker-sort-select">Sort By</InputLabel>
                 <Select
@@ -328,7 +328,7 @@ function AnimeTrackerContent() {
                   endAdornment={
                     <InputAdornment position="end">
                       <IconButton
-                        color="secondary"
+                        color="primary"
                         onClick={toggleSortDirection}
                         sx={{ padding: 0 }}
                       >
@@ -341,7 +341,7 @@ function AnimeTrackerContent() {
                     </InputAdornment>
                   }
                   sx={{
-                    color: "secondary.main",
+                    color: "primary.main",
                     fontWeight: "bold",
                     "&:hover": {
                       backgroundColor: "tertiary.main",
@@ -368,7 +368,7 @@ function AnimeTrackerContent() {
                   minWidth: 209,
                 }}
                 variant="standard"
-                color="secondary"
+                color="primary"
               >
                 <InputLabel id="anime-tracker-filter-select">
                   Filter By
@@ -381,11 +381,11 @@ function AnimeTrackerContent() {
                   id="anime-tracker-filter-select"
                   endAdornment={
                     <InputAdornment position="end">
-                      <FilterListIcon color="secondary" />
+                      <FilterListIcon color="primary" />
                     </InputAdornment>
                   }
                   sx={{
-                    color: "secondary.main",
+                    color: "primary.main",
                     fontWeight: "bold",
                     "&:hover": {
                       backgroundColor: "tertiary.main",
@@ -412,7 +412,7 @@ function AnimeTrackerContent() {
                       key={tag}
                       label={tag}
                       size="small"
-                      color="secondary"
+                      color="primary"
                       onDelete={() => handleTagRemove(tag)}
                       deleteIcon={<CloseIcon />}
                       sx={{
@@ -427,7 +427,7 @@ function AnimeTrackerContent() {
                     label="Clear all"
                     size="small"
                     variant="outlined"
-                    color="secondary"
+                    color="primary"
                     onClick={clearAllTags}
                     sx={{
                       fontSize: "0.75rem",
@@ -442,7 +442,7 @@ function AnimeTrackerContent() {
 
               <Typography
                 sx={{
-                  color: "secondary.main",
+                  color: "primary.main",
                   fontWeight: "bold",
                   fontSize: 14,
                   lineHeight: 1,
@@ -452,66 +452,6 @@ function AnimeTrackerContent() {
                 {sortedAnimeList.length} anime
               </Typography>
             </Box>
-
-            {/* Selected Tags Display */}
-            {/* {filterByTag.length > 0 && (
-              <Box
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  flexWrap: "wrap",
-                  gap: 1,
-                  marginTop: -1,
-                  paddingLeft: { xs: 1, sm: 0 },
-                  paddingRight: { xs: 1, sm: 0 },
-                  paddingTop: 1,
-                  paddingBottom: 1,
-                  backgroundColor: "rgba(255, 255, 255, 0.05)",
-                  borderRadius: 1,
-                }}
-              >
-                <Typography
-                  sx={{
-                    color: "primary.main",
-                    fontWeight: "bold",
-                    fontSize: 14,
-                    marginRight: 1,
-                  }}
-                >
-                  Filtered by:
-                </Typography>
-                {filterByTag.map((tag) => (
-                  <Chip
-                    key={tag}
-                    label={tag}
-                    size="small"
-                    color="primary"
-                    onDelete={() => handleTagRemove(tag)}
-                    deleteIcon={<CloseIcon />}
-                    sx={{
-                      fontSize: "0.75rem",
-                      "& .MuiChip-deleteIcon": {
-                        fontSize: "1rem",
-                      },
-                    }}
-                  />
-                ))}
-                <Chip
-                  label="Clear all"
-                  size="small"
-                  variant="outlined"
-                  color="primary"
-                  onClick={clearAllTags}
-                  sx={{
-                    fontSize: "0.75rem",
-                    cursor: "pointer",
-                    "&:hover": {
-                      backgroundColor: "rgba(255, 255, 255, 0.1)",
-                    },
-                  }}
-                />
-              </Box>
-            )} */}
 
             <Stack spacing={2}>
               {sortedAnimeList.map((anime) => (
@@ -551,7 +491,7 @@ function LoadingFallback() {
             minHeight: "50vh",
           }}
         >
-          <CircularProgress color="secondary" size={60} />
+          <CircularProgress color="primary" size={60} />
         </Container>
       </Container>
     </ThemeProvider>
