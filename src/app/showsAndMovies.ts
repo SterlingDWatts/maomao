@@ -121,6 +121,40 @@ export interface UpNextProps extends AvailableNowProps {
 
 export const availableNow: AvailableNowProps[] = [
   {
+    avatar: FoundationAvatar.src,
+    title: "Foundation",
+    subheader: "Foundation's End",
+    season: 3,
+    episode: 7,
+    episodesInSeason: 10,
+    cardMedia: FoundationS3E7.src,
+    cardMediaAlt: "Foundation Season 3 Episode 7",
+    releaseDateTime: "August 22 2025 03:00:00 GMT-0700",
+    synopsis:
+      "Chaos and destruction rain down on New Terminus. Back on Trantor, Dusk and Quent unite to assess the state of the galaxy.",
+    watchUrl:
+      "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
+    imdbUrl: "https://www.imdb.com/title/tt32429294/?ref_=ttep_ep_7",
+    objectPosition: "100% 20%",
+    SiteLogo: AppleLogo,
+  },
+  {
+    avatar: InvasionLogo.src,
+    title: "Invasion",
+    subheader: "The Ones We Leave Behind",
+    season: 3,
+    episode: 1,
+    episodesInSeason: 10,
+    cardMedia: Invasion.src,
+    cardMediaAlt: "Invasion",
+    synopsis:
+      "Trevante returns to an Earth that’s different than the one he left two years ago. Jamila struggles to adapt to this new world.",
+    releaseDateTime: "August 22 2025 03:00:00 GMT-0700",
+    watchUrl: `https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6`,
+    objectPosition: "35% 30%",
+    SiteLogo: AppleLogo,
+  },
+  {
     avatar: MasterchefLogo.src,
     title: "Masterchef",
     subheader: "Divide & Conquer",
@@ -465,40 +499,6 @@ export const backlog: AvailableNowProps[] = [
 
 export const upNext: UpNextProps[] = [
   {
-    avatar: FoundationAvatar.src,
-    title: "Foundation",
-    subheader: "Foundation's End",
-    season: 3,
-    episode: 7,
-    episodesInSeason: 10,
-    cardMedia: FoundationS3E7.src,
-    cardMediaAlt: "Foundation Season 3 Episode 7",
-    releaseDateTime: "August 22 2025 03:00:00 GMT-0700",
-    synopsis:
-      "Chaos and destruction rain down on New Terminus. Back on Trantor, Dusk and Quent unite to assess the state of the galaxy.",
-    watchUrl:
-      "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
-    imdbUrl: "https://www.imdb.com/title/tt32429294/?ref_=ttep_ep_7",
-    objectPosition: "100% 20%",
-    TimerCard: LargeTimerCard,
-    SiteLogo: AppleLogo,
-  },
-  {
-    avatar: InvasionLogo.src,
-    title: "Invasion",
-    subheader: "",
-    season: 3,
-    episode: 1,
-    episodesInSeason: 10,
-    cardMedia: Invasion.src,
-    cardMediaAlt: "Invasion",
-    releaseDateTime: "August 22 2025 21:00:00 GMT-0700",
-    watchUrl: `https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6`,
-    objectPosition: "35% 30%",
-    TimerCard: LargeTimerCard,
-    SiteLogo: AppleLogo,
-  },
-  {
     avatar: KaijuLogo.src,
     title: "Kaiju No. 8",
     subheader: "",
@@ -594,23 +594,25 @@ export const upNext: UpNextProps[] = [
     watchUrl:
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
     objectPosition: "100% 20%",
-    TimerCard: SmallTimerCard,
+    TimerCard: LargeTimerCard,
     SiteLogo: AppleLogo,
   },
   {
     avatar: InvasionLogo.src,
     title: "Invasion",
-    subheader: "",
+    subheader: "The Message",
     season: 3,
     episode: 2,
     episodesInSeason: 10,
     cardMedia: Invasion.src,
     cardMediaAlt: "Invasion",
-    releaseDateTime: "August 29 2025 21:00:00 GMT-0700",
+    synopsis:
+      "Mysterious alien signals force Mitsuki out of hiding. Nikhil is charged with a task that tests his loyalty.",
+    releaseDateTime: "August 29 2025 03:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
     objectPosition: "35% 30%",
-    TimerCard: SmallTimerCard,
+    TimerCard: LargeTimerCard,
     SiteLogo: AppleLogo,
   },
   {
@@ -721,7 +723,7 @@ export const upNext: UpNextProps[] = [
     episodesInSeason: 10,
     cardMedia: Invasion.src,
     cardMediaAlt: "Invasion",
-    releaseDateTime: "September 05 2025 21:00:00 GMT-0700",
+    releaseDateTime: "September 05 2025 03:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
     objectPosition: "35% 30%",
@@ -886,7 +888,7 @@ export const upNext: UpNextProps[] = [
     episodesInSeason: 10,
     cardMedia: Invasion.src,
     cardMediaAlt: "Invasion",
-    releaseDateTime: "September 12 2025 21:00:00 GMT-0700",
+    releaseDateTime: "September 12 2025 03:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
     objectPosition: "35% 30%",
@@ -1001,7 +1003,7 @@ export const upNext: UpNextProps[] = [
     episodesInSeason: 10,
     cardMedia: Invasion.src,
     cardMediaAlt: "Invasion",
-    releaseDateTime: "September 19 2025 21:00:00 GMT-0700",
+    releaseDateTime: "September 19 2025 03:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
     objectPosition: "35% 30%",
@@ -1133,7 +1135,7 @@ export const upNext: UpNextProps[] = [
     episodesInSeason: 10,
     cardMedia: Invasion.src,
     cardMediaAlt: "Invasion",
-    releaseDateTime: "September 26 2025 21:00:00 GMT-0700",
+    releaseDateTime: "September 26 2025 03:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
     objectPosition: "35% 30%",
@@ -1216,7 +1218,7 @@ export const upNext: UpNextProps[] = [
     episodesInSeason: 10,
     cardMedia: Invasion.src,
     cardMediaAlt: "Invasion",
-    releaseDateTime: "October 03 2025 21:00:00 GMT-0700",
+    releaseDateTime: "October 03 2025 03:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
     objectPosition: "35% 30%",
@@ -1298,7 +1300,7 @@ export const upNext: UpNextProps[] = [
     episodesInSeason: 10,
     cardMedia: Invasion.src,
     cardMediaAlt: "Invasion",
-    releaseDateTime: "October 10 2025 21:00:00 GMT-0700",
+    releaseDateTime: "October 10 2025 03:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
     objectPosition: "35% 30%",
@@ -1347,7 +1349,7 @@ export const upNext: UpNextProps[] = [
     episodesInSeason: 10,
     cardMedia: Invasion.src,
     cardMediaAlt: "Invasion",
-    releaseDateTime: "October 17 2025 21:00:00 GMT-0700",
+    releaseDateTime: "October 17 2025 03:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
     objectPosition: "35% 30%",
@@ -1411,7 +1413,7 @@ export const upNext: UpNextProps[] = [
     episodesInSeason: 10,
     cardMedia: Invasion.src,
     cardMediaAlt: "Invasion",
-    releaseDateTime: "October 24 2025 21:00:00 GMT-0700",
+    releaseDateTime: "October 24 2025 03:00:00 GMT-0700",
     watchUrl:
       "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
     objectPosition: "35% 30%",
