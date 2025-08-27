@@ -17,8 +17,6 @@ import AllCreatures from "./assets/AllCreatures.jpg";
 import Attack from "./assets/Attack.jpg";
 import AttackLogo from "./assets/AttackLogo.jpg";
 import ChainsawManMovie from "./assets/ChainsawManMovie.jpg";
-import Creature from "./assets/Creature.jpg";
-import CreatureLogo from "./assets/CreatureLogo.jpg";
 import DanDaDan from "./assets/DanDaDan.jpg";
 import DandadanLogo from "./assets/DandadanLogo.jpg";
 import Fantastic from "./assets/Fantastic.jpg";
@@ -222,22 +220,6 @@ export const availableNow: AvailableNowProps[] = [
     SiteLogo: CrunchyrollLogo,
   },
   {
-    avatar: Fruits.src,
-    title: "Fruits Basket",
-    subheader: "Sure Thing",
-    season: 2,
-    episode: 13,
-    episodesInSeason: 25,
-    cardMedia: Fruits.src,
-    cardMediaAlt: "Fruits Basket",
-    releaseDateTime: "June 30 2020 03:00:00 GMT-0700",
-    synopsis: `The new term starts and Yuki takes on his duties as the student council president.`,
-    watchUrl: "https://www.crunchyroll.com/series/G6ZJMGEXY/fruits-basket",
-    imdbUrl: "https://www.imdb.com/title/tt12574332/?ref_=tt_ov_ep_nx",
-    objectPosition: "50% 50%",
-    SiteLogo: CrunchyrollLogo,
-  },
-  {
     avatar: AttackLogo.src,
     title: "Attack on Titan",
     subheader: "Night of the Battle to Retake the Wall",
@@ -254,18 +236,34 @@ export const availableNow: AvailableNowProps[] = [
     SiteLogo: CrunchyrollLogo,
   },
   {
+    avatar: Fruits.src,
+    title: "Fruits Basket",
+    subheader: "See You Later",
+    season: 2,
+    episode: 15,
+    episodesInSeason: 25,
+    cardMedia: Fruits.src,
+    cardMediaAlt: "Fruits Basket",
+    releaseDateTime: "July 14 2020 03:00:00 GMT-0700",
+    synopsis: `Parent-teacher conferences to discuss career plans are underway, triggering various emotions in the students.`,
+    watchUrl: "https://www.crunchyroll.com/series/G6ZJMGEXY/fruits-basket",
+    imdbUrl: "https://www.imdb.com/title/tt12633314/?ref_=ttep_ep_15",
+    objectPosition: "50% 50%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
     avatar: Gurren.src,
     title: "Gurren Lagann",
-    subheader: "You Are Someone Who Ought to Survive",
+    subheader: "This is My Final Duty",
     season: 1,
-    episode: 21,
+    episode: 22,
     episodesInSeason: 27,
     cardMedia: Gurren.src,
     cardMediaAlt: "Gurren Lagann",
     releaseDateTime: "October 27 2007 03:00:00 GMT-0700",
-    synopsis: `Yoko changed her name and she has lived quietly as a teacher of the elementary school.`,
+    synopsis: `Arc-Gurren goes into space. But soon after, a large energy blast comes from the moon.`,
     watchUrl: "https://www.crunchyroll.com/series/GEXH3WKK0/vinland-saga",
-    imdbUrl: "https://www.imdb.com/title/tt1785147/?ref_=tt_ov_ep_nx",
+    imdbUrl: "https://www.imdb.com/title/tt1785143/?ref_=ttep_ep_22",
     objectPosition: "50% 20%",
     SiteLogo: CrunchyrollLogo,
   },
@@ -481,23 +479,6 @@ export const backlog: AvailableNowProps[] = [
 
 export const upNext: UpNextProps[] = [
   {
-    avatar: KaijuLogo.src,
-    title: "Kaiju No. 8",
-    subheader: "",
-    season: 2,
-    episode: 6,
-    episodesInSeason: 11,
-    cardMedia: Kaiju.src,
-    cardMediaAlt: "Kaiju No. 8",
-    releaseDateTime: "August 23 2025 07:00:00 GMT-0700",
-    synopsis: "",
-    watchUrl: "https://www.crunchyroll.com/series/GG5H5XQ7D/kaiju-no-8",
-    imdbUrl: "https://www.imdb.com/title/tt37979704/?ref_=ttep_ep_6",
-    objectPosition: "50% 50%",
-    TimerCard: LargeTimerCard,
-    SiteLogo: CrunchyrollLogo,
-  },
-  {
     avatar: NyaightLogo.src,
     title: "Nyaight of the Living Cat",
     subheader: "",
@@ -616,7 +597,7 @@ export const upNext: UpNextProps[] = [
     watchUrl: "https://www.crunchyroll.com/series/GG5H5XQ7D/kaiju-no-8",
     imdbUrl: "https://www.imdb.com/title/tt37979707/?ref_=ttep_ep_7",
     objectPosition: "50% 50%",
-    TimerCard: SmallTimerCard,
+    TimerCard: LargeTimerCard,
     SiteLogo: CrunchyrollLogo,
   },
   {
