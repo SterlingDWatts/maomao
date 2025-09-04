@@ -285,6 +285,7 @@ function AnimeTrackerContent() {
           maxWidth={false}
           sx={{ backgroundColor: "tertiary.light", minHeight: "100vh" }}
         >
+          <Box id="back-to-top-anchor"> </Box>
           <Container
             maxWidth="lg"
             sx={{
@@ -310,17 +311,11 @@ function AnimeTrackerContent() {
                 paddingRight: { xs: 1, sm: 0 },
               }}
             >
-              <FormControl
-                size="small"
-                sx={{
-                  minWidth: 112,
-                }}
-                variant="standard"
-                color="primary"
-              >
+              <FormControl size="small" variant="standard" color="primary">
                 <InputLabel id="anime-tracker-sort-select">Sort By</InputLabel>
                 <Select
                   labelId="sort-select-label"
+                  autoWidth
                   value={sortBy}
                   label="Sort By"
                   onChange={handleSortChange}
@@ -362,19 +357,13 @@ function AnimeTrackerContent() {
                 </Select>
               </FormControl>
 
-              <FormControl
-                size="small"
-                sx={{
-                  minWidth: 209,
-                }}
-                variant="standard"
-                color="primary"
-              >
+              <FormControl size="small" variant="standard" color="primary">
                 <InputLabel id="anime-tracker-filter-select">
                   Filter By
                 </InputLabel>
                 <Select
                   labelId="filter-select-label"
+                  autoWidth
                   value={filterBy}
                   label="Filter By"
                   onChange={handleFilterChange}

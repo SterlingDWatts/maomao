@@ -5,6 +5,8 @@ import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
 import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
+import Fab from "@mui/material/Fab";
+import Fade from "@mui/material/Fade";
 import IconButton from "@mui/material/IconButton";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
@@ -16,6 +18,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import MenuIcon from "@mui/icons-material/Menu";
 
 import Link from "next/link";
@@ -25,6 +28,44 @@ interface Props {
   children?: React.ReactElement<unknown>;
   backgroundColor?: string;
   color?: string;
+}
+
+interface ScrollTopProps {
+  children?: React.ReactElement<unknown>;
+}
+
+function ScrollTop(props: ScrollTopProps) {
+  const { children } = props;
+
+  const trigger = useScrollTrigger({
+    target: window ? window : undefined,
+    disableHysteresis: true,
+    threshold: 100,
+  });
+
+  const handleClick = (event: React.MouseEvent<HTMLDivElement>) => {
+    const anchor = (
+      (event.target as HTMLDivElement).ownerDocument || document
+    ).querySelector("#back-to-top-anchor");
+
+    if (anchor) {
+      anchor.scrollIntoView({
+        block: "center",
+      });
+    }
+  };
+
+  return (
+    <Fade in={trigger}>
+      <Box
+        onClick={handleClick}
+        role="presentation"
+        sx={{ position: "fixed", bottom: 16, right: 16, zIndex: 101 }}
+      >
+        {children}
+      </Box>
+    </Fade>
+  );
 }
 
 const drawerWidth = 240;
@@ -85,73 +126,84 @@ export default function DrawerAppBar(props: Props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex" }}>
-      <HideOnScroll {...props}>
-        <AppBar
-          component="nav"
-          sx={{
-            backgroundColor: props.backgroundColor || "primary.main",
-            color: props.color || "black",
-          }}
-        >
-          <Container maxWidth="lg" disableGutters>
-            <Toolbar>
-              <IconButton
-                color="inherit"
-                aria-label="open drawer"
-                edge="start"
-                onClick={handleDrawerToggle}
-                sx={{ mr: 2, display: { sm: "none" } }}
-              >
-                <MenuIcon />
-              </IconButton>
-              <Typography
-                variant="h6"
-                component="div"
-                sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
-              >
-                Watchlist
-              </Typography>
-              <Box sx={{ display: { xs: "none", sm: "block" } }}>
-                {navItems.map((item) => (
-                  <Link
-                    key={item.label}
-                    href={item.href}
-                    style={{ textDecoration: "none" }}
-                  >
-                    <Button sx={{ color: props.color || "black" }}>
-                      {item.label}
-                    </Button>
-                  </Link>
-                ))}
-              </Box>
-            </Toolbar>
-          </Container>
-        </AppBar>
-      </HideOnScroll>
-
-      <HideOnScroll {...props}>
-        <nav>
-          <Drawer
-            container={container}
-            variant="temporary"
-            open={mobileOpen}
-            onClose={handleDrawerToggle}
-            ModalProps={{
-              keepMounted: true, // Better open performance on mobile.
-            }}
+    <React.Fragment>
+      <Box sx={{ display: "flex" }}>
+        <HideOnScroll {...props}>
+          <AppBar
+            component="nav"
             sx={{
-              display: { xs: "block", sm: "none" },
-              "& .MuiDrawer-paper": {
-                boxSizing: "border-box",
-                width: drawerWidth,
-              },
+              backgroundColor: props.backgroundColor || "primary.main",
+              color: props.color || "black",
             }}
           >
-            {drawer}
-          </Drawer>
-        </nav>
-      </HideOnScroll>
-    </Box>
+            <Container maxWidth="lg" disableGutters>
+              <Toolbar>
+                <IconButton
+                  color="inherit"
+                  aria-label="open drawer"
+                  edge="start"
+                  onClick={handleDrawerToggle}
+                  sx={{ mr: 2, display: { sm: "none" } }}
+                >
+                  <MenuIcon />
+                </IconButton>
+                <Typography
+                  variant="h6"
+                  component="div"
+                  sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+                >
+                  Watchlist
+                </Typography>
+                <Box sx={{ display: { xs: "none", sm: "block" } }}>
+                  {navItems.map((item) => (
+                    <Link
+                      key={item.label}
+                      href={item.href}
+                      style={{ textDecoration: "none" }}
+                    >
+                      <Button sx={{ color: props.color || "black" }}>
+                        {item.label}
+                      </Button>
+                    </Link>
+                  ))}
+                </Box>
+              </Toolbar>
+            </Container>
+          </AppBar>
+        </HideOnScroll>
+
+        <HideOnScroll {...props}>
+          <nav>
+            <Drawer
+              container={container}
+              variant="temporary"
+              open={mobileOpen}
+              onClose={handleDrawerToggle}
+              ModalProps={{
+                keepMounted: true, // Better open performance on mobile.
+              }}
+              sx={{
+                display: { xs: "block", sm: "none" },
+                "& .MuiDrawer-paper": {
+                  boxSizing: "border-box",
+                  width: drawerWidth,
+                },
+              }}
+            >
+              {drawer}
+            </Drawer>
+          </nav>
+        </HideOnScroll>
+      </Box>
+      <ScrollTop {...props}>
+        <Fab
+          size="small"
+          aria-label="scroll back to top"
+          color={props.backgroundColor ? "primary" : "secondary"}
+        >
+          <KeyboardArrowUpIcon />
+        </Fab>
+      </ScrollTop>
+    </React.Fragment>
   );
 }
