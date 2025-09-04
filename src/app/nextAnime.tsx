@@ -8,6 +8,7 @@ import Attack from "./assets/Attack.jpg";
 import Bleach from "./assets/Bleach.jpg";
 import BlueLock from "./assets/BlueLock.jpg";
 import ChainsawManMovie from "./assets/ChainsawManMovie.jpg";
+import Clevatess from "./assets/Clevatess.jpg";
 import CowboyBebop from "./assets/CowboyBebop.jpg";
 import CyberpunkEdgerunners from "./assets/CyberpunkEdgerunners.jpg";
 import DanDaDan from "./assets/DanDaDan.jpg";
@@ -19,6 +20,7 @@ import Evangelion from "./assets/Evangelion.jpg";
 import FrierenFrierensParty from "./assets/FrierenFrierensParty.jpg";
 import Fruits from "./assets/Fruits.jpg";
 import Fullmetal from "./assets/Fullmetal.jpg";
+import Gachiakuta from "./assets/Gachiakuta.jpg";
 import Gosick from "./assets/Gosick.jpg";
 import GundamWitch from "./assets/GundamWitch.jpg";
 import Gurren from "./assets/Gurren.jpg";
@@ -790,6 +792,7 @@ export const animeList: Anime[] = [
       </>
     ),
     hasSterlingSeen: true,
+    hasDawnSeen: true,
   },
   {
     title: "Spy x Family",
@@ -2071,6 +2074,54 @@ export const animeList: Anime[] = [
     ),
   },
   {
+    title: "Gachiakuta",
+    year: 2025,
+    episodes: 24,
+    rating: 8.02,
+    ratingOutOf: 38579,
+    rank: 665,
+    popularity: 1081,
+    picture: Gachiakuta.src,
+    tags: [
+      "Dark Fantasy",
+      "Shōnen",
+      "Survival",
+      "Action",
+      "Adventure",
+      "Drama",
+      "Fantasy",
+      "Dark",
+    ],
+    shortDescription: `In a floating city, a young boy is framed for the death of his father and exiled. He ends up in a junkyard zone, and swears to return for revenge.`,
+    longDescription: (
+      <>
+        Living in the slums of a wealthy town, Rudo and his foster father Regto
+        try to coexist with the rest of the town's residents, but Rudo despises
+        the wastefulness of the upper class. Ignoring the warnings from those
+        around him, Rudo regularly rummages through the town's garbage in search
+        of anything useful or valuable to save from the "Abyss"—a massive hole
+        where anything considered trash is dumped, including people. Rudo's
+        biological father was one such person, having been thrown into the Abyss
+        after he was accused of murder.
+        <br />
+        <br />
+        One day, after running into a mysterious figure on the way home, Rudo
+        returns to find Regto's dying body on the floor. He is immediately found
+        at the scene by the authorities and is charged with murder. No one
+        believes his claims of innocence, and he is thrown into the Abyss.
+        Instead of dying, however, he finds himself in a strange, foul-smelling
+        place surrounded by monsters made out of trash.
+        <br />
+        <br />
+        When Rudo is attacked by said monsters, he is saved by a man named
+        Enjin, who reveals himself to be a "Cleaner"—someone who uses special
+        weapons called Vital Instruments to combat these creatures. In order to
+        get his revenge on the one who killed Regto, Rudo reluctantly becomes a
+        Cleaner to fight his way back up and out of the Abyss.
+      </>
+    ),
+  },
+  {
     title: "Lazarus",
     year: 2025,
     episodes: 13,
@@ -2143,6 +2194,8 @@ export const animeList: Anime[] = [
       </>
     ),
     isMaomaoRecommendation: true,
+    hasDawnSeen: true,
+    hasSterlingSeen: true,
   },
   {
     title: "Why Raeliana Ended up at the Duke's Mansion",
@@ -2601,5 +2654,55 @@ export const animeList: Anime[] = [
       </>
     ),
     isMaomaoRecommendation: true,
+  },
+  {
+    title: "Clevatess",
+    year: 2025,
+    episodes: 12,
+    rating: 7.86,
+    ratingOutOf: 17225,
+    rank: 931,
+    popularity: 2326,
+    picture: Clevatess.src,
+    tags: [
+      "Dark Fantasy",
+      "Fantasy Epic",
+      "Psychological Drama",
+      "Seinen",
+      "Sword & Sorcery",
+      "Action",
+      "Drama",
+      "Fantasy",
+      "Dark",
+      "Epic",
+      "Psychological",
+    ],
+    shortDescription: `A group of heroes set out to destroy Cleavatess, the king of beasts. But they stumble on a conspiracy to destroy the world and must rely on Cleavatess to help them out.`,
+    longDescription: (
+      <>
+        Surrounded by four armies of dark beasts, five humanoid races strive to
+        push the known boundaries of the world. Unfortunately, the 13 heroes
+        dispatched to the southern region are easily wiped out by Clevatess, one
+        of the Lords of Dark Beasts. Determined to get revenge against humanity,
+        Clevatess bursts into the capital of the Kingdom of Hiden, leaving a
+        trail of death and destruction behind him.
+        <br />
+        <br />
+        Although the situation looks desperate, humanity still has a chance to
+        appease Clevatess' anger. Alicia Glenfall, one of the 13 heroes, is
+        revived by Clevatess to help him raise a newborn infant, Luna, whose
+        choices shall shape the fate of the human world. Although reluctant to
+        help the dark beast at first, Alicia understands that Luna is the only
+        thing that stands between humanity and complete annihilation.
+        <br />
+        <br />
+        Hiding himself by taking on a human form, Clevatess sets out in search
+        for a wet nurse with Alicia and Luna. With Clevatess unwilling to reveal
+        his identity, it falls on Alicia to slay all enemies that stand in their
+        way. Meanwhile, the neighboring countries prepare to advance on the
+        weakened Hiden, aiming to control the only forge capable of producing
+        the heroes' weapons.
+      </>
+    ),
   },
 ];
