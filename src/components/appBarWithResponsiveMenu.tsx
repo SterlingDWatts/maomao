@@ -28,19 +28,22 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Link from "next/link";
 
 interface Props {
+  window?: () => Window;
   children?: React.ReactElement<unknown>;
   backgroundColor?: string;
   color?: string;
 }
 
 interface ScrollTopProps {
+  window?: () => Window;
   children?: React.ReactElement<unknown>;
 }
 
 function ScrollTop(props: ScrollTopProps) {
-  const { children } = props;
+  const { children, window } = props;
 
   const trigger = useScrollTrigger({
+    target: window ? window() : undefined,
     disableHysteresis: true,
     threshold: 100,
   });
@@ -77,9 +80,9 @@ const navItems: { label: string; href: string }[] = [
 ];
 
 function HideOnScroll(props: Props) {
-  const { children } = props;
+  const { children, window } = props;
   const trigger = useScrollTrigger({
-    target: window || undefined,
+    target: window ? window() : undefined,
   });
 
   return (
@@ -124,7 +127,9 @@ export default function DrawerAppBar(props: Props) {
   );
 
   const container =
-    typeof window !== "undefined" ? () => window.document.body : undefined;
+    props.window !== undefined
+      ? () => props.window!().document.body
+      : undefined;
 
   return (
     <React.Fragment>
