@@ -18,13 +18,14 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 
+// @ts-ignore
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+// @ts-ignore
 import MenuIcon from "@mui/icons-material/Menu";
 
 import Link from "next/link";
 
 interface Props {
-  window?: () => Window;
   children?: React.ReactElement<unknown>;
   backgroundColor?: string;
   color?: string;
@@ -38,7 +39,6 @@ function ScrollTop(props: ScrollTopProps) {
   const { children } = props;
 
   const trigger = useScrollTrigger({
-    target: window ? window : undefined,
     disableHysteresis: true,
     threshold: 100,
   });
@@ -75,9 +75,9 @@ const navItems: { label: string; href: string }[] = [
 ];
 
 function HideOnScroll(props: Props) {
-  const { children, window } = props;
+  const { children } = props;
   const trigger = useScrollTrigger({
-    target: window ? window() : undefined,
+    target: window || undefined,
   });
 
   return (
@@ -88,7 +88,6 @@ function HideOnScroll(props: Props) {
 }
 
 export default function DrawerAppBar(props: Props) {
-  const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
@@ -123,7 +122,7 @@ export default function DrawerAppBar(props: Props) {
   );
 
   const container =
-    window !== undefined ? () => window().document.body : undefined;
+    typeof window !== "undefined" ? () => window.document.body : undefined;
 
   return (
     <React.Fragment>
