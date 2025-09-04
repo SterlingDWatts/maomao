@@ -20,6 +20,7 @@ interface ExpandMoreProps extends BoxProps {
 
 export default function TallTimerCard({
   title,
+  shortTitle,
   subheader,
   season,
   episode,
@@ -118,7 +119,7 @@ export default function TallTimerCard({
                 color: "secondary.dark",
               }}
             >
-              {title}
+              {shortTitle || title}
             </Typography>
             <Typography
               variant="subtitle1"

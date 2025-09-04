@@ -66,6 +66,7 @@ import RunningMan from "./assets/RunningMan.jpg";
 import RunningManLogo from "./assets/RunningManLogo.jpg";
 import Sandman from "./assets/Sandman.jpg";
 import SandmanLogo from "./assets/SandmanLogo.jpg";
+import Seventh from "./assets/Seventh.jpg";
 import SlowHorsesBig from "./assets/SlowHorses.jpg";
 import SlowHorsesLogo from "./assets/SlowHorsesLogo.jpg";
 import SquidGame from "./assets/SquidGameCoffins.jpg";
@@ -88,6 +89,7 @@ import ZoneOfInterestLogo from "./assets/ZoneOfInterestLogo.jpg";
 export interface AvailableNowProps {
   avatar: string;
   title: string;
+  shortTitle?: string;
   subheader: string;
   season?: number;
   episode?: number;
@@ -118,56 +120,6 @@ export interface UpNextProps extends AvailableNowProps {
 }
 
 export const availableNow: AvailableNowProps[] = [
-  {
-    avatar: NyaightLogo.src,
-    title: "Nyaight of the Living Cat",
-    subheader: "",
-    season: 1,
-    episode: 8,
-    episodesInSeason: 12,
-    cardMedia: Nyaight.src,
-    cardMediaAlt: "Nyaight of the Living Cat",
-    releaseDateTime: "August 24 2025 07:15:00 GMT-0700",
-    synopsis: "",
-    watchUrl:
-      "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
-    objectPosition: "50% 20%",
-    SiteLogo: CrunchyrollLogo,
-  },
-  {
-    avatar: InvasionLogo.src,
-    title: "Invasion",
-    subheader: "The Ones We Leave Behind",
-    season: 3,
-    episode: 1,
-    episodesInSeason: 10,
-    cardMedia: Invasion.src,
-    cardMediaAlt: "Invasion",
-    synopsis:
-      "Trevante returns to an Earth that’s different than the one he left two years ago. Jamila struggles to adapt to this new world.",
-    releaseDateTime: "August 22 2025 03:00:00 GMT-0700",
-    watchUrl: `https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6`,
-    objectPosition: "35% 30%",
-    SiteLogo: AppleLogo,
-  },
-  {
-    avatar: MasterchefLogo.src,
-    title: "Masterchef",
-    subheader: "Divide & Conquer",
-    season: 15,
-    episode: 13,
-    episodesInSeason: 16,
-    cardMedia: Masterchef.src,
-    cardMediaAlt: "Masterchef",
-    releaseDateTime: "August 20 2025 21:00:00 GMT-0700",
-    synopsis:
-      "The three duos from last week's losing team face the final Pressure Test of the season. It's the toughest one yet, as each duo is challenged to create a three course meal that replicates an appetizer from Joe Bastianich's restaurant, an entree from Tiffany Derry's restaurant, and a dessert from Gordon Ramsay's",
-    watchUrl:
-      "https://www.hulu.com/series/45d67197-5346-4adb-9d90-6ed2d7b7bd85",
-    imdbUrl: "https://www.imdb.com/title/tt37717866/?ref_=ttep_ep_13",
-    objectPosition: "100% 27%",
-    SiteLogo: HuluLogo,
-  },
   {
     avatar: TheBearLogo.src,
     title: "The Bear",
@@ -219,37 +171,57 @@ export const availableNow: AvailableNowProps[] = [
     SiteLogo: CrunchyrollLogo,
   },
   {
-    avatar: Raven.src,
-    title: "Raven of The Inner Palace",
-    subheader: "The Flute",
+    avatar: NyaightLogo.src,
+    title: "Nyaight of the Living Cat",
+    subheader: "Nyarmageddon",
     season: 1,
-    episode: 3,
-    episodesInSeason: 13,
-    cardMedia: Raven.src,
-    cardMediaAlt: "Raven of The Inner Palace",
-    releaseDateTime: "October 15 2020 03:00:00 GMT-0700",
-    synopsis: `Huaniang, the high-ranking inner palace consort who lives at Yuanqian Palace, comes to Ye Ming Palace. She wants to know why her flower whistle will not blow. Flower whistles are hung from the eaves of buildings at the end of winter to mourn those who passed away the previous year. Allegedly the dead return on winds announcing the coming of spring to blow the whistles. Huaniang is concerned that her whistle has not blown since she lost her lover Ou Xuanyou. Shouxue complies with her request and attempts to summon the soul of Ou Xuanyou so she can speak to him.`,
+    episode: 8,
+    episodesInSeason: 12,
+    cardMedia: Nyaight.src,
+    cardMediaAlt: "Nyaight of the Living Cat",
+    releaseDateTime: "August 24 2025 07:15:00 GMT-0700",
+    synopsis:
+      "Kunagi and crew have finished gathering supplies, but now they suddenly face a cat riding on a bear.",
     watchUrl:
-      "https://www.crunchyroll.com/series/GP5HJ8E99/raven-of-the-inner-palace",
-    imdbUrl: "https://www.imdb.com/title/tt22783432/?ref_=tt_ov_ep_nx",
-    objectPosition: "50% 50%",
+      "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
+    imdbUrl: "https://www.imdb.com/title/tt38037013/?ref_=ttep_ep_8",
+    objectPosition: "50% 20%",
     SiteLogo: CrunchyrollLogo,
   },
   {
-    avatar: AttackLogo.src,
-    title: "Attack on Titan",
-    subheader: "The Town Where Everything Began",
+    avatar: InvasionLogo.src,
+    title: "Invasion",
+    subheader: "The Ones We Leave Behind",
     season: 3,
+    episode: 1,
+    episodesInSeason: 10,
+    cardMedia: Invasion.src,
+    cardMediaAlt: "Invasion",
+    synopsis:
+      "Trevante returns to an Earth that’s different than the one he left two years ago. Jamila struggles to adapt to this new world.",
+    releaseDateTime: "August 22 2025 03:00:00 GMT-0700",
+    watchUrl: `https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6`,
+    imdbUrl: "https://www.imdb.com/title/tt30825175/?ref_=tt_ov_ep_pr",
+    objectPosition: "35% 30%",
+    SiteLogo: AppleLogo,
+  },
+  {
+    avatar: MasterchefLogo.src,
+    title: "Masterchef",
+    subheader: "Divide & Conquer",
+    season: 15,
     episode: 13,
-    episodesInSeason: 22,
-    cardMedia: Attack.src,
-    cardMediaAlt: "Attack on Titan",
-    releaseDateTime: "April 29 2019 03:00:00 GMT-0700",
-    synopsis: `The operation to retake Wall Maria commences in Shiganshina, the town where everything began. But when the Scouts arrive, something seems very wrong.`,
-    watchUrl: "https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan",
-    imdbUrl: "https://www.imdb.com/title/tt9038682/?ref_=ttep_ep_13",
-    objectPosition: "15% 50%",
-    SiteLogo: CrunchyrollLogo,
+    episodesInSeason: 16,
+    cardMedia: Masterchef.src,
+    cardMediaAlt: "Masterchef",
+    releaseDateTime: "August 20 2025 21:00:00 GMT-0700",
+    synopsis:
+      "The three duos from last week's losing team face the final Pressure Test of the season. It's the toughest one yet, as each duo is challenged to create a three course meal that replicates an appetizer from Joe Bastianich's restaurant, an entree from Tiffany Derry's restaurant, and a dessert from Gordon Ramsay's",
+    watchUrl:
+      "https://www.hulu.com/series/45d67197-5346-4adb-9d90-6ed2d7b7bd85",
+    imdbUrl: "https://www.imdb.com/title/tt37717866/?ref_=ttep_ep_13",
+    objectPosition: "100% 27%",
+    SiteLogo: HuluLogo,
   },
   {
     avatar: Fruits.src,
@@ -281,6 +253,59 @@ export const availableNow: AvailableNowProps[] = [
     watchUrl: "https://www.crunchyroll.com/series/GEXH3WKK0/vinland-saga",
     imdbUrl: "https://www.imdb.com/title/tt1785139/?ref_=ttep_ep_23",
     objectPosition: "50% 20%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: Raven.src,
+    title: "Raven of The Inner Palace",
+    subheader: "The Skylark Princess",
+    season: 1,
+    episode: 4,
+    episodesInSeason: 13,
+    cardMedia: Raven.src,
+    cardMediaAlt: "Raven of The Inner Palace",
+    releaseDateTime: "October 22 2020 03:00:00 GMT-0700",
+    synopsis: `The Ghost of a skylark visits Shouxue, which leads to her hearing the tale of the Skylark Princess and her tragic death.`,
+    watchUrl:
+      "https://www.crunchyroll.com/series/GP5HJ8E99/raven-of-the-inner-palace",
+    imdbUrl: "https://www.imdb.com/title/tt22938330/?ref_=ttep_ep_4",
+    objectPosition: "50% 50%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: AttackLogo.src,
+    title: "Attack on Titan",
+    subheader: "Thunder Spears",
+    season: 3,
+    episode: 14,
+    episodesInSeason: 22,
+    cardMedia: Attack.src,
+    cardMediaAlt: "Attack on Titan",
+    releaseDateTime: "May 06 2019 03:00:00 GMT-0700",
+    synopsis: `Against a rush of enemies, the Scouts scramble to defend their horses. But despite falling into a trap, they have their own surprise for the Armored Titan.`,
+    watchUrl: "https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan",
+    imdbUrl: "https://www.imdb.com/title/tt9790722/?ref_=ttep_ep_14",
+    objectPosition: "15% 50%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: Seventh.src,
+    shortTitle: "7th Time Loop",
+    title:
+      "7th Time Loop: The Villainess Enjoys a Carefree Life Married to Her Worst Enemy",
+    subheader: "The Golden Imperial Capital",
+    season: 1,
+    episode: 2,
+    episodesInSeason: 12,
+    cardMedia: Seventh.src,
+    cardMediaAlt:
+      "7th Time Loop: The Villainess Enjoys a Carefree Life Married to Her Worst Enemy",
+    releaseDateTime: "January 14 2024 03:00:00 GMT-0700",
+    synopsis: `Rishe accepts Arnold's proposal on conditions. He agrees, they travel to Galkhein where she's never been. She wonders his true motives.`,
+    watchUrl:
+      "https://www.crunchyroll.com/series/G4PH0WJGQ/7th-time-loop-the-villainess-enjoys-a-carefree-life-married-to-her-worst-enemy",
+    imdbUrl: "https://www.imdb.com/title/tt30790804/?ref_=ttep_ep_2",
+    objectPosition: "50% 50%",
     SiteLogo: CrunchyrollLogo,
   },
 ];
@@ -495,33 +520,19 @@ export const backlog: AvailableNowProps[] = [
 
 export const upNext: UpNextProps[] = [
   {
-    avatar: DandadanLogo.src,
-    title: "Dandadan",
-    subheader: "",
-    season: 2,
-    episode: 10,
-    episodesInSeason: 12,
-    cardMedia: DanDaDan.src,
-    cardMediaAlt: "Dandadan",
-    releaseDateTime: "September 04 2025 09:00:00 GMT-0700",
-    synopsis: ``,
-    watchUrl: "https://www.crunchyroll.com/series/GG5H5XQ0D/dan-da-dan",
-    objectPosition: "50% 40%",
-    SiteLogo: CrunchyrollLogo,
-    TimerCard: LargeTimerCard,
-  },
-  {
     avatar: PeacemakerLogo.src,
     title: "Peacemaker",
-    subheader: "",
+    subheader: "Another Rick Up My Sleeve",
     season: 2,
     episode: 3,
     episodesInSeason: 8,
     cardMedia: PeacemakerSeason2.src,
     cardMediaAlt: "Peacemaker Season 2",
     releaseDateTime: "September 04 2025 21:00:00 GMT-0700",
+    synopsis: `As Peacemaker receives praise as a hero, he uses the alternate dimension to deepen his bond with Harcourt. Meanwhile, Economos faces criticism for the mission's failure.`,
     watchUrl:
       "https://play.hbomax.com/show/a939d96b-7ffb-4481-96f6-472838d104ca",
+    imdbUrl: "https://www.imdb.com/title/tt35530357/?ref_=ttep_ep_3",
     objectPosition: "50% 35%",
     TimerCard: LargeTimerCard,
     SiteLogo: HBOLogo,
@@ -529,15 +540,17 @@ export const upNext: UpNextProps[] = [
   {
     avatar: FoundationAvatar.src,
     title: "Foundation",
-    subheader: "",
+    subheader: "The Paths That Choose Us",
     season: 3,
     episode: 9,
     episodesInSeason: 10,
     cardMedia: FoundationSeason3.src,
     cardMediaAlt: "Foundation Season 3 Episode 9",
     releaseDateTime: "September 05 2025 03:00:00 GMT-0700",
+    synopsis: `Gaal faces the Mule's ability to convert others. Dusk takes extreme action. Demerzel seeks to understand what lies ahead.`,
     watchUrl:
       "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
+    imdbUrl: "https://www.imdb.com/title/tt32429309/?ref_=ttep_ep_9",
     objectPosition: "100% 20%",
     TimerCard: LargeTimerCard,
     SiteLogo: AppleLogo,
@@ -545,15 +558,17 @@ export const upNext: UpNextProps[] = [
   {
     avatar: InvasionLogo.src,
     title: "Invasion",
-    subheader: "",
+    subheader: "Infinitas",
     season: 3,
     episode: 3,
     episodesInSeason: 10,
     cardMedia: Invasion.src,
     cardMediaAlt: "Invasion",
     releaseDateTime: "September 05 2025 03:00:00 GMT-0700",
+    synopsis: `Aneesha and Clark's peaceful life is upended by a visit from Trevante and Cole. Mitsuki and Nikhil search for answers at a portal base.`,
     watchUrl:
       "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
+    imdbUrl: "https://www.imdb.com/title/tt37136627/?ref_=ttep_ep_3",
     objectPosition: "35% 30%",
     TimerCard: LargeTimerCard,
     SiteLogo: AppleLogo,
