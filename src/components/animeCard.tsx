@@ -11,6 +11,7 @@ import Typography from "@mui/material/Typography";
 
 import Face3Icon from "@mui/icons-material/Face3";
 import Face5Icon from "@mui/icons-material/Face5";
+// @ts-ignore
 import LocalFloristIcon from "@mui/icons-material/LocalFlorist";
 
 import { abbreviateNumber } from "@/app/utils";
