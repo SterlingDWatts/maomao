@@ -1,4 +1,18 @@
-import { createTheme, ThemeOptions } from "@mui/material/styles";
+import {
+  createTheme,
+  ThemeOptions,
+  Theme,
+  Palette,
+} from "@mui/material/styles";
+
+// new type that uses the Theme interface and includes the new palette options
+interface CustomPalette extends Palette {
+  tertiary: Palette["primary"];
+}
+
+interface CustomTheme extends Theme {
+  palette: CustomPalette;
+}
 
 export const theme = createTheme({
   palette: {
@@ -25,4 +39,4 @@ export const theme = createTheme({
       contrastText: "#000",
     },
   },
-} as Omit<ThemeOptions, "components">);
+} as Omit<ThemeOptions, "components">) as unknown as CustomTheme;

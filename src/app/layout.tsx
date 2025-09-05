@@ -1,7 +1,9 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
+
+import { theme } from "./theme";
 
 import "./globals.css";
 
@@ -18,6 +20,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Watchlist",
   description: "Watchlist",
+};
+
+export const viewport: Viewport = {
+  themeColor: theme.palette.primary.dark,
 };
 
 export default function RootLayout({

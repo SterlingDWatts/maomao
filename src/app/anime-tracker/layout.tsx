@@ -1,8 +1,14 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
+
+import { theme } from "../theme";
 
 export const metadata: Metadata = {
   title: "Anime Tracker | Watchlist",
   description: "Anime we have watched and great options for what is next.",
+};
+
+export const viewport: Viewport = {
+  themeColor: theme.palette.tertiary.dark,
 };
 
 export default function AnimeTrackerLayout({
