@@ -455,7 +455,7 @@ function AnimeTrackerContent() {
               </Typography>
             </Box>
 
-            <Stack spacing={2}>
+            <Stack spacing={2.5}>
               {sortedAnimeList.map((anime) => (
                 <AnimeCard
                   key={anime.title}
