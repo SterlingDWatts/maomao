@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: theme.palette.tertiary.dark,
+  themeColor: theme.palette.tertiary.main,
 };
 
 export default function AnimeTrackerLayout({
