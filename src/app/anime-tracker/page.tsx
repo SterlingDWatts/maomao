@@ -474,7 +474,7 @@ function LoadingFallback() {
       <Container
         disableGutters
         maxWidth={false}
-        sx={{ backgroundColor: "primary.main", minHeight: "100vh" }}
+        sx={{ backgroundColor: "secondary.main", minHeight: "100vh" }}
       >
         <Container
           maxWidth="lg"
