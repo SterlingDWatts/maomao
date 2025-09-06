@@ -30,6 +30,14 @@ interface Props {
   children?: React.ReactElement<unknown>;
   backgroundColor?: string;
   color?: string;
+  secondaryColor?:
+    | "primary"
+    | "secondary"
+    | "tertiary"
+    | "error"
+    | "info"
+    | "success"
+    | "warning";
 }
 
 interface ScrollTopProps {
@@ -203,7 +211,8 @@ export default function DrawerAppBar(props: Props) {
         <Fab
           size="small"
           aria-label="scroll back to top"
-          color={props.backgroundColor ? "primary" : "secondary"}
+          // @ts-ignore
+          color={props.secondaryColor || "secondary"}
         >
           <KeyboardArrowUpIcon />
         </Fab>

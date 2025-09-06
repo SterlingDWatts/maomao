@@ -297,7 +297,11 @@ function AnimeTrackerContent() {
               overflowX: "hidden",
             }}
           >
-            <DrawerAppBar backgroundColor="secondary.dark" color="white" />
+            <DrawerAppBar
+              backgroundColor="secondary.dark"
+              color="white"
+              secondaryColor="tertiary"
+            />
 
             <Box
               sx={{
