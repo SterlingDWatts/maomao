@@ -716,7 +716,7 @@ export const upNext: UpNextProps[] = [
     watchUrl:
       "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
     objectPosition: "35% 30%",
-    TimerCard: SmallTimerCard,
+    TimerCard: SmallTimerCard, // TODO make large
     SiteLogo: AppleLogo,
   },
   {

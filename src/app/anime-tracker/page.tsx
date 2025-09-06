@@ -284,7 +284,7 @@ function AnimeTrackerContent() {
         <Container
           disableGutters
           maxWidth={false}
-          sx={{ backgroundColor: "tertiary.light", minHeight: "100vh" }}
+          sx={{ backgroundColor: "secondary.main", minHeight: "100vh" }}
         >
           <Box id="back-to-top-anchor"> </Box>
           <Container
@@ -293,11 +293,11 @@ function AnimeTrackerContent() {
               paddingTop: { xs: "56px", sm: "64px" },
               paddingBottom: { xs: 1, sm: 3 },
               paddingLeft: { xs: 1, sm: 3 },
-              paddingRight: { xs: 1, sm: 3 },
+              paddingRight: { xs: 0, sm: 3 },
               overflowX: "hidden",
             }}
           >
-            <DrawerAppBar backgroundColor="tertiary.main" />
+            <DrawerAppBar backgroundColor="secondary.dark" color="white" />
 
             <Box
               sx={{
@@ -313,7 +313,12 @@ function AnimeTrackerContent() {
               }}
             >
               <FormControl size="small" variant="standard" color="primary">
-                <InputLabel id="anime-tracker-sort-select">Sort By</InputLabel>
+                <InputLabel
+                  id="anime-tracker-sort-select"
+                  sx={{ color: "white" }}
+                >
+                  Sort By
+                </InputLabel>
                 <Select
                   labelId="sort-select-label"
                   autoWidth
@@ -340,8 +345,8 @@ function AnimeTrackerContent() {
                     color: "primary.main",
                     fontWeight: "bold",
                     "&:hover": {
-                      backgroundColor: "tertiary.main",
-                      color: "black",
+                      backgroundColor: "secondary.dark",
+                      // color: "black",
                     },
                     "& .MuiSvgIcon-root.MuiSelect-icon": {
                       display: "none",
@@ -359,7 +364,10 @@ function AnimeTrackerContent() {
               </FormControl>
 
               <FormControl size="small" variant="standard" color="primary">
-                <InputLabel id="anime-tracker-filter-select">
+                <InputLabel
+                  id="anime-tracker-filter-select"
+                  sx={{ color: "white" }}
+                >
                   Filter By
                 </InputLabel>
                 <Select
@@ -378,8 +386,8 @@ function AnimeTrackerContent() {
                     color: "primary.main",
                     fontWeight: "bold",
                     "&:hover": {
-                      backgroundColor: "tertiary.main",
-                      color: "black",
+                      backgroundColor: "secondary.dark",
+                      // color: "black",
                     },
                     "& .MuiSvgIcon-root.MuiSelect-icon": {
                       display: "none",

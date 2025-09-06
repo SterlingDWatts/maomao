@@ -27,7 +27,6 @@ const Bullet = () => (
       display: "inline-block",
       mx: "2px",
       transform: "scale(0.8)",
-      color: "black",
     }}
   >
     •
@@ -53,6 +52,8 @@ export default function AnimeCard({
           position: "relative",
           overflow: "hidden",
           boxShadow: "none",
+          backgroundColor: "transparent",
+          color: "white",
         }}
       >
         <Box
@@ -80,6 +81,7 @@ export default function AnimeCard({
                 width: "100px",
                 height: "100%",
                 zIndex: 100,
+                borderRadius: "4px",
               }}
             />
           </Box>
@@ -87,157 +89,154 @@ export default function AnimeCard({
             className="anime-card-content-main"
             sx={{
               width: "calc(100% - 100px)",
-              // pt: 1.5,
-              "&.MuiCardContent-root:last-child": { pb: 2 },
+              "&.MuiCardContent-root:last-child": { pb: 0 },
               position: "relative",
+              pt: 0,
             }}
           >
-            <Box className="anime-card-content-divider"></Box>
-            <Stack
-              direction="row"
-              justifyContent={"space-between"}
-              sx={{ width: "100%" }}
-            >
-              <Typography
-                sx={{
-                  color: "black",
-                  fontSize: 16,
-                  lineHeight: 1.25,
-                  "& sup": {
-                    fontSize: 10,
-                    lineHeight: 1,
-                    verticalAlign: "5px",
-                  },
-                }}
+            <Stack spacing={0.5}>
+              <Stack
+                direction="row"
+                justifyContent={"space-between"}
+                sx={{ width: "100%" }}
               >
-                {anime.year} <Bullet /> {anime.episodes}
-                <sup> EPISODES</sup>
-              </Typography>
-              <Stack direction="row" spacing={0.125}>
-                {anime.isMaomaoRecommendation && (
-                  <LocalFloristIcon color="inherit" sx={{ fontSize: 16 }} />
-                )}
-                {anime.hasDawnSeen && (
-                  <Face3Icon color="inherit" sx={{ fontSize: 16 }} />
-                )}
-                {anime.hasSterlingSeen && (
-                  <Face5Icon color="inherit" sx={{ fontSize: 16 }} />
-                )}
-              </Stack>
-            </Stack>
-            <Typography
-              variant="h5"
-              sx={{
-                color: "black",
-                fontSize: 16,
-                fontWeight: "bold",
-              }}
-            >
-              {anime.title}
-            </Typography>
-            <Stack direction="row" gap={2} sx={{ lineHeight: "1.1" }}>
-              <Typography
-                sx={{
-                  color: "black",
-                  fontSize: 16,
-                  "& sub": {
-                    fontSize: 13,
-                    lineHeight: 1,
-                    verticalAlign: "baseline",
-                  },
-                }}
-              >
-                {anime.rating}/<sub>{abbreviateNumber(anime.ratingOutOf)}</sub>
-              </Typography>
-              <Typography
-                sx={{
-                  color: "black",
-                  fontSize: 16,
-                  "& sup": {
-                    fontSize: 10,
-                    lineHeight: 1,
-                    verticalAlign: "5px",
-                  },
-                }}
-              >
-                {anime.rank}
-                <sup> RANK</sup>
-              </Typography>
-
-              <Typography
-                sx={{
-                  color: "black",
-                  fontSize: 16,
-                  "& sup": {
-                    fontSize: 10,
-                    lineHeight: 1,
-                    verticalAlign: "5px",
-                  },
-                }}
-              >
-                {anime.popularity}
-                <sup> POP</sup>
-              </Typography>
-            </Stack>
-
-            <Stack
-              direction="row"
-              spacing={1}
-              useFlexGap
-              sx={{
-                overflowX: "auto",
-                overflowY: "visible",
-                flexWrap: { xs: "nowrap", sm: "wrap" },
-                width: { xs: "100vw", sm: "auto" },
-                marginLeft: { xs: "calc(-16px - 100px)", sm: 0 },
-                paddingLeft: { xs: "calc(16px + 100px)", sm: 0 },
-                paddingRight: { xs: 2, sm: 0 },
-                paddingBottom: { xs: 0.5, sm: 0 },
-                marginBottom: { xs: -0.5, sm: 0 },
-                scrollbarWidth: "none",
-                msOverflowStyle: "none",
-                "&::-webkit-scrollbar": {
-                  display: "none",
-                },
-              }}
-            >
-              {anime.tags.map((tag) => (
-                <Chip
-                  key={tag}
-                  label={tag}
-                  size="small"
-                  color="primary"
-                  onClick={
-                    onTagClick
-                      ? (event) => {
-                          event.stopPropagation();
-                          onTagClick(tag);
-                        }
-                      : undefined
-                  }
+                <Typography
                   sx={{
-                    fontSize: "0.75rem",
-                    cursor: onTagClick ? "pointer" : "default",
-                    transition: "all 0.2s ease-in-out",
-                    "&:hover": onTagClick
-                      ? {
-                          backgroundColor: "primary.dark",
-                          transform: "scale(1.05)",
-                          boxShadow: "0 2px 4px rgba(0,0,0,0.2)",
-                        }
-                      : {},
+                    fontSize: 16,
+                    lineHeight: 1.25,
+                    "& sup": {
+                      fontSize: 10,
+                      lineHeight: 1,
+                      verticalAlign: "5px",
+                    },
                   }}
-                />
-              ))}
+                >
+                  {anime.year} <Bullet /> {anime.episodes}
+                  <sup> EPISODES</sup>
+                </Typography>
+                <Stack direction="row" spacing={0.125}>
+                  {anime.isMaomaoRecommendation && (
+                    <LocalFloristIcon color="inherit" sx={{ fontSize: 16 }} />
+                  )}
+                  {anime.hasDawnSeen && (
+                    <Face3Icon color="inherit" sx={{ fontSize: 16 }} />
+                  )}
+                  {anime.hasSterlingSeen && (
+                    <Face5Icon color="inherit" sx={{ fontSize: 16 }} />
+                  )}
+                </Stack>
+              </Stack>
+              <Typography
+                variant="h5"
+                sx={{
+                  fontSize: 16,
+                  fontWeight: "bold",
+                }}
+              >
+                {anime.title}
+              </Typography>
+              <Stack direction="row" gap={2} sx={{ lineHeight: "1.1" }}>
+                <Typography
+                  sx={{
+                    fontSize: 16,
+                    "& sub": {
+                      fontSize: 13,
+                      lineHeight: 1,
+                      verticalAlign: "baseline",
+                    },
+                  }}
+                >
+                  {anime.rating}/
+                  <sub>{abbreviateNumber(anime.ratingOutOf)}</sub>
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: 16,
+                    "& sup": {
+                      fontSize: 10,
+                      lineHeight: 1,
+                      verticalAlign: "5px",
+                    },
+                  }}
+                >
+                  {anime.rank}
+                  <sup> RANK</sup>
+                </Typography>
+
+                <Typography
+                  sx={{
+                    fontSize: 16,
+                    "& sup": {
+                      fontSize: 10,
+                      lineHeight: 1,
+                      verticalAlign: "5px",
+                    },
+                  }}
+                >
+                  {anime.popularity}
+                  <sup> POP</sup>
+                </Typography>
+              </Stack>
+
+              <Stack
+                direction="row"
+                spacing={1}
+                useFlexGap
+                sx={{
+                  overflowX: "auto",
+                  overflowY: "visible",
+                  flexWrap: { xs: "nowrap", sm: "wrap" },
+                  width: { xs: "100vw", sm: "auto" },
+                  marginLeft: { xs: 0, sm: 0 },
+                  paddingLeft: { xs: 0, sm: 0 },
+                  paddingRight: { xs: 2, sm: 0 },
+                  paddingBottom: { xs: 0.5, sm: 0 },
+                  marginBottom: { xs: -0.5, sm: 0 },
+                  scrollbarWidth: "none",
+                  msOverflowStyle: "none",
+                  "&::-webkit-scrollbar": {
+                    display: "none",
+                  },
+                }}
+              >
+                {anime.tags.map((tag) => (
+                  <Chip
+                    key={tag}
+                    label={tag}
+                    size="small"
+                    color="primary"
+                    onClick={
+                      onTagClick
+                        ? (event) => {
+                            event.stopPropagation();
+                            onTagClick(tag);
+                          }
+                        : undefined
+                    }
+                    sx={{
+                      fontSize: "0.75rem",
+                      cursor: onTagClick ? "pointer" : "default",
+                      transition: "all 0.2s ease-in-out",
+                      "&:hover": onTagClick
+                        ? {
+                            backgroundColor: "primary.dark",
+                            transform: "scale(1.05)",
+                            boxShadow: "0 2px 4px rgba(0,0,0,0.2)",
+                          }
+                        : {},
+                    }}
+                  />
+                ))}
+              </Stack>
             </Stack>
           </CardContent>
         </Box>
         {anime.shortDescription && (
           <CardContent
             sx={{
-              paddingTop: 0,
               "&:last-child": { paddingBottom: 1 },
               display: expanded ? "block" : "none",
+              pl: 0,
             }}
           >
             <Box
@@ -257,14 +256,15 @@ export default function AnimeCard({
                 variant="body2"
                 component={"span"}
                 sx={{
-                  color: "black",
+                  color: "white",
                   fontSize: 16,
                 }}
               >
                 {anime.shortDescription}
               </Typography>
               <Divider
-                variant="middle"
+                variant="fullWidth"
+                color="white"
                 sx={{
                   mt: 1,
                   mb: 1,
@@ -276,7 +276,7 @@ export default function AnimeCard({
                 variant="body2"
                 component={"span"}
                 sx={{
-                  color: "black",
+                  color: "white",
                   display: expanded ? "initial" : "none",
                   fontSize: 16,
                 }}
