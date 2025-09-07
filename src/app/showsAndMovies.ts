@@ -27,7 +27,6 @@ import FoundationS3E7 from "./assets/FoundationS3E7.jpg";
 import FrierenFrierensParty from "./assets/FrierenFrierensParty.jpg";
 import FrierenLogo from "./assets/FrierenLogo.jpg";
 import Fruits from "./assets/Fruits.jpg";
-import Gurren from "./assets/Gurren.jpg";
 import Highest2Lowest from "./assets/Highest2Lowest.jpg";
 import Highest2LowestLogo from "./assets/Highest2LowestLogo.jpg";
 import Invasion from "./assets/Invasion.jpg";
@@ -121,23 +120,6 @@ export interface UpNextProps extends AvailableNowProps {
 
 export const availableNow: AvailableNowProps[] = [
   {
-    avatar: PeacemakerLogo.src,
-    title: "Peacemaker",
-    subheader: "Another Rick Up My Sleeve",
-    season: 2,
-    episode: 3,
-    episodesInSeason: 8,
-    cardMedia: PeacemakerSeason2.src,
-    cardMediaAlt: "Peacemaker Season 2",
-    releaseDateTime: "September 04 2025 21:00:00 GMT-0700",
-    synopsis: `As Peacemaker receives praise as a hero, he uses the alternate dimension to deepen his bond with Harcourt. Meanwhile, Economos faces criticism for the mission's failure.`,
-    watchUrl:
-      "https://play.hbomax.com/show/a939d96b-7ffb-4481-96f6-472838d104ca",
-    imdbUrl: "https://www.imdb.com/title/tt35530357/?ref_=ttep_ep_3",
-    objectPosition: "50% 35%",
-    SiteLogo: HBOLogo,
-  },
-  {
     avatar: TheBearLogo.src,
     title: "The Bear",
     subheader: "Sophie",
@@ -153,23 +135,6 @@ export const availableNow: AvailableNowProps[] = [
     imdbUrl: "https://www.imdb.com/title/tt36943999/?ref_=mv_close",
     objectPosition: "50% 50%",
     SiteLogo: HuluLogo,
-  },
-  {
-    avatar: JamesLogo.src,
-    title: "All Creatures Great And Small",
-    subheader: "For Whom the Bell Tolls",
-    season: 3,
-    episode: 6,
-    episodesInSeason: 7,
-    cardMedia: AllCreatures.src,
-    cardMediaAlt: "All Creatures Great And Small Season 3 Episode 4",
-    releaseDateTime: "February 12, 2023 21:00:00",
-    synopsis: `James finds a case of TB while testing his father-in-law's herd. Could it be the end of the farm? Meanwhile, Tristan proposes marriage while Mrs Hall tries to save an abandoned dog. Suddenly, Britain declares a state of war.`,
-    watchUrl:
-      "https://play.google.com/store/tv/show?id=gbQjVgRNYkg.P&cdid=tvseason-mjGu8FIpiU4.P&hl=en_US",
-    imdbUrl: "https://www.imdb.com/title/tt16971194/?ref_=ttep_ep_6",
-    objectPosition: "50% 50%",
-    SiteLogo: GooglePlayMoviesLogo,
   },
   {
     avatar: StoneLogo.src,
@@ -240,26 +205,6 @@ export const availableNow: AvailableNowProps[] = [
     SiteLogo: CrunchyrollLogo,
   },
   {
-    avatar: Seventh.src,
-    shortTitle: "7th Time Loop",
-    title:
-      "7th Time Loop: The Villainess Enjoys a Carefree Life Married to Her Worst Enemy",
-    subheader: "The Golden Imperial Capital",
-    season: 1,
-    episode: 2,
-    episodesInSeason: 12,
-    cardMedia: Seventh.src,
-    cardMediaAlt:
-      "7th Time Loop: The Villainess Enjoys a Carefree Life Married to Her Worst Enemy",
-    releaseDateTime: "January 14 2024 03:00:00 GMT-0700",
-    synopsis: `Rishe accepts Arnold's proposal on conditions. He agrees, they travel to Galkhein where she's never been. She wonders his true motives.`,
-    watchUrl:
-      "https://www.crunchyroll.com/series/G4PH0WJGQ/7th-time-loop-the-villainess-enjoys-a-carefree-life-married-to-her-worst-enemy",
-    imdbUrl: "https://www.imdb.com/title/tt30790804/?ref_=ttep_ep_2",
-    objectPosition: "50% 50%",
-    SiteLogo: CrunchyrollLogo,
-  },
-  {
     avatar: NyaightLogo.src,
     title: "Nyaight of the Living Cat",
     subheader: "Commeowndo",
@@ -277,39 +222,6 @@ export const availableNow: AvailableNowProps[] = [
     SiteLogo: CrunchyrollLogo,
   },
   {
-    avatar: AttackLogo.src,
-    title: "Attack on Titan",
-    subheader: "Descent",
-    season: 3,
-    episode: 15,
-    episodesInSeason: 22,
-    cardMedia: Attack.src,
-    cardMediaAlt: "Attack on Titan",
-    releaseDateTime: "May 13 2019 03:00:00 GMT-0700",
-    synopsis: `Though their Thunder Spears prove effective, the Scouts' celebration is short-lived as disaster descends upon Shiganshina.`,
-    watchUrl: "https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan",
-    imdbUrl: "https://www.imdb.com/title/tt9806162/?ref_=tt_ov_ep_nx",
-    objectPosition: "15% 50%",
-    SiteLogo: CrunchyrollLogo,
-  },
-  {
-    avatar: Gurren.src,
-    title: "Gurren Lagann",
-    subheader: "I Accept Your Last Wish",
-    season: 1,
-    episode: 25,
-    episodesInSeason: 27,
-    cardMedia: Gurren.src,
-    cardMediaAlt: "Gurren Lagann",
-    releaseDateTime: "November 10 2008 03:00:00 GMT-0700",
-    synopsis: `Anti-Spirals make an attack in waves against the team. The universe changes to high-density water, Super Galaxy Dai-Gurren starts to sink.`,
-    watchUrl:
-      "https://www.hulu.com/series/6ea27f41-e422-4c58-8e06-9ad1602903b7",
-    imdbUrl: "https://www.imdb.com/title/tt1785135/?ref_=tt_ov_ep_nx",
-    objectPosition: "50% 20%",
-    SiteLogo: HuluLogo,
-  },
-  {
     avatar: Fruits.src,
     title: "Fruits Basket",
     subheader: "Do You Wanna Kiss?",
@@ -322,6 +234,59 @@ export const availableNow: AvailableNowProps[] = [
     synopsis: `Isuzu, the zodiac Horse, is determined to make change and seeks out Shigure for some answers.`,
     watchUrl: "https://www.crunchyroll.com/series/G6ZJMGEXY/fruits-basket",
     imdbUrl: "https://www.imdb.com/title/tt12752212/?ref_=tt_ov_ep_nx",
+    objectPosition: "50% 50%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: JamesLogo.src,
+    title: "All Creatures Great And Small",
+    subheader: "Merry Bloody Christmas",
+    season: 3,
+    episode: 7,
+    episodesInSeason: 7,
+    cardMedia: AllCreatures.src,
+    cardMediaAlt: "All Creatures Great And Small Season 3 Episode 4",
+    releaseDateTime: "February 19, 2023 21:00:00",
+    synopsis: `As Christmastime is overshadowed by war, the Farnons have taken in a refugee child. Siegfried must choose between the well being of a racehorse and safeguarding Tristan's future. Mrs. Hall also grapples with upsetting news.`,
+    watchUrl:
+      "https://play.google.com/store/tv/show?id=gbQjVgRNYkg.P&cdid=tvseason-mjGu8FIpiU4.P&hl=en_US",
+    imdbUrl: "https://www.imdb.com/title/tt16971196/?ref_=tt_ov_ep_nx",
+    objectPosition: "50% 50%",
+    SiteLogo: GooglePlayMoviesLogo,
+  },
+  {
+    avatar: AttackLogo.src,
+    title: "Attack on Titan",
+    subheader: "Perfect Game",
+    season: 3,
+    episode: 16,
+    episodesInSeason: 22,
+    cardMedia: Attack.src,
+    cardMediaAlt: "Attack on Titan",
+    releaseDateTime: "May 20 2019 03:00:00 GMT-0700",
+    synopsis: `While one front is rained on by flames, the other is battered by boulders. With no way out and limited options, the Scouts are forced to fight against the Titans with little hope left.`,
+    watchUrl: "https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan",
+    imdbUrl: "https://www.imdb.com/title/tt9898836/?ref_=tt_ov_ep_nx",
+    objectPosition: "15% 50%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: Seventh.src,
+    shortTitle: "7th Time Loop",
+    title:
+      "7th Time Loop: The Villainess Enjoys a Carefree Life Married to Her Worst Enemy",
+    subheader: "A Thinly Veiled Sword Dance (Rondo)",
+    season: 1,
+    episode: 3,
+    episodesInSeason: 12,
+    cardMedia: Seventh.src,
+    cardMediaAlt:
+      "7th Time Loop: The Villainess Enjoys a Carefree Life Married to Her Worst Enemy",
+    releaseDateTime: "January 21 2024 03:00:00 GMT-0700",
+    synopsis: `Rishe accepts Arnold's proposal on conditions. He agrees, they travel to Galkhein where she's never been. She wonders his true motives.`,
+    watchUrl:
+      "https://www.crunchyroll.com/series/G4PH0WJGQ/7th-time-loop-the-villainess-enjoys-a-carefree-life-married-to-her-worst-enemy",
+    imdbUrl: "https://www.imdb.com/title/tt30790805/?ref_=tt_ov_ep_nx",
     objectPosition: "50% 50%",
     SiteLogo: CrunchyrollLogo,
   },
@@ -682,6 +647,7 @@ export const upNext: UpNextProps[] = [
     releaseDateTime: "September 11 2025 21:00:00 GMT-0700",
     watchUrl:
       "https://play.hbomax.com/show/a939d96b-7ffb-4481-96f6-472838d104ca",
+    imdbUrl: "https://www.imdb.com/title/tt35530359/?ref_=ttep_ep_4",
     objectPosition: "50% 35%",
     TimerCard: SmallTimerCard,
     SiteLogo: HBOLogo,
