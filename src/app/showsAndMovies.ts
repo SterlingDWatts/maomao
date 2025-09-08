@@ -13,12 +13,12 @@ import {
 
 import TwentyEightYears from "./assets/28Years.jpg";
 import TwentyEightYearsLogo from "./assets/28YearsLogo.jpg";
-import AllCreatures from "./assets/AllCreatures.jpg";
 import Attack from "./assets/Attack.jpg";
 import AttackLogo from "./assets/AttackLogo.jpg";
 import ChainsawManMovie from "./assets/ChainsawManMovie.jpg";
 import DanDaDan from "./assets/DanDaDan.jpg";
 import DandadanLogo from "./assets/DandadanLogo.jpg";
+import Delicious from "./assets/Delicious.jpg";
 import Fantastic from "./assets/Fantastic.jpg";
 import FantasticLogo from "./assets/FantasticLogo.jpg";
 import FoundationAvatar from "./assets/FoundationAvatar.jpg";
@@ -188,23 +188,6 @@ export const availableNow: AvailableNowProps[] = [
     SiteLogo: HuluLogo,
   },
   {
-    avatar: Raven.src,
-    title: "Raven of The Inner Palace",
-    subheader: "The Skylark Princess",
-    season: 1,
-    episode: 4,
-    episodesInSeason: 13,
-    cardMedia: Raven.src,
-    cardMediaAlt: "Raven of The Inner Palace",
-    releaseDateTime: "October 22 2020 03:00:00 GMT-0700",
-    synopsis: `The Ghost of a skylark visits Shouxue, which leads to her hearing the tale of the Skylark Princess and her tragic death.`,
-    watchUrl:
-      "https://www.crunchyroll.com/series/GP5HJ8E99/raven-of-the-inner-palace",
-    imdbUrl: "https://www.imdb.com/title/tt22938330/?ref_=ttep_ep_4",
-    objectPosition: "50% 50%",
-    SiteLogo: CrunchyrollLogo,
-  },
-  {
     avatar: NyaightLogo.src,
     title: "Nyaight of the Living Cat",
     subheader: "Commeowndo",
@@ -222,52 +205,35 @@ export const availableNow: AvailableNowProps[] = [
     SiteLogo: CrunchyrollLogo,
   },
   {
-    avatar: Fruits.src,
-    title: "Fruits Basket",
-    subheader: "Do You Wanna Kiss?",
-    season: 2,
-    episode: 18,
-    episodesInSeason: 25,
-    cardMedia: Fruits.src,
-    cardMediaAlt: "Fruits Basket",
-    releaseDateTime: "August 04 2020 03:00:00 GMT-0700",
-    synopsis: `Isuzu, the zodiac Horse, is determined to make change and seeks out Shigure for some answers.`,
-    watchUrl: "https://www.crunchyroll.com/series/G6ZJMGEXY/fruits-basket",
-    imdbUrl: "https://www.imdb.com/title/tt12752212/?ref_=tt_ov_ep_nx",
-    objectPosition: "50% 50%",
-    SiteLogo: CrunchyrollLogo,
-  },
-  {
-    avatar: JamesLogo.src,
-    title: "All Creatures Great And Small",
-    subheader: "Merry Bloody Christmas",
-    season: 3,
-    episode: 7,
-    episodesInSeason: 7,
-    cardMedia: AllCreatures.src,
-    cardMediaAlt: "All Creatures Great And Small Season 3 Episode 4",
-    releaseDateTime: "February 19, 2023 21:00:00",
-    synopsis: `As Christmastime is overshadowed by war, the Farnons have taken in a refugee child. Siegfried must choose between the well being of a racehorse and safeguarding Tristan's future. Mrs. Hall also grapples with upsetting news.`,
-    watchUrl:
-      "https://play.google.com/store/tv/show?id=gbQjVgRNYkg.P&cdid=tvseason-mjGu8FIpiU4.P&hl=en_US",
-    imdbUrl: "https://www.imdb.com/title/tt16971196/?ref_=tt_ov_ep_nx",
-    objectPosition: "50% 50%",
-    SiteLogo: GooglePlayMoviesLogo,
-  },
-  {
     avatar: AttackLogo.src,
     title: "Attack on Titan",
-    subheader: "Perfect Game",
+    subheader: "Hero",
     season: 3,
-    episode: 16,
+    episode: 17,
     episodesInSeason: 22,
     cardMedia: Attack.src,
     cardMediaAlt: "Attack on Titan",
-    releaseDateTime: "May 20 2019 03:00:00 GMT-0700",
-    synopsis: `While one front is rained on by flames, the other is battered by boulders. With no way out and limited options, the Scouts are forced to fight against the Titans with little hope left.`,
+    releaseDateTime: "May 27 2019 03:00:00 GMT-0700",
+    synopsis: `As Erwin's heroic charge buys Levi time to confront the Beast Titan, Armin comes up with a plan of his own that lays it all on the line.`,
     watchUrl: "https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan",
-    imdbUrl: "https://www.imdb.com/title/tt9898836/?ref_=tt_ov_ep_nx",
+    imdbUrl: "https://www.imdb.com/title/tt9906260/?ref_=tt_ov_ep_nx",
     objectPosition: "15% 50%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: Fruits.src,
+    title: "Fruits Basket",
+    subheader: "There's Just No Way!",
+    season: 2,
+    episode: 19,
+    episodesInSeason: 25,
+    cardMedia: Fruits.src,
+    cardMediaAlt: "Fruits Basket",
+    releaseDateTime: "August 11 2020 03:00:00 GMT-0700",
+    synopsis: `Isuzu spends the night recuperating at Shigure's, giving a chance for Tohru and Isuzu to get to know each other.`,
+    watchUrl: "https://www.crunchyroll.com/series/G6ZJMGEXY/fruits-basket",
+    imdbUrl: "https://www.imdb.com/title/tt12819798/?ref_=tt_ov_ep_nx",
+    objectPosition: "50% 50%",
     SiteLogo: CrunchyrollLogo,
   },
   {
@@ -275,20 +241,54 @@ export const availableNow: AvailableNowProps[] = [
     shortTitle: "7th Time Loop",
     title:
       "7th Time Loop: The Villainess Enjoys a Carefree Life Married to Her Worst Enemy",
-    subheader: "A Thinly Veiled Sword Dance (Rondo)",
+    subheader: "Turning the Knave into a Secret Spice",
     season: 1,
-    episode: 3,
+    episode: 4,
     episodesInSeason: 12,
     cardMedia: Seventh.src,
     cardMediaAlt:
       "7th Time Loop: The Villainess Enjoys a Carefree Life Married to Her Worst Enemy",
-    releaseDateTime: "January 21 2024 03:00:00 GMT-0700",
-    synopsis: `Rishe accepts Arnold's proposal on conditions. He agrees, they travel to Galkhein where she's never been. She wonders his true motives.`,
+    releaseDateTime: "January 28 2024 03:00:00 GMT-0700",
+    synopsis: `To earn the right to do business with her favored trading company, Rishe is challenged to come up with a product that will sell rapidly within a set time limit.`,
     watchUrl:
       "https://www.crunchyroll.com/series/G4PH0WJGQ/7th-time-loop-the-villainess-enjoys-a-carefree-life-married-to-her-worst-enemy",
-    imdbUrl: "https://www.imdb.com/title/tt30790805/?ref_=tt_ov_ep_nx",
+    imdbUrl: "https://www.imdb.com/title/tt30790806/?ref_=tt_ov_ep_nx",
     objectPosition: "50% 50%",
     SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: Raven.src,
+    title: "Raven of The Inner Palace",
+    subheader: "Confidant",
+    season: 1,
+    episode: 5,
+    episodesInSeason: 13,
+    cardMedia: Raven.src,
+    cardMediaAlt: "Raven of The Inner Palace",
+    releaseDateTime: "October 29 2020 03:00:00 GMT-0700",
+    synopsis: `The Ghost of a skylark visits Shouxue, which leads to her hearing the tale of the Skylark Princess and her tragic death.`,
+    watchUrl:
+      "https://www.crunchyroll.com/series/GP5HJ8E99/raven-of-the-inner-palace",
+    imdbUrl: "https://www.imdb.com/title/tt23128458/?ref_=tt_ov_ep_nx",
+    objectPosition: "50% 50%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: Raven.src,
+    title: "Delicious in Dungeon",
+    subheader: "Roast Basilisk/Omelet/Kakiage",
+    season: 1,
+    episode: 2,
+    episodesInSeason: 24,
+    cardMedia: Delicious.src,
+    cardMediaAlt: "Delicious in Dungeon",
+    releaseDateTime: "January 11 2024 03:00:00 GMT-0700",
+    synopsis: `After waking up to a tantalizing smell, Marcille receives a lecture from Senshi on a balanced diet. The crew helps an adventurer poisoned by a basilisk.`,
+    watchUrl:
+      "https://www.netflix.com/us/title/81564899?s=a&trkid=13747225&trg=cp&vlang=en&clip=81751898",
+    imdbUrl: "https://www.imdb.com/title/tt30799784/?ref_=ttep_ep_2",
+    objectPosition: "50% 50%",
+    SiteLogo: NetflixLogo,
   },
 ];
 
