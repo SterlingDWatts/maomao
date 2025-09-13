@@ -9,6 +9,7 @@ import {
   HuluLogo,
   IMDBLogo,
   NetflixLogo,
+  YoutubeLogo,
 } from "./svgs/svgLogos";
 
 import TwentyEightYears from "./assets/28Years.jpg";
@@ -76,6 +77,8 @@ import StrangerLogo from "./assets/StrangerLogo.jpg";
 import StrangerThings from "./assets/StrangerThings.jpg";
 import Tar from "./assets/Tar.jpg";
 import TarLogo from "./assets/TarLogo.jpg";
+import Taskmaster from "./assets/Taskmaster.jpg";
+import TaskmasterLogo from "./assets/TaskmasterLogo.jpg";
 import TheBearLogo from "./assets/TheBearLogo.jpg";
 import TheBearS4E6 from "./assets/TheBearS4E6.jpg";
 import TheBrutalist from "./assets/TheBrutalist.jpg";
@@ -119,6 +122,24 @@ export interface UpNextProps extends AvailableNowProps {
 }
 
 export const availableNow: AvailableNowProps[] = [
+  {
+    avatar: TaskmasterLogo.src,
+    title: "Taskmaster",
+    subheader: "9x7",
+    season: 20,
+    episode: 1,
+    episodesInSeason: 10,
+    cardMedia: Taskmaster.src,
+    cardMediaAlt: "Taskmaster",
+    releaseDateTime: "September 11 2025 21:00:00 GMT-0700",
+    synopsis:
+      "Greg Davies and Alex Horne host five comedians - Maisie Adam, Reece Shearsmith, Sanjeev Bhaskar, Phil Ellis and Ania Magliano - in tasks involving codes, gym balls and gross sounds, testing skills and dignity.",
+    watchUrl:
+      "https://youtube.com/playlist?list=PLRWvNQVqAeWKj3-psfj3jrsqtCnPoE178&si=nWt5PTpRSe1uc76I",
+    imdbUrl: "https://www.imdb.com/title/tt37520605/?ref_=ttep_ep_1",
+    objectPosition: "50% 50%",
+    SiteLogo: YoutubeLogo,
+  },
   {
     avatar: PeacemakerLogo.src,
     title: "Peacemaker",
@@ -291,17 +312,17 @@ export const availableNow: AvailableNowProps[] = [
   {
     avatar: Raven.src,
     title: "Raven of The Inner Palace",
-    subheader: "The Summer King and the Winter King",
+    subheader: "Glass Prayer",
     season: 1,
-    episode: 6,
+    episode: 7,
     episodesInSeason: 13,
     cardMedia: Raven.src,
     cardMediaAlt: "Raven of The Inner Palace",
-    releaseDateTime: "November 05 2020 03:00:00 GMT-0700",
-    synopsis: `Shouxue searches the storehouse for the ghost's gemstone, while Gaujun investigates the Raven Consort's secrets.`,
+    releaseDateTime: "November 12 2020 03:00:00 GMT-0700",
+    synopsis: `Shouxue must solve the mystery of the ghost that appears beneath the willow tree, and the two ghosts that appear in the emperor's chambers.`,
     watchUrl:
       "https://www.crunchyroll.com/series/GP5HJ8E99/raven-of-the-inner-palace",
-    imdbUrl: "https://www.imdb.com/title/tt23335478/?ref_=ttep_ep_6",
+    imdbUrl: "https://www.imdb.com/title/tt23629834/?ref_=ttep_ep_7",
     objectPosition: "50% 50%",
     SiteLogo: CrunchyrollLogo,
   },
@@ -569,23 +590,6 @@ export const upNext: UpNextProps[] = [
   //   SiteLogo: AppleLogo,
   // },
   {
-    avatar: KaijuLogo.src,
-    title: "Kaiju No. 8",
-    subheader: "",
-    season: 2,
-    episode: 9,
-    episodesInSeason: 11,
-    cardMedia: Kaiju.src,
-    cardMediaAlt: "Kaiju No. 8",
-    releaseDateTime: "September 13 2025 07:00:00 GMT-0700",
-    synopsis: "",
-    watchUrl: "https://www.crunchyroll.com/series/GG5H5XQ7D/kaiju-no-8",
-    imdbUrl: "https://www.imdb.com/title/tt21975436/?ref_=ttep_ov_bk",
-    objectPosition: "50% 50%",
-    TimerCard: LargeTimerCard,
-    SiteLogo: CrunchyrollLogo,
-  },
-  {
     avatar: NyaightLogo.src,
     title: "Nyaight of the Living Cat",
     subheader: "",
@@ -636,6 +640,24 @@ export const upNext: UpNextProps[] = [
     TimerCard: LargeTimerCard,
   },
   {
+    avatar: TaskmasterLogo.src,
+    title: "Taskmaster",
+    subheader: "Cows Are Made of Milk",
+    season: 20,
+    episode: 2,
+    episodesInSeason: 10,
+    cardMedia: Taskmaster.src,
+    cardMediaAlt: "Taskmaster",
+    releaseDateTime: "September 18 2025 21:00:00 GMT-0700",
+    synopsis: "",
+    watchUrl:
+      "https://youtube.com/playlist?list=PLRWvNQVqAeWKj3-psfj3jrsqtCnPoE178&si=nWt5PTpRSe1uc76I",
+    imdbUrl: "https://www.imdb.com/title/tt37520609/?ref_=ttep_ep_2",
+    objectPosition: "50% 30%",
+    SiteLogo: YoutubeLogo,
+    TimerCard: LargeTimerCard,
+  },
+  {
     avatar: PeacemakerLogo.src,
     title: "Peacemaker",
     subheader: "",
@@ -648,7 +670,7 @@ export const upNext: UpNextProps[] = [
     watchUrl:
       "https://play.hbomax.com/show/a939d96b-7ffb-4481-96f6-472838d104ca",
     objectPosition: "50% 35%",
-    TimerCard: SmallTimerCard,
+    TimerCard: LargeTimerCard,
     SiteLogo: HBOLogo,
   },
   {
@@ -680,7 +702,7 @@ export const upNext: UpNextProps[] = [
     watchUrl:
       "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
     objectPosition: "35% 30%",
-    TimerCard: SmallTimerCard,
+    TimerCard: LargeTimerCard,
     SiteLogo: AppleLogo,
   },
   {
@@ -697,7 +719,7 @@ export const upNext: UpNextProps[] = [
     watchUrl: "https://www.crunchyroll.com/series/GG5H5XQ7D/kaiju-no-8",
     imdbUrl: "https://www.imdb.com/title/tt21975436/?ref_=ttep_ov_bk",
     objectPosition: "50% 50%",
-    TimerCard: SmallTimerCard,
+    TimerCard: LargeTimerCard,
     SiteLogo: CrunchyrollLogo,
   },
   {
@@ -767,6 +789,24 @@ export const upNext: UpNextProps[] = [
     TimerCard: SmallTimerCard,
     SiteLogo: AppleLogo,
     addContrastToTimer: true,
+  },
+  {
+    avatar: TaskmasterLogo.src,
+    title: "Taskmaster",
+    subheader: "",
+    season: 20,
+    episode: 3,
+    episodesInSeason: 10,
+    cardMedia: Taskmaster.src,
+    cardMediaAlt: "Taskmaster",
+    releaseDateTime: "September 25 2025 21:00:00 GMT-0700",
+    synopsis: "",
+    watchUrl:
+      "https://youtube.com/playlist?list=PLRWvNQVqAeWKj3-psfj3jrsqtCnPoE178&si=nWt5PTpRSe1uc76I",
+    imdbUrl: "https://www.imdb.com/title/tt37520610/?ref_=ttep_ep_3",
+    objectPosition: "50% 30%",
+    SiteLogo: YoutubeLogo,
+    TimerCard: SmallTimerCard,
   },
   {
     avatar: PeacemakerLogo.src,
@@ -867,6 +907,24 @@ export const upNext: UpNextProps[] = [
     addContrastToTimer: true,
   },
   {
+    avatar: TaskmasterLogo.src,
+    title: "Taskmaster",
+    subheader: "",
+    season: 20,
+    episode: 4,
+    episodesInSeason: 10,
+    cardMedia: Taskmaster.src,
+    cardMediaAlt: "Taskmaster",
+    releaseDateTime: "October 02 2025 21:00:00 GMT-0700",
+    synopsis: "",
+    watchUrl:
+      "https://youtube.com/playlist?list=PLRWvNQVqAeWKj3-psfj3jrsqtCnPoE178&si=nWt5PTpRSe1uc76I",
+    imdbUrl: "https://www.imdb.com/title/tt37520612/?ref_=ttep_ep_4",
+    objectPosition: "50% 30%",
+    SiteLogo: YoutubeLogo,
+    TimerCard: SmallTimerCard,
+  },
+  {
     avatar: PeacemakerLogo.src,
     title: "Peacemaker",
     subheader: "",
@@ -948,6 +1006,24 @@ export const upNext: UpNextProps[] = [
     addContrastToTimer: true,
   },
   {
+    avatar: TaskmasterLogo.src,
+    title: "Taskmaster",
+    subheader: "",
+    season: 20,
+    episode: 5,
+    episodesInSeason: 10,
+    cardMedia: Taskmaster.src,
+    cardMediaAlt: "Taskmaster",
+    releaseDateTime: "October 09 2025 21:00:00 GMT-0700",
+    synopsis: "",
+    watchUrl:
+      "https://youtube.com/playlist?list=PLRWvNQVqAeWKj3-psfj3jrsqtCnPoE178&si=nWt5PTpRSe1uc76I",
+    imdbUrl: "https://www.imdb.com/title/tt37520613/?ref_=ttep_ep_5",
+    objectPosition: "50% 30%",
+    SiteLogo: YoutubeLogo,
+    TimerCard: SmallTimerCard,
+  },
+  {
     avatar: PeacemakerLogo.src,
     title: "Peacemaker",
     subheader: "",
@@ -1014,6 +1090,24 @@ export const upNext: UpNextProps[] = [
     addContrastToTimer: true,
   },
   {
+    avatar: TaskmasterLogo.src,
+    title: "Taskmaster",
+    subheader: "",
+    season: 20,
+    episode: 6,
+    episodesInSeason: 10,
+    cardMedia: Taskmaster.src,
+    cardMediaAlt: "Taskmaster",
+    releaseDateTime: "October 16 2025 21:00:00 GMT-0700",
+    synopsis: "",
+    watchUrl:
+      "https://youtube.com/playlist?list=PLRWvNQVqAeWKj3-psfj3jrsqtCnPoE178&si=nWt5PTpRSe1uc76I",
+    imdbUrl: "https://www.imdb.com/title/tt37520614/?ref_=ttep_ep_6",
+    objectPosition: "50% 30%",
+    SiteLogo: YoutubeLogo,
+    TimerCard: SmallTimerCard,
+  },
+  {
     avatar: InvasionLogo.src,
     title: "Invasion",
     subheader: "",
@@ -1062,6 +1156,24 @@ export const upNext: UpNextProps[] = [
     SiteLogo: AppleLogo,
     addContrastToTimer: true,
     finale: true,
+  },
+  {
+    avatar: TaskmasterLogo.src,
+    title: "Taskmaster",
+    subheader: "",
+    season: 20,
+    episode: 7,
+    episodesInSeason: 10,
+    cardMedia: Taskmaster.src,
+    cardMediaAlt: "Taskmaster",
+    releaseDateTime: "October 23 2025 21:00:00 GMT-0700",
+    synopsis: "",
+    watchUrl:
+      "https://youtube.com/playlist?list=PLRWvNQVqAeWKj3-psfj3jrsqtCnPoE178&si=nWt5PTpRSe1uc76I",
+    imdbUrl: "https://www.imdb.com/title/tt37520615/?ref_=ttep_ep_7",
+    objectPosition: "50% 30%",
+    SiteLogo: YoutubeLogo,
+    TimerCard: SmallTimerCard,
   },
   {
     avatar: NobodyWantsLogo.src,
@@ -1129,6 +1241,42 @@ export const upNext: UpNextProps[] = [
     addContrastToTimer: true,
   },
   {
+    avatar: TaskmasterLogo.src,
+    title: "Taskmaster",
+    subheader: "",
+    season: 20,
+    episode: 8,
+    episodesInSeason: 10,
+    cardMedia: Taskmaster.src,
+    cardMediaAlt: "Taskmaster",
+    releaseDateTime: "October 30 2025 21:00:00 GMT-0700",
+    synopsis: "",
+    watchUrl:
+      "https://youtube.com/playlist?list=PLRWvNQVqAeWKj3-psfj3jrsqtCnPoE178&si=nWt5PTpRSe1uc76I",
+    imdbUrl: "https://www.imdb.com/title/tt37520619/?ref_=ttep_ep_8",
+    objectPosition: "50% 30%",
+    SiteLogo: YoutubeLogo,
+    TimerCard: SmallTimerCard,
+  },
+  {
+    avatar: TaskmasterLogo.src,
+    title: "Taskmaster",
+    subheader: "",
+    season: 20,
+    episode: 9,
+    episodesInSeason: 10,
+    cardMedia: Taskmaster.src,
+    cardMediaAlt: "Taskmaster",
+    releaseDateTime: "November 06 2025 21:00:00 GMT-0700",
+    synopsis: "",
+    watchUrl:
+      "https://youtube.com/playlist?list=PLRWvNQVqAeWKj3-psfj3jrsqtCnPoE178&si=nWt5PTpRSe1uc76I",
+    imdbUrl: "https://www.imdb.com/title/tt37520623/?ref_=ttep_ep_9",
+    objectPosition: "50% 30%",
+    SiteLogo: YoutubeLogo,
+    TimerCard: SmallTimerCard,
+  },
+  {
     avatar: RunningManLogo.src,
     title: "The Running Man",
     subheader: "",
@@ -1142,6 +1290,25 @@ export const upNext: UpNextProps[] = [
     objectPosition: "50% 25%",
     TimerCard: LargeTimerCard,
     SiteLogo: FandangoLogo,
+  },
+  {
+    avatar: TaskmasterLogo.src,
+    title: "Taskmaster",
+    subheader: "",
+    season: 20,
+    episode: 10,
+    episodesInSeason: 10,
+    cardMedia: Taskmaster.src,
+    cardMediaAlt: "Taskmaster",
+    releaseDateTime: "November 13 2025 21:00:00 GMT-0700",
+    synopsis: "",
+    watchUrl:
+      "https://youtube.com/playlist?list=PLRWvNQVqAeWKj3-psfj3jrsqtCnPoE178&si=nWt5PTpRSe1uc76I",
+    imdbUrl: "https://www.imdb.com/title/tt37520630/?ref_=ttep_ep_10",
+    objectPosition: "50% 30%",
+    SiteLogo: YoutubeLogo,
+    TimerCard: SmallTimerCard,
+    finale: true,
   },
   {
     avatar: StrangerLogo.src,
