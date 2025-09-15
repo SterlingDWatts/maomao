@@ -22,9 +22,6 @@ import DandadanLogo from "./assets/DandadanLogo.jpg";
 import Delicious from "./assets/Delicious.jpg";
 import Fantastic from "./assets/Fantastic.jpg";
 import FantasticLogo from "./assets/FantasticLogo.jpg";
-import FoundationAvatar from "./assets/FoundationAvatar.jpg";
-import FoundationSeason3 from "./assets/FoundationSeason3.jpg";
-import FoundationS3E7 from "./assets/FoundationS3E7.jpg";
 import FrierenFrierensParty from "./assets/FrierenFrierensParty.jpg";
 import FrierenLogo from "./assets/FrierenLogo.jpg";
 import Fruits from "./assets/Fruits.jpg";
@@ -123,6 +120,22 @@ export interface UpNextProps extends AvailableNowProps {
 
 export const availableNow: AvailableNowProps[] = [
   {
+    avatar: NyaightLogo.src,
+    title: "Nyaight of the Living Cat",
+    subheader: "",
+    season: 1,
+    episode: 11,
+    episodesInSeason: 12,
+    cardMedia: Nyaight.src,
+    cardMediaAlt: "Nyaight of the Living Cat",
+    releaseDateTime: "September 14 2025 07:15:00 GMT-0700",
+    synopsis: "",
+    watchUrl:
+      "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
+    objectPosition: "50% 20%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
     avatar: TaskmasterLogo.src,
     title: "Taskmaster",
     subheader: "9x7",
@@ -155,22 +168,6 @@ export const availableNow: AvailableNowProps[] = [
     imdbUrl: "https://www.imdb.com/title/tt35530359/?ref_=ttep_ep_4",
     objectPosition: "50% 35%",
     SiteLogo: HBOLogo,
-  },
-  {
-    avatar: FoundationAvatar.src,
-    title: "Foundation",
-    subheader: "",
-    season: 3,
-    episode: 10,
-    episodesInSeason: 10,
-    cardMedia: FoundationSeason3.src,
-    cardMediaAlt: "Foundation Season 3 Episode 10",
-    releaseDateTime: "September 12 2025 03:00:00 GMT-0700",
-    watchUrl:
-      "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
-    objectPosition: "100% 20%",
-    SiteLogo: AppleLogo,
-    finale: true,
   },
   {
     avatar: TheBearLogo.src,
@@ -261,39 +258,6 @@ export const availableNow: AvailableNowProps[] = [
     SiteLogo: CrunchyrollLogo,
   },
   {
-    avatar: Fruits.src,
-    title: "Fruits Basket",
-    subheader: "Are You Okay?",
-    season: 2,
-    episode: 20,
-    episodesInSeason: 25,
-    cardMedia: Fruits.src,
-    cardMediaAlt: "Fruits Basket",
-    releaseDateTime: "August 18 2020 03:00:00 GMT-0700",
-    synopsis: `With the school culture festival around the corner, Yuki is kept busy as he juggles the student council and class duties.`,
-    watchUrl: "https://www.crunchyroll.com/series/G6ZJMGEXY/fruits-basket",
-    imdbUrl: "https://www.imdb.com/title/tt12833458/?ref_=ttep_ep_20",
-    objectPosition: "50% 50%",
-    SiteLogo: CrunchyrollLogo,
-  },
-  {
-    avatar: Raven.src,
-    title: "Raven of The Inner Palace",
-    subheader: "Glass Prayer",
-    season: 1,
-    episode: 7,
-    episodesInSeason: 13,
-    cardMedia: Raven.src,
-    cardMediaAlt: "Raven of The Inner Palace",
-    releaseDateTime: "November 12 2020 03:00:00 GMT-0700",
-    synopsis: `Shouxue must solve the mystery of the ghost that appears beneath the willow tree, and the two ghosts that appear in the emperor's chambers.`,
-    watchUrl:
-      "https://www.crunchyroll.com/series/GP5HJ8E99/raven-of-the-inner-palace",
-    imdbUrl: "https://www.imdb.com/title/tt23629834/?ref_=ttep_ep_7",
-    objectPosition: "50% 50%",
-    SiteLogo: CrunchyrollLogo,
-  },
-  {
     avatar: Delicious.src,
     title: "Delicious in Dungeon",
     subheader: "Snacks/Sorbet",
@@ -324,6 +288,39 @@ export const availableNow: AvailableNowProps[] = [
     watchUrl: "https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan",
     imdbUrl: "https://www.imdb.com/title/tt10064964/?ref_=ttep_ep_21",
     objectPosition: "15% 50%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: Fruits.src,
+    title: "Fruits Basket",
+    subheader: "There Was, Definitely",
+    season: 2,
+    episode: 21,
+    episodesInSeason: 25,
+    cardMedia: Fruits.src,
+    cardMediaAlt: "Fruits Basket",
+    releaseDateTime: "August 25 2020 03:00:00 GMT-0700",
+    synopsis: `Yuki loses himself in thought as he remembers a dark memory from his childhood.`,
+    watchUrl: "https://www.crunchyroll.com/series/G6ZJMGEXY/fruits-basket",
+    imdbUrl: "https://www.imdb.com/title/tt12901410/?ref_=ttep_ep_21",
+    objectPosition: "50% 50%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: Raven.src,
+    title: "Raven of The Inner Palace",
+    subheader: "Blue Swallow",
+    season: 1,
+    episode: 8,
+    episodesInSeason: 13,
+    cardMedia: Raven.src,
+    cardMediaAlt: "Raven of The Inner Palace",
+    releaseDateTime: "November 19 2020 03:00:00 GMT-0700",
+    synopsis: `Yi Siha, a eunuch serving Feiyan Palace, visits Ye Ming Palace. He has seen the ghost of a boy holding a blue swallow feather and asks Shouxue to help him. During her investigation, Shouxue comes across Yi Siha being caned by some older eunuchs. When she stops the punishment, Yi Siha's mentor Kang Lan trembles with fear. In Shouxue's eyes he saw a horrifying monster.`,
+    watchUrl:
+      "https://www.crunchyroll.com/series/GP5HJ8E99/raven-of-the-inner-palace",
+    imdbUrl: "https://www.imdb.com/title/tt23747250/?ref_=ttep_ep_8",
+    objectPosition: "50% 50%",
     SiteLogo: CrunchyrollLogo,
   },
 ];
@@ -589,23 +586,6 @@ export const upNext: UpNextProps[] = [
   //   TimerCard: LargeTimerCard,
   //   SiteLogo: AppleLogo,
   // },
-  {
-    avatar: NyaightLogo.src,
-    title: "Nyaight of the Living Cat",
-    subheader: "",
-    season: 1,
-    episode: 11,
-    episodesInSeason: 12,
-    cardMedia: Nyaight.src,
-    cardMediaAlt: "Nyaight of the Living Cat",
-    releaseDateTime: "September 14 2025 07:15:00 GMT-0700",
-    synopsis: "",
-    watchUrl:
-      "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
-    objectPosition: "50% 20%",
-    TimerCard: LargeTimerCard,
-    SiteLogo: CrunchyrollLogo,
-  },
   {
     avatar: OnlyMurdersLogo.src,
     title: "Only Murders In The Building",
