@@ -41,8 +41,6 @@ import MyHeroLogo from "./assets/MyHeroLogo.jpg";
 import Naruto from "./assets/Naruto.jpg";
 import NobodyWants from "./assets/NobodyWants.jpg";
 import NobodyWantsLogo from "./assets/NobodyWantsLogo.jpg";
-import Nyaight from "./assets/Nyaight.jpg";
-import NyaightLogo from "./assets/NyaightLogo.jpg";
 import Odyssey from "./assets/Odyssey.jpg";
 import OdysseyLogo from "./assets/OdysseyLogo.jpg";
 import OneBattle from "./assets/OneBattle.jpg";
@@ -115,22 +113,6 @@ export interface UpNextProps extends AvailableNowProps {
 }
 
 export const availableNow: AvailableNowProps[] = [
-  {
-    avatar: NyaightLogo.src,
-    title: "Nyaight of the Living Cat",
-    subheader: "",
-    season: 1,
-    episode: 11,
-    episodesInSeason: 12,
-    cardMedia: Nyaight.src,
-    cardMediaAlt: "Nyaight of the Living Cat",
-    releaseDateTime: "September 14 2025 07:15:00 GMT-0700",
-    synopsis: "",
-    watchUrl:
-      "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
-    objectPosition: "50% 20%",
-    SiteLogo: CrunchyrollLogo,
-  },
   {
     avatar: TaskmasterLogo.src,
     title: "Taskmaster",
@@ -303,23 +285,6 @@ export const availableNow: AvailableNowProps[] = [
     objectPosition: "50% 50%",
     SiteLogo: CrunchyrollLogo,
   },
-  // {
-  //   avatar: NyaightLogo.src,
-  //   title: "Nyaight of the Living Cat",
-  //   subheader: "",
-  //   season: 1,
-  //   episode: 12,
-  //   episodesInSeason: 12,
-  //   cardMedia: Nyaight.src,
-  //   cardMediaAlt: "Nyaight of the Living Cat",
-  //   releaseDateTime: "September 21 2025 07:15:00 GMT-0700",
-  //   synopsis: "",
-  //   watchUrl:
-  //     "https://www.crunchyroll.com/series/GKEH2G0DN/nyaight-of-the-living-cat",
-  //   objectPosition: "50% 20%",
-  //   SiteLogo: CrunchyrollLogo,
-  //   finale: true,
-  // },
 ];
 
 export const backlog: AvailableNowProps[] = [
