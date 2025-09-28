@@ -23,6 +23,7 @@ import FantasticLogo from "./assets/FantasticLogo.jpg";
 import FrierenFrierensParty from "./assets/FrierenFrierensParty.jpg";
 import FrierenLogo from "./assets/FrierenLogo.jpg";
 import Fruits from "./assets/Fruits.jpg";
+import Haikyu from "./assets/Haikyu.jpg";
 import Highest2Lowest from "./assets/Highest2Lowest.jpg";
 import Highest2LowestLogo from "./assets/Highest2LowestLogo.jpg";
 import Invasion from "./assets/Invasion.jpg";
@@ -115,26 +116,6 @@ export interface UpNextProps extends AvailableNowProps {
 
 export const availableNow: AvailableNowProps[] = [
   {
-    avatar: Seventh.src,
-    shortTitle: "7th Time Loop",
-    title:
-      "7th Time Loop: The Villainess Enjoys a Carefree Life Married to Her Worst Enemy",
-    subheader: "Turning the Knave into a Secret Spice",
-    season: 1,
-    episode: 4,
-    episodesInSeason: 12,
-    cardMedia: Seventh.src,
-    cardMediaAlt:
-      "7th Time Loop: The Villainess Enjoys a Carefree Life Married to Her Worst Enemy",
-    releaseDateTime: "January 28 2024 03:00:00 GMT-0700",
-    synopsis: `To earn the right to do business with her favored trading company, Rishe is challenged to come up with a product that will sell rapidly within a set time limit.`,
-    watchUrl:
-      "https://www.crunchyroll.com/series/G4PH0WJGQ/7th-time-loop-the-villainess-enjoys-a-carefree-life-married-to-her-worst-enemy",
-    imdbUrl: "https://www.imdb.com/title/tt30790806/?ref_=tt_ov_ep_nx",
-    objectPosition: "50% 50%",
-    SiteLogo: CrunchyrollLogo,
-  },
-  {
     avatar: AttackLogo.src,
     title: "Attack on Titan",
     subheader: "The Door of Hope",
@@ -169,22 +150,6 @@ export const availableNow: AvailableNowProps[] = [
     SiteLogo: HBOLogo,
   },
   {
-    avatar: Fruits.src,
-    title: "Fruits Basket",
-    subheader: "It's Cinderella-ish",
-    season: 2,
-    episode: 23,
-    episodesInSeason: 25,
-    cardMedia: Fruits.src,
-    cardMediaAlt: "Fruits Basket",
-    releaseDateTime: "September 08 2020 03:00:00 GMT-0700",
-    synopsis: `Tohru's class puts on an unconventional retelling of Cinderella at the school culture festival.`,
-    watchUrl: "https://www.crunchyroll.com/series/G6ZJMGEXY/fruits-basket",
-    imdbUrl: "https://www.imdb.com/title/tt12989110/?ref_=ttep_ep_23",
-    objectPosition: "50% 50%",
-    SiteLogo: CrunchyrollLogo,
-  },
-  {
     avatar: TheBearLogo.src,
     title: "The Bear",
     subheader: "Bears",
@@ -202,23 +167,6 @@ export const availableNow: AvailableNowProps[] = [
     SiteLogo: HuluLogo,
   },
   {
-    avatar: Delicious.src,
-    title: "Delicious in Dungeon",
-    subheader: "Kelpie/Porridge/Broiled with Sauce",
-    season: 1,
-    episode: 7,
-    episodesInSeason: 24,
-    cardMedia: Delicious.src,
-    cardMediaAlt: "Delicious in Dungeon",
-    releaseDateTime: "February 15 2024 03:00:00 GMT-0700",
-    synopsis: `The crew enters a new level covered in lakes, and try out seafood.`,
-    watchUrl:
-      "https://www.netflix.com/us/title/81564899?s=a&trkid=13747225&trg=cp&vlang=en&clip=81751898",
-    imdbUrl: "https://www.imdb.com/title/tt30838272/?ref_=ttep_ep_7",
-    objectPosition: "50% 50%",
-    SiteLogo: NetflixLogo,
-  },
-  {
     avatar: SlowHorsesLogo.src,
     title: "Slow Horses",
     subheader: "",
@@ -234,9 +182,92 @@ export const availableNow: AvailableNowProps[] = [
     SiteLogo: AppleLogo,
     addContrastToTimer: true,
   },
+  {
+    avatar: Seventh.src,
+    shortTitle: "7th Time Loop",
+    title:
+      "7th Time Loop: The Villainess Enjoys a Carefree Life Married to Her Worst Enemy",
+    subheader: "Another Kind of Trade",
+    season: 1,
+    episode: 5,
+    episodesInSeason: 12,
+    cardMedia: Seventh.src,
+    cardMediaAlt:
+      "7th Time Loop: The Villainess Enjoys a Carefree Life Married to Her Worst Enemy",
+    releaseDateTime: "February 04 2024 03:00:00 GMT-0700",
+    synopsis: `Rishe arrives at the chapel to find Theodore waiting for her with a warning. Arnold appears and his icy treatment of his brother leaves Rishe with more questions. But she doesn't have time for that. She still has to convince Tully to become an ally.`,
+    watchUrl:
+      "https://www.crunchyroll.com/series/G4PH0WJGQ/7th-time-loop-the-villainess-enjoys-a-carefree-life-married-to-her-worst-enemy",
+    imdbUrl: "https://www.imdb.com/title/tt30790809/?ref_=ttep_ep_5",
+    objectPosition: "50% 50%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: Delicious.src,
+    title: "Delicious in Dungeon",
+    subheader: "Raspberries/Grilled Meat",
+    season: 1,
+    episode: 8,
+    episodesInSeason: 24,
+    cardMedia: Delicious.src,
+    cardMediaAlt: "Delicious in Dungeon",
+    releaseDateTime: "February 22 2024 03:00:00 GMT-0700",
+    synopsis: `Marcille thinks back to when she first met Falin, before getting in trouble with a spirit.`,
+    watchUrl:
+      "https://www.netflix.com/us/title/81564899?s=a&trkid=13747225&trg=cp&vlang=en&clip=81751898",
+    imdbUrl: "https://www.imdb.com/title/tt30838273/?ref_=ttep_ep_8",
+    objectPosition: "50% 50%",
+    SiteLogo: NetflixLogo,
+  },
+  {
+    avatar: Fruits.src,
+    title: "Fruits Basket",
+    subheader: "You're Here, Machi",
+    season: 2,
+    episode: 24,
+    episodesInSeason: 25,
+    cardMedia: Fruits.src,
+    cardMediaAlt: "Fruits Basket",
+    releaseDateTime: "September 15 2020 03:00:00 GMT-0700",
+    synopsis: `Another New Year's means another banquet for the zodiac members at the Soma estate.`,
+    watchUrl: "https://www.crunchyroll.com/series/G6ZJMGEXY/fruits-basket",
+    imdbUrl: "https://www.imdb.com/title/tt12998046/?ref_=ttep_ep_24",
+    objectPosition: "50% 50%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: Haikyu.src,
+    title: "Haikyu!!",
+    subheader: "A Coward's Anxiety",
+    season: 1,
+    episode: 5,
+    episodesInSeason: 25,
+    cardMedia: Haikyu.src,
+    cardMediaAlt: "Haikyu!!",
+    releaseDateTime: "May 04, 2014 21:00:00",
+    synopsis: `Kageyama is improving his natural skills as setter, and Hinata has natural speed and spring.  When the two of them get synched, their combination brings them victory in the three-on-three match.  So they are officially accepted as members of the Karasuno High School Volleyball Club.`,
+    watchUrl: "https://www.crunchyroll.com/series/GY8VM8MWY/haikyu",
+    imdbUrl: "https://www.imdb.com/title/tt4461874/?ref_=ttep_ep_5",
+    objectPosition: "50% 30%",
+    SiteLogo: CrunchyrollLogo,
+  },
 ];
 
 export const backlog: AvailableNowProps[] = [
+  {
+    avatar: OneBattleLogo.src,
+    title: "One Battle After Another",
+    subheader: "",
+    cardMedia: OneBattle.src,
+    cardMediaAlt: "One Battle After Another",
+    releaseDateTime: "September 26 2025 16:00:00 GMT-0700",
+    watchUrl:
+      "https://www.fandango.com/one-battle-after-another-2025-241516/movie-overview",
+    objectPosition: "50% 70%",
+    synopsis:
+      "When their evil enemy resurfaces after 16 years, a group of ex-revolutionaries reunite to rescue one of their own's daughter.",
+    SiteLogo: FandangoLogo,
+  },
   {
     avatar: TaskmasterLogo.src,
     title: "Taskmaster",
@@ -597,21 +628,6 @@ export const upNext: UpNextProps[] = [
   //   SiteLogo: YoutubeLogo,
   //   TimerCard: SmallTimerCard,
   // },
-  {
-    avatar: OneBattleLogo.src,
-    title: "One Battle After Another",
-    subheader: "",
-    cardMedia: OneBattle.src,
-    cardMediaAlt: "One Battle After Another",
-    releaseDateTime: "September 26 2025 16:00:00 GMT-0700",
-    watchUrl:
-      "https://www.fandango.com/one-battle-after-another-2025-241516/movie-overview",
-    objectPosition: "50% 70%",
-    synopsis:
-      "When their evil enemy resurfaces after 16 years, a group of ex-revolutionaries reunite to rescue one of their own's daughter.",
-    TimerCard: LargeTimerCard,
-    SiteLogo: FandangoLogo,
-  },
   // {
   //   avatar: PeacemakerLogo.src,
   //   title: "Peacemaker",
@@ -628,40 +644,22 @@ export const upNext: UpNextProps[] = [
   //   TimerCard: LargeTimerCard,
   //   SiteLogo: HBOLogo,
   // },
-  {
-    avatar: InvasionLogo.src,
-    title: "Invasion",
-    subheader: "",
-    season: 3,
-    episode: 6,
-    episodesInSeason: 10,
-    cardMedia: Invasion.src,
-    cardMediaAlt: "Invasion",
-    releaseDateTime: "September 26 2025 03:00:00 GMT-0700",
-    watchUrl:
-      "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
-    objectPosition: "35% 30%",
-    TimerCard: SmallTimerCard,
-    SiteLogo: AppleLogo,
-  },
-  {
-    avatar: KaijuLogo.src,
-    title: "Kaiju No. 8",
-    subheader: "",
-    season: 2,
-    episode: 11,
-    episodesInSeason: 11,
-    cardMedia: Kaiju.src,
-    cardMediaAlt: "Kaiju No. 8",
-    releaseDateTime: "September 27 2025 07:00:00 GMT-0700",
-    synopsis: "",
-    watchUrl: "https://www.crunchyroll.com/series/GG5H5XQ7D/kaiju-no-8",
-    imdbUrl: "https://www.imdb.com/title/tt21975436/?ref_=ttep_ov_bk",
-    objectPosition: "50% 50%",
-    TimerCard: LargeTimerCard,
-    SiteLogo: CrunchyrollLogo,
-    finale: true,
-  },
+  // {
+  //   avatar: InvasionLogo.src,
+  //   title: "Invasion",
+  //   subheader: "",
+  //   season: 3,
+  //   episode: 6,
+  //   episodesInSeason: 10,
+  //   cardMedia: Invasion.src,
+  //   cardMediaAlt: "Invasion",
+  //   releaseDateTime: "September 26 2025 03:00:00 GMT-0700",
+  //   watchUrl:
+  //     "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
+  //   objectPosition: "35% 30%",
+  //   TimerCard: SmallTimerCard,
+  //   SiteLogo: AppleLogo,
+  // },
   {
     avatar: OnlyMurdersLogo.src,
     title: "Only Murders In The Building",
