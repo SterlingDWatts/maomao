@@ -1569,10 +1569,9 @@ export const upNext: UpNextProps[] = [
     episode: 1,
     cardMedia: FrierenFrierensParty.src,
     cardMediaAlt: "Frieren's Party",
-    releaseDateTime: "January 31, 2026 23:00:00",
+    releaseDateTime: "January 16, 2026 23:00:00",
     watchUrl:
       "https://www.crunchyroll.com/series/GG5H5XQX4/frieren-beyond-journeys-end",
-    estimate: true,
     estimateDate: "January 2026",
     objectPosition: "50% 28%",
     TimerCard: LargeTimerCard,

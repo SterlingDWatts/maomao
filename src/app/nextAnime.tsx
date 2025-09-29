@@ -41,6 +41,7 @@ import MyHappyMarriage from "./assets/MyHappyMarriage.jpg";
 import Naruto from "./assets/Naruto.jpg";
 import NarutoShippuden from "./assets/NarutoShippuden.jpg";
 import NoDoubt from "./assets/NoDoubt.jpg";
+import Nyaight from "./assets/Nyaight.jpg";
 import OnePunch from "./assets/OnePunch.jpg";
 import placeholder from "./assets/placeholder.jpg";
 import Pluto from "./assets/Pluto.jpg";
@@ -608,6 +609,8 @@ export const animeList: Anime[] = [
         top in earnest.
       </>
     ),
+    hasDawnSeen: true,
+    hasSterlingSeen: true,
   },
   {
     title: "Cowboy Bebop",
@@ -1917,6 +1920,8 @@ export const animeList: Anime[] = [
         other—along the way.
       </>
     ),
+    hasDawnSeen: true,
+    hasSterlingSeen: true,
   },
   {
     title: "The Way of the Househusband",
@@ -2704,5 +2709,39 @@ export const animeList: Anime[] = [
         the heroes' weapons.
       </>
     ),
+  },
+  {
+    title: "Nyaight of the Living Cat",
+    year: 2025,
+    episodes: 12,
+    rating: 6.33,
+    ratingOutOf: 5396,
+    rank: 8277,
+    popularity: 4692,
+    picture: Nyaight.src,
+    tags: [
+      "Parody",
+      "Shōnen",
+      "Supernatural Horror",
+      "Survival",
+      "Comedy",
+      "Fantasy",
+      "Horror",
+      "Supernatural",
+    ],
+    shortDescription: `A mysterious virus turns humans who touch cats into felines, causing a "Nyandemic" worldwide catastrophe where people transform into cats.`,
+    longDescription: (
+      <>
+        A virus spreads across the world, transforming all humankind into wild,
+        slavering, furry beasts: cats, to be precise. Those few survivors who
+        remain human take refuge in the dark corners of the earth as they fight
+        back against the feline horde. Kunagi, a man with no memory of his past
+        yet a deep knowledge of cats, struggles to hold on with only his wits
+        and a will to survive. Yet the virus transmits merely through cuddles,
+        and Kunagi finds kitties so hard to resist! Is his willpower strong
+        enough to withstand this hair-raising cat-tastrophe?
+      </>
+    ),
+    hasSterlingSeen: true,
   },
 ];
