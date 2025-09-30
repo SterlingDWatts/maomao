@@ -18,6 +18,7 @@ import Attack from "./assets/Attack.jpg";
 import AttackLogo from "./assets/AttackLogo.jpg";
 import ChainsawManMovie from "./assets/ChainsawManMovie.jpg";
 import Delicious from "./assets/Delicious.jpg";
+import Dorohedoro from "./assets/Dorohedoro.jpg";
 import Fantastic from "./assets/Fantastic.jpg";
 import FantasticLogo from "./assets/FantasticLogo.jpg";
 import FrierenFrierensParty from "./assets/FrierenFrierensParty.jpg";
@@ -116,23 +117,6 @@ export interface UpNextProps extends AvailableNowProps {
 
 export const availableNow: AvailableNowProps[] = [
   {
-    avatar: TheBearLogo.src,
-    title: "The Bear",
-    subheader: "Bears",
-    season: 4,
-    episode: 7,
-    episodesInSeason: 10,
-    cardMedia: TheBearLogo.src,
-    cardMediaAlt: "The Bear Season 4",
-    releaseDateTime: "June 25, 2025 21:00:00",
-    synopsis: "The wedding.",
-    watchUrl:
-      "https://www.hulu.com/series/05eb6a8e-90ed-4947-8c0b-e6536cbddd5f",
-    imdbUrl: "https://www.imdb.com/title/tt36944003/?ref_=ttep_ep_7",
-    objectPosition: "50% 50%",
-    SiteLogo: HuluLogo,
-  },
-  {
     avatar: SlowHorsesLogo.src,
     title: "Slow Horses",
     subheader: "",
@@ -202,38 +186,6 @@ export const availableNow: AvailableNowProps[] = [
     SiteLogo: CrunchyrollLogo,
   },
   {
-    avatar: Haikyu.src,
-    title: "Haikyu!!",
-    subheader: "A Coward's Anxiety",
-    season: 1,
-    episode: 5,
-    episodesInSeason: 25,
-    cardMedia: Haikyu.src,
-    cardMediaAlt: "Haikyu!!",
-    releaseDateTime: "May 04, 2014 21:00:00",
-    synopsis: `Kageyama is improving his natural skills as setter, and Hinata has natural speed and spring.  When the two of them get synched, their combination brings them victory in the three-on-three match.  So they are officially accepted as members of the Karasuno High School Volleyball Club.`,
-    watchUrl: "https://www.crunchyroll.com/series/GY8VM8MWY/haikyu",
-    imdbUrl: "https://www.imdb.com/title/tt4461874/?ref_=ttep_ep_5",
-    objectPosition: "50% 30%",
-    SiteLogo: CrunchyrollLogo,
-  },
-  {
-    avatar: AttackLogo.src,
-    title: "Attack on Titan",
-    subheader: "From One Hand to Another",
-    season: 4,
-    episode: 4,
-    episodesInSeason: 30,
-    cardMedia: Attack.src,
-    cardMediaAlt: "Attack on Titan",
-    releaseDateTime: "December 27 2020 03:00:00 GMT-0700",
-    synopsis: `A sudden visit from the Tybur family shakes up the Marleyan military. Meanwhile, Falco smuggles letters for a friend and helps two old comrades reunite.`,
-    watchUrl: "https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan",
-    imdbUrl: "https://www.imdb.com/title/tt13605712/?ref_=ttep_ep_4",
-    objectPosition: "15% 50%",
-    SiteLogo: CrunchyrollLogo,
-  },
-  {
     avatar: PeacemakerLogo.src,
     title: "Peacemaker",
     subheader: "Ignorance is Chris",
@@ -249,6 +201,74 @@ export const availableNow: AvailableNowProps[] = [
     objectPosition: "50% 35%",
     imdbUrl: "https://www.imdb.com/title/tt35530361/?ref_=ttep_ep_6",
     SiteLogo: HBOLogo,
+  },
+  {
+    avatar: Haikyu.src,
+    title: "Haikyu!!",
+    subheader: "An Interesting Team",
+    season: 1,
+    episode: 6,
+    episodesInSeason: 25,
+    cardMedia: Haikyu.src,
+    cardMediaAlt: "Haikyu!!",
+    releaseDateTime: "May 11, 2014 21:00:00",
+    synopsis: ``,
+    watchUrl: "https://www.crunchyroll.com/series/GY8VM8MWY/haikyu",
+    imdbUrl: "https://www.imdb.com/title/tt4461876/?ref_=ttep_ep_6",
+    objectPosition: "50% 30%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: AttackLogo.src,
+    title: "Attack on Titan",
+    subheader: "Declaration of War",
+    season: 4,
+    episode: 5,
+    episodesInSeason: 30,
+    cardMedia: Attack.src,
+    cardMediaAlt: "Attack on Titan",
+    releaseDateTime: "January 10 2021 03:00:00 GMT-0700",
+    synopsis: `Eren confronts Reiner, while Willy Tybur gives a speech to the entire world in which he aims to solve the endless cycle of hate directed towards Eldians.`,
+    watchUrl: "https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan",
+    imdbUrl: "https://www.imdb.com/title/tt13605714/?ref_=ttep_ep_5",
+    objectPosition: "15% 50%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: TheBearLogo.src,
+    title: "The Bear",
+    subheader: "Green",
+    season: 4,
+    episode: 8,
+    episodesInSeason: 10,
+    cardMedia: TheBearLogo.src,
+    cardMediaAlt: "The Bear Season 4",
+    releaseDateTime: "June 25, 2025 21:00:00",
+    synopsis: "Everyone keeps going.",
+    watchUrl:
+      "https://www.hulu.com/series/05eb6a8e-90ed-4947-8c0b-e6536cbddd5f",
+    imdbUrl: "https://www.imdb.com/title/tt36944022/?ref_=ttep_ep_8",
+    objectPosition: "50% 50%",
+    SiteLogo: HuluLogo,
+  },
+  {
+    avatar: Dorohedoro.src,
+    title: "Dorohedoro",
+    subheader:
+      "In The Bag / Eat Quietly During Meals / My Neighbor the Sorcerer",
+    season: 1,
+    episode: 2,
+    episodesInSeason: 12,
+    cardMedia: Dorohedoro.src,
+    cardMediaAlt: "Dorohedoro",
+    releaseDateTime: "June 20, 2020 21:00:00",
+    synopsis:
+      "Shin and Noi take care of En's enemies. Fujita and Ebisu have an important dinner with En. Caiman and Nikaido head to Marumigi to confront a sorcerer who change people's faces with needles.",
+    watchUrl:
+      "https://www.netflix.com/us/title/80991903?s=a&trkid=13747225&trg=cp&vlang=en&clip=81221930",
+    imdbUrl: "https://www.imdb.com/title/tt11586190/?ref_=ttep_ep_2",
+    objectPosition: "50% 50%",
+    SiteLogo: NetflixLogo,
   },
 ];
 
@@ -643,22 +663,6 @@ export const upNext: UpNextProps[] = [
   //   TimerCard: SmallTimerCard,
   //   SiteLogo: AppleLogo,
   // },
-  {
-    avatar: OnlyMurdersLogo.src,
-    title: "Only Murders In The Building",
-    subheader: "",
-    season: 5,
-    episode: 6,
-    episodesInSeason: 10,
-    cardMedia: OnlyMurdersintheBuilding.src,
-    cardMediaAlt: "Only Murders In The Building",
-    releaseDateTime: "September 29, 2025 21:00:00",
-    watchUrl:
-      "https://www.hulu.com/series/ef31c7e1-cd0f-4e07-848d-1cbfedb50ddf",
-    objectPosition: "100% 20%",
-    TimerCard: LargeTimerCard,
-    SiteLogo: HuluLogo,
-  },
   {
     avatar: SlowHorsesLogo.src,
     title: "Slow Horses",

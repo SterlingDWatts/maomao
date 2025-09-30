@@ -106,7 +106,14 @@ export default function DrawerAppBar(props: Props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+    <Box
+      onClick={handleDrawerToggle}
+      sx={{
+        textAlign: "center",
+        backgroundColor: props.backgroundColor || "primary.main",
+        color: props.color || "black",
+      }}
+    >
       <Typography variant="h6" sx={{ my: 2 }}>
         Watchlist
       </Typography>
@@ -199,6 +206,8 @@ export default function DrawerAppBar(props: Props) {
                 "& .MuiDrawer-paper": {
                   boxSizing: "border-box",
                   width: drawerWidth,
+                  backgroundColor: props.backgroundColor || "primary.main",
+                  color: props.color || "black",
                 },
               }}
             >
