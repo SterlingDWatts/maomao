@@ -19,12 +19,15 @@ import AttackLogo from "./assets/AttackLogo.jpg";
 import ChainsawManMovie from "./assets/ChainsawManMovie.jpg";
 import Delicious from "./assets/Delicious.jpg";
 import Dorohedoro from "./assets/Dorohedoro.jpg";
+import DownCemetery from "./assets/DownCemetery.jpg";
 import Fantastic from "./assets/Fantastic.jpg";
 import FantasticLogo from "./assets/FantasticLogo.jpg";
 import FrierenFrierensParty from "./assets/FrierenFrierensParty.jpg";
 import FrierenLogo from "./assets/FrierenLogo.jpg";
 import Fruits from "./assets/Fruits.jpg";
 import Haikyu from "./assets/Haikyu.jpg";
+import HellsKitchen from "./assets/HellsKitchen.jpg";
+import HellsKitchenLogo from "./assets/HellsKitchenLogo.jpg";
 import Highest2Lowest from "./assets/Highest2Lowest.jpg";
 import Highest2LowestLogo from "./assets/Highest2LowestLogo.jpg";
 import Invasion from "./assets/Invasion.jpg";
@@ -32,8 +35,6 @@ import InvasionLogo from "./assets/InvasionLogo.jpg";
 import JamesLogo from "./assets/JamesLogo.jpg";
 import JeffBuckley from "./assets/JeffBuckley.jpg";
 import JeffBuckleyLogo from "./assets/JeffBuckleyLogo.jpg";
-import Kaiju from "./assets/Kaiju.jpg";
-import KaijuLogo from "./assets/KaijuLogo.jpg";
 import LostBus from "./assets/LostBus.jpg";
 import LostBusLogo from "./assets/LostBusLogo.jpg";
 import Mickey17 from "./assets/Mickey17.jpg";
@@ -79,6 +80,8 @@ import TheBrutalist from "./assets/TheBrutalist.jpg";
 import TheBrutalistLogo from "./assets/TheBrutalistLogo.jpg";
 import WhiteLotusLogo from "./assets/WhiteLotusLogo.jpg";
 import WhiteLotusS2 from "./assets/WhiteLotusS2.jpg";
+import WickedForGood from "./assets/WickedForGood.jpg";
+import WickedForGoodLogo from "./assets/WickedForGoodLogo.jpg";
 import ZoneOfInterest from "./assets/ZoneOfInterest.jpg";
 import ZoneOfInterestLogo from "./assets/ZoneOfInterestLogo.jpg";
 
@@ -117,40 +120,21 @@ export interface UpNextProps extends AvailableNowProps {
 
 export const availableNow: AvailableNowProps[] = [
   {
-    avatar: SlowHorsesLogo.src,
-    title: "Slow Horses",
-    subheader: "",
-    season: 5,
-    episode: 2,
+    avatar: HellsKitchen.src,
+    title: "Hells Kitchen",
+    subheader: "Making a State-ment",
+    season: 24,
+    episode: 1,
     episodesInSeason: 6,
-    cardMedia: SlowHorsesBig.src,
-    cardMediaAlt: "Slow Horses",
-    releaseDateTime: "September 24, 2025 21:00:00",
+    cardMedia: HellsKitchen.src,
+    cardMediaAlt: "Hells Kitchen",
+    releaseDateTime: "September 25 2025 21:00:00 GMT-0700",
+    synopsis: `For the first time in Hell's Kitchen history, every chef will be from and represent a different place. The Top 20 chefs will set out to impress Chef Ramsay in the Signature Dish Challenge before embarking on their first dinner service.`,
     watchUrl:
-      "https://tv.apple.com/us/show/slow-horses/umc.cmc.2szz3fdt71tl1ulnbp8utgq5o",
-    objectPosition: "50% 30%",
-    SiteLogo: AppleLogo,
-    addContrastToTimer: true,
-  },
-  {
-    avatar: Seventh.src,
-    shortTitle: "7th Time Loop",
-    title:
-      "7th Time Loop: The Villainess Enjoys a Carefree Life Married to Her Worst Enemy",
-    subheader: "Another Kind of Trade",
-    season: 1,
-    episode: 5,
-    episodesInSeason: 12,
-    cardMedia: Seventh.src,
-    cardMediaAlt:
-      "7th Time Loop: The Villainess Enjoys a Carefree Life Married to Her Worst Enemy",
-    releaseDateTime: "February 04 2024 03:00:00 GMT-0700",
-    synopsis: `Rishe arrives at the chapel to find Theodore waiting for her with a warning. Arnold appears and his icy treatment of his brother leaves Rishe with more questions. But she doesn't have time for that. She still has to convince Tully to become an ally.`,
-    watchUrl:
-      "https://www.crunchyroll.com/series/G4PH0WJGQ/7th-time-loop-the-villainess-enjoys-a-carefree-life-married-to-her-worst-enemy",
-    imdbUrl: "https://www.imdb.com/title/tt30790809/?ref_=ttep_ep_5",
+      "https://www.hulu.com/series/4f31f13a-d60c-4c90-b8e5-397ea49d08db?utm_source=shared_link",
+    imdbUrl: "https://www.imdb.com/title/tt36933498/?ref_=ttep_ep_1",
     objectPosition: "50% 50%",
-    SiteLogo: CrunchyrollLogo,
+    SiteLogo: HuluLogo,
   },
   {
     avatar: Delicious.src,
@@ -168,22 +152,6 @@ export const availableNow: AvailableNowProps[] = [
     imdbUrl: "https://www.imdb.com/title/tt30838273/?ref_=ttep_ep_8",
     objectPosition: "50% 50%",
     SiteLogo: NetflixLogo,
-  },
-  {
-    avatar: Fruits.src,
-    title: "Fruits Basket",
-    subheader: "You're Here, Machi",
-    season: 2,
-    episode: 24,
-    episodesInSeason: 25,
-    cardMedia: Fruits.src,
-    cardMediaAlt: "Fruits Basket",
-    releaseDateTime: "September 15 2020 03:00:00 GMT-0700",
-    synopsis: `Another New Year's means another banquet for the zodiac members at the Soma estate.`,
-    watchUrl: "https://www.crunchyroll.com/series/G6ZJMGEXY/fruits-basket",
-    imdbUrl: "https://www.imdb.com/title/tt12998046/?ref_=ttep_ep_24",
-    objectPosition: "50% 50%",
-    SiteLogo: CrunchyrollLogo,
   },
   {
     avatar: PeacemakerLogo.src,
@@ -269,6 +237,43 @@ export const availableNow: AvailableNowProps[] = [
     imdbUrl: "https://www.imdb.com/title/tt11586190/?ref_=ttep_ep_2",
     objectPosition: "50% 50%",
     SiteLogo: NetflixLogo,
+  },
+  {
+    avatar: Seventh.src,
+    shortTitle: "7th Time Loop",
+    title:
+      "7th Time Loop: The Villainess Enjoys a Carefree Life Married to Her Worst Enemy",
+    subheader: "The Only One in the World",
+    season: 1,
+    episode: 6,
+    episodesInSeason: 12,
+    cardMedia: Seventh.src,
+    cardMediaAlt:
+      "7th Time Loop: The Villainess Enjoys a Carefree Life Married to Her Worst Enemy",
+    releaseDateTime: "February 11 2024 03:00:00 GMT-0700",
+    synopsis: `Rishe has been imprisoned. Her captor sits down with Arnold and tells him the conditions for her safe return. Arnold's seemingly nonchalant manner confounds Rishe's captor.`,
+    watchUrl:
+      "https://www.crunchyroll.com/series/G4PH0WJGQ/7th-time-loop-the-villainess-enjoys-a-carefree-life-married-to-her-worst-enemy",
+    imdbUrl: "https://www.imdb.com/title/tt30790810/?ref_=ttep_ep_6",
+    objectPosition: "50% 50%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: Fruits.src,
+    title: "Fruits Basket",
+    subheader: "I'm Different Now",
+    season: 2,
+    episode: 25,
+    episodesInSeason: 25,
+    cardMedia: Fruits.src,
+    cardMediaAlt: "Fruits Basket",
+    releaseDateTime: "September 22 2020 03:00:00 GMT-0700",
+    synopsis: `A winter chill lingers in the air as memories revealing some of Kureno's mysterious past and present emerge.`,
+    watchUrl: "https://www.crunchyroll.com/series/G6ZJMGEXY/fruits-basket",
+    imdbUrl: "https://www.imdb.com/title/tt13041448/?ref_=ttep_ep_25",
+    objectPosition: "50% 50%",
+    SiteLogo: CrunchyrollLogo,
+    finale: true,
   },
 ];
 
@@ -681,6 +686,24 @@ export const upNext: UpNextProps[] = [
     addContrastToTimer: true,
   },
   {
+    avatar: HellsKitchenLogo.src,
+    title: "Hells Kitchen",
+    subheader: "Hell on a Half-Shell",
+    season: 24,
+    episode: 2,
+    episodesInSeason: 6,
+    cardMedia: HellsKitchen.src,
+    cardMediaAlt: "Hells Kitchen",
+    releaseDateTime: "October 02 2025 21:00:00 GMT-0700",
+    synopsis: ``,
+    watchUrl:
+      "https://www.hulu.com/series/4f31f13a-d60c-4c90-b8e5-397ea49d08db?utm_source=shared_link",
+    imdbUrl: "https://www.imdb.com/title/tt38525498/?ref_=ttep_ep_2",
+    objectPosition: "50% 60%",
+    SiteLogo: HuluLogo,
+    TimerCard: LargeTimerCard,
+  },
+  {
     avatar: TaskmasterLogo.src,
     title: "Taskmaster",
     subheader: "",
@@ -778,6 +801,24 @@ export const upNext: UpNextProps[] = [
     TimerCard: SmallTimerCard,
     SiteLogo: AppleLogo,
     addContrastToTimer: true,
+  },
+  {
+    avatar: HellsKitchenLogo.src,
+    title: "Hells Kitchen",
+    subheader: "",
+    season: 24,
+    episode: 3,
+    episodesInSeason: 6,
+    cardMedia: HellsKitchen.src,
+    cardMediaAlt: "Hells Kitchen",
+    releaseDateTime: "October 09 2025 21:00:00 GMT-0700",
+    synopsis: ``,
+    watchUrl:
+      "https://www.hulu.com/series/4f31f13a-d60c-4c90-b8e5-397ea49d08db?utm_source=shared_link",
+    imdbUrl: "https://www.imdb.com/title/tt38525499/?ref_=ttep_ep_3",
+    objectPosition: "50% 50%",
+    SiteLogo: HuluLogo,
+    TimerCard: SmallTimerCard,
   },
   {
     avatar: TaskmasterLogo.src,
@@ -880,6 +921,24 @@ export const upNext: UpNextProps[] = [
     addContrastToTimer: true,
   },
   {
+    avatar: HellsKitchenLogo.src,
+    title: "Hells Kitchen",
+    subheader: "",
+    season: 24,
+    episode: 4,
+    episodesInSeason: 6,
+    cardMedia: HellsKitchen.src,
+    cardMediaAlt: "Hells Kitchen",
+    releaseDateTime: "October 16 2025 21:00:00 GMT-0700",
+    synopsis: ``,
+    watchUrl:
+      "https://www.hulu.com/series/4f31f13a-d60c-4c90-b8e5-397ea49d08db?utm_source=shared_link",
+    imdbUrl: "https://www.imdb.com/title/tt38525500/?ref_=ttep_ep_4",
+    objectPosition: "50% 50%",
+    SiteLogo: HuluLogo,
+    TimerCard: SmallTimerCard,
+  },
+  {
     avatar: TaskmasterLogo.src,
     title: "Taskmaster",
     subheader: "",
@@ -962,6 +1021,24 @@ export const upNext: UpNextProps[] = [
     SiteLogo: AppleLogo,
     addContrastToTimer: true,
     finale: true,
+  },
+  {
+    avatar: HellsKitchenLogo.src,
+    title: "Hells Kitchen",
+    subheader: "",
+    season: 24,
+    episode: 5,
+    episodesInSeason: 6,
+    cardMedia: HellsKitchen.src,
+    cardMediaAlt: "Hells Kitchen",
+    releaseDateTime: "October 23 2025 21:00:00 GMT-0700",
+    synopsis: ``,
+    watchUrl:
+      "https://www.hulu.com/series/4f31f13a-d60c-4c90-b8e5-397ea49d08db?utm_source=shared_link",
+    imdbUrl: "https://www.imdb.com/title/tt38525502/?ref_=ttep_ep_5",
+    objectPosition: "50% 50%",
+    SiteLogo: HuluLogo,
+    TimerCard: SmallTimerCard,
   },
   {
     avatar: TaskmasterLogo.src,
@@ -1063,6 +1140,60 @@ export const upNext: UpNextProps[] = [
     addContrastToTimer: true,
   },
   {
+    avatar: DownCemetery.src,
+    title: "Down Cemetery Road",
+    subheader: "",
+    season: 1,
+    episode: 1,
+    episodesInSeason: 8,
+    cardMedia: DownCemetery.src,
+    cardMediaAlt: "Down Cemetery Road",
+    releaseDateTime: "October 29 2025 21:00:00 GMT-0700",
+    synopsis: "",
+    watchUrl:
+      "https://tv.apple.com/us/show/down-cemetery-road/umc.cmc.3i55uxosnfpzw7rw1q525iksh",
+    imdbUrl: "https://www.imdb.com/title/tt33552603/?ref_=ttep_ep_1",
+    objectPosition: "50% 30%",
+    SiteLogo: AppleLogo,
+    TimerCard: LargeTimerCard,
+  },
+  {
+    avatar: DownCemetery.src,
+    title: "Down Cemetery Road",
+    subheader: "",
+    season: 1,
+    episode: 2,
+    episodesInSeason: 8,
+    cardMedia: DownCemetery.src,
+    cardMediaAlt: "Down Cemetery Road",
+    releaseDateTime: "October 29 2025 21:00:00 GMT-0700",
+    synopsis: "",
+    watchUrl:
+      "https://tv.apple.com/us/show/down-cemetery-road/umc.cmc.3i55uxosnfpzw7rw1q525iksh",
+    imdbUrl: "https://www.imdb.com/title/tt33552604/?ref_=ttep_ep_2",
+    objectPosition: "50% 30%",
+    SiteLogo: AppleLogo,
+    TimerCard: SmallTimerCard,
+  },
+  {
+    avatar: HellsKitchenLogo.src,
+    title: "Hells Kitchen",
+    subheader: "",
+    season: 24,
+    episode: 6,
+    episodesInSeason: 6,
+    cardMedia: HellsKitchen.src,
+    cardMediaAlt: "Hells Kitchen",
+    releaseDateTime: "October 30 2025 21:00:00 GMT-0700",
+    synopsis: ``,
+    watchUrl:
+      "https://www.hulu.com/series/4f31f13a-d60c-4c90-b8e5-397ea49d08db?utm_source=shared_link",
+    imdbUrl: "https://www.imdb.com/title/tt38525505/?ref_=ttep_ep_6",
+    objectPosition: "50% 50%",
+    SiteLogo: HuluLogo,
+    TimerCard: SmallTimerCard,
+  },
+  {
     avatar: TaskmasterLogo.src,
     title: "Taskmaster",
     subheader: "",
@@ -1095,6 +1226,24 @@ export const upNext: UpNextProps[] = [
     TimerCard: SmallTimerCard,
     SiteLogo: CrunchyrollLogo,
     addContrastToTimer: true,
+  },
+  {
+    avatar: DownCemetery.src,
+    title: "Down Cemetery Road",
+    subheader: "",
+    season: 1,
+    episode: 3,
+    episodesInSeason: 8,
+    cardMedia: DownCemetery.src,
+    cardMediaAlt: "Down Cemetery Road",
+    releaseDateTime: "Novermber 05 2025 21:00:00 GMT-0700",
+    synopsis: "",
+    watchUrl:
+      "https://tv.apple.com/us/show/down-cemetery-road/umc.cmc.3i55uxosnfpzw7rw1q525iksh",
+    imdbUrl: "https://www.imdb.com/title/tt33552605/?ref_=ttep_ep_3",
+    objectPosition: "50% 30%",
+    SiteLogo: AppleLogo,
+    TimerCard: SmallTimerCard,
   },
   {
     avatar: TaskmasterLogo.src,
@@ -1182,6 +1331,24 @@ export const upNext: UpNextProps[] = [
     addContrastToTimer: true,
   },
   {
+    avatar: DownCemetery.src,
+    title: "Down Cemetery Road",
+    subheader: "",
+    season: 1,
+    episode: 4,
+    episodesInSeason: 8,
+    cardMedia: DownCemetery.src,
+    cardMediaAlt: "Down Cemetery Road",
+    releaseDateTime: "Novermber 12 2025 21:00:00 GMT-0700",
+    synopsis: "",
+    watchUrl:
+      "https://tv.apple.com/us/show/down-cemetery-road/umc.cmc.3i55uxosnfpzw7rw1q525iksh",
+    imdbUrl: "https://www.imdb.com/title/tt33552606/?ref_=ttep_ep_4",
+    objectPosition: "50% 30%",
+    SiteLogo: AppleLogo,
+    TimerCard: SmallTimerCard,
+  },
+  {
     avatar: TaskmasterLogo.src,
     title: "Taskmaster",
     subheader: "",
@@ -1233,6 +1400,40 @@ export const upNext: UpNextProps[] = [
     TimerCard: SmallTimerCard,
     SiteLogo: CrunchyrollLogo,
     addContrastToTimer: true,
+  },
+  {
+    avatar: DownCemetery.src,
+    title: "Down Cemetery Road",
+    subheader: "",
+    season: 1,
+    episode: 5,
+    episodesInSeason: 8,
+    cardMedia: DownCemetery.src,
+    cardMediaAlt: "Down Cemetery Road",
+    releaseDateTime: "Novermber 19 2025 21:00:00 GMT-0700",
+    synopsis: "",
+    watchUrl:
+      "https://tv.apple.com/us/show/down-cemetery-road/umc.cmc.3i55uxosnfpzw7rw1q525iksh",
+    imdbUrl: "https://www.imdb.com/title/tt33552607/?ref_=ttep_ep_5",
+    objectPosition: "50% 30%",
+    SiteLogo: AppleLogo,
+    TimerCard: SmallTimerCard,
+  },
+  {
+    avatar: WickedForGoodLogo.src,
+    title: "Wicked: for Good",
+    subheader: "",
+    cardMedia: WickedForGood.src,
+    cardMediaAlt: "Wicked: for Good",
+    releaseDateTime: "November 21 2025 21:00:00 GMT-0700",
+    synopsis:
+      "Elphaba, the future Wicked Witch of the West and her relationship with Glinda, the Good Witch of the North. The second of a two-part feature film adaptation of the Broadway musical.",
+    watchUrl:
+      "https://www.fandango.com/wicked-for-good-2025-238985/movie-overview",
+    imdbUrl: "https://www.imdb.com/title/tt19847976/?ref_=ttmi_ov_bk",
+    objectPosition: "50% 30%",
+    SiteLogo: FandangoLogo,
+    TimerCard: LargeTimerCard,
   },
   {
     avatar: Pluribus.src,
@@ -1329,6 +1530,24 @@ export const upNext: UpNextProps[] = [
     SiteLogo: NetflixLogo,
   },
   {
+    avatar: DownCemetery.src,
+    title: "Down Cemetery Road",
+    subheader: "",
+    season: 1,
+    episode: 6,
+    episodesInSeason: 8,
+    cardMedia: DownCemetery.src,
+    cardMediaAlt: "Down Cemetery Road",
+    releaseDateTime: "Novermber 26 2025 21:00:00 GMT-0700",
+    synopsis: "",
+    watchUrl:
+      "https://tv.apple.com/us/show/down-cemetery-road/umc.cmc.3i55uxosnfpzw7rw1q525iksh",
+    imdbUrl: "https://www.imdb.com/title/tt33552608/?ref_=ttep_ep_6",
+    objectPosition: "50% 30%",
+    SiteLogo: AppleLogo,
+    TimerCard: SmallTimerCard,
+  },
+  {
     avatar: Pluribus.src,
     title: "Pluribus",
     subheader: "",
@@ -1363,6 +1582,24 @@ export const upNext: UpNextProps[] = [
     addContrastToTimer: true,
   },
   {
+    avatar: DownCemetery.src,
+    title: "Down Cemetery Road",
+    subheader: "",
+    season: 1,
+    episode: 7,
+    episodesInSeason: 8,
+    cardMedia: DownCemetery.src,
+    cardMediaAlt: "Down Cemetery Road",
+    releaseDateTime: "December 03 2025 21:00:00 GMT-0700",
+    synopsis: "",
+    watchUrl:
+      "https://tv.apple.com/us/show/down-cemetery-road/umc.cmc.3i55uxosnfpzw7rw1q525iksh",
+    imdbUrl: "https://www.imdb.com/title/tt33552609/?ref_=ttep_ep_7",
+    objectPosition: "50% 30%",
+    SiteLogo: AppleLogo,
+    TimerCard: SmallTimerCard,
+  },
+  {
     avatar: Pluribus.src,
     title: "Pluribus",
     subheader: "",
@@ -1395,6 +1632,25 @@ export const upNext: UpNextProps[] = [
     TimerCard: SmallTimerCard,
     SiteLogo: CrunchyrollLogo,
     addContrastToTimer: true,
+  },
+  {
+    avatar: DownCemetery.src,
+    title: "Down Cemetery Road",
+    subheader: "",
+    season: 1,
+    episode: 8,
+    episodesInSeason: 8,
+    cardMedia: DownCemetery.src,
+    cardMediaAlt: "Down Cemetery Road",
+    releaseDateTime: "December 10 2025 21:00:00 GMT-0700",
+    synopsis: "",
+    watchUrl:
+      "https://tv.apple.com/us/show/down-cemetery-road/umc.cmc.3i55uxosnfpzw7rw1q525iksh",
+    imdbUrl: "https://www.imdb.com/title/tt33552610/?ref_=ttep_ep_8",
+    objectPosition: "50% 30%",
+    SiteLogo: AppleLogo,
+    TimerCard: SmallTimerCard,
+    finale: true,
   },
   {
     avatar: Pluribus.src,
