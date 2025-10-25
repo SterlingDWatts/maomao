@@ -14,6 +14,7 @@ import {
 
 import TwentyEightYears from "./assets/28Years.jpg";
 import TwentyEightYearsLogo from "./assets/28YearsLogo.jpg";
+import ApothecaryDiaries from "./assets/ApothecaryDiaries.jpg";
 import Attack from "./assets/Attack.jpg";
 import AttackLogo from "./assets/AttackLogo.jpg";
 import ChainsawManMovie from "./assets/ChainsawManMovie.jpg";
@@ -574,23 +575,6 @@ export const upNext: UpNextProps[] = [
     objectPosition: "50% 50%",
     TimerCard: LargeTimerCard,
     SiteLogo: NetflixLogo,
-  },
-  {
-    avatar: InvasionLogo.src,
-    title: "Invasion",
-    subheader: "",
-    season: 3,
-    episode: 10,
-    episodesInSeason: 10,
-    cardMedia: Invasion.src,
-    cardMediaAlt: "Invasion",
-    releaseDateTime: "October 24 2025 03:00:00 GMT-0700",
-    watchUrl:
-      "https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
-    objectPosition: "35% 30%",
-    TimerCard: LargeTimerCard,
-    SiteLogo: AppleLogo,
-    finale: true,
   },
   {
     avatar: MyHeroLogo.src,
@@ -1368,7 +1352,6 @@ export const upNext: UpNextProps[] = [
     releaseDateTime: "January 16, 2026 23:00:00",
     watchUrl:
       "https://www.crunchyroll.com/series/GG5H5XQX4/frieren-beyond-journeys-end",
-    estimateDate: "January 2026",
     objectPosition: "50% 28%",
     TimerCard: LargeTimerCard,
     SiteLogo: CrunchyrollLogo,
@@ -1388,5 +1371,22 @@ export const upNext: UpNextProps[] = [
     TimerCard: LargeTimerCard,
     SiteLogo: FandangoLogo,
     // addContrastToTimer: true,
+  },
+  {
+    avatar: ApothecaryDiaries.src,
+    title: "Apothecary Diaries",
+    subheader: "",
+    season: 3,
+    episode: 1,
+    cardMedia: ApothecaryDiaries.src,
+    cardMediaAlt: "Apothecary Diaries",
+    releaseDateTime: "October 31, 2026 23:00:00",
+    watchUrl:
+      "https://www.crunchyroll.com/series/G3KHEVDJ7/the-apothecary-diaries",
+    estimateDate: "October 2026",
+    objectPosition: "50% 28%",
+    TimerCard: LargeTimerCard,
+    SiteLogo: CrunchyrollLogo,
+    addContrastToTimer: true,
   },
 ];
