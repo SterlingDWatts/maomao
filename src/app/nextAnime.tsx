@@ -1835,6 +1835,8 @@ export const animeList: Anime[] = [
         Bug, is his greatest ally.
       </>
     ),
+    hasDawnSeen: true,
+    hasSterlingSeen: true,
   },
   {
     title: "Gosick",
