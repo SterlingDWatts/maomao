@@ -21,7 +21,7 @@ export default function Page() {
   React.useEffect(() => {
     function inactivityTime() {
       let timer: string | number | NodeJS.Timeout | undefined;
-      const timeLimit = 24 * 60 * 60 * 1000;
+      const timeLimit = 6 * 60 * 60 * 1000;
 
       function timerElapsed() {
         console.log("Inactivity period reached. Triggering refresh."); // todo remove later

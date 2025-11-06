@@ -36,6 +36,34 @@ function AnimeTrackerContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
 
+  React.useEffect(() => {
+    function inactivityTime() {
+      let timer: string | number | NodeJS.Timeout | undefined;
+      const timeLimit = 6 * 60 * 60 * 1000;
+
+      function timerElapsed() {
+        console.log("Inactivity period reached. Triggering refresh."); // todo remove later
+        window.location.reload();
+      }
+
+      function timerReset() {
+        console.log("User activity detected. Resetting timer."); // todo remove later
+        clearTimeout(timer);
+        timer = setTimeout(timerElapsed, timeLimit);
+      }
+
+      window.onload = timerReset;
+      document.onkeypress = timerReset;
+      document.onmousemove = timerReset;
+      document.onmousedown = timerReset;
+      document.ontouchstart = timerReset;
+      document.onclick = timerReset;
+      document.onscroll = timerReset;
+    }
+
+    inactivityTime();
+  }, []);
+
   const [sortBy, setSortBy] = React.useState<
     "rank" | "rating" | "popularity" | "title" | "year" | "episodes" | ""
   >("rank");
