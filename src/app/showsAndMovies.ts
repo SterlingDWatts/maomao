@@ -280,20 +280,6 @@ export const backlog: AvailableNowProps[] = [
     SiteLogo: NetflixLogo,
   },
   {
-    avatar: OneBattleLogo.src,
-    title: "One Battle After Another",
-    subheader: "",
-    cardMedia: OneBattle.src,
-    cardMediaAlt: "One Battle After Another",
-    releaseDateTime: "September 26 2025 16:00:00 GMT-0700",
-    watchUrl:
-      "https://www.fandango.com/one-battle-after-another-2025-241516/movie-overview",
-    objectPosition: "50% 70%",
-    synopsis:
-      "When their evil enemy resurfaces after 16 years, a group of ex-revolutionaries reunite to rescue one of their own's daughter.",
-    SiteLogo: FandangoLogo,
-  },
-  {
     avatar: TaskmasterLogo.src,
     title: "Taskmaster",
     subheader: "9x7",
@@ -343,71 +329,6 @@ export const backlog: AvailableNowProps[] = [
     imdbUrl: "https://www.imdb.com/title/tt30825175/?ref_=tt_ov_ep_pr",
     objectPosition: "35% 30%",
     SiteLogo: AppleLogo,
-  },
-  {
-    avatar: LostBusLogo.src,
-    title: "The Lost Bus",
-    subheader: "",
-    synopsis:
-      "Explores what went wrong in California's Camp Fire, the nation's deadliest wildfire in a century, and how to prevent future tragedies, also including stories of a bus driver and school teacher who helped through a wildfire.",
-    cardMedia: LostBus.src,
-    cardMediaAlt: "The Lost Bus",
-    releaseDateTime: "September 19 2025 16:00:00 GMT-0700",
-    watchUrl:
-      "https://www.imdb.com/title/tt21103218/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_the%2520lost%2520bus",
-    objectPosition: "50% 20%",
-    SiteLogo: IMDBLogo,
-    isMovie: true,
-  },
-  {
-    avatar: Highest2LowestLogo.src,
-    title: "Highest 2 Lowest",
-    subheader: "",
-    synopsis:
-      "When a titan music mogul is targeted with a ransom plot, he is jammed up in a life-or-death moral dilemma.",
-    cardMedia: Highest2Lowest.src,
-    cardMediaAlt: "Highest 2 Lowest",
-    releaseDateTime: "August 15 2025 16:00:00 GMT-0700",
-    watchUrl:
-      "https://www.fandango.com/highest-2-lowest-2025-240338/movie-overview",
-    imdbUrl:
-      "https://www.imdb.com/title/tt31194612/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_highest",
-    objectPosition: "50% 80%",
-    SiteLogo: FandangoLogo,
-    isMovie: true,
-  },
-  {
-    avatar: JeffBuckleyLogo.src,
-    title: "It's Never Over, Jeff Buckley",
-    subheader: "",
-    synopsis:
-      "Never-before-seen footage, exclusive voice messages, and accounts from Jeff Buckley's inner circle paint a captivating portrait of the gifted musician who died tragically in 1997, having only released one album.",
-    cardMedia: JeffBuckley.src,
-    cardMediaAlt: "It's Never Over, Jeff Buckley",
-    releaseDateTime: "August 08 2025 16:00:00 GMT-0700",
-    watchUrl:
-      "https://www.fandango.com/its-never-over-jeff-buckley-2025-241047/movie-overview",
-    imdbUrl:
-      "https://www.imdb.com/title/tt34966650/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_jeff%2520buck",
-    objectPosition: "65% 40%",
-    SiteLogo: FandangoLogo,
-    isMovie: true,
-  },
-  {
-    avatar: FantasticLogo.src,
-    title: "The Fantastic Four: First Steps",
-    subheader: "",
-    cardMedia: Fantastic.src,
-    cardMediaAlt: "The Fantastic Four: First Steps",
-    releaseDateTime: "July 25 2025 16:00:00 GMT-0700",
-    synopsis:
-      "Forced to balance their roles as heroes with the strength of their family bond, the Fantastic Four must defend Earth from a ravenous space god called Galactus and his enigmatic Herald, Silver Surfer.",
-    watchUrl:
-      "https://www.fandango.com/the-fantastic-four-first-steps-2025-236967/movie-overview",
-    imdbUrl:
-      "https://www.imdb.com/title/tt10676052/?ref_=nv_sr_srsg_2_tt_6_nm_0_in_0_q_fantasti",
-    objectPosition: "47% 15%",
-    SiteLogo: FandangoLogo,
   },
   {
     avatar: ResidentAlienLogo.src,
@@ -494,6 +415,85 @@ export const backlog: AvailableNowProps[] = [
     imdbUrl: "https://www.imdb.com/title/tt15208848/?ref_=ttep_ep_1",
     objectPosition: "50% 50%",
     SiteLogo: HBOLogo,
+  },
+  {
+    avatar: OneBattleLogo.src,
+    title: "One Battle After Another",
+    subheader: "",
+    cardMedia: OneBattle.src,
+    cardMediaAlt: "One Battle After Another",
+    releaseDateTime: "September 26 2025 16:00:00 GMT-0700",
+    watchUrl:
+      "https://www.fandango.com/one-battle-after-another-2025-241516/movie-overview",
+    objectPosition: "50% 70%",
+    synopsis:
+      "When their evil enemy resurfaces after 16 years, a group of ex-revolutionaries reunite to rescue one of their own's daughter.",
+    SiteLogo: FandangoLogo,
+  },
+  {
+    avatar: LostBusLogo.src,
+    title: "The Lost Bus",
+    subheader: "",
+    synopsis:
+      "Explores what went wrong in California's Camp Fire, the nation's deadliest wildfire in a century, and how to prevent future tragedies, also including stories of a bus driver and school teacher who helped through a wildfire.",
+    cardMedia: LostBus.src,
+    cardMediaAlt: "The Lost Bus",
+    releaseDateTime: "September 19 2025 16:00:00 GMT-0700",
+    watchUrl:
+      "https://www.imdb.com/title/tt21103218/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_the%2520lost%2520bus",
+    objectPosition: "50% 20%",
+    SiteLogo: IMDBLogo,
+    isMovie: true,
+  },
+  {
+    avatar: Highest2LowestLogo.src,
+    title: "Highest 2 Lowest",
+    subheader: "",
+    synopsis:
+      "When a titan music mogul is targeted with a ransom plot, he is jammed up in a life-or-death moral dilemma.",
+    cardMedia: Highest2Lowest.src,
+    cardMediaAlt: "Highest 2 Lowest",
+    releaseDateTime: "August 15 2025 16:00:00 GMT-0700",
+    watchUrl:
+      "https://www.fandango.com/highest-2-lowest-2025-240338/movie-overview",
+    imdbUrl:
+      "https://www.imdb.com/title/tt31194612/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_highest",
+    objectPosition: "50% 80%",
+    SiteLogo: FandangoLogo,
+    isMovie: true,
+  },
+  {
+    avatar: JeffBuckleyLogo.src,
+    title: "It's Never Over, Jeff Buckley",
+    subheader: "",
+    synopsis:
+      "Never-before-seen footage, exclusive voice messages, and accounts from Jeff Buckley's inner circle paint a captivating portrait of the gifted musician who died tragically in 1997, having only released one album.",
+    cardMedia: JeffBuckley.src,
+    cardMediaAlt: "It's Never Over, Jeff Buckley",
+    releaseDateTime: "August 08 2025 16:00:00 GMT-0700",
+    watchUrl:
+      "https://www.fandango.com/its-never-over-jeff-buckley-2025-241047/movie-overview",
+    imdbUrl:
+      "https://www.imdb.com/title/tt34966650/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_jeff%2520buck",
+    objectPosition: "65% 40%",
+    SiteLogo: FandangoLogo,
+    isMovie: true,
+  },
+  {
+    avatar: FantasticLogo.src,
+    title: "The Fantastic Four: First Steps",
+    subheader: "",
+    cardMedia: Fantastic.src,
+    cardMediaAlt: "The Fantastic Four: First Steps",
+    releaseDateTime: "July 25 2025 16:00:00 GMT-0700",
+    synopsis:
+      "Forced to balance their roles as heroes with the strength of their family bond, the Fantastic Four must defend Earth from a ravenous space god called Galactus and his enigmatic Herald, Silver Surfer.",
+    watchUrl:
+      "https://www.fandango.com/the-fantastic-four-first-steps-2025-236967/movie-overview",
+    imdbUrl:
+      "https://www.imdb.com/title/tt10676052/?ref_=nv_sr_srsg_2_tt_6_nm_0_in_0_q_fantasti",
+    objectPosition: "47% 15%",
+    SiteLogo: FandangoLogo,
   },
   {
     avatar: ZoneOfInterestLogo.src,
