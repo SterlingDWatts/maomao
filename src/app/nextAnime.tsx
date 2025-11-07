@@ -712,6 +712,7 @@ export const animeList: Anime[] = [
       </>
     ),
     hasSterlingSeen: true,
+    hasDawnSeen: true,
   },
   {
     title: "Dr. Stone",
@@ -1660,6 +1661,8 @@ export const animeList: Anime[] = [
       </>
     ),
     isMaomaoRecommendation: true,
+    hasDawnSeen: true,
+    hasSterlingSeen: true,
   },
   {
     title: "Kamisama Kiss",

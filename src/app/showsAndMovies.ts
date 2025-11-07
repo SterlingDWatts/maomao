@@ -57,6 +57,7 @@ import RunningMan from "./assets/RunningMan.jpg";
 import RunningManLogo from "./assets/RunningManLogo.jpg";
 import Sandman from "./assets/Sandman.jpg";
 import SandmanLogo from "./assets/SandmanLogo.jpg";
+import SnowWhite from "./assets/SnowWhite.jpg";
 import SquidGame from "./assets/SquidGameCoffins.jpg";
 import SquidLogo from "./assets/SquidLogo.jpg";
 import Stone from "./assets/Stone.jpg";
@@ -246,6 +247,23 @@ export const availableNow: AvailableNowProps[] = [
     imdbUrl: "https://www.imdb.com/title/tt32328115/?ref_=ttep_ep_20",
     objectPosition: "50% 50%",
     SiteLogo: NetflixLogo,
+  },
+  {
+    avatar: SnowWhite.src,
+    title: "Snow White with the Red Hair",
+    subheader: "This Path, the Crystallization of Premonition",
+    season: 1,
+    episode: 5,
+    episodesInSeason: 12,
+    cardMedia: SnowWhite.src,
+    cardMediaAlt: "Snow White with the Red Hair",
+    releaseDateTime: "August 03 2015 03:00:00 GMT-0700",
+    synopsis: `The soldiers at Fort Laxdo have come down with a strange illness, and Shirayuki helps Zen and the others find the cause.`,
+    watchUrl:
+      "https://www.crunchyroll.com/series/GRZJ7QN86/snow-white-with-the-red-hair",
+    imdbUrl: "https://www.imdb.com/title/tt5008716/?ref_=ttep_ep_5",
+    objectPosition: "50% 50%",
+    SiteLogo: CrunchyrollLogo,
   },
   {
     avatar: Haikyu.src,
