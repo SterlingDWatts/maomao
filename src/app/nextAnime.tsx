@@ -384,6 +384,8 @@ export const animeList: Anime[] = [
         which he cannot return—the path of a Jujutsu sorcerer.
       </>
     ),
+    hasDawnSeen: true,
+    hasSterlingSeen: true,
   },
   {
     title: "Steins;Gate",
