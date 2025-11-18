@@ -15,6 +15,8 @@ import {
 import TwentyEightYears from "./assets/28Years.jpg";
 import TwentyEightYearsLogo from "./assets/28YearsLogo.jpg";
 import ApothecaryDiaries from "./assets/ApothecaryDiaries.jpg";
+import AMan from "./assets/AMan.jpg";
+import AManLogo from "./assets/AManLogo.jpg";
 import Attack from "./assets/Attack.jpg";
 import AttackLogo from "./assets/AttackLogo.jpg";
 import ChainsawManMovie from "./assets/ChainsawManMovie.jpg";
@@ -197,22 +199,6 @@ export const availableNow: AvailableNowProps[] = [
   },
   {
     avatar: AttackLogo.src,
-    title: "Jujutsu Kaisen",
-    subheader: "Girl of Steel",
-    season: 1,
-    episode: 3,
-    episodesInSeason: 24,
-    cardMedia: Jujutsu.src,
-    cardMediaAlt: "Jujutsu Kaisen",
-    releaseDateTime: "October 17 2020 03:00:00 GMT-0700",
-    synopsis: ` new freshman arrives to join the Itadori and Fushiguro group. She barely arrives in Tokyo, and is already put to the test on her first exorcism mission.`,
-    watchUrl: "https://www.crunchyroll.com/series/GRDV0019R/jujutsu-kaisen",
-    imdbUrl: "https://www.imdb.com/title/tt14342824/?ref_=ttep_ep_17",
-    objectPosition: "50% 50%",
-    SiteLogo: CrunchyrollLogo,
-  },
-  {
-    avatar: AttackLogo.src,
     title: "Attack on Titan",
     subheader: "Judgment",
     season: 4,
@@ -244,38 +230,54 @@ export const availableNow: AvailableNowProps[] = [
     SiteLogo: CrunchyrollLogo,
   },
   {
-    avatar: Evangelion.src,
-    title: "Neon Genesis Evangelion",
-    subheader: `He Was Aware That He Was Still a Child`,
-    season: 1,
-    episode: 21,
-    episodesInSeason: 26,
-    cardMedia: Evangelion.src,
-    cardMediaAlt: "Neon Genesis Evangelion",
-    releaseDateTime: "February 21, 1996 21:00:00",
-    synopsis: `As Kouzou is interrogated by SEELE, he reminisces about the history of NERV, its parent company GEHIRN, Yui and Gendou Ikari, and Ritsuko's mother Naoko Akagi. At the same time, a horrible fate is in store for Kaji concerning his shadowy dealings.`,
-    watchUrl:
-      "https://www.netflix.com/us/title/81033445?s=a&trkid=13747225&trg=dsms&vlang=en&clip=81722672",
-    imdbUrl: "https://www.imdb.com/title/tt0785996/?ref_=ttep_ep_21",
-    objectPosition: "50% 30%",
-    SiteLogo: NetflixLogo,
-  },
-  {
     avatar: SnowWhite.src,
     title: "Snow White with the Red Hair",
-    subheader: "Memories Draw Spirals of the Past...",
+    subheader: "Feelings That Connect and Reach",
     season: 1,
-    episode: 8,
+    episode: 9,
     episodesInSeason: 12,
     cardMedia: SnowWhite.src,
     cardMediaAlt: "Snow White with the Red Hair",
-    releaseDateTime: "August 24 2015 03:00:00 GMT-0700",
-    synopsis: `Zen assigns Obi to be Shirayuki's bodyguard and thinks back to when Mitsuhide first came to be his attendant.`,
+    releaseDateTime: "August 31 2015 03:00:00 GMT-0700",
+    synopsis: `Shirayuki's still a little drunk, but with Obi keeping an eye on her, there's no need to worry...`,
     watchUrl:
       "https://www.crunchyroll.com/series/GRZJ7QN86/snow-white-with-the-red-hair",
-    imdbUrl: "https://www.imdb.com/title/tt5134194/?ref_=ttep_ep_8",
+    imdbUrl: "https://www.imdb.com/title/tt5134196/?ref_=tt_ov_ep_nx",
     objectPosition: "50% 50%",
     SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: Jujutsu.src,
+    title: "Jujutsu Kaisen",
+    subheader: "Curse Womb Must Die",
+    season: 1,
+    episode: 4,
+    episodesInSeason: 24,
+    cardMedia: Jujutsu.src,
+    cardMediaAlt: "Jujutsu Kaisen",
+    releaseDateTime: "October 23 2020 03:00:00 GMT-0700",
+    synopsis: `The three Jujutsu first years are sent to rescue inmates of a detention center haunted by a Cursed Womb. With the potential to spawn a Special Grade Cursed Spirit, the young Sorcerers are faced with the choice to run or die.`,
+    watchUrl: "https://www.crunchyroll.com/series/GRDV0019R/jujutsu-kaisen",
+    imdbUrl: "https://www.imdb.com/title/tt13220452/?ref_=ttep_ep_4",
+    objectPosition: "50% 50%",
+    SiteLogo: CrunchyrollLogo,
+  },
+  {
+    avatar: Evangelion.src,
+    title: "Neon Genesis Evangelion",
+    subheader: `Don't Be`,
+    season: 1,
+    episode: 22,
+    episodesInSeason: 26,
+    cardMedia: Evangelion.src,
+    cardMediaAlt: "Neon Genesis Evangelion",
+    releaseDateTime: "February 28, 1996 21:00:00",
+    synopsis: `Asuka, haunted by childhood memories of her mother's suicide and a notion that she "lost" to Shinji in the previous battle, begins to lose her precious self-confidence as a pilot. A new Angel appears in space and invades Asuka's psyche through a strange beam of light, rendering her helpless.`,
+    watchUrl:
+      "https://www.netflix.com/us/title/81033445?s=a&trkid=13747225&trg=dsms&vlang=en&clip=81722672",
+    imdbUrl: "https://www.imdb.com/title/tt0785995/?ref_=tt_ov_ep_nx",
+    objectPosition: "50% 30%",
+    SiteLogo: NetflixLogo,
   },
 ];
 
@@ -742,6 +744,24 @@ export const upNext: UpNextProps[] = [
     imdbUrl: "https://www.imdb.com/title/tt32767327/?ref_=ttep_ep_4",
     objectPosition: "50% 40%",
     SiteLogo: AppleLogo,
+    TimerCard: LargeTimerCard,
+  },
+  {
+    avatar: AManLogo.src,
+    title: "A Man on the Inside",
+    subheader: "",
+    season: 2,
+    episode: 1,
+    episodesInSeason: 8,
+    cardMedia: AMan.src,
+    cardMediaAlt: "A Man on the Inside",
+    releaseDateTime: "November 20 2025 21:00:00 GMT-0700",
+    synopsis: "",
+    watchUrl:
+      "https://www.netflix.com/us/title/81677257?s=a&trkid=13747225&trg=dsms&vlang=en&clip=81923908",
+    imdbUrl: "https://www.imdb.com/title/tt35047948/?ref_=ttep_ep_1",
+    objectPosition: "50% 10%",
+    SiteLogo: NetflixLogo,
     TimerCard: LargeTimerCard,
   },
   {
