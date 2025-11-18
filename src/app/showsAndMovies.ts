@@ -731,14 +731,14 @@ export const upNext: UpNextProps[] = [
   {
     avatar: Pluribus.src,
     title: "Pluribus",
-    subheader: "",
+    subheader: "Please Carol",
     season: 1,
     episode: 4,
     episodesInSeason: 9,
     cardMedia: Pluribus.src,
     cardMediaAlt: "Pluribus",
     releaseDateTime: "November 20 2025 21:00:00 GMT-0700",
-    synopsis: "",
+    synopsis: `Carol tests the boundaries of this weirdly honest world at the expense of her ego. Far away, a resolute individual learns he's not alone.`,
     watchUrl:
       "https://tv.apple.com/us/show/pluribus/umc.cmc.37axgovs2yozlyh3c2cmwzlza",
     imdbUrl: "https://www.imdb.com/title/tt32767327/?ref_=ttep_ep_4",
